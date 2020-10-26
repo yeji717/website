@@ -1,0 +1,38 @@
+/*common.css*/
+    
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    
+    html, body, table, tr, td, th, input, select, textarea, option, button{
+        font: 16px / normal "arial", sans-serif; 
+        color: #000;
+    }
+    
+    img, iframe{
+        border: 0 none;
+    }
+    
+    ul, li{
+        list-style: none;
+    }
+    
+    a{
+        display: block;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    img{
+        display: block;
+    }
+    
+    input#toggle{
+        display: none;
+    }
+    
+    body{
+        width: 100%;
+    }
+    

@@ -1,0 +1,577 @@
+/*master.css*/
+
+@import url(common.css);
+
+
+/******** Header Style ************/
+
+#main_header {
+	width: 55px;
+	height: 300px;
+	position: fixed;
+	right: 80px;
+	top: 200px;
+	z-index: 30;
+}
+
+
+
+.toggle {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	display: none;
+}
+
+
+.toggle>img {
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	border-radius: 30px;
+}
+
+
+#main_nav {
+	width: 55px;
+	position: absolute;
+	right: 0;
+	top: 70px;
+}
+
+
+#main_nav>li {
+	width: 55px;
+	height: 55px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../images/work.png) no-repeat;
+	background-size: 100% 100%;
+	margin: 20px auto;
+	border-radius: 40px;
+
+}
+
+
+
+#main_nav>li.aboutMe {
+	background-image: url(../images/aboutme.png);
+}
+
+#main_nav>li.contact {
+	background-image: url(../images/contact.png);
+}
+
+
+/*********** Home Style *************/
+
+#home {
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+
+#home>h1 {
+	width: 301px;
+	height: 122px;
+	background: url(../images/home_title.png) no-repeat;
+	background-size: 100% 100%;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+
+.follow {
+	width: 50px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+	top: 440px;
+	overflow: hidden;
+	animation: followAni 2s infinite 0s normal;
+	opacity: 0;
+}
+
+
+@keyframes followAni {
+	from {
+		height: 0;
+		opacity: 0;
+	}
+
+	to {
+		height: 500px;
+		opacity: 1;
+	}
+}
+
+.line {
+	width: 1px;
+	height: 204px;
+	background: url(../images/line.png) no-repeat;
+	margin: 0 auto;
+	animation: lineAni 2s infinite 0s normal;
+	opacity: 0;
+}
+
+@keyframes lineAni {
+	from {
+		height: 30px;
+		opacity: 0;
+	}
+
+	to {
+		height: 204px;
+		opacity: 1;
+	}
+}
+
+
+
+.follow>span>img {
+	width: 50px;
+	margin: 5px auto;
+	animation: arrowAni 2s infinite 0s normal;
+	opacity: 0;
+}
+
+@keyframes arrowAni {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+/*********** Work Style *************/
+
+#work {
+	width: 100%;
+}
+
+
+#work>h2 {
+	width: 135px;
+	height: 88px;
+	background: url(../images/work_title.png);
+	background-size: 100% 100%;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 50px auto;
+}
+
+#link_wrap {
+	width: 100%;
+	position: relative;
+}
+
+#link_wrap>img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.link_image {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.link_image>li {
+	position: absolute;
+	width: 100%;
+	display: none;
+	background: url(../images/pcwork01.png);
+	background-size: 100% 100%;
+}
+
+
+
+.link_image>li.hanmi {
+	background-image: url(../images/pcwork001.png);
+}
+
+
+
+.link_image>li.dilmah {
+	background-image: url(../images/pcwork00.png);
+}
+
+
+.link_image>li.kobongmin {
+	background-image: url(../images/pcwork06.png);
+}
+
+
+.link_image>li.maeil {
+	background-image: url(../images/pcwork06.png);
+}
+
+
+.link_image>li.active {
+	display: block;
+}
+
+.link {
+	width: 150px;
+	height: 40px;
+	border: 1px solid #000;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	z-index: 20;
+}
+
+.link>a {
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	display: none;
+}
+
+.link>a.active {
+	display: block;
+}
+
+#link_wrap>.btn_prev,
+#link_wrap>.btn_next {
+	width: 50px;
+	height: 50px;
+	background: url(../images/btn_prev.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -125px;
+	z-index: 30;
+	opacity: 0.8;
+}
+
+#link_wrap>.btn_prev {
+	left: 25%;
+}
+
+#link_wrap>.btn_next {
+	right: 28%;
+	background-image: url(../images/btn_next.png);
+}
+
+
+/*********** About Style *************/
+
+#about {
+	width: 100%;
+	height: 700px;
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+
+
+#about>h2 {
+	width: 244px;
+	height: 88px;
+	background: url(../images/aboutme_title.png);
+	background-size: 100% 100%;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+#skills {
+	width: 1200px;
+	margin: 50px auto 0;
+}
+
+
+
+#skills_wrap {
+	width: 580px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+#skills_wrap>.box {
+	float: left;
+	margin: 20px;
+}
+
+
+.circle_wrap {
+	margin: 50px auto;
+	width: 150px;
+	height: 150px;
+	background: #ddd;
+	border-radius: 50%;
+
+}
+
+
+
+.circle_wrap .circle {
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	opacity: 0.99;
+	position: relative;
+}
+
+
+
+.circle_wrap .circle .mask,
+.circle_wrap .circle .fill {
+	width: 155px;
+	height: 155px;
+	position: absolute;
+	border-radius: 50%;
+
+}
+
+
+.circle_wrap .circle .mask {
+	clip: rect(0px, 200px, 200px, 74px);
+
+}
+
+
+.circle_wrap .circle .mask .fill {
+	clip: rect(0px, 75px, 150px, 0px);
+	background-color: #000;
+}
+
+
+.circle_wrap .circle.photoshop .mask.full,
+.circle_wrap .circle.photoshop .mask .fill {
+	animation: fillphotoshop ease-in-out 3s;
+	transform: rotate(110deg);
+}
+
+@keyframes fillphotoshop {
+	0% {
+		transform: rotate(3deg);
+	}
+
+	100% {
+		transform: rotate(110deg);
+	}
+}
+
+.circle_wrap .circle.illust .mask.full,
+.circle_wrap .circle.illust .mask .fill {
+	animation: fillillust ease-in-out 3s;
+	transform: rotate(110deg);
+}
+
+@keyframes fillillust {
+	0% {
+		transform: rotate(3deg);
+	}
+
+	100% {
+		transform: rotate(110deg);
+	}
+}
+
+.circle_wrap .circle.html .mask.full,
+.circle_wrap .circle.html .mask .fill {
+	animation: fillhtml ease-in-out 3s;
+	transform: rotate(130deg);
+}
+
+@keyframes fillhtml {
+	0% {
+		transform: rotate(3deg);
+	}
+
+	100% {
+		transform: rotate(130deg);
+	}
+}
+
+.circle_wrap .circle.css .mask.full,
+.circle_wrap .circle.css .mask .fill {
+	animation: fillcss ease-in-out 3s;
+	transform: rotate(130deg);
+}
+
+@keyframes fillcss {
+	0% {
+		transform: rotate(3deg);
+	}
+
+	100% {
+		transform: rotate(130deg);
+	}
+}
+
+.circle_wrap .circle.java .mask.full,
+.circle_wrap .circle.java .mask .fill {
+	animation: filljava ease-in-out 3s;
+	transform: rotate(90deg);
+}
+
+@keyframes filljava {
+	0% {
+		transform: rotate(3deg);
+	}
+
+	100% {
+		transform: rotate(90deg);
+	}
+}
+
+.circle_wrap .circle.jquery .mask.full,
+.circle_wrap .circle.jquery .mask .fill {
+	animation: filljquery ease-in-out 3s;
+	transform: rotate(95deg);
+}
+
+@keyframes filljquery {
+	0% {
+		transform: rotate(3deg);
+	}
+
+	100% {
+		transform: rotate(95deg);
+	}
+}
+
+.circle_wrap .inside_circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: #fff;
+	line-height: 120px;
+	text-align: center;
+	margin-top: 15px;
+	margin-left: 15px;
+	position: absolute;
+	z-index: 100;
+	font-size: 18px;
+}
+
+
+
+/*********** Contact Style *************/
+
+#contact {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+
+#contact>img {
+	width: 180px;
+	margin: 0 auto 30px;
+}
+
+
+#contact>h2 {
+	width: 186px;
+	height: 88px;
+	background: url(../images/contact_title.png);
+	background-size: 100% 100%;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0 auto 20px;
+}
+
+
+#contact>p {
+	text-align: center;
+	margin: 10px 0;
+}
+
+.contact_box {
+	position: absolute;
+	top: 430px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 186px;
+	height: 58px;
+}
+
+
+
+.btn:link,
+.btn:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 20px 40px;
+	border-radius: 100px;
+	display: inline-block;
+	transition: all .5s;
+}
+
+.btn-white {
+	background: #efefef;
+	color: #000;
+}
+
+.btn:hover {
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-3px);
+}
+
+.btn:active {
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1 {
+	animation: comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after {
+	content: "";
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 100px;
+	display: inline-block;
+	z-index: -1;
+	transition: all .5s;
+}
+
+.btn-white::after {
+	background: #efefef;
+}
+
+.btn-animation-1:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+@keyframes comeFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
