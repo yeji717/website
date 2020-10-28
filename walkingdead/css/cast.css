@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:wght@615;700;800&family=Fanwood+Text&family=Gentium+Basic:wght@700&family=Noto+Sans+KR:wght@300&family=Squada+One&display=swap');
+
+.box4{
+    width:100%;
+    height:950px;
+    background:#1F1B19;
+    position: relative;
+    overflow:hidden;
+    perspective: 1000px;
+}
+
+.box4>h1{
+    position: relative;
+    text-align: center;
+    color: #BA1B0D;
+    margin-top:50px;
+    font-size: 60px;
+    font-family: 'EB Garamond', serif;
+}
+
+.box4>h1::before{
+
+    position: absolute;
+    display:block;
+    content:"";
+    width:100px;
+    height:2px;
+    background:#BA1B0D;
+    top:53%;
+    left:37%;
+
+}
+
+.box4>h1::after{
+
+    position: absolute;
+    display:block;
+    content:"";
+    width:100px;
+    height:2px;
+    background:#BA1B0D;
+    top:53%;
+    right:37%;
+
+}
+.list{
+    position: relative;
+    top:35%;
+    left:10%;
+    margin-top:-250px;
+    width:5400px;
+    height:680px;
+  
+}
+
+.box4 > .list > li{
+    top:0;
+    width:380px;
+    height:680px;
+   
+    float: left;
+   
+    transition: all 0.7s;
+    position: relative;
+}
+
+.box4>.list>li>.e2,.e4,.e6,.e8,.e10,.e12{
+    top:20%;
+}
+
+
+.effect{
+    position: absolute;
+    margin:0 auto;
+    width:300px; height:490px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #bbb;
+}
+
+.effect img{
+    width:100%;
+    transition: all 0.6s ease 0.2s;
+    border-radius: 5px;
+}
+
+.effect .front{
+    position: absolute;
+    left:0;
+    top:0;
+    transform: rotateY(0deg);
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 1s;
+    backface-visibility: hidden;
+  
+}
+
+.effect .back{
+    position: absolute;
+    left:0; 
+    top:0;
+    transform: rotateY(-180deg);
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    transition: transform 1s;
+    backface-visibility: hidden;
+    z-index:-1;
+}
+
+.effect .back p{
+    position: absolute;
+
+    color:#fff;
+    padding:0 10px;
+    z-index:4;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:17px;
+}
+
+
+
+.effect:hover .front {
+    transform : rotateY(180deg);
+    
+}
+
+.effect:hover .back {
+	transform : rotateY(0);
+}
+.name{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:91%;
+    width:100%;
+    text-align: center;
+    color: #fff;
+    font-size:27px;
+    font-family: 'Squada One', cursive;
+ 
+}
+
+.name > p > span{
+    font-family: 'Caveat', cursive;
+    font-size:20px;
+}

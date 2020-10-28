@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://kit.fontawesome.com/d841d98aaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR:wght@300;400&family=Sorts+Mill+Goudy:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- <div id="all-menu-box"> -->
+            <div id="moPanel">
+                <ul id="moGnb">
+                    <li>
+                        <a href="#">ROOMS</a>
+                        <ul class="sub">
+                            <li><a href="#">DELUXE</a></li>
+                            <li><a href="#">PREMIUM</a></li>
+                            <li><a href="#">QUEEN CORNER PREMIUM</a></li>
+                            <li><a href="#">EXECUTIVE</a></li>
+                            <li><a href="#">GRAND KING CORNER SUITE</a></li>
+                            <li><a href="#">GRAND KING EXECUTIVE SUITE</a></li>
+                            <li><a href="#">THE CONRAD SUITE</a></li>
+                            <li><a href="#">THE PENTHOUSE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">FOOD &amp; BEVERAGE</a>
+                        <ul class="sub">
+                            <li><a href="#">ATRIO</a></li>
+                            <li><a href="#">ZEST</a></li>
+                            <li><a href="#">37 GRILL &amp; BAR</a></li>
+                            <li><a href="#">VVERTIGO</a></li>
+                            <li><a href="#">THE NOODLE BAR</a></li>
+                            <li><a href="#">FLAMES</a></li>
+                            <li><a href="#">10G</a></li>
+                            <li><a href="#">EXECUTIVE LOUNGE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">WEDDING</a>
+
+                    </li>
+                    <li>
+                        <a href="#">MEETING &amp; CONFERENCE</a>
+                        <ul class="sub">
+                            <li><a href="#">GRAND BALLROOM</a></li>
+                            <li><a href="#">PARK BALLROOM</a></li>
+                            <li><a href="#">THE STUDIO</a></li>
+                            <li><a href="#">BOARDROOM</a></li>
+                            <li><a href="#">CAPACITY CHART</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">FITNESS &amp; SPA</a>
+
+                    </li>
+                    <li>
+                        <a href="#">PROMOTION &amp; NEWS</a>
+                        <ul class="sub">
+                            <li><a href="#">ROOMS</a></li>
+                            <li><a href="#">RESTAURANT</a></li>
+                            <li><a href="#">NEWS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">GALLERY</a>
+
+                    </li>
+                </ul>
+            </div>
+        <!-- </div> -->
+
+        <div class="main">
+            <ul class="info after">
+                <li><a href="#">JOIN CONNOISSEUR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">
+                    <select name="language">
+                        <option value="ko">KOREAN</option>
+                        <option value="en">ENGLISH</option>
+                    </select></a></li>
+            </ul>
+            <ul class="bg">
+                <li class="bg1 active">
+                    <h1>Conrad Hotel</h1>
+                    <h2>당신만을 위한 특별한 호텔&nbsp;<i class="fas fa-chevron-right"></i></h2>
+                </li>
+                <li class="bg2">
+                    <h1>Rooms & Facilities</h1>
+                    <h2>화려하고 넓은 객실&nbsp;<i class="fas fa-chevron-right"></i></h2>
+                </li>
+                <li class="bg3">
+                    <h1>Conrad Spa</h1>
+                    <h2>럭셔리한 휴식과 내면의 기 재충전&nbsp;<i class="fas fa-chevron-right"></i></h2>
+                </li>
+            </ul>
+            <div class="logo2"><img src="./img/logo2-2.png" alt=""></div>
+            <div class="logo3">Conrad Seoul</div>
+            <div id="header" class="after">
+                <div class="menu after">
+                    <div class="logo">
+                        <a href="conrad.html"><img src="./img/logoimg.png" alt=""></a>
+                    </div>
+                    <div class="logo2-1">
+                        <a href="conrad.html"><img src="./img/logo.jpeg" alt=""></a>
+                    </div>
+                    <div class="gnb">
+                        <ul class="mainmenu after">
+                            <li><a href="#">ROOMS</a>
+                                <ul class="submenu">
+                                    <li><a href="#">DELUXE</a></li>
+                                    <li><a href="#">PREMIUM</a></li>
+                                    <li><a href="#">QUEEN CORNER PREMIUM</a></li>
+                                    <li><a href="#">EXECUTIVE</a></li>
+                                    <li><a href="#">GRAND KING CORNER SUITE</a></li>
+                                    <li><a href="#">GRAND KING EXECUTIVE SUITE</a></li>
+                                    <li><a href="#">THE CONRAD SUITE</a></li>
+                                    <li><a href="#">THE PENTHOUSE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FOOD</a>
+                                <!-- <div class="submenu"> -->
+                                <ul class="submenu">
+                                    <li><a href="#">ATRIO</a></li>
+                                    <li><a href="#">ZEST</a></li>
+                                    <li><a href="#">37 GRILL &amp; BAR</a></li>
+                                    <li><a href="#">VVERTIGO</a></li>
+                                    <li><a href="#">THE NOODLE BAR</a></li>
+                                    <li><a href="#">FLAMES</a></li>
+                                    <li><a href="#">10G</a></li>
+                                    <li><a href="#">EXECUTIVE LOUNGE</a></li>
+                                </ul>
+                                <!-- </div> -->
+                            </li>
+                            <li><a href="wedding.html">WEDDING</a></li>
+                            <li><a href="#">MEETING</a>
+                                <!-- <div class="submenu"> -->
+                                <ul class="submenu">
+                                    <li><a href="#">GRAND BALLROOM</a></li>
+                                    <li><a href="#">PARK BALLROOM</a></li>
+                                    <li><a href="#">THE STUDIO</a></li>
+                                    <li><a href="#">BOARDROOM</a></li>
+                                    <li><a href="#">CAPACITY CHART</a></li>
+                                </ul>
+                                <!-- </div> -->
+                            </li>
+                            <li><a href="#">FITNESS &amp; SPA</a></li>
+                            <li><a href="#">PROMOTION</a>
+                                <!-- <div class="submenu"> -->
+                                <ul class="submenu">
+                                    <li><a href="#">ROOMS</a></li>
+                                    <li><a href="#">RESTAURANT</a></li>
+                                    <li><a href="#">NEWS</a></li>
+                                </ul>
+                                <!-- </div> -->
+                            </li>
+                            <li><a href="#">GALLERY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">
+                <span></span>
+                <!-- <i class="fas fa-bars"></i> -->
+            </a>
+            <div id="reservation">
+                <div class="r1 after">
+                    <div>
+                        <p>Check In</p>
+                        <h4>선택하세요</h4>
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div>
+                        <p>Check Out</p>
+                        <h4>선택하세요</h4>
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div>
+                        <p>Room</p>
+                        <select name="checkout" id="checkout" style="background: #011638">
+                            <option value="check">객실</option>
+                            <option value="1">DELUXE</option>
+                            <option value="2">PREMIUM</option>
+                            <option value="3">QUEEN CORNER PREMIUM</option>
+                            <option value="4">EXECUTIVE</option>
+                            <option value="5">GRAND KING CORNER SUITE</option>
+                            <option value="6">GRAND KING EXECUTIVE SUITE</option>
+                            <option value="7">CONRAD SUITE</option>
+                            <option value="8">PENTHOUSE</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Adult</p>
+                        <select name="adult" id="adult" style="background: #011638">
+                            <option selected="adult" selected>성인</option>
+                            <option value="1">성인 1</option>
+                            <option value="2">성인 2</option>
+                            <option value="3">성인 3</option>
+                            <option value="4">성인 4</option>
+                            <option value="5">성인 5</option>
+                            <option value="6">성인 6</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Kid</p>
+                        <select name="kids" id="kids" style="background: #011638">
+                            <option value="kids">소아</option>
+                            <option value="kids">소아 1</option>
+                            <option value="kids">소아 2</option>
+                            <option value="kids">소아 3</option>
+                            <option value="kids">소아 4</option>
+                            <option value="kids">소아 5</option>
+                            <option value="kids">소아 6</option>
+                        </select>
+                    </div>
+                    <div><button class="search">예약 &nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/arrow.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="con1">
+            <h1>PROMOTION</h1>
+            <p class="sub_t">콘래드 서울에서 제공하는 스페셜한 프로모션을 경험해 보세요</p>
+            <div class="con1-2">
+                <ul class="pro_box after">
+                    <li>
+                        <div class="img"><img src="./img/p3.jpg" alt=""></div>
+                        <div class="cover2">
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <span>#레고 듀플로 #러쉬</span>
+                        </div>
+                        <p>COLORFUL SUMMER</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="./img/marry.jpg" alt=""></div>
+                        <div class="cover2">
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <span>완벽한 프로포즈를 계획하세요</span>
+                        </div>
+                        <p>ALL FOR LOVE</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="./img/package.jpg" alt=""></div>
+                        <div class="cover2">
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <span>#상쾌한 기분전환</span>
+                        </div>
+                        <p>DAY USE PACKAGE</p>
+                    </li>
+                    <li>
+                        <div class="img"><img src="./img/summer2.jpg" alt=""></div>
+                        <div class="cover2">
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <strong></strong>
+                            <span>#아트리오 피멕세트 # 무제한 </span>
+                        </div>
+                        <p>PERFECT SUMMER ESCAPE</p>
+                    </li>
+                </ul>
+                <ul class="btn_ after">
+                    <li><a href="#"><img src="./img/left-arrow.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/arrow2.png" alt=""></a></li>
+                </ul>
+                <a href="#" class="view">MORE+</a>
+            </div>
+        </div>
+        <div id="con2">
+            <h1>ACCOMMODATIONS</h1>
+            <P class="sub_t">콘래드 서울만의 화려하고 넓은 객실과 24시간 객실 서비스를 경험해 보세요</P>
+            <div class="slider after">
+                <div class="left">
+                    <ul class="room after">
+                        <li class="a1"></li>
+                        <li class="a2"></li>
+                        <li class="a3"></li>
+                        <li class="a4"></li>
+                        <li class="a5"></li>
+                        <li class="a6"></li>
+                        <li class="a7"></li>
+                        <li class="a8"></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="ex after">
+                        <li class="b1 on">
+                            <h2>DELUXE</h2>
+                            <P>넓고 세련된 디럭스 룸은 서울에서 가장 큰 객실로서 새롭게 벤치마크 되어 마련된 48평방미터의 럭셔리한 공간입니다.</P>
+                            <a href="#">자세히 보기</a>
+                            <div class="b1-2">
+                                <h2>DELUXE</h2>
+                            </div>
+                        </li>
+                        <li class="b2">
+                            <h2>PREMIUM</h2>
+                            <P>스마트 기술로 편안함을 제공하는 <br> 프리미엄 룸은 48평방미터의 넓은 객실로 한강의 환상적인 전망을 한 눈에 볼 수 있습니다.</P>
+                            <a href="#">자세히 보기</a>
+                            <div class="b2-2">
+                                <h2>PREMIUM</h2>
+                            </div>
+                        </li>
+                        <li class="b3">
+                            <h2>QUEEN CORNER PREMIUM</h2>
+                            <p>퀸 코너 프리미엄 룸은 가족을 위한 도심 속 최적의 휴식처 입니다. 코너에 위치해 통 유리창을 통해 180도로 펼쳐진 서울의 아름다운 도시의 전경을
+                                자랑합니다.</p>
+                            <a href="#">자세히 보기</a>
+                            <div class="b3-2">
+                                <h2>QUEEN CORNER <br> PREMIUM</h2>
+                            </div>
+                        </li>
+                        <li class="b4">
+                            <h2>EXECUTIVE</h2>
+                            <P>이그제큐티브 룸은 48평망비터로 고층에 위치하며, 한강과 서울스카이라인의 화려한 경치를 담고 있습니다.</P>
+                            <a href="#">자세히 보기</a>
+                            <div class="b4-2">
+                                <h2>EXECUTIVE</h2>
+                            </div>
+                        </li>
+                        <li class="b5">
+                            <h2>GRAND KING <br> CORNER SUITE</h2>
+                            <p>아름다운 전망을 자랑하는 그랜드 킹 코너 스위트 룸은 호텔의 코너에 위치하고 있어 180도 파노라마 뷰로 펼쳐진 여의도 시티뷰와 사계절 아름다운 여의도 공원을
+                                감상할 수 있습니다.
+                            </p>
+                            <a href="#">자세히 보기</a>
+                            <div class="b5-2">
+                                <h2>GRAND KING <br> CORNER SUITE</h2>
+                            </div>
+                        </li>
+                        <li class="b6">
+                            <h2>GRAND KING EXECUTIVE SUITE</h2>
+                            <p>96평방미터의 놀라운 공간을 자랑하는 그랜드 킹 이그제큐티브 코너 스위트 룸은 서울에서 동급 객실 중 가장 넓은 스위트룸입니다.</p>
+                            <a href="#">자세히 보기</a>
+                            <div class="b6-2">
+                                <h2>GRAND KING <br> EXECUTIVE SUITE</h2>
+                            </div>
+                        </li>
+                        <li class="b7">
+                            <h2>CONRAD SUITE</h2>
+                            <p>럭셔리한 당신을 위한 콘래드 스위트룸은 144평방미터로 고객맞춤의 스타일을 제공합니다.</p>
+                            <a href="#">자세히 보기</a>
+                            <div class="b7-2">
+                                <h2>CONRAD SUITE</h2>
+                            </div>
+                        </li>
+                        <li class="b8">
+                            <h2>PENTHOUSE</h2>
+                            <p>진정한 럭셔리는 바로 자신이라는 것을 알고 있는 세계 여행자들을 위한 객실입니다. </p>
+                            <a href="#">자세히 보기</a>
+                            <div class="b8-2">
+                                <h2>PENTHOUSE</h2>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="prev"></i></a>
+                    <a href="#" class="next"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="con3">
+            <h1>MEMBERSHIP</h1>
+            <P class="sub_t">콘래드 서울 고메 다이닝 멤버십의 다양한 혜택을 누려보세요</P>
+            <div class="box2">
+                <div class="box2-2">
+                    <img src="./img/box1.png" alt="">
+                    <img src="./img/box2.png" alt="">
+                    <div class="more">
+                        <h2>THE CONNOISSEUR</h2>
+                        <p>코노소어는 콘래드 서울을 즐겨 찾으시는 고객만을 위한 다이닝 프로그램입니다. 콘래드 서울에서 즐길 수 있는 격조 높은 다이닝과 다양한 멤버십 혜택을 풍성하게 누리시기
+                            바랍니다.</p>
+                        <a href="#">READ MORE</a>
+                    </div>
+                    <div>THE CONNOISSEUR <br> REWARDS BY CONRAD</div>
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
+        <div id="con4">
+            <h1>FACILITIES</h1>
+            <p class="sub_t">콘래드 서울의 다양한 시설을 즐겨보세요</p>
+            <div class="box3">
+                <section class="contents">
+                    <article>
+                        <h2>Meeting & Conference</h2>
+                        <h4></h4>
+                        <img src="./img/conference05.jpg" alt="">
+                        <p>다양한 크기 및 구조의 미팅룸 12개가 준비되어 있습니다.</p>
+                        <a href="#">바로가기</a>
+                    </article>
+                    <article>
+                        <h2>Restorang</h2>
+                        <h4></h4>
+                        <img src="./img/버티고2.jpg" alt="">
+                        <p>콘래드 서울의 7개 대표 레스토랑에서 다양하고 세련된,황홀한 맛이 세계를 경험해 보세요</p>
+                        <a href="#">바로가기</a>
+                    </article>
+                    <article>
+                        <h2>Fitness & Spa</h2>
+                        <h4></h4>
+                        <img src="./img/spa02.jpg" alt="">
+                        <p>럭셔리한 스파와 다양한 프로그램을 통해 휴식을 취해보세요</p>
+                        <a href="#">바로가기</a>
+                    </article>
+                    <article>
+                        <h2>Wedding</h2>
+                        <h4></h4>
+                        <img src="./img/wedding07.jpg" alt="">
+                        <p>콘래드 서울의 웨딩 연회장에서 행복한 그 순간을 느껴보시기 바랍니다.</p>
+                        <a href="#">바로가기</a>
+                    </article>
+                </section>
+            </div>
+            <div class="box3-1 after">
+                <div class="f1">
+                    <div class="hover">
+                        <div class="hover-1">
+                            <p>콘래드 서울의 웨딩 연회장에서 <br> 행복한 그 순간을 느껴보시기 바랍니다.</p>
+                            <a href="#">바로가기</a>
+                        </div>
+                    </div>
+                    <h3>WEDDING</h3>
+                </div>
+                <div class="f2">
+                    <div class="hover">
+                        <div class="hover-1">
+                            <p>럭셔리한 스파와 다양한 프로그램을 통해 <br> 휴식을 취해보세요</p>
+                            <a href="#">바로가기</a>
+                        </div>
+                    </div>
+                    <h3>FITNESS & SPA</h3>
+                </div>
+                <div class="f3">
+                    <div class="hover">
+                        <div class="hover-1">
+                            <p>콘래드 서울의 7개 대표 레스토랑에서 <br> 다양하고 세련된,황홀한 맛의 세계를 경험해 보세요</p>
+                            <a href="#">바로가기</a>
+                        </div>
+                    </div>
+                    <h3>RESTORANG</h3>
+                </div>
+                <div class="f4">
+                    <div class="hover">
+                        <div class="hover-1">
+                            <p>다양한 크기 및 구조의 미팅룸 12개가 준비되어 있습니다.</p>
+                            <a href="#">바로가기</a>
+                        </div>
+                    </div>
+                    <h3>MEETING & CONFERENCE</h3>
+                </div>
+            </div>
+        </div>
+        <div id="con5">
+            <h1>FOLLOW &amp; LOCATION</h1>
+            <p class="sub_t">콘래드 서울의 다양한 소식을 접하시고 좋은 추억 만들러 오세요</p>
+            <div class="box4">
+                <div class="cover">
+                    <img src="img/main6.jpg" alt="bg">
+                </div>
+                <div class="box4-1">
+                    <h2>Location</h2>
+                    <div id="google"></div>
+                    <div class="follow">
+                        <ul>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                            <li><i class="far fa-envelope"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li class="text">Follow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><a href="#">SITE MAP</a></li>
+                <li><a href="#">RECRUIT</a></li>
+                <li><a href="#">CORPORATE RESPONSIBILITY</a></li>
+                <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">CONRAD HOTELS AND RESORTS</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">서울특별시 영등포구 10(여의도동) 07326 콘래드 서울</a></li>
+                <li><a href="#">Tel.02.6137.7000</a></li>
+                <li><a href="#">Tel. 02.6137.7001</a></li>
+                <li><a href="#">대표 Stuart Mercier</a></li><br>
+                <li><a href="#">사업자등록번호 104-81-94925</a></li>
+                <li><a href="#">통신판매업신고번호 2012-서울영등포-1328호</a></li>
+                <li><a href="#"> Copyright &copy; All Rights Reserved.</a></li>
+
+            </ul>
+        </div>
+        <div id="top"><a href="#"><i class="fas fa-angle-up"></i></a></div>
+    </div>
+</body>
+
+</html>
