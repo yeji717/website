@@ -1,8 +1,8 @@
 $(document).ready(function(){		
 		
-	// var speed = 1000;
-	// var ease = 'easeOutExpo';
-	// var $wrap_div = $('#wrap>div');
+	var speed = 1000;
+	var ease = 'easeOutExpo';
+	var $wrap_div = $('#wrap>div');
 
 	// match_height();
 
