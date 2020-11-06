@@ -1752,6 +1752,14 @@ html{
         margin-left:40px;
     }
 
+    #work ul li .inner p{
+    
+        text-align: center;
+        padding:0 20px;
+        font-size:0.8rem;
+        margin-top:80px;
+    }
+
     .balloon{
         display: none;
     }
