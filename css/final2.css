@@ -1732,6 +1732,15 @@ html{
         font-size:10vw;
     }
 
+    .box h2{
+        padding:10px 0;
+    }
+
+    .box h2::after{
+        height:7px;
+        bottom:15px;
+    }
+
     .infinite>img{
         width:100%;
     }
