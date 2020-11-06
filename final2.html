@@ -16,8 +16,20 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div class="wrapper">
+            <div class="circle1"></div>
+            <div class="circle1"></div>
+            <div class="circle1"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading</span>
+        </div>
+    </div>
+   
     <div id="wrap">
-        <div class="box1">
+        <div class="box1 scroll">
             <div class="grid">
                 <div class="text">
                     <div class="circle"></div>
@@ -31,12 +43,12 @@
                     <p>무한한 성장이 <br> 기대되는 </p>
                     <p>웹퍼블리셔 <br> 김예지 입니다</p>
                 </div>
-                <div class="follow">
+                <!-- <div class="follow">
                     <div class="line"></div>
                     <span>
                         <img src="./mouse.png" alt="포트폴리오 바로가기" />
                     </span>
-                </div>
+                </div> -->
             </div>
             <div class="burger">
                 <a href="#" class="button">
@@ -54,7 +66,7 @@
                 </ul>
             </div>
         </div>
-        <div class="box2">
+        <div class="box2 scroll">
             <section id="intro">
                 <h1>
                     <span>About Myself</span>
@@ -65,7 +77,10 @@
                     <div class="bottom"></div>
                     <div class="left"></div>
                     <div class="in after">
-                        <div class="img"><img src="./image1/yeji.jpg" alt=""></div>
+                        <div class="img">
+                            <img src="./image1/yeji.jpg" class="yeji1" alt="">
+                            <div class="yeji2"></div>
+                        </div>
                         <div class="balloon">
                             <p>어제보다 오늘 더 나은  <br> 웹퍼블리셔가 되고싶은 '김예지' 입니다. <br>
                                   사용자가 편리한 웹사이트, <br> 기억에 남는 웹사이트를 만들고 싶습니다. 
@@ -106,7 +121,7 @@
                                     <h3>2020. 06</h3>
                                 </div>
                                 <div class="edu2 rightbox">
-                                    <p>호원대학교 사이버보안학과 입학</p>
+                                    <p>호원대학교 <br> 사이버보안학과 입학</p>
                                     <p>호원대학교 졸업</p>
                                     <p>대전 SBS 아카데미 학원 웹디자인 수료</p>
                                 </div>
@@ -118,7 +133,7 @@
                 </div>
             </section>
         </div>
-        <div class="box3">
+        <div class="box3 scroll">
             <section id="skill">
                 <h1>
                     <span>Skill</span>
@@ -162,55 +177,61 @@
                 </div>
             </section>
         </div>
-        <div class="box4">
+        <div class="box4 scroll">
             <section id="work">
                 <h1>
                     <span>My Work</span>
                 </h1>
-                <p class="ex">
-                    <img src="./image1/dot1.png" alt="">
-                    현재 3가지의 웹사이트를 직접 리디자인하여 만들었습니다.
-                    
-                    <img src="./image1/dot2.png" alt="">
-                </p>
-                <ul class="after">
-                    <li>
-                        <div class="inner">
-                            <h2>WAKING DEAD</h2>
-                            <p>
-                                평소 좋아하는 미국드라마 '워킹데드' <br> 홈페이지를 만들었습니다. <br> 참여도 100%!
-                            </p>
-                            <a href="./first.html"  target="_blank">more detail+</a>
-                            <a href="./walkingdead/index.html"  target="_blank">사이트 바로가기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="inner">
-                            <h2>CONRAD SEOUL</h2>
-                            <p>
-                                콘래드서울의 기존 홈페이지를 반응형으로 <br> 리뉴얼해서 만들었습니다. <br>
-                                참여도 100%!
-                            </p>
-                            <a href="./second.html"  target="_blank">more detail+</a>
-                            <a href="./conrad_rwd/index.html"  target="_blank">사이트 바로가기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="inner">
-                            <h2>대전 서구 보건소</h2>
-                            <p>
-                                대전 서구 보건소의 기존 홈페이지를 반응형으로 리뉴얼해서 만들었습니다. <br>
-                                참여도 100%!
-                            </p>
-                            <a href="./third.html"  target="_blank">more detail+</a>
-                            <a href="./public health (final)/index.html"  target="_blank">사이트 바로가기</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="desk">
+                    <p class="ex">
+                        <img src="./image1/dot1.png" alt="">
+                        현재 3가지의 웹사이트를 직접 리디자인하여 만들었습니다.
+                        
+                        <img src="./image1/dot2.png" alt="">
+                    </p>
+                    <ul class="after">
+                        <li class="work1">
+                            <img src="./image2/w_web.png" alt="">
+                            <div class="inner">
+                                <h2>WAKING DEAD</h2>
+                                <p>
+                                    평소 좋아하는 미국드라마 '워킹데드' <br> 홈페이지를 만들었습니다. <br> 참여도 100%!
+                                </p>
+                                <a href="./first.html"  target="_blank">more detail+</a>
+                                <a href="./walkingdead/index.html"  target="_blank">사이트 바로가기</a>
+                            </div>
+                        </li>
+                        <li class="work2">
+                            <img src="./image2/c_web.png" alt="">
+                            <div class="inner">
+                                <h2>CONRAD SEOUL</h2>
+                                <p>
+                                    콘래드서울의 기존 홈페이지를 반응형으로 <br> 리뉴얼해서 만들었습니다. <br>
+                                    참여도 100%!
+                                </p>
+                                <a href="./second.html"  target="_blank">more detail+</a>
+                                <a href="./conrad_rwd/index.html"  target="_blank">사이트 바로가기</a>
+                            </div>
+                        </li>
+                        <li class="work3">
+                            <img src="./image2/d_web.png" alt="">
+                            <div class="inner">
+                                <h2>대전 서구 보건소</h2>
+                                <p>
+                                    대전 서구 보건소의 기존 홈페이지를 반응형으로 <br> 리뉴얼해서 만들었습니다. <br>
+                                    참여도 100%!
+                                </p>
+                                <a href="./third.html"  target="_blank">more detail+</a>
+                                <a href="./public health (final)/index.html"  target="_blank">사이트 바로가기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
             
             </section>
         </div>
-        <div class="box5">
+        <div class="box5 scroll">
             <section id="contact">
                 <h1>
                     <span>Contact</span>
@@ -218,10 +239,10 @@
                 <div class="form">
                     <ul class="pic after">
                         <li>
-                            <a href="#">
+                          
                                 <p>010-4070-9111</p>
                                 <img src="./image1/phone-call.png" alt="">
-                            </a>
+                           
                         </li>
                         <li>
                             <a href="mailto:foforh717@gmail.com">
@@ -242,7 +263,8 @@
                 </div>
                 <div class="mouse">
                     <img src="./image1/mouse.png" alt="">
-                    <p> 마우스를 올려보세요!</p>
+                    <!-- <p> 마우스를 올려보세요!</p> -->
+                    <!-- <span>마우스</span> -->
                 </div>
                 
             </section>
