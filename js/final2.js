@@ -70,7 +70,7 @@ $(window).load(function() {
 			)
 		}
 		
-	
+	/* 메인메뉴 버튼(햄버거) */
 		var burger = $('.burger');
 	
 		burger.on('click',function(e){
@@ -79,6 +79,7 @@ $(window).load(function() {
 			$('.button').toggleClass('on');
 		});
 		
+	/* 메뉴 활성화 */	
 		var menu = $('.menu>ul>li');
 	
 		menu.on('click',function(e){
@@ -92,36 +93,34 @@ $(window).load(function() {
 			$('.button').removeClass('on');
 		})
 		
-		
+		/* 스크롤 될때 제목 */
+
 		$(window).on("scroll",function(){
 	
-			var cd = $(this).scrollTop();
+			var scrollTop = $(this).scrollTop() + $(window).height();
 			
-		    var ab = $("#intro").offset().top;
-		    // alert(cd);
-		    if(cd>ab/2){
+			var a = $("#intro").offset().top;
+			var b = $("#skill").offset().top;
+			var c = $("#work").offset().top;
+			var d = $("#contact").offset().top;
+		  
+		    if(scrollTop > a){
 				$("#intro>h1").addClass('on');
 				$('.balloon').addClass('on');
 		        doMotion();
 		        img();
 		    }
 		
-		    var ef = $("#skill").offset().top;
-	
-			if(cd>ef/1.5){
+			if(scrollTop > b){
 				$("#skill>h1").addClass('on');
 				$('.box2-1>div').css('transform','scale(1)');
 			}
-			
-			var gh = $("#work").offset().top;
-	
-			if(cd>gh*1.2/1.5){
+		
+			if(scrollTop > c){
 				$("#work>h1").addClass('on');
 			}
 	
-			var ij = $("#contact").offset().top;
-	
-			if(cd>=ij/1.3){
+			if(scrollTop > d){
 				$("#contact>h1").addClass('on');
 			}
 		});
