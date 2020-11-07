@@ -97,7 +97,7 @@ $(window).load(function() {
 
 		$(window).on("scroll",function(){
 	
-			var scrollTop = $(this).scrollTop() + $(window).height();
+			var scrollTop = $(this).scrollTop() + $(window).height()/1.5;
 			
 			var a = $("#intro").offset().top;
 			var b = $("#skill").offset().top;

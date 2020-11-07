@@ -42,7 +42,7 @@ html{
     height:20px;
     position: absolute;
     border-radius: 50%;
-    background-color: black;
+    background-color: #ef5a3f;
     left:15%;
     transform-origin: 50%;
     animation: circle .5s alternate infinite ease;
@@ -521,7 +521,7 @@ html{
     top:100px;
     /* left:50%;
     transform: translateX(-50%); */
-    transition: 0.8s;
+    transition: 0.8s cubic-bezier(0, 0.51, 0.16, 1.1);
     opacity: 0;
 }
 
