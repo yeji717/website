@@ -103,11 +103,13 @@ $(window).load(function() {
 			var b = $("#skill").offset().top;
 			var c = $("#work").offset().top;
 			var d = $("#contact").offset().top;
+
+			
 		  
 		    if(scrollTop > a){
 				$("#intro>h1").addClass('on');
 				$('.balloon').addClass('on');
-		        doMotion();
+		        // doMotion();
 		        img();
 		    }
 		
@@ -123,6 +125,8 @@ $(window).load(function() {
 			if(scrollTop > d){
 				$("#contact>h1").addClass('on');
 			}
+
+			
 		});
 	
 		
@@ -159,16 +163,16 @@ $(window).load(function() {
 		// })
 		
 		var speed = 1000;
-		function doMotion(){
+	// 	function doMotion(){
 	
-		$(".top").animate({"width" : "100%"}, speed, function(){
-			$(".right").animate({"height" : "100%"}, speed, function(){
-				$(".bottom").animate({"width" : "100%"}, speed, function(){
-					$(".left").animate({"height" : "100%"}, speed);
-				});
-			});
-		});
-	}
+	// 	$(".top").animate({"width" : "100%"}, speed, function(){
+	// 		$(".right").animate({"height" : "100%"}, speed, function(){
+	// 			$(".bottom").animate({"width" : "100%"}, speed, function(){
+	// 				$(".left").animate({"height" : "100%"}, speed);
+	// 			});
+	// 		});
+	// 	});
+	// }
 	
 	function img(){
 		$(".img>.yeji1").css({"margin-left":"0px"});
@@ -187,19 +191,19 @@ $(window).load(function() {
 	
 		$(window).scroll(function(){
 	
-			var scroll = $(this).scrollTop();
+			var scroll = $(this).scrollTop()+$(window).height();
 	
-			if(scroll >= scroll1/1.3){
+			if(scroll >= scroll1){
 				$('.work1>img').css({'margin-left':'0'});
 				$('.work1 .inner').css({'opacity':'1','margin-top':'0'});        
 			}
 	
-			if(scroll >= scroll2/1.3){
+			if(scroll >= scroll2){
 				$('.work2>img').css({'margin-left':'0'});
 				$('.work2 .inner').css({'opacity':'1','margin-top':'0'});        
 			}
 	
-			if(scroll >= scroll3/1.3){
+			if(scroll >= scroll3){
 				$('.work3>img').css({'margin-left':'0'});
 				$('.work3 .inner').css({'opacity':'1','margin-top':'0'});        
 			}
