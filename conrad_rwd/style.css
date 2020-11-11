@@ -209,7 +209,9 @@ a {
 .main .bg {
     position: relative;
     width: 100%;
-    height: 800px;
+    height:40vw;
+    /* height:86vh; */
+    /* height: 800px; */
 }
 
 .main>.bg>li {
@@ -228,7 +230,7 @@ a {
     color: #fff;
     right: 10%;
     bottom: 25%;
-    font-size: 90px;
+    font-size: 4vw;
     text-shadow: 5px 5px 5px #222;
     letter-spacing: 2px;
 }
@@ -323,8 +325,9 @@ a {
 #header {
     position: absolute;
     width: 100%;
-    top: 40px;
-    height: 85px;
+    top:5vmin;
+    /* top: 2.6vw; */
+    height: 10vmin;
     background: rgba(0, 0, 0, 0.6);
     transition: 0.5s;
     z-index: 1000;
@@ -338,22 +341,33 @@ a {
 
 
 #header .logo {
-    height: 100%;
+    width:84px;
+    height:10vmin;
+    /* height: 100%; */
     float: left;
 }
 
-#header a img {
+#header .logo img {
+    display: block;
     height: 100%;
 }
 
 #header .logo2-1 {
-    height: 100%;
+    width:84px;
+    height:10vmin;
+    /* height: 100%; */
     float: left;
     display: none;
 }
 
+#header .logo2-1 img {
+    display: block;
+    height: 100%;
+}
+
 .gnb {
-    width: 90%;
+    /* width: 90%; */
+    width:calc(100% - 84px);
     position: relative;
     float: left;
     height: 100%;
@@ -381,9 +395,9 @@ a {
     position: relative;
     display: block;
     width: 100%;
-    font-size: 13px;
+    font-size: 0.84vw;
     color: #f0c27b;
-    line-height: 84px;
+    line-height: 10vmin;
 }
 
 .gnb .mainmenu>li .submenu {
@@ -486,6 +500,7 @@ a {
     position: absolute;
     background: rgba(155, 168, 185, 0.8);
     top: 92%;
+    /* height:7vw; */
     height: 110px;
     width: 60%;
     left: 50%;
@@ -497,11 +512,11 @@ a {
     /* margin:0 auto; */
     width: 100%;
     position: absolute;
-    /* height: 100%; */
+    height: 100%;
 }
 
 #reservation .r1>div {
-    height: 110px;
+    height: 100%;
     float: left;
     width: 16.6666%;
     background: rgba(1, 22, 56, 0.9);
@@ -512,7 +527,7 @@ a {
 
 #reservation .r1 div p {
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 10px;
 }
 
@@ -811,7 +826,8 @@ button {
 
 #con1.on {
     opacity: 1;
-    margin-top: 250px;
+    /* margin-top: 250px; */
+    margin-top:180px;
 }
 
 
@@ -850,7 +866,7 @@ button {
 .slider .left .room li {
     float: left;
     width: 12.5%;
-    height: 600px;
+    height: 32vw;
 }
 
 .slider .left .room .a1 {
@@ -897,7 +913,7 @@ button {
 .slider .right {
     float: left;
     width: 50%;
-    height: 600px;
+    height: 32vw;
     overflow: hidden;
     text-align: left;
     position: relative;
@@ -1031,7 +1047,7 @@ button {
     left: 13%;
     width: 70px;
     height: 30px;
-    background: url(./img/prev2.png) no-repeat;
+    background: url(./img/left2.png) no-repeat;
     background-size: contain;
 }
 
@@ -1041,7 +1057,7 @@ button {
     left: 30%;
     width: 70px;
     height: 30px;
-    background: url(./img/next2.png) no-repeat;
+    background: url(./img/right2.png) no-repeat;
     background-size: contain;
     text-shadow: 1px 1px 1px #222;
 }
@@ -1060,7 +1076,8 @@ button {
 }
 
 #con3.on {
-    margin-top: 250px;
+    margin-top:180px;
+    /* margin-top: 250px; */
     opacity: 1;
 }
 
@@ -1204,7 +1221,8 @@ button {
 
 #con4.on {
     opacity: 1;
-    margin-top: 250px;
+    /* margin-top: 250px; */
+    margin-top:180px;
 }
 
 /* #con4 h1,p{
@@ -1215,7 +1233,7 @@ button {
     margin-top: 100px;
     position: relative;
     min-width: 70%;
-    height: 700px;
+    height: 35vw;
     background: url('./img/bg.png') no-repeat;
     background-size: cover;
 }
@@ -1246,7 +1264,7 @@ article h2 {
     padding-left: 15px;
     color: #fff;
     z-index: 3;
-    font-size: 22px;
+    font-size: 1.3vw;
 }
 
 article h2::before {
@@ -1278,7 +1296,7 @@ article p {
     top: 80%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.25rem;
+    font-size: 1.1vw;
     opacity: 0;
     z-index: 1;
     color: #fff;
@@ -1301,16 +1319,17 @@ article a {
     transform: translateX(-50%);
     top: 70%;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 0.9vw;
     background: #011638;
     opacity: 0;
     z-index: 1;
-    padding: 10px 15px;
+    padding:2% 3%;
+    /* padding: 10px 15px; */
 }
 
 
 article:hover h4 {
-    height: 70px;
+    height: 3.9vw;
     top: 17%;
 }
 
@@ -1427,7 +1446,8 @@ article:hover h4 {
 
 #con5.on {
     opacity: 1;
-    margin-top: 250px;
+    margin-top:180px;
+    /* margin-top: 250px; */
 }
 
 .box4 {

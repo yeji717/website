@@ -56,7 +56,12 @@ $(document).ready(function(){
             $mognb_li.children('.sub').stop().slideUp();
             $(this).children('a').addClass('on');
             $(this).children('.sub').stop().slideDown();
+            $('.mognb>li>.sub>.link').on('click',function(){
+                location.href=e.target.getAttribute('href');
+            })
         }
+
+       
     });
 
     /* mognb close */
