@@ -125,7 +125,7 @@ html{
 .box1{
     /* background:#EFFFE9; */
     /* background:linear-gradient(to bottom,#c7a1b7, #85a5dc);  */
-    height:700px;
+    /* height:700px; */
     position: relative;
     overflow: hidden;
    
@@ -141,7 +141,7 @@ html{
 
 .text{
  
-    padding-top:100px;
+    /* padding-top:100px; */
     margin:0 auto;
     /* left:50%;
     top:40%;
@@ -189,10 +189,9 @@ html{
 .text1 {
     display:inline-block;
     margin:0 auto 20px;
-
     /* width:750px; */
     position:relative;
-    font:5.2rem 'Ibarra Real Nova'; 
+    font:5.2vw 'Ibarra Real Nova'; 
     color:transparent;
     overflow:hidden;
     z-index:2;
@@ -203,7 +202,7 @@ html{
     margin:0 auto 20px;
     /* width:150px;  */
     position:relative;
-    font:3.5rem 'Ibarra Real Nova'; 
+    font:3.5vw 'Ibarra Real Nova'; 
     color:transparent;
     overflow:hidden;
     z-index:2;
@@ -240,7 +239,7 @@ html{
     margin:0 auto;
     /* width:55%;
     margin:50px auto 0; */
-    width:60%;
+    width:55%;
     transform:rotate(90deg) scale(0.5);
     animation: rotateOn 4.5s forwards 1s;
 }
@@ -477,7 +476,7 @@ html{
     /* max-width:1240px; */
 }
 #wrap>div{
-    /* height:100vh; */
+    height:100vh;
     /* height:730px; */
     position: relative;
     /* padding-top:10%; */
@@ -516,7 +515,7 @@ html{
     display: inline-block;
     /* position: absolute; */
     position: relative;
-    font-size:3rem;
+    font-size:3vw;
     padding:35px 0 15px 0;
     top:100px;
     /* left:50%;
@@ -674,7 +673,7 @@ html{
 .box h2{
     position: relative;
     color:#28282a;
-    font-size:1.25em;
+    font-size:1.3vw;
 }
 
 .box h2::after{

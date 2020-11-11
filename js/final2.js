@@ -106,7 +106,7 @@ $(window).load(function() {
 
 			
 		  
-		    if(scrollTop > a){
+		    if(scrollTop > a ){
 				$("#intro>h1").addClass('on');
 				$('.balloon').addClass('on');
 		        // doMotion();

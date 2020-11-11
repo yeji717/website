@@ -1031,7 +1031,7 @@ button {
     left: 13%;
     width: 70px;
     height: 30px;
-    background: url(./img/left.png) no-repeat;
+    background: url(./img/prev2.png) no-repeat;
     background-size: contain;
 }
 
@@ -1041,7 +1041,7 @@ button {
     left: 30%;
     width: 70px;
     height: 30px;
-    background: url(./img/right.png) no-repeat;
+    background: url(./img/next2.png) no-repeat;
     background-size: contain;
     text-shadow: 1px 1px 1px #222;
 }
