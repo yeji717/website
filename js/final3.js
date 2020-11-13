@@ -93,7 +93,7 @@ $(document).ready(function(){
 
         var scrollTop = $(this).scrollTop() + $(window).height()/1.5;
 
-        $('.menu').css({"position":"fixed" , "background":"#edeae4"});
+        // $('.menu').css({"position":"fixed" , "background":"#edeae4"});
 
         // var mq1 = window.matchMedia("screen and (max-width: 1024px)");
 
