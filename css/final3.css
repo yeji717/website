@@ -1122,6 +1122,7 @@ body{
     .burger{
         display: none;
     }
+
     .menu{
         position: absolute;
         width:100%;
@@ -1163,6 +1164,8 @@ body{
     .menu.on{
         top:0;
     }
+
+    /* menu 끝 */
 
     .text1{
         font:8.2vw 'Ibarra Real Nova';
