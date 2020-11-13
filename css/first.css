@@ -35,7 +35,7 @@ p.typing-txt {
     left:50%;
     transform: translateX(-50%);
     margin-top:20px;
-    font-size:90px;
+    font-size:5.2vw;
     text-shadow: 5px 5px 5px #000;
   /*       position: absolute;*/
   display: inline-block;
@@ -267,8 +267,8 @@ p.typing-txt {
 
 .main2{
     position: relative;
-    height:950px;
-    background:url("../image2/wdbg.jpg") 0 -60px no-repeat;
+    height:100vh;
+    background:url("../images/wdbg.jpg") 0 -60px no-repeat;
     background-size: cover;
 }
 
@@ -294,12 +294,15 @@ p.typing-txt {
 
 .main2 .cover .explain{
     width:40%;
+    position: absolute;
+    left:4%;
+    bottom:20%;
     /* margin:500px 50px 0 0; */
-    margin-top:500px;
-    margin-left:30px;
+    /* margin-top:500px;
+    margin-left:30px; */
     color:#fff;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size:18px;
+    font-size:15px;
     float:left;
     
 }
@@ -307,46 +310,72 @@ p.typing-txt {
 .explain h2{
     font-family: 'Julius Sans One', sans-serif;
     color:#fff;
-    font-size:50px;
+    font-size:2vw;
     margin-bottom:20px;
 }
 
 .explain h3{
     margin-top:40px;
+    font-size:1.5vw;
 }
 
-.go{
+.explain p{
+    font-size:1vw;
+}
+
+.link{
+    position: absolute;
+    bottom:50px;
+    width:45%;
+    left:2%;
+
+}
+.link>li{
+    float: left;
+    width:25%;
+    margin:0 4.16%;
+}
+
+.link>li:active{
+    transform: translateY(2px);
+}
+
+.link li a{
     display: block;
-    left:20%;
-    transform: translateX(-50%);
-    bottom:100px;
+    text-align: center;
+    position: relative;
     color: #fff;
-    position: absolute;
-    /* background:#cc0000; */
-    border: 2px solid #cc0000;
+    border: 2px solid #fff;
     padding:10px 15px;
-    border-radius: 10px;
-    font-size:18px;
-    overflow: hidden;
+    font-size:0.8rem;
+    font-weight: bold;
+    background:#cc0000;
     font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: -2px 5px 6px black;
+    overflow: hidden;
 }
 
-.go::before{
-    display: block;
-    position: absolute;
-    content: "";
-    top:-100%;
-    /* top:0; */
-    left:0;
-    background: #cc0000;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    transition: 0.3s;
+.link li a span{
+    z-index:20;
 }
 
-.go:hover::before{
-    top:0;
+.link li a::before {
+   display: block;
+   content: "";
+   position: absolute;
+   width:50px;
+   height:155px;
+   left:-75px;
+   top:-50px;
+   background:#fff;
+   opacity: 0.2;
+    transition: all 0.7s ease;
+    transform:rotate(35deg);
+}
+
+.link li a:hover::before{
+    left:120%;
+    transition: all 0.5s ease;
 }
 
 .main3{
@@ -374,9 +403,8 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     display: block;
     position: absolute;
     top:37%;
-   
     right:0;
-   
+    width:50%;
 }
 
 .main>img{
@@ -395,11 +423,12 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 .main3 .color{
     float: left;
     width:50%;
-    padding-top:80px;
+    padding:80px 20px 20px 20px;
+    box-sizing: border-box;
     /* border-right:1px solid #fff; */
 }
 .color>ul{
-    width:80%;
+    width:70%;
     margin:0 auto;
     margin-top:40px;
 }
@@ -426,7 +455,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     color:#fff;
     margin-top:40px;
     /* margin-left:120px; */
-    font-size:18px;
+    font-size:0.97vw;
     text-align:center;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -452,12 +481,13 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 .main3 .typho{
     width:50%;
     float: left;
-    padding-top:80px;
+    padding:80px 20px 20px 20px;
+    box-sizing: border-box;
     color:#fff;
 }
 
 .typho ul{
-    width:80%;
+    width:70%;
     margin:40px auto 0;
     text-align: center;
 }
@@ -465,13 +495,13 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .typho ul li{
     border:1px solid #fff;
-    font-size:20px;
+    font-size:1vw;
     padding:10px 0;
 }
 
 .typho ul li>p{
     font-weight:bold;
-    font-size:30px;
+    font-size:1.5em;
 }
 
 .typho ul li:nth-of-type(1){
@@ -494,7 +524,8 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 }
 
 .page{
-    padding-top:600px;
+    padding:600px 0 50px 0;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .page>div{
@@ -511,7 +542,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: absolute;
     content: "";
     display: block;
-    width:400px;
+    width:21vw;
     height:3px;
     margin-top:10px;
     background:red;
@@ -520,6 +551,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 .page>div>p{
     color:#fff;
     margin-top:20px;
+    font-size:0.9rem;
 }
 
 .page>div:nth-of-type(odd){

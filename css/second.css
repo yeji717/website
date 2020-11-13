@@ -29,7 +29,7 @@ p.typing-txt {
       left:50%;
       transform: translateX(-50%);
       margin-top:20px;
-      font-size:90px;
+      font-size:5.2vw;
       text-shadow: 5px 5px 5px #000;
     /*       position: absolute;*/
     display: inline-block;
@@ -43,8 +43,9 @@ p.typing-txt {
 
 #visual{
     position: relative;
-    height:950px;
-    background:url("../image2/bg.png") 0 0 no-repeat;
+    height:100vh;
+    /* height:950px; */
+    background:url("../images/bg.png") 0 0 no-repeat;
     background-size: cover;
 }
 
@@ -70,12 +71,15 @@ p.typing-txt {
 
 #visual .cover .explain{
     width:40%;
+    position: absolute;
+    left:4%;
+    bottom:20%;
     /* margin:500px 50px 0 0; */
-    margin-top:500px;
-    margin-left:30px;
+    /* margin-top:500px;
+    margin-left:30px; */
     color:#fff;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size:18px;
+    font-size:15px;
     float:left;
     
 }
@@ -83,97 +87,81 @@ p.typing-txt {
 .explain h2{
     font-family: 'Julius Sans One' , sans-serif;
     color:#fff;
-    font-size:40px;
+    font-size:2vw;
     margin-bottom:20px;
 }
 
 .explain h3{
     margin-top:40px;
+    font-size:1.5vw;
 }
 
-.original{
-    display: block;
-    left:15%;
-    width:130px;
-    text-align: center;
-    transform: translateX(-50%);
-    bottom:100px;
-    color: #fff;
+.explain p{
+    font-size:1vw;
+}
+
+.link{
     position: absolute;
-    /* background:#cc0000; */
-    border: 2px solid #f0c27b;
-    padding:10px 15px;
-    border-radius: 50px;
-    font-size:18px;
-    font-weight: bold;
-    overflow: hidden;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
-.original::before{
-    display: block;
-    position: absolute;
-    content: "";
-    top:-100%;
-    /* top:0; */
-    left:0;
-    background: #f0c27b;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    transition: 0.3s;
-}
-
-.original:hover {
-    color:#000;
+    bottom:50px;
+    width:45%;
+    left:2%;
     
 }
-
-.original:hover::before{
-    top:0;
+.link>li{
+    float: left;
+    width:25%;
+    margin:0 4.16%;
 }
 
-.renewal{
+.link li a{
     display: block;
-    left:30%;
-    width:130px;
     text-align: center;
-    transform: translateX(-50%);
-    bottom:100px;
-    color: #fff;
-    position: absolute;
-    /* background:#cc0000; */
-    border: 2px solid #f0c27b;
+    position: relative;
+    border: 2px solid #fff;
     padding:10px 15px;
-    border-radius: 50px;
-    font-size:18px;
+    font-size:0.8rem;
     font-weight: bold;
-    overflow: hidden;
+    background:#4b1248;
     font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: -2px 5px 6px black;
+    overflow: hidden;
 }
 
-.renewal::before{
+.link li a span{
+   z-index:20;
+   color:#fff;
+}
+
+.link li a::before{
     display: block;
-    position: absolute;
     content: "";
-    top:-100%;
-    /* top:0; */
-    left:0;
-    background: #f0c27b;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    transition: 0.3s;
+    position: absolute;
+    width:50px;
+   height:155px;
+   left:-75px;
+   top:-50px;
+    background:#fff;
+    opacity: 0.2;
+    transition: all 0.7s ease;
+    transform:rotate(35deg);
 }
 
-.renewal:hover {
-    color:#000;
-    
+.link li a:hover::before{
+    left:120%;
+    transition: all 0.5s ease;
 }
 
-.renewal:hover::before{
-    top:0;
-}
+/* .link li:active{
+    transform: translateY(2px);
+} */
+
+
+
+
+
+
+
+
 
 .main3{
     width:100%;
@@ -201,6 +189,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: absolute;
     top:37%;
     right:0;   
+    width:50%;
 }
 
 .concept{
@@ -221,7 +210,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     color: #fff;
     font-weight: bold;
     line-height: 100px;
-    font-size:37px;
+    font-size:2.25vw;
     font-family: 'Noto Sans KR', sans-serif;
     border-radius: 30px;
 }
@@ -263,7 +252,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: relative;
     box-sizing: border-box;
     font-weight: bold;
-    font-size:18px;
+    font-size:1vw;
 }
 
 .p-1>li>span{
@@ -326,7 +315,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: relative;
     box-sizing: border-box;
     font-weight: bold;
-    font-size:18px;
+    font-size:1vw;
 }
 
 .s-1>li>span{
@@ -352,11 +341,11 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc{
     /* position: absolute; */
-    width:70%;
+    width:60%;
     /* left:50%;
     transform: translateX(-50%);
     margin-top:900px; */
-    margin:150px auto 0;
+    margin:110px auto 0;
 }
 
 .tc li{
@@ -387,7 +376,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc li:nth-of-type(1) p{
     text-align: center;
-    font-size:30px;
+    font-size:1.62vw;
     font-family: 'Noto Sans KR', sans-serif;
     padding:10px 0;
 }
@@ -400,8 +389,8 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc li:nth-of-type(2)>div{
     position: absolute;
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     color:#fff;
     font-weight:bold;
     padding:12px 0 0 12px;
@@ -428,9 +417,10 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc li:nth-of-type(2)>p {
     position: absolute;
-    right:100px;
+    right:50px;
     bottom:20px;
     font-family: 'Noto Sans KR', sans-serif;
+    font-size:0.9vw;
 }
 
 
@@ -447,7 +437,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 }
 
 .comment{
-    width:20%;
+    width:25%;
     padding-left:100px;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
@@ -458,19 +448,19 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 }
 
 .c2{
-    margin-top:400px;
+    margin-top:250px;
 }
 
 .c3{
-    margin-top:400px;
+    margin-top:300px;
 }
 
 .c4,.c5,.c6{
-    margin-top:500px;
+    margin-top:400px;
 }
 
 .c7{
-    margin-top:550px;
+    margin-top:200px;
 }
 
 /* .c5{
@@ -487,7 +477,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: absolute;
     content: "";
     display: block;
-    width:170%;
+    width:120%;
     height:3px;
     background:#4b1248;
     left:0;
@@ -495,7 +485,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 }
 
 .comment>div>p{
-    font-size:18px;
+    font-size:1vw;
     margin-top:20px;
 }
 
@@ -513,13 +503,13 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     color: #fff;
     font-weight: bold;
     line-height: 100px;
-    font-size:37px;
+    font-size:2.25vw;
     font-family: 'Noto Sans KR', sans-serif;
     border-radius: 30px;
 }
 
 .ex{
-    width:80%;
+    width:75%;
     
 }
 

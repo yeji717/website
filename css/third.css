@@ -31,7 +31,7 @@ p.typing-txt {
       left:50%;
       transform: translateX(-50%);
       margin-top:20px;
-      font-size:70px;
+      font-size:4vw;
       text-shadow: 5px 5px 5px #000;
     /*       position: absolute;*/
     display: inline-block;
@@ -45,8 +45,8 @@ p.typing-txt {
 
 #visual{
     position: relative;
-    height:950px;
-    background:url("../image2/bg2.png") 0 0 no-repeat;
+    height:100vh;
+    background:url("../images/bg2.png") 0 0 no-repeat;
     background-size: cover;
 }
 
@@ -72,12 +72,15 @@ p.typing-txt {
 
 #visual .cover .explain{
     width:40%;
+    position: absolute;
+    left:4%;
+    bottom:20%;
     /* margin:500px 50px 0 0; */
-    margin-top:500px;
-    margin-left:30px;
+    /* margin-top:500px;
+    margin-left:30px; */
     color:#fff;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size:18px;
+    font-size:15px;
     float:left;
     
 }
@@ -85,7 +88,7 @@ p.typing-txt {
 .explain h2{
     font-family: 'Julius Sans One' , sans-serif;
     color:#fff;
-    font-size:40px;
+    font-size:2rem;
     margin-bottom:20px;
 }
 
@@ -93,54 +96,59 @@ p.typing-txt {
     margin-top:40px;
 }
 
-.original{
-    display: block;
-    bottom:12%;
-    left:10%;
-    padding:15px 25px;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff;
+.link{
     position: absolute;
-    background: #f9930f;
-    font-size:18px;
-    font-weight: bold;
-    overflow: hidden;
-    transition: 0.3s;
-    box-shadow:0px 5px 10px #dedede;
-    font-family: 'Nanum Gothic', sans-serif;
+    bottom:50px;
+    width:45%;
+    left:2%;
+
+}
+.link>li{
+    float: left;
+    width:25%;
+    margin:0 4.16%;
 }
 
-
-.original:hover {
-    color:#000;
-    transform: scale(1.03);
-    box-shadow:0px 10px 12px #000;
+.link>li:active{
+    transform: translateY(2px);
 }
 
-.renewal{
+.link li a{
     display: block;
-    bottom:12%;
-    left:25%;
-    padding:15px 25px;
-    border-radius: 50px;
     text-align: center;
+    position: relative;
     color: #fff;
-    position: absolute;
-    background: #f9930f;
-    font-size:18px;
+    border: 2px solid #fff;
+    padding:10px 15px;
+    font-size:15px;
     font-weight: bold;
-    overflow: hidden;
-    transition: 0.3s;
-    box-shadow:0px 5px 10px #dedede;
+    background:#44b82a;
     font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: -2px 5px 6px black;
+    overflow: hidden;
 }
 
+span{
+    z-index:20;
+}
 
-.renewal:hover {
-    color:#000;
-    transform: scale(1.03);
-    box-shadow: 0px 10px 12px #000;
+.link li a::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width:50px;
+    height:155px;
+    left:-75px;
+    top:-50px;
+    background:#fff;
+    opacity: 0.2;
+    transition: all 0.7s ease;
+    transform:rotate(35deg);
+}
+
+.link li a:hover::before{
+    left:120%;
+    transition: all 0.5s ease;
 }
 
 
@@ -170,6 +178,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: absolute;
     top:37%;
     right:0;   
+    width:50%;
 }
 
 .concept{
@@ -232,7 +241,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: relative;
     box-sizing: border-box;
     font-weight: bold;
-    font-size:18px;
+    font-size:1vw;
 }
 
 .p-1>li>span{
@@ -295,7 +304,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: relative;
     box-sizing: border-box;
     font-weight: bold;
-    font-size:18px;
+    font-size:1vw;
 }
 
 .s-1>li>span{
@@ -321,11 +330,11 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc{
     /* position: absolute; */
-    width:70%;
+    width:60%;
     /* left:50%;
     transform: translateX(-50%);
     margin-top:900px; */
-    margin:150px auto 0;
+    margin:110px auto 0;
 }
 
 .tc li{
@@ -356,7 +365,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc li:nth-of-type(1) p{
     text-align: center;
-    font-size:30px;
+    font-size:1.62vw;
     font-family: 'Noto Sans KR', sans-serif;
     padding:10px 0;
 }
@@ -370,8 +379,8 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc li:nth-of-type(2)>div{
     position: absolute;
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     color:#fff;
     font-weight:bold;
     padding:12px 0 0 12px;
@@ -398,8 +407,9 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .tc li:nth-of-type(2)>p {
     position: absolute;
-    right:100px;
+    right:50px;
     bottom:20px;
+    font-size:0.9vw;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -409,7 +419,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 .main{
     position: relative;
     /* margin-top:300px; */
-    margin:400px 0 150px 0;
+    margin:320px 0 100px 0;
 }
 
 .main>div{
@@ -418,21 +428,30 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
 .comment{
     width:25%;
-    padding-left:100px;
+    height:100vh;
+    padding-left:80px;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.comment .c1{
-    /* margin-top:10px; */
+.comment>div{
+    position: absolute;
 }
 
-.c2,.c3{
-    margin-top:200px;
+.c1{
+    top:0;
+}
+
+.c2{
+    top:25%;
+}
+
+.c3{
+    top:55%;
 }
 
 .c4{
-    margin-top:270px;
+    top:75%;
 }
 
 /* .c4,.c5,.c6{
@@ -457,7 +476,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     position: absolute;
     content: "";
     display: block;
-    width:120%;
+    width:350px;
     height:3px;
     background:#f9930f;
     left:0;
@@ -465,7 +484,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 }
 
 .comment>div>p{
-    font-size:18px;
+    font-size:1vw;
     margin-top:20px;
 }
 
@@ -476,7 +495,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     width:300px;
     height:100px;
     left:-70px;
-    box-shadow: 3px 5px 5px #000;
+    box-shadow: 2px 5px 5px #000;
     box-sizing: border-box;
     padding-left:130px;
     background:#44b82a;

@@ -90,19 +90,37 @@ $(document).ready(function(){
     })
 
     $(window).on("scroll",function(){
-	
+
         var scrollTop = $(this).scrollTop() + $(window).height()/1.5;
+
+        $('.menu').css({"position":"fixed" , "background":"#edeae4"});
+
+        // var mq1 = window.matchMedia("screen and (max-width: 1024px)");
+
+        // mq1.addEventListener(function(e)){
+        //     if(e.matches){
+        //         $('.menu').css({"position":"fixed" , "background":"blue"});
+        //     }
+        //     else{
+        //         $('.menu').css({"position":"static" , "background":"none"});
+        //     }
+        // }
+
+ 
         
         var a = $("#intro").offset().top;
         var b = $("#skill").offset().top;
         var c = $("#work").offset().top;
         var d = $("#contact").offset().top;
 
+
+
         
       
         if(scrollTop > a ){
             $("#intro>h1").addClass('on');
             $('.balloon').addClass('on');
+            $('.menu>ul>li:first-child').css({"color":"red"});
             // doMotion();
             // img();
         }
@@ -132,8 +150,17 @@ $(document).ready(function(){
             $('.work3').addClass('on');
         }
 
+        //   var mq1 = window.matchMedia("screen and (min-width: 1024px)");
+
         
-    });
+        //     if(mq1.matches){
+        //         $('.menu').css({"position":"fixed" , "background":"blue"});
+        //     }
+        //     else{
+        //         $('.menu').css({"position":"static" , "background":"none"});
+        //     }
+        });
+   
 
     $(function(){
         setInterval(function(){
