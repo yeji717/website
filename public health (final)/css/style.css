@@ -2344,6 +2344,10 @@ header .row .row-1 li a{
         text-align: center;
     }
 
+    .box2 .contents{
+        padding: 0 25px;
+    }
+
     .box2-1{
         display: none;
     }
