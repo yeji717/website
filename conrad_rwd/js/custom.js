@@ -66,7 +66,7 @@ $(document).ready(function(){
     var $moGnb_li = $('#moGnb>li');
 
     $moGnb_li.on('click', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
 
         var isOn = $(this).children('a').hasClass('on');
 
