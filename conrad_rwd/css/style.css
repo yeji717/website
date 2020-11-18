@@ -2334,8 +2334,23 @@ article:hover h4 {
     }
 
     .main .btn {
+        width:35px;
+        height:35px;
         font-size: 25px;
-        top: 7%;
+        top: 10%;
+    }
+
+    .btn span{
+        height:5px;
+    }
+
+    .btn span::before, .btn span::after{
+        top:-10px;
+        height:5px;
+    }
+
+    .btn span::after{
+        top:10px;
     }
 
     .main>.bg>li>.title {
@@ -2349,7 +2364,7 @@ article:hover h4 {
     }
 
     #con1.on{
-        margin-top:200px;
+        margin-top:280px;
     }
 
     #con2.on{
