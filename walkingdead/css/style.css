@@ -8,12 +8,12 @@ a{
 }
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:wght@615;700;800&family=Fanwood+Text&family=Gentium+Basic:wght@700&family=Noto+Sans+KR:wght@300&family=Squada+One&display=swap');
 
-@font-face {
+/* @font-face {
     font-family: 'Dead Kansas';
     src: url('Fonts/DeadKansas.ttf') format("truetype");
     font-style: normal;
     font-weight: normal;
-}
+} */
 
 /* html{
     font-size:62.5%;

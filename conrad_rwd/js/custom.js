@@ -18,7 +18,7 @@ $(document).ready(function(){
                     'box-shadow':'2px 2px 8px #5c5c5d'
                 }); 
                 $('#header .logo').css({'display':'none'});
-                $('#header .logo2-1').css({'display':'block'});
+                $('#header .logo1-2').css({'display':'block'});
             }      
             isScrolled = $('.main').hasClass('on'); 
 
@@ -27,7 +27,7 @@ $(document).ready(function(){
             $('#header').css({'background':'rgba(0,0,0,0.5'});
             $('#header').css({ 'box-shadow':'none'});
             $('#header .logo').css({'display':'block'});
-            $('#header .logo2-1').css({'display':'none'});
+            $('#header .logo1-2').css({'display':'none'});
           
             isScrolled = false;
 

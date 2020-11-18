@@ -31,7 +31,7 @@ a {
     position: relative;
 }
 
-#wrap>div>h1 {
+#wrap>div>h2 {
     color: #011638;
     font-size: 35px;
     text-align: center;
@@ -39,7 +39,7 @@ a {
     text-shadow: 1px 1px 1px #fff;
 }
 
-#wrap>div>h1::after {
+#wrap>div>h2::after {
     display: block;
     content: "";
     width: 17%;
@@ -209,7 +209,7 @@ a {
 .main .bg {
     position: relative;
     width: 100%;
-    height:40vw;
+    height:38vw;
     /* height:86vh; */
     /* height: 800px; */
 }
@@ -224,7 +224,7 @@ a {
 
 }
 
-.main>.bg>li>h1 {
+.main>.bg>li>.title {
     position: absolute;
     font-family: 'Sorts Mill Goudy', serif;
     color: #fff;
@@ -235,7 +235,7 @@ a {
     letter-spacing: 2px;
 }
 
-.main>.bg>li>h2 {
+.main>.bg>li>.subject {
     position: absolute;
     font-family: 'Noto Sans KR', sans-serif;
     color: #fff;
@@ -246,17 +246,17 @@ a {
 }
 
 .main>.bg>.bg1 {
-    background: url('./img/main3.jpg')100% no-repeat;
+    background: url('../img/main3.jpg')100% no-repeat;
     background-size: cover;
 }
 
 .main>.bg>.bg2 {
-    background: url('./img/bg2.jpg')100% no-repeat;
+    background: url('../img/bg2.jpg')100% no-repeat;
     background-size: cover;
 }
 
 .main>.bg>.bg3 {
-    background: url('./img/spa01.jpg')100% no-repeat;
+    background: url('../img/spa01.jpg')100% no-repeat;
     background-size: cover;
 }
 
@@ -303,7 +303,7 @@ a {
     background:#753a88;
 } */
 
-.main .logo2 {
+.main .m_logo {
     position: absolute;
     height: 60px;
     top: 0;
@@ -313,7 +313,7 @@ a {
     display: none;
 }
 
-.main .logo2 img {
+.main .m_logo img {
     display: block;
     height: 100%;
 }
@@ -341,7 +341,8 @@ a {
 
 
 #header .logo {
-    width:84px;
+    /* width:84px; */
+    width:10vmin;
     height:10vmin;
     /* height: 100%; */
     float: left;
@@ -352,22 +353,22 @@ a {
     height: 100%;
 }
 
-#header .logo2-1 {
-    width:84px;
+#header .logo1-2 {
+    width:10vmin;
     height:10vmin;
     /* height: 100%; */
     float: left;
     display: none;
 }
 
-#header .logo2-1 img {
+#header .logo1-2 img {
     display: block;
     height: 100%;
 }
 
 .gnb {
     /* width: 90%; */
-    width:calc(100% - 84px);
+    width:calc(100% - 10vmin);
     position: relative;
     float: left;
     height: 100%;
@@ -866,54 +867,54 @@ button {
 .slider .left .room li {
     float: left;
     width: 12.5%;
-    height: 32vw;
+    height: 38vw;
 }
 
 .slider .left .room .a1 {
-    background: url('./img/deluxe.jpg')0 0 no-repeat;
+    background: url('../img/deluxe.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a2 {
-    background: url('./img/premium.jpg')0 0 no-repeat;
+    background: url('../img/premium.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a3 {
-    background: url('./img/queencorner.jpg')0 0 no-repeat;
+    background: url('../img/queencorner.jpg')0 0 no-repeat;
     background-size: cover;
 
 }
 
 .slider .left .room .a4 {
-    background: url('./img/executive.jpg')0 0 no-repeat;
+    background: url('../img/executive.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a5 {
-    background: url('./img/premium_corner_suite.jpg')0 0 no-repeat;
+    background: url('../img/premium_corner_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a6 {
-    background: url('./img/executive_suite.jpg')0 0 no-repeat;
+    background: url('../img/executive_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a7 {
-    background: url('./img/conrad_suite.jpg')0 0 no-repeat;
+    background: url('../img/conrad_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a8 {
-    background: url('./img/penthouse.jpg')0 0 no-repeat;
+    background: url('../img/penthouse.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .right {
     float: left;
     width: 50%;
-    height: 32vw;
+    height: 38vw;
     overflow: hidden;
     text-align: left;
     position: relative;
@@ -1001,43 +1002,43 @@ button {
 
 
 .b1-2 {
-    background: url('./img/deluxe.jpg')0 0 no-repeat;
+    background: url('../img/deluxe.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b2-2 {
-    background: url('./img/premium.jpg')0 0 no-repeat;
+    background: url('../img/premium.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 
 .b3-2 {
-    background: url('./img/queencorner.jpg')0 0 no-repeat;
+    background: url('../img/queencorner.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b4-2 {
-    background: url('./img/executive.jpg')0 0 no-repeat;
+    background: url('../img/executive.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b5-2 {
-    background: url('./img/premium_corner_suite.jpg')0 0 no-repeat;
+    background: url('../img/premium_corner_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b6-2 {
-    background: url('./img/executive_suite.jpg')0 0 no-repeat;
+    background: url('../img/executive_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b7-2 {
-    background: url('./img/conrad_suite.jpg')0 0 no-repeat;
+    background: url('../img/conrad_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b8-2 {
-    background: url('./img/penthouse.jpg')0 0 no-repeat;
+    background: url('../img/penthouse.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
@@ -1047,7 +1048,7 @@ button {
     left: 13%;
     width: 70px;
     height: 30px;
-    background: url(./img/left2.png) no-repeat;
+    background: url(../img/left2.png) no-repeat;
     background-size: contain;
 }
 
@@ -1057,7 +1058,7 @@ button {
     left: 30%;
     width: 70px;
     height: 30px;
-    background: url(./img/right2.png) no-repeat;
+    background: url(../img/right2.png) no-repeat;
     background-size: contain;
     text-shadow: 1px 1px 1px #222;
 }
@@ -1200,7 +1201,7 @@ button {
     height: 300px;
     /* border-radius: 50%; */
     /* background: linear-gradient(to top, #250825,  rgb(255, 255, 255)); */
-    background: url(img/main7.jpg)no-repeat center;
+    background: url(../img/main7.jpg)no-repeat center;
     background-size: cover;
     top: 28%;
     right: 10%;
@@ -1234,7 +1235,7 @@ button {
     position: relative;
     min-width: 70%;
     height: 35vw;
-    background: url('./img/bg.png') no-repeat;
+    background: url('../img/bg.png') no-repeat;
     background-size: cover;
 }
 
@@ -1412,22 +1413,22 @@ article:hover h4 {
 }
 
 .box3-1>div:nth-of-type(1) .hover {
-    background: url('./img/wedding07.jpg') no-repeat center;
+    background: url('../img/wedding07.jpg') no-repeat center;
     background-size: cover;
 }
 
 .box3-1>div:nth-of-type(2) .hover {
-    background: url('./img/spa02.jpg')no-repeat center;
+    background: url('../img/spa02.jpg')no-repeat center;
     background-size: cover;
 }
 
 .box3-1>div:nth-of-type(3) .hover {
-    background: url('./img/버티고2.jpg') no-repeat center;
+    background: url('../img/버티고2.jpg') no-repeat center;
     background-size: cover;
 }
 
 .box3-1>div:nth-of-type(4) .hover {
-    background: url('./img/conference05.jpg') no-repeat center;
+    background: url('../img/conference05.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -1671,7 +1672,7 @@ article:hover h4 {
         font-size: 10px;
     }
 
-    .main>.bg>li>h1 {
+    .main>.bg>li>.title {
         font-size: 70px;
     }
 
@@ -1679,7 +1680,7 @@ article:hover h4 {
         width: 80%;
     }
 
-    #wrap div>h1 {
+    #wrap div>h2 {
         font-size: 2.3rem;
     }
 
@@ -1687,7 +1688,7 @@ article:hover h4 {
         font-size: 1rem;
     }
 
-    #wrap div>h1 {
+    #wrap div>h2 {
         font-size: 2.3rem;
     }
 
@@ -1818,7 +1819,7 @@ article:hover h4 {
 
 @media (max-width:1000px) {
 
-    #wrap div>h1 {
+    #wrap div>h2 {
         font-size: 2rem;
     }
 
@@ -1826,11 +1827,11 @@ article:hover h4 {
         font-size: 15px;
     }
 
-    .main>.bg>li>h1 {
+    .main>.bg>li>.title {
         font-size: 60px;
     }
 
-    .main>.bg>li>h2 {
+    .main>.bg>li>.subject {
         font-size: 16px;
     }
 
@@ -1968,7 +1969,7 @@ article:hover h4 {
         display: none;
     }
 
-    .main .logo2 {
+    .main .m_logo {
         display: block;
     }
 
@@ -1991,12 +1992,12 @@ article:hover h4 {
         height: 550px;
     }
 
-    .main>.bg>li>h1 {
+    .main>.bg>li>.title {
         font-size: 40px;
         bottom: 35%;
     }
 
-    .main>.bg>li>h2 {
+    .main>.bg>li>.subject {
         font-size: 14px;
         bottom: 32%;
     }
@@ -2169,7 +2170,7 @@ article:hover h4 {
         font-size: 15px;
     }
 
-    #wrap div>h1 {
+    #wrap div>h2 {
         font-size: 1.2rem;
     }
 
@@ -2181,12 +2182,12 @@ article:hover h4 {
         height: 350px;
     }
 
-    .main>.bg>li>h1 {
+    .main>.bg>li>.title {
         font-size: 35px;
         bottom: 22%;
     }
 
-    .main>.bg>li>h2 {
+    .main>.bg>li>.subject {
         bottom: 18%;
     }
 
@@ -2317,7 +2318,7 @@ article:hover h4 {
 }
 
 @media(max-width:480px) {
-    .main .logo2 {
+    .main .m_logo {
         display: none;
     }
 
@@ -2337,12 +2338,12 @@ article:hover h4 {
         top: 7%;
     }
 
-    .main>.bg>li>h1 {
+    .main>.bg>li>.title {
         font-size: 30px;
         bottom: 22%;
     }
 
-    .main>.bg>li>h2 {
+    .main>.bg>li>.subject {
         bottom: 18%;
         font-size: 12px;
     }

@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Raleway:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.after::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#wrap{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*------------------------------- 모바일 메뉴 --------------------------- */
+
+#moPanel {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    top: 0px;
+    left: -300px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: 0.5s; 
+}
+
+#moPanel.on {
+    left: 0px; 
+}
+
+#moGnb {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 0px;
+    z-index: 100;
+}
+
+#moGnb>li {
+    border-bottom: 1px solid #000;
+}
+
+#moGnb>li>a {
+    display: block; 
+    background: #011638;
+    font-size: 18px; 
+    color: #F0C27B; 
+    padding: 15px 20px;
+}
+
+#moGnb>li>.sub {
+    display: none;
+}
+
+#moGnb>li>.sub>li {
+    border-bottom: 1px solid #000; 
+}
+
+#moGnb>li>.sub>li>a {
+    display:block; 
+    background:#eee; 
+    color:#222; 
+    padding: 15px 30px;
+}
+
+.main{
+    position: relative;
+    width:100%;
+    height:48.8vw;
+    background:url('../img2/main01.png')center no-repeat;
+    background-size: cover;
+}
+
+.main h1{
+    position: absolute;
+    color: #fff;
+    font-size: 5vw;
+    bottom: 20%;
+    right: 10%;
+    text-shadow: 3px 3px 3px #330d33;
+    z-index: 10;
+}
+
+.main h1::after {
+    position: absolute;
+    right: 0;
+    top: 55%;
+    display: block;
+    content: "";
+    width: 90%;
+    padding: 25px 0;
+    background: linear-gradient(to left,rgba(214, 164, 38, 0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    transform: skewX(-45deg);
+    z-index:-1;
+}
+
+
+.main .logo2{
+    position: absolute;
+    height:60px;
+    top:0;
+    left:50%;
+    margin-top:10px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.main .logo2 img{
+    display: block;
+    height:100%;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    top:5vmin;
+    /* top: 2.6vw; */
+    height: 10vmin;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+#header .menu {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+#header .logo {
+    width:84px;
+    height:10vmin;
+    /* height: 100%; */
+    float: left;
+}
+
+#header .logo img {
+    display: block;
+    height: 100%;
+}
+
+#header .logo1-2 {
+    width:84px;
+    height:10vmin;
+    /* height: 100%; */
+    float: left;
+    display: none;
+}
+
+#header .logo1-2 img {
+    display: block;
+    height: 100%;
+}
+
+.gnb {
+    /* width: 90%; */
+    width:calc(100% - 84px);
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.gnb .mainmenu {
+    height: 100%;
+}
+
+
+.gnb .mainmenu>li {
+    width: 14%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    position: relative;
+
+}
+
+.gnb .mainmenu>li:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.gnb .mainmenu>li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 0.84vw;
+    color: #f0c27b;
+    line-height: 10vmin;
+}
+
+.gnb .mainmenu>li .submenu {
+    position: absolute;
+    width: 100%;
+    background: #011638;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 13px;
+    box-sizing: border-box;
+    color: #f0c27b;
+}
+
+.submenu li:hover a {
+    background: rgba(155, 168, 185, 0.5);
+}
+
+.submenu::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #f0c27b;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.7s;
+}
+
+.mainmenu>li:hover .submenu::before {
+    width: 100%;
+}
+
+.main .btn {
+    position: absolute;
+    background: none;
+    font-size: 40px;
+    top: 12%;
+    right: 30px;
+    display: none;
+    z-index:100;
+}
+
+.btn span{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:8px;
+    background:#f0c27b;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+.btn span::before, .btn span::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width:100%;
+    height:8px;
+    background:#f0c27b;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+
+.btn span::before{
+    top:-15px;
+}
+
+.btn span::after{
+   top:15px;
+}
+
+.btn.on span{ background:none;}
+
+.btn.on span::before{top:0; transform:  rotate(45deg);}
+
+.btn.on span::after{top:0; transform: rotate(-45deg);}
+
+
+.main.on #header {
+    margin-top: -40px;
+}
+
+
+#content>div{
+    position: relative;
+    width:1240px;
+    margin:150px auto;
+}
+
+#content>div>h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top:20px;
+    position: relative;
+}
+
+#content>div>h1::after {
+    display: block;
+    content: "";
+    width: 10%;
+    height: 3px;
+    background: #011638;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* 
+#content div>.line{
+    position: absolute;
+    content: "";
+    display: block;
+    width:150px;
+    height:3px;
+    background:#011638;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+} */
+
+.about p{
+    text-align: center;
+    margin:50px 0;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+/* 웨딩홀 */
+
+.box5{
+    width:95%;
+    position: relative;
+    margin:50px auto 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.box5>div{
+    width:32%;
+    height:420px;
+    float: left;
+    position: relative;
+    margin-right:2%;
+    overflow: hidden;
+}
+
+.box5>div:last-child{
+    margin-right:0;
+}
+
+.box5>div::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    top:100%;
+    background:rgba(0,0,0,0.6);
+    transition: 0.4s;
+    z-index:1;
+}
+.box5>div:hover::before{
+    top:10px;
+  
+}
+
+.box5>div:hover >.text{
+    opacity: 1;
+    z-index:2;
+    color: #fff;
+}
+
+
+.box5>div>.text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity: 0;
+}
+.box5>div>.text>h4{
+    margin-top:20px;
+    padding:5px;
+    border:1px solid #fff;
+}
+.box5>div>.text>h4>a{
+    display:block;
+    width:100%;
+}
+
+.box5>div>.text>h4:hover{
+    background:#fff;
+    color: #011638;;
+}
+
+.hall1{
+    background:url("../img2/grand01.png")center no-repeat;
+    background-size: cover;
+   
+}
+
+.hall2{
+    background:url("../img2/park01.png")center no-repeat;
+    background-size: cover;
+}
+
+.hall3{
+    background:url("../img2/studio.jpg")center no-repeat;
+    background-size: cover;
+    
+}
+
+/*--------------------- 스타일 --------------------*/
+
+.style .box2{
+    position: relative;
+    width:100%;
+    height:600px;
+    margin:150px auto;
+}
+
+.style .box2 .left{
+    position: absolute;
+    width:80%;
+    left:0;
+    height: 600px;
+    background:url('../img2/wedding09.jpg')100% no-repeat;
+    background-size: cover;
+}
+
+.style .box2 .right{
+    position: absolute;
+    text-align: center;
+    width:65%;
+    height:500px;
+    background:#fff;
+    right:-220px;
+    margin:50px 0;
+    border:1px solid #011638;
+    padding:10px 15px;
+}
+
+.style span{
+    position: absolute;
+    background:#F0C27B;
+    color: #000;
+    top:78%;
+    right:5%;
+}
+
+.style span a{
+    display: block;
+    padding:10px;
+}
+
+.box2 .right h2{
+    
+    margin-top:50px;
+    color: #4b1248;
+}
+
+.box2 .right p{
+  
+    line-height: 30px;
+    margin-top:50px;
+}
+
+.food .box3{
+    width:100%;
+    margin:150px auto 0;
+}
+
+.box3 > div{
+    width:50%;
+    float: left;
+    height:300px;
+}
+
+.box3 .f1{
+    background:url('../img2/food1.jpg')0 0 no-repeat;
+    background-size: cover;
+}
+
+.box3 .f2{
+    background:url('../img2/food2.jpg')0 0 no-repeat;
+    background-size: cover;
+}
+
+.food p{
+    margin-top:30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.promotion .pro{
+    width:100%;
+    height:400px;
+    background:url('../img2/wedding05.jpg')0 0 no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    position: relative;
+}
+
+.promotion p {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.589), #0116388e);
+    text-shadow: 2px 2px 2px #011638;
+}
+
+
+/*----------------------------  footer -----------------------------*/
+
+#footer{
+    width:100%;
+    position: relative;
+    padding:30px 0;
+    height:100%;
+    background:#011638;
+    text-align: center;
+    color: #fff;
+}
+
+#footer li {
+    position: relative;
+    display:inline; 
+    padding:0 7px 0 10px; 
+    white-space: nowrap;
+}
+#footer li::before{
+    content: "";
+    width: 1px;
+    height:14px;
+    background:#dbdbdb;
+    position: absolute;
+    left:0;
+    top:5px;
+}
+#footer li:first-child::before{
+    width:0;
+}
+#footer ul:nth-child(2){
+    padding-top:15px;
+}
+
+
+
+/*  반응형 */
+
+@media (max-width:1000px){
+    
+    .main h1{
+        font-size:3.5rem;
+    }
+}
+
+@media (max-width:1260px){
+    
+    #header .menu{
+        width:90%;
+    }
+
+    #header .gnb{
+        width:85%;
+    }
+
+    #header .gnb li a {
+        font-size:10px;
+    }
+
+    #content>div{
+        width:100%;
+    }
+
+    .box{
+        width:80%;
+    }
+
+    .style .box2{
+        width:80%;
+    }
+}
+
+@media (max-width:768px){
+
+    .main{
+        height:700px;
+    }
+
+    .main h1{
+        font-size: 3rem;
+    }
+
+    #header{
+        margin-top:30px;
+        height:65px;
+        display: none;
+    }
+
+    #header .menu{
+        
+        width:100%;
+    }
+
+    #header .logo{
+        float:none;
+        display: none;
+    }
+
+    .main .logo2{
+        display: block;
+    }
+
+ 
+    #header .gnb{
+        display: none;
+    }
+
+   .gnb>.mainmenu>li{
+       line-height: 55px;
+   }
+
+   .main .btn {
+    display: block;
+    
+}
+
+
+}
+
+@media(max-width:576px){
+
+    .main{
+        height:550px;
+    }
+
+    #moPanel{
+        width:200px;
+    }
+
+    #moGnb>li>a{
+        font-size:15px;
+    }
+/* 
+    #header .btn {
+        display: block;
+        font-size:35px;
+    }
+
+    #header .gnb{
+        display: none;
+    } */
+
+    #header{
+        margin-top:0;
+        height:70px;
+    }
+
+}

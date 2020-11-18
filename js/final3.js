@@ -5,7 +5,7 @@ $(document).ready(function(){
 		
     var speed = 1000;
     var ease = 'easeOutExpo';
-    var $wrap_div = $('#wrap>div');
+    var $wrap_div = $('#wrap>section');
 
     // match_height();
 
@@ -108,19 +108,16 @@ $(document).ready(function(){
 
  
         
-        var a = $("#intro").offset().top;
+        var a = $("#about").offset().top;
         var b = $("#skill").offset().top;
         var c = $("#work").offset().top;
         var d = $("#contact").offset().top;
 
 
-
-        
-      
         if(scrollTop > a ){
-            $("#intro>h1").addClass('on');
+            $("#about>h1").addClass('on');
             $('.balloon').addClass('on');
-            $('.menu>ul>li:first-child').css({"color":"red"});
+            // $('.menu>ul>li:first-child').css({"color":"red"});
             // doMotion();
             // img();
         }
@@ -169,6 +166,33 @@ $(document).ready(function(){
                 $(".circle").children(".round").addClass("mask");
             }
         },500);
+    });
+
+    $(function(){
+        var cnt0 = 0;
+
+        counterFn();
+
+        function counterFn() {
+            id0 = setInterval(count0Fn, 15);
+
+            function count0Fn(){
+                cnt0++;
+                if(cnt0 > 90) {
+                    clearInterval(id0);
+                }else{
+                    $(".c1").text(cnt0);
+                }
+                if(cnt0 > 85){
+                    clearInterval(id0);
+                }
+                else{
+                    $(".c2").text(cnt0);
+                }
+            }
+        }
+    
+    
     });
 
 })
