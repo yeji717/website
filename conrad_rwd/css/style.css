@@ -128,7 +128,7 @@ a {
     font-size: 18px;
     color: #F0C27B;
     /* padding: 15px 20px; */
-    padding:40px 30px 40px 45px;
+    padding:30px 40px;
     position: relative;
 }
 
@@ -2215,9 +2215,13 @@ article:hover h4 {
         font-size: 13px;
     }
 
+    .slider .right ul li{
+        padding:0 30px;
+    }
 
     .slider .right ul li a {
         font-size: 0.7rem;
+        padding:10px 15px;
     }
 
     .slider .right ul li h2 {
@@ -2249,6 +2253,7 @@ article:hover h4 {
     .box2-2>.more>h2 {
         font-size: 17px;
     }
+    
 
     .more p {
         font-size: 13px;
@@ -2355,11 +2360,11 @@ article:hover h4 {
 
     .main>.bg>li>.title {
         font-size: 30px;
-        bottom: 22%;
+        bottom: 30%;
     }
 
     .main>.bg>li>.subject {
-        bottom: 18%;
+        bottom: 25%;
         font-size: 12px;
     }
 

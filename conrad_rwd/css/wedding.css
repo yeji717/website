@@ -125,6 +125,8 @@ a{
     height:100%;
 }
 
+
+
 #header {
     position: absolute;
     width: 100%;
@@ -167,6 +169,8 @@ a{
     display: block;
     height: 100%;
 }
+
+
 
 .gnb {
     /* width: 90%; */
@@ -250,8 +254,10 @@ a{
     position: absolute;
     background: none;
     font-size: 40px;
-    top: 12%;
-    right: 30px;
+    width:50px;
+    height:40px;
+    top: 4%;
+    right: 10px;
     display: none;
     z-index:100;
 }
@@ -260,7 +266,7 @@ a{
     position: absolute;
     display: block;
     width:100%;
-    height:8px;
+    height:5px;
     background:#f0c27b;
     top:50%;
     left:0;
@@ -273,7 +279,7 @@ a{
     content: "";
     position: absolute;
     width:100%;
-    height:8px;
+    height:5px;
     background:#f0c27b;
     top:0;
     left:0;
@@ -308,7 +314,7 @@ a{
 
 #content>div>h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 2.6vw;
     padding-top:20px;
     position: relative;
 }
@@ -317,6 +323,7 @@ a{
     display: block;
     content: "";
     width: 10%;
+    bottom:-10px;
     height: 3px;
     background: #011638;
     position: absolute;
@@ -341,7 +348,8 @@ a{
 .about p{
     text-align: center;
     margin:50px 0;
-    line-height: 35px;
+    font-size:1vw;
+    line-height: 2.27vw;
     font-weight: bold;
 }
 
@@ -456,8 +464,9 @@ a{
     width:65%;
     height:500px;
     background:#fff;
-    right:-220px;
-    margin:50px 0;
+    right:-25%;
+    top:50%;
+    transform: translateY(-50%);
     border:1px solid #011638;
     padding:10px 15px;
 }
@@ -582,6 +591,29 @@ a{
     .main h1{
         font-size:3.5rem;
     }
+
+    #content>div{
+        margin:120px auto;
+    }
+
+    #content>div>h1{
+        font-size:3.5vw;
+    }
+
+    .about p{
+        font-size:1.3vw;
+        line-height:3vw;
+    }
+
+    .promotion p{
+        font-size:0.9rem;
+    }
+
+    #footer ul {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
 }
 
 @media (max-width:1260px){
@@ -651,10 +683,13 @@ a{
    }
 
    .main .btn {
-    display: block;
+        display: block;
     
-}
+    }
 
+    #footer ul li {
+        font-size: 11px;
+    }
 
 }
 
@@ -671,19 +706,108 @@ a{
     #moGnb>li>a{
         font-size:15px;
     }
-/* 
-    #header .btn {
-        display: block;
-        font-size:35px;
-    }
-
-    #header .gnb{
-        display: none;
-    } */
 
     #header{
         margin-top:0;
         height:70px;
     }
 
+    #content>div>h1{
+        font-size:5.5vw;
+    }
+
+    .about p{
+        font-size:2.8vw;
+        line-height:5vw;
+        margin:50px 30px;
+    }
+
+    .box5>div{
+        width:100%;
+        margin-right: 0;
+        margin-bottom:5%;
+    }
+
+    .style .box2{
+        margin:50px auto;
+    }
+
+    .style .box2 .left{
+        height:400px;
+    }
+
+    .style .box2 .right{
+        height:300px;
+    }
+
+    .box3 > div {
+        height:150px;
+    }
+
+    .food p{
+        font-size:1vw;
+    }
+
+    .promotion p{
+        width:70%;
+    }
+
+    .promotion .pro{
+        margin-top:50px;
+    }
+
+    .follow {
+        margin: 50px auto;
+    }
+
+    .follow ul li {
+        line-height: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .follow ul .text {
+        line-height: 45px;
+        font-size: 20px;
+        left: 52%;
+    }
+
+    .follow ul li i {
+
+        font-size: 15px;
+    }
+
+    .follow ul:hover li {
+        margin: 0 2px;
+    }
+}
+
+@media(max-width:425px){
+
+    .main{
+        height:400px;
+    }
+
+    .main h1{
+        font-size:2.5rem;
+    }
+    
+    .box2 .right p{
+        display: none;
+    }
+
+    .food .box3{
+        margin:50px auto 0;
+    }
+    
+    .style span{
+        top:50%;
+        left:50%;
+        transform: translateX(-50%);
+        width:70%;
+    }
+
+    .style .box2{
+        height:400px;
+    }
 }
