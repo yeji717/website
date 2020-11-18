@@ -44,7 +44,7 @@ $(document).ready(function(){
     var $mognb_li = $('.mognb>li');
 
     $mognb_li.on('click',function(e){
-        e.preventDefault();
+        // e.preventDefault();
 
         var isOn = $(this).children('a').hasClass('on');
 
