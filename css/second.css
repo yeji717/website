@@ -538,6 +538,10 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
         font-size:8.5vw;
     }
 
+    #visual{
+        height:600px;
+    }
+
     #visual .cover>img{
         width:90%;
         top:20%;
@@ -580,6 +584,7 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 
     .link li a {
         padding:10px;
+        font-size:0.5rem;
     }
 
     .link li:last-child{
