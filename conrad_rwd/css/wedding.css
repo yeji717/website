@@ -471,7 +471,7 @@ a{
     padding:10px 15px;
 }
 
-.style span{
+.right>span{
     position: absolute;
     background:#F0C27B;
     color: #000;
@@ -479,7 +479,7 @@ a{
     right:5%;
 }
 
-.style span a{
+.right>span a{
     display: block;
     padding:10px;
 }
@@ -687,6 +687,10 @@ a{
     
     }
 
+    .style .box2 .right>p>span{
+        display: none;
+    }
+
     #footer ul li {
         font-size: 11px;
     }
@@ -740,6 +744,14 @@ a{
         height:300px;
     }
 
+   
+
+    .box2 .right h2{
+        display: none;
+    }
+
+ 
+
     .box3 > div {
         height:150px;
     }
@@ -792,16 +804,16 @@ a{
         font-size:2.5rem;
     }
     
-    .box2 .right p{
+    /* .box2 .right p{
         display: none;
-    }
+    } */
 
     .food .box3{
         margin:50px auto 0;
     }
     
-    .style span{
-        top:50%;
+    .right>span{
+      
         left:50%;
         transform: translateX(-50%);
         width:70%;

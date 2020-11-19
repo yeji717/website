@@ -529,3 +529,173 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
     width:20%;
     margin-left:50px;
 }
+
+/* 모바일 */
+
+@media(max-width:425px){
+    
+    .typing{
+        font-size:8.5vw;
+    }
+
+    #visual .cover>img{
+        width:90%;
+        top:20%;
+        left:50%;
+        transform: translateX(-50%);
+        right:inherit;
+    }
+
+    #visual .cover .explain{
+        width:90%;
+        text-align: center;
+        left:50%;
+        bottom:20%;
+        transform: translateX(-50%);
+    }
+
+    .explain h2{
+        font-size:20px;
+    }
+
+    .explain p{
+        font-size:13px;
+    }
+
+    .explain h3{
+        font-size:17px;
+    }
+
+    .link{
+        width:90%;
+        bottom:40px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .link>li{
+        width:32%;
+        margin:0 2% 0 0;
+    }
+
+    .link li a {
+        padding:10px;
+    }
+
+    .link li:last-child{
+        margin:0;
+    }
+
+    .problem{
+        width:80%;
+    }
+
+    .problem>img{
+        margin-top:20px;
+    }
+
+    .p-1{
+        padding:30px;
+    }
+
+    .p-1>li{
+        width:100%;
+        font-size:12px;
+        margin-right:0;
+        margin-bottom:2%;
+    }
+
+    .title{
+        width:200px;
+        height:50px;
+        line-height:50px;
+        font-size:17px;
+    }
+
+    .solution{
+        width:80%;
+    }
+
+    .s-1{
+        padding:30px;
+    }
+
+    .s-1>li{
+        width:100%;
+        margin-right:0;
+        margin-bottom:2%;
+        font-size:12px;
+    }
+
+    .tc{
+        width:85%;
+    }
+
+    .tc li{
+        height:250px;
+    }
+
+    .tc li h2{
+        font-size:17px;
+    }
+
+    .tc li .font{
+        margin-top:50px;
+    }
+
+    .tc li:nth-of-type(1) p{
+        font-size:11px;
+    }
+
+    .tc li:nth-of-type(2)>div{
+        width:70px;
+        height:70px;
+        font-size:10px;
+    }
+
+    .tc li:nth-of-type(2)>div:nth-of-type(1){
+        top:33%;
+        left:10%;
+    }
+
+    .tc li:nth-of-type(2)>div:nth-of-type(2){
+        top:40%;
+        left:47%;
+    }
+
+    .tc li:nth-of-type(2)>p{
+        left:15px;
+        right:inherit;
+        bottom:10px;
+        font-size:0.8vw;
+    }
+
+    .title2{
+        width:200px;
+        height:50px;
+        line-height:50px;
+        font-size:17px;
+        padding-left:110px;
+    }
+
+    .main{
+        margin:200px 0 100px 0;
+    }
+
+    .comment{
+        display: none;
+    }
+
+    .ex{margin-left:50px;}
+
+    .main .ex img:nth-of-type(1){
+        margin-left: 0;
+        width:100%;
+    }
+
+    .main .ex img:nth-of-type(2){
+        margin-top: 40px;
+        width:80%;
+        margin-left:40px;
+    }
+}
