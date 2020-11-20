@@ -2141,6 +2141,11 @@ header .row .row-1 li a{
         right:19%;
     }
 
+    .box2-1 li{
+        margin-right:15px;
+        padding-right:15px;
+    }
+
     .box2-1 li a{
         font-size:12px;
     }
@@ -2263,10 +2268,10 @@ header .row .row-1 li a{
         margin-left:30px;
     }
 
-    .box2-1 li{
-        margin-right:20px;
-        padding-right:20px;
-    }
+    /* .box2-1 li{
+        margin-right:15px;
+        padding-right:15px;
+    } */
 
     .box2-1 li a{
         font-size:10px;
