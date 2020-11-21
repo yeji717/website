@@ -748,23 +748,18 @@ body{
     right:15%;
 } */
 
-#work .ex span{
+#work .ex img{
     position: absolute;
     display: block;
     width:50px;
-    height:50px;
     top:0;
 }
 
-#work .ex .dot1{
-    background:url("../image1/dot1.png") no-repeat;
-    background-size: contain;
+#work .ex img:nth-child(1){
     left:15%;
 }
 
-#work .ex .dot2{
-    background:url("../image1/dot2.png")no-repeat;
-    background-size: contain;
+#work .ex img:nth-child(2){
     right:15%;
 }
 
@@ -1188,11 +1183,11 @@ body{
         font-size:22px;
     }
 
-    #work .ex .dot1{
+    #work .ex img:nth-child(1){
         left:0;
     }
 
-    #work .ex .dot2{
+    #work .ex img:nth-child(2){
         right:0;
     }
 
@@ -1281,7 +1276,7 @@ body{
         font-size:17px;
     }
 
-    #work .ex span{
+    #work .ex img{
         width:30px;
     }
 
@@ -1434,7 +1429,7 @@ body{
         margin:100px auto;
     }
 
-    #work .ex span{
+    #work .ex img{
       width:25px;
     }
 
@@ -1568,7 +1563,7 @@ body{
         font-size:10px;
     }
 
-    #work .ex span{
+    #work .ex img{
         display: none;
     }
 
