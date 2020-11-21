@@ -402,42 +402,42 @@ body{
     border-bottom:1px solid #111;
 }
 
-#about .about_sec01>div{
+.about_sec01>div{
     width:50%;
     float: left;
 }
 
-#about .about_sec01 .left>img{
+.about_sec01 .left>img{
     width:50%;
     margin:15% 25%;
 }
 
-#about .about_sec01 .left{
+.about_sec01 .left{
     position: sticky;
     top:0;
 
 }
 
-#about .about_sec01 .right{
+.about_sec01 .right{
     font-family: 'Noto Sans KR', sans-serif;
     color:#000;
     border-left:1px solid #111;
     box-sizing: border-box;
 }
 
-#about .about_sec01 .right>div{
+.about_sec01 .right>div{
     margin:150px auto;
     text-align: center;
 }
 
-#about .about_sec01 .right>div>h2{
+.about_sec01 .right>div>h2{
     position: relative;
     font-size:2.5vw;
     color:#222;
     z-index: 5;
 }
 
-#about .about_sec01 .right>div>h2::after{
+.about_sec01 .right>div>h2::after{
     position: absolute;
     z-index:-1;
     display: block;
@@ -449,18 +449,18 @@ body{
     left:0;
 }
 
-#about .about_sec01 .right>div>ul{
+.about_sec01 .right>div>ul{
     margin:5% 0;
 }
 
-#about .about_sec01 .right>div>ul>li{
+.about_sec01 .right>div>ul>li{
     font-size:20px;
     padding:10px 0 0 30%;
     position: relative;
     
 }
 
-#about .about_sec01 .right>div>ul>li>span{
+.about_sec01 .right>div>ul>li>span{
     margin-right:5%;
     text-align:left;
     color:#ef5a3f;
@@ -469,7 +469,7 @@ body{
     left:150px;
 }
 
-#about .about_sec01 .right .balloon {
+.about_sec01 .right .balloon {
     position: relative;
     width:500px;
     transition: 1s;
@@ -1052,11 +1052,11 @@ body{
 
        /* about */
 
-    .right>div>ul>li{
+    .about_sec01 .right>div>ul>li{
         padding:10px 0 0 25%;
     }
 
-    .right>div>ul>li>span{
+    .about_sec01 .right>div>ul>li>span{
         left:20px;
         /* margin-left:10%; */
         margin-right:0;
@@ -1067,7 +1067,7 @@ body{
 
     /* menu */
 
-    .burger{
+    #main .burger{
         display: none;
     }
 
@@ -1111,28 +1111,28 @@ body{
 
     /* menu 끝 */
 
-    .text1{
+    #main .grid .text .text1{
         font:8.2vw 'Ibarra Real Nova';
 
     }
 
-    .text2{
+    #main .grid .text .text2{
         font:5.5vw 'Ibarra Real Nova';
     }
 
-    .infinite>img{
+    #main .grid .infinite>img{
         width:70%;
     }
 
-    .infinite>p{
+    #main .grid .infinite>p{
         font-size: 2.5vw;
     }
 
-    .infinite>p:nth-of-type(1){
+    #main .grid .infinite>p:nth-of-type(1){
         left:20%;
     }
 
-    .infinite>p:nth-of-type(2){
+    #main .grid .infinite>p:nth-of-type(2){
         right:20%;
     }
 
@@ -1140,12 +1140,12 @@ body{
         font-size:5vw;
     }
 
-    .wrap2 .left>img{
+    /* .wrap2 .left>img{
         width:70%;
         margin:10% 15%;
-    }
+    } */
 
-    .balloon{
+    .about_sec01 .right .balloon{
         width:400px;
         font-size:18px;
     }
@@ -1212,15 +1212,15 @@ body{
 
     /* contact */
 
-    .form{
+    #contact .form{
         width:60%;
     }
 
-    .form .pic li p{
+    #contact .form .pic li p{
         font-size:15px;
     }
 
-    .form .pic li img{
+    #contact .form .pic li img{
         width:40%;
     }
 }
@@ -1239,33 +1239,33 @@ body{
         margin:10% auto;
     }
 
-    .left{
+    .about_sec01 .left{
         position: static;
     }
 
-    .right{
+    .about_sec01 .right{
         border-left:none;
         border-top:1px solid #111;
     }
 
-    .right>.info, .cer, .edu{
+    .about_sec01 .right>.info, .cer, .edu{
         margin: 13% auto;
     }
 
-    .right>div>h2{
+    .about_sec01 .right>div>h2{
         font-size:3.5vw;
     }
 
-    .right>div>h2::after{
+    .about_sec01 .right>div>h2::after{
         left:50%;
         transform: translateX(-50%);
     }
 
-    .right>div>ul>li>span{
+    .about_sec01 .right>div>ul>li>span{
         left:230px;
     }
 
-    .balloon{
+    .about_sec01 .right .balloon{
         width:500px;
         margin:10% auto;
     }
@@ -1280,17 +1280,17 @@ body{
         width:30px;
     }
 
-    .comment h2{
+    #work>div .comment h2{
         font:3vw/1 'Deciso-BoldItalic';
     }
 
-    .comment p{
+    #work>div .comment p{
         font-size:15px;
         margin-top:30px;
         line-height:inherit;
     }
 
-    .comment .link{
+    #work>div .comment .link{
         margin-top:25px;
         font-size:13px;
     }
@@ -1365,7 +1365,7 @@ body{
 
     /* about */
 
-    .right>div>ul>li>span{
+    .about_sec01 .right>div>ul>li>span{
         left:170px;
     }
 
@@ -1399,7 +1399,7 @@ body{
 
     /* contact */
 
-    .form{
+    #contact .form{
         width:80%;
     }
 }
@@ -1408,15 +1408,15 @@ body{
     
     /* about */
 
-    .balloon{
+    .about_sec01 .right .balloon{
         width:70%;
     }
 
-    .right>div>ul>li{
+    .about_sec01 .right>div>ul>li{
         font-size: 15px;
     }
 
-    .right>div>ul>li>span{
+    .about_sec01 .right>div>ul>li>span{
         left:80px;
     }
 
@@ -1437,7 +1437,7 @@ body{
         width:70%;
     }
 
-    .comment h2{
+    #work>div .comment h2{
         font:6vw/1 'Deciso-BoldItalic';
     }
 }
@@ -1446,19 +1446,19 @@ body{
 
     /* contact */
 
-    .form .pic{
+    #contact .form .pic{
         padding-top:8%;
     }
 
-    .form .pic li{
+    #contact .form .pic li{
         width:100%;
     }
 
-    .form .pic li p{
+    #contact .form .pic li p{
         padding-bottom: 0;
     }
 
-    .form .pic li img{
+    #contact .form .pic li img{
         width:12%;
         padding:20px 0;
     }
@@ -1466,27 +1466,27 @@ body{
 
 @media(max-width:425px){
 
-    .text1{
+    #main .grid .text .text1{
         font:45px 'Ibarra Real Nova';
     }
 
-    .text2{
+    #main .grid .text .text2{
         font:30px 'Ibarra Real Nova';
     }
 
-    .infinite>img{
+    #main .grid .infinite>img{
         width:90%;
     }
 
-    .infinite>p{
+    #main .grid .infinite>p{
         font-size:3.5vw;
     }
 
-    .infinite>p:nth-of-type(1){
+    #main .grid .infinite>p:nth-of-type(1){
         left:10%;
     }
 
-    .infinite>p:nth-of-type(2){
+    #main .grid .infinite>p:nth-of-type(2){
         right:10%;
     }
 
@@ -1500,23 +1500,23 @@ body{
         margin-top:50px;
     }
 
-    .balloon{
+    .about_sec01 .right .balloon{
         font-size:15px;
     }
 
-    .right>div>h2{
+    .about_sec01 .right>div>h2{
         font-size:25px;
     }
 
-    .right>div>h2::after{
+    .about_sec01 .right>div>h2::after{
         width:50%;
     }
 
-    .right>div>ul>li{
+    .about_sec01 .right>div>ul>li{
         font-size:13px;
     }
 
-    .right>div>ul>li>span{
+    .about_sec01 .right>div>ul>li>span{
         left:30px;
     }
 
@@ -1527,7 +1527,7 @@ body{
     }
 
     #skills_wrap>.box{
-        margin:45px;
+        margin:35px;
     }
 
     /* work */
@@ -1544,16 +1544,21 @@ body{
         width:90%;
     }
 
+    #work .ex img{
+        display: none;
+    }
+
+
     /* contact */
 
-    .form .pic{
+    #contact .form .pic{
         padding-top:15%;
     }
 }
 
 @media(max-width:375px){
     
-    .balloon{
+    .about_sec01 .right .balloon{
         font-size:13px;
     }
     
@@ -1563,9 +1568,6 @@ body{
         font-size:10px;
     }
 
-    #work .ex img{
-        display: none;
-    }
-
+    
 
 }
