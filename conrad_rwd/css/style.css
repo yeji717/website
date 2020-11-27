@@ -25,13 +25,26 @@ a {
 
 
 
-/* Wrap */
+/* wrap */
 #wrap {
     width: 100%;
     position: relative;
 }
 
-#wrap>div>h2 {
+#contents{
+    margin:100px 0;
+}
+
+#contents>div{
+    width: 100%;
+    margin-top: 300px;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+#contents>div>h2 {
     color: #011638;
     font-size: 35px;
     text-align: center;
@@ -39,7 +52,7 @@ a {
     text-shadow: 1px 1px 1px #fff;
 }
 
-#wrap>div>h2::after {
+#contents>div>h2::after {
     display: block;
     content: "";
     width: 17%;
@@ -52,11 +65,16 @@ a {
     z-index: -10;
 }
 
-#wrap div>.sub_t {
+#contents div>.sub_t {
     margin-top: 10px;
     font-size: 17px;
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
+}
+
+#contents>div.on{
+    opacity: 1;
+    margin-top:180px;
 }
 
 /*------------------------------- 모바일 메뉴 --------------------------- */
@@ -159,7 +177,7 @@ a {
     padding: 15px 30px;
 }
 
-/*------------------------------- 메인  --------------------------- */
+/*------------------------------- 메인 header  --------------------------- */
 
 .main {
     position: relative;
@@ -597,7 +615,7 @@ button {
 
 
 /*------------------------------------ con1(프로모션) ----------------------------- */
-
+/* 
 #con1 {
     width: 100%;
     margin-top: 300px;
@@ -605,7 +623,7 @@ button {
     opacity: 0;
     transition: 0.5s;
     text-align: center;
-}
+} */
 
 
 
@@ -825,29 +843,28 @@ button {
     text-shadow: 2px 2px 2px #011638;
 }
 
-#con1.on {
+/* #con1.on {
     opacity: 1;
-    /* margin-top: 250px; */
     margin-top:180px;
-}
+} */
 
 
 
 /* -------------------------------- con2(객실) ------------------------------ */
 
-#con2 {
+/* #con2 {
     width: 100%;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     margin-top: 300px;
     transition: 0.5s;
     opacity: 0;
-}
+} */
 
-#con2.on {
+/* #con2.on {
     opacity: 1;
-    margin-top: 250px;
-}
+    margin-top: 180px;
+} */
 
 #con2 .slider {
     width: 100%;
@@ -1067,20 +1084,19 @@ button {
 
 /* -------------------------------- con3(멤버십) ------------------------------ */
 
-#con3 {
-    position: relative;
+/* #con3 {
+    
     margin-top: 300px;
     width: 100%;
     text-align: center;
     transition: 0.5s;
     opacity: 0;
-}
+} */
 
-#con3.on {
+/* #con3.on {
     margin-top:180px;
-    /* margin-top: 250px; */
     opacity: 1;
-}
+} */
 
 #con3.on>.box2>.box2-2>div:nth-of-type(2) {
     right: 4%;
@@ -1212,19 +1228,17 @@ button {
 
 /* -------------------------------- con4(시설) ------------------------------ */
 
-#con4 {
+/* #con4 {
     width: 100%;
-    margin: 0 auto 200px;
     margin-top: 300px;
     opacity: 0;
     transition: 0.5s;
-}
+} */
 
-#con4.on {
+/* #con4.on {
     opacity: 1;
-    /* margin-top: 250px; */
     margin-top:180px;
-}
+} */
 
 /* #con4 h1,p{
     text-align: center;
@@ -1438,18 +1452,17 @@ article:hover h4 {
 
 /* ---------------------------- con2(location & follow) --------------------------- */
 
-#con5 {
+/* #con5 {
     text-align: center;
-    margin-top: 400px;
+    margin-top: 300px;
     opacity: 0;
     transition: 0.5s;
-}
+} */
 
-#con5.on {
+/* #con5.on {
     opacity: 1;
     margin-top:180px;
-    /* margin-top: 250px; */
-}
+} */
 
 .box4 {
     width: 85%;
@@ -1680,15 +1693,7 @@ article:hover h4 {
         width: 80%;
     }
 
-    #wrap div>h2 {
-        font-size: 2.3rem;
-    }
-
-    #wrap div>.sub {
-        font-size: 1rem;
-    }
-
-    #wrap div>h2 {
+    #contents>div>h2 {
         font-size: 2.3rem;
     }
 
@@ -1819,7 +1824,7 @@ article:hover h4 {
 
 @media (max-width:1000px) {
 
-    #wrap div>h2 {
+    #contents>div>h2 {
         font-size: 2rem;
     }
 
@@ -2071,14 +2076,16 @@ article:hover h4 {
         transform: translateX(-50%);
     }
 
-    #con1 {
+    /* #con1 {
         margin-top: 500px;
+    } */
+
+    #contents>div:nth-of-type(1).on{
+        margin-top: 250px;
     }
-
-    #con1.on {
-
+    /* #con1.on {
         margin-top: 350px;
-    }
+    } */
 
     .con1-2 {
         overflow: visible;
@@ -2170,8 +2177,8 @@ article:hover h4 {
         font-size: 15px;
     }
 
-    #wrap div>h2 {
-        font-size: 1.2rem;
+    #contents>div>h2 {
+        font-size: 1.4rem;
     }
 
     #wrap div>.sub_t {

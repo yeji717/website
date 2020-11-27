@@ -1,25 +1,29 @@
 $(document).ready(function(){
 
-    
+    // 탭 메뉴
 
-    $('.tab>li>.tab1').on('click',function(e){
-        e.preventDefault();
-        $(this).siblings('.notice').css({'display':'block'});
-        $('.health').css({'display':'none'});
-    });
+    var $tab_list = $('.con2-1');
 
-    $('.tab>li>.tab2').on('click',function(e){
-        e.preventDefault();
-        // $(this).css({'background':'#353990','color':'#fff'});
-        $(this).siblings('.health').css({'display':'block'});
-        $('.notice').css({'display':'none'});
-    });
+      $tab_list.find('ul ul').hide();
+      $tab_list.find('li.active>ul').show();
 
-    $('.tab>li').on('click',function(){
-        $('.tab>li>a').removeClass('active');
-        $(this).children('a').addClass('active');
+      function tabMenu(e){
+          e.preventDefault();
+
+          var $this = $(this);
+          $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('ul').hide();
+      }
+
+      $tab_list.find('ul>li>a').click(tabMenu).focus(tabMenu);
         
-    });
+      // $this.children('a').addClass('active');
+        // $this.siblings().find('a').removeClass('active');
+        
+        // tab_panel.hide();
+
+        // var target = $this.index();
+        // tab_panel.eq(target).show();
+   
 
 
     /* mobutton */
@@ -27,15 +31,28 @@ $(document).ready(function(){
     $('.mobutton').on('click', function(e) {
         e.preventDefault();
 
-        var isOpen = $('.mopanel').hasClass('on');
+        $('.mopanel').addClass('on');
+        $("header").addClass('on');
 
-        if (isOpen) {
-            $('.mopanel').removeClass('on');
-        } else {
-            $('.mopanel').addClass('on');
-        }
+         /* mognb close */
 
-        $(this).toggleClass('active');
+    $('.close').click(function(){
+        $('.mopanel').removeClass('on');
+        // $('.mopanel').css({'right':'-300px'});
+        $("header").removeClass('on');
+    });
+
+        // var isOpen = $('.mopanel').hasClass('on');
+
+        // if (isOpen) {
+        //     $('.mopanel').removeClass('on');
+        //     $("header").removeClass('on');
+        // } else {
+        //     $('.mopanel').addClass('on');
+        //     $("header").addClass('on');
+        // }
+
+        // $(this).toggleClass('active');
         // $(this).siblings('mopanel').css({'right':'0'});
     });
 
@@ -64,11 +81,7 @@ $(document).ready(function(){
        
     });
 
-    /* mognb close */
-
-    // $('.close').click(function(){
-    //     $('.mopanel').css({'right':'-200px'});
-    // });
+   
     /*-----------------     banner 1    ------------------ */
 
     active_index = 0;

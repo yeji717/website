@@ -82,7 +82,7 @@ $(document).ready(function(){
         e.preventDefault();
     
         var i = $(this).index();
-        var offset = $wrap_div.eq(i+1).offset().top;
+        var offset = $wrap_div.eq(i).offset().top;
         
         $('html,body').stop().animate({scrollTop:offset},speed,ease);
         $('.menu').removeClass('on');

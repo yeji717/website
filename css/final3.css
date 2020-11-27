@@ -95,7 +95,7 @@ body{
     padding-bottom:0;
 }
 
-#main .grid{
+#main .title{
     position: absolute;
     width:100%;
     top:50%;
@@ -103,7 +103,7 @@ body{
     transform: translate(-50%,-50%);
 }
 
-#main .grid .text{
+#main .title .text{
     margin:0 auto;
     text-align: center;
 }
@@ -119,7 +119,7 @@ body{
 }
 
 
-#main .grid .text .text1 {
+#main .title .text .text1 {
     display:inline-block;
     margin:0 auto 20px;
 
@@ -130,7 +130,7 @@ body{
     z-index:2;
 }
 
-#main .grid .text .text2 {
+#main .title .text .text2 {
     display:inline-block;
     margin:0 auto 20px;
 
@@ -141,7 +141,7 @@ body{
     z-index:2;
 }
 
-#main .grid .text .text3 {
+#main .title .text .text3 {
     display:inline-block; 
     mix-blend-mode: difference;
     position:relative;
@@ -155,33 +155,33 @@ body{
     display: none;
 }
 
-#main .grid .infinite{
+#main .title .infinite{
     position: relative;
 }
 
-#main .grid .infinite>img{
+#main .title .infinite>img{
     display: block;
     margin:0 auto;
     width:50%;
     transform:rotate(90deg) scale(0.5);
-    animation: rotateOn 4.5s forwards 1s;
+    animation: rotateOn 2.5s forwards 1s;
 }
 
-#main .grid .infinite>p{
+#main .title .infinite>p{
     position: absolute;
     top:43%;
     font-size:1.5vw;
     opacity:0;
-    animation:opacity 4s forwards 1s;
+    animation:opacity 2s forwards 1s;
     font-family: 'Noto Sans KR', sans-serif;
     color:#011627;
 }
 
-#main .grid .infinite>p:nth-of-type(1){
+#main .title .infinite>p:nth-of-type(1){
     left:30%;
 }
 
-#main .grid .infinite>p:nth-of-type(2){
+#main .title .infinite>p:nth-of-type(2){
     right:30%;
     text-align:right;
 }
@@ -1111,28 +1111,28 @@ body{
 
     /* menu 끝 */
 
-    #main .grid .text .text1{
+    #main .title .text .text1{
         font:8.2vw 'Ibarra Real Nova';
 
     }
 
-    #main .grid .text .text2{
+    #main .title .text .text2{
         font:5.5vw 'Ibarra Real Nova';
     }
 
-    #main .grid .infinite>img{
+    #main .title .infinite>img{
         width:70%;
     }
 
-    #main .grid .infinite>p{
+    #main .title .infinite>p{
         font-size: 2.5vw;
     }
 
-    #main .grid .infinite>p:nth-of-type(1){
+    #main .title .infinite>p:nth-of-type(1){
         left:20%;
     }
 
-    #main .grid .infinite>p:nth-of-type(2){
+    #main .title .infinite>p:nth-of-type(2){
         right:20%;
     }
 
@@ -1466,27 +1466,27 @@ body{
 
 @media(max-width:425px){
 
-    #main .grid .text .text1{
+    #main .title .text .text1{
         font:45px 'Ibarra Real Nova';
     }
 
-    #main .grid .text .text2{
+    #main .title .text .text2{
         font:30px 'Ibarra Real Nova';
     }
 
-    #main .grid .infinite>img{
+    #main .title .infinite>img{
         width:90%;
     }
 
-    #main .grid .infinite>p{
+    #main .title .infinite>p{
         font-size:3.5vw;
     }
 
-    #main .grid .infinite>p:nth-of-type(1){
+    #main .title .infinite>p:nth-of-type(1){
         left:10%;
     }
 
-    #main .grid .infinite>p:nth-of-type(2){
+    #main .title .infinite>p:nth-of-type(2){
         right:10%;
     }
 

@@ -86,6 +86,7 @@ header .row .row-1 li a{
     /* display: inline-block; */
     margin:0 auto;
     text-align: center;
+    /* width:100%; */
     width:100%;
     /* height:70px; */
     overflow:hidden;
@@ -308,6 +309,17 @@ header .row .row-1 li a{
     display:none;
 }
 
+.back {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1001;
+    background:rgba(0,0,0,0.5);
+}
+
 /* -------- contents 시작 --------- */
 
 .contents{
@@ -485,7 +497,7 @@ header .row .row-1 li a{
     text-align: center;
 }
 
-.tab li>a.active{
+.tab li.active>a{
     background:#353990;
     color: #fff;
     border:none;
@@ -549,9 +561,9 @@ header .row .row-1 li a{
     box-sizing: border-box;
 }
 
-.health{
+/* .health{
     display: none;
-}
+} */
 
 
 .tab li ul li{
@@ -600,14 +612,14 @@ header .row .row-1 li a{
     overflow:hidden;
 }
 
-.con2-2 ul{
+.con2-2 .banner{
     width:90%;
     height:280px;
    margin-left:10%;
    position: relative;
 }
 
-.con2-2 ul li{
+.con2-2 .banner li{
     /* float: left; */
     width:100%;
     height:100%;
@@ -617,7 +629,7 @@ header .row .row-1 li a{
     display: none;
 }
 
-.con2-2 ul li.on{
+.con2-2 .banner li.on{
     display: block;
 }
 
@@ -631,14 +643,14 @@ header .row .row-1 li a{
     background-size: cover;
 } */
 
-.con2-2 ul li img{
+.con2-2 .banner li img{
     display: block;
     width:100%;
     height:100%;
    
 }
 
-.con2-2 ul li a{
+.con2-2 .banner li a{
     position: absolute;
     top:75%;
     left:11%;
@@ -648,17 +660,48 @@ header .row .row-1 li a{
     padding:10px 15px;
 }
 
-.con2-2>a{
-   
-    width:40px;
-    height:25px;
-    /* border:3px solid #44b82a; */
-    background:#44b82a;
+.con2-2 .button{
     position: absolute;
+    /* width:300px;
+    height:40px; */
+    right:0;
     bottom:0;
-    color:#fff;
+    background:#fff;
+}
+
+.con2-2 .button li{
+    float: left;
+    margin:1px 2px;
+}
+
+.con2-2 .button li a{
+   display: block;
+    width:23px;
+    height:23px;
+    /* border:3px solid #44b82a; */
+    /* background:#44b82a; */
+    /* position: absolute; */
+    /* bottom:0; */
+  x
     font-weight: bold;
     text-align: center;
+    background:url("../images/icon.png") no-repeat;
+}
+
+.con2-2 .button li a.prev{
+    background-position: -150px -166px;
+}
+
+.con2-2 .button li a.next{
+    background-position: -150px -189px;
+}
+
+.con2-2 .button li a.pause {
+    background-position: -150px -143px;
+}
+
+.con2-2 .button li a.play {
+    background-position: -150px -120px;
 }
 
 /* .con2-2>a>img{
@@ -667,13 +710,13 @@ header .row .row-1 li a{
     width:100%;
 } */
 
-.con2-2 .prev{
+/* .con2-2 .prev{
     right:40px;
 }
 
 .con2-2 .next{
     right:0;
-}
+} */
 
 .con2-3{
     float: left;
@@ -803,14 +846,14 @@ header .row .row-1 li a{
     position: absolute;
     font-size:12px;
     top:0;
-    left:25px;
+    left:8px;
 }
 
 .time .t2 p i:nth-of-type(2) {
     position: absolute;
     font-size:12px;
     top:0;
-    right:25px;
+    right:8px;
 }
 
 
@@ -1179,7 +1222,7 @@ header .row .row-1 li a{
     }
 
     .visual .p2{
-        top:42%;
+        top:45%;
     }
 
     .main_menu {
@@ -1607,7 +1650,7 @@ header .row .row-1 li a{
         margin-top: 5px;
     }
 
-    .mobutton.active span {
+    /* .mobutton.active span {
         transition: 0.25s margin, 0.25s transform 0.25s;
     }
 
@@ -1631,7 +1674,7 @@ header .row .row-1 li a{
         display: block;
         right:0;
        
-    }
+    } */
 
 
     /* #lnb nav .mobutton::before{
@@ -1651,19 +1694,24 @@ header .row .row-1 li a{
     .mopanel{
         display: block;
         /* width:220px; */
+        overflow-x:hidden;
         width:300px;
-        left:-300px;
+        right:-300px;
         height:100%;
         position: fixed;
         top:0;
-        z-index:100;
+        z-index:1002;
         transition:0.7s;
         background:#eaeaea;
         /* overflow:scroll; */
     }
 
     .mopanel.on{
-        left: 0px;
+        right: 0px;
+    }
+
+    header.on .back{
+        display: block;
     }
 
     .mopanel .mognb{
@@ -1705,6 +1753,8 @@ header .row .row-1 li a{
         /* height:30px; */
         right:0;
         top:50%;
+        padding-left:0;
+        margin-right:10px;
         transform: translateY(-50%);
     }
 
@@ -1758,17 +1808,22 @@ header .row .row-1 li a{
         display: block;
     }
 
-    .mognb li .sub li{
+    /* .mognb li .sub li{
         border-bottom:1px solid #000;
-    }
+    } */
 
     .mognb li .sub>li>a{
         display:block;
         background:#eee;
         color:#222;
+        border-bottom:1px solid #000;
         /* padding:5px; */
         padding:15px 30px;
         font-size:12px;
+    }
+
+    .mognb li .sub>li:last-child>a{
+        border-bottom:none;
     }
 
     #lnb nav + div{
@@ -1804,15 +1859,15 @@ header .row .row-1 li a{
     }
 
     .visual .p1, .p2{
-        font-size:25px;
+        font-size:23px;
     }
 
     .visual .p1{
-        left:17%;
+        left:10%;
     }
 
     .visual .p2{
-        left:17%;
+        left:10%;
     }
 
     /*contents */
@@ -2112,10 +2167,6 @@ header .row .row-1 li a{
         background:#f26522;
     }
 
-
-
-
-
     .momenu ul li:nth-of-type(3n){
         margin-right:0;
     }
@@ -2216,6 +2267,10 @@ header .row .row-1 li a{
         font-size:11px;
     }
 
+    .banner2 {
+        margin-top:30px;
+    }
+
     /* footer */
 
     .footer_site_list>li>a{
@@ -2230,11 +2285,10 @@ header .row .row-1 li a{
 
 @media (max-width:510px){
 
-    .mopanel{
-       
+    /* .mopanel{
         width:180px;
-        left:-180px;
-    }
+     
+    } */
 
     .mognb>li>a{
         font-size:12px;
