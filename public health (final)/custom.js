@@ -24,8 +24,6 @@ $(document).ready(function(){
         // var target = $this.index();
         // tab_panel.eq(target).show();
    
-
-
     /* mobutton */
 
     $('.mobutton').on('click', function(e) {

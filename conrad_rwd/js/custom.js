@@ -189,7 +189,7 @@ $(document).ready(function(){
 
 
    $(window).on("scroll",function(){
-       var scroll = $(this).scrollTop() + $(window).height()/1.5;
+       var scroll = $(this).scrollTop() + $(window).height();
   
 
        if(scroll > pos){
