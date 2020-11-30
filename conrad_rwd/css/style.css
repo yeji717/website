@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR:wght@300;400&family=Sorts+Mill+Goudy:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR:wght@300;400&family=Noto+Serif+KR:wght@500&family=Sorts+Mill+Goudy:ital@1&display=swap');
 
 * {
     margin: 0;
@@ -29,6 +29,7 @@ a {
 #wrap {
     width: 100%;
     position: relative;
+    background:#f7f7f7;
 }
 
 #contents{
@@ -45,7 +46,8 @@ a {
 }
 
 #contents>div>h2 {
-    color: #011638;
+    /* color: #011638; */
+    color: #051856;
     font-size: 35px;
     text-align: center;
     position: relative;
@@ -53,7 +55,8 @@ a {
 }
 
 #contents>div>h2::after {
-    display: block;
+    /* display: block; */
+    display: none;
     content: "";
     width: 17%;
     height: 15px;
@@ -190,12 +193,11 @@ a {
     position: absolute;
     z-index:1000;
     right:5%;
-    margin-top:10px;
-    
+    /* margin-top:10px; */
+    margin-top:25px;
 }
 
 .main .info li{
-    /* border-right:1px solid #fff; */
     float: left;
     color:#fff;
     padding:0 10px;
@@ -221,6 +223,20 @@ a {
 
 .main .info li:last-child:hover a{
     border-bottom:0;
+}
+
+.main .info li:last-child::after{
+    display: none;
+}
+
+.main .info li:last-child select{
+    color:#fff;
+    background:none;
+    border:1px solid #fff;
+}
+
+.main .info li:last-child select option{
+    background:#333;
 }
 
 
@@ -251,16 +267,19 @@ a {
     font-size: 4vw;
     text-shadow: 5px 5px 5px #222;
     letter-spacing: 2px;
+    display: none;
 }
 
 .main>.bg>li>.subject {
     position: absolute;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif KR', serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
     color: #fff;
-    right: 10%;
-    bottom: 22%;
-    font-size: 20px;
+    right: 17%;
+    top:45%;
+    font-size: 42px;
     letter-spacing: 2px;
+    text-align: right;
 }
 
 .main>.bg>.bg1 {
@@ -323,17 +342,21 @@ a {
 
 .main .m_logo {
     position: absolute;
-    height: 60px;
+    /* height: 60px; */
     top: 0;
     left: 50%;
-    margin-top: 10px;
+    margin-top:30px;
+    /* margin-top: 10px; */
     transform: translateX(-50%);
-    display: none;
+    /* display: none; */
+    display: block;
 }
 
 .main .m_logo img {
     display: block;
-    height: 100%;
+    /* height: 100%; */
+    /* height:50%; */
+    height:2.5vw;
 }
 
 .main .logo3 {
@@ -343,12 +366,15 @@ a {
 #header {
     position: absolute;
     width: 100%;
-    top:5vmin;
+    /* top:5vmin; */
+    /* top:8vmin; */
+    top:90px;
     /* top: 2.6vw; */
-    height: 10vmin;
-    background: rgba(0, 0, 0, 0.6);
+    height: 8vmin;
+    /* background: rgba(0, 0, 0, 0.6); */
     transition: 0.5s;
     z-index: 1000;
+    color:#fff;
 }
 
 #header .menu {
@@ -386,7 +412,9 @@ a {
 
 .gnb {
     /* width: 90%; */
-    width:calc(100% - 10vmin);
+    /* width:1240px; */
+    /* width:calc(100% - 10vmin); */
+    width:100%;
     position: relative;
     float: left;
     height: 100%;
@@ -415,14 +443,17 @@ a {
     display: block;
     width: 100%;
     font-size: 0.84vw;
-    color: #f0c27b;
-    line-height: 10vmin;
+    /* color:#fff; */
+    /* color: #f0c27b; */
+    line-height: 8vmin;
 }
 
 .gnb .mainmenu>li .submenu {
     position: absolute;
     width: 100%;
-    background: #011638;
+    /* background:rgba(0,0,0,0.7); */
+    background:rgba(0,0,0,1);
+    /* background: #011638; */
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -512,7 +543,13 @@ a {
 
 
 .main.on #header {
-    margin-top: -40px;
+    /* margin-top: -40px; */
+    /* margin-top:-60px; */
+    top:0;
+}
+
+.main.on .gnb .mainmenu>li:hover a{
+    color:#fff;
 }
 
 #reservation {
@@ -538,22 +575,26 @@ a {
     height: 100%;
     float: left;
     width: 16.6666%;
-    background: rgba(1, 22, 56, 0.9);
+    background:#fff;
+    /* background: rgba(1, 22, 56, 0.9); */
     padding: 15px;
     box-sizing: border-box;
     position: relative;
+    border-right: 1px solid #e8e8e8; 
 }
 
 #reservation .r1 div p {
-    color: #fff;
+    /* color: #fff; */
+    color:#777;
     font-size: 13px;
     margin-top: 10px;
 }
 
 .r1 div h4 {
-    color: #F0C27B;
+    /* color: #F0C27B; */
+    color:#333;
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -566,7 +607,13 @@ a {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    color: #fff;
+    /* color: #fff; */
+    color:#333;
+}
+
+#reservation .r1>div:last-child{
+    border-right:none;
+    background:#bc9b6a;
 }
 
 select {
@@ -577,7 +624,13 @@ select {
 button {
     border: none;
     outline: none;
-    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.705);
+    background:none;
+    cursor: pointer;
+    /* box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.705); */
+}
+
+button>img{
+    display: none;
 }
 
 /* #reservation .r1 div:nth-child(4){
@@ -594,6 +647,8 @@ button {
     padding: 10px 5px;
     color: #fff;
     margin-top: 5px;
+    background:#051856;
+    font-family: 'Noto Sans KR';
 }
 
 #reservation .r1 div .search {
@@ -601,7 +656,7 @@ button {
     float: left;
     width: 100%;
     height: 100%;
-    background: #4b1248;
+    /* background: #4b1248; */
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -952,6 +1007,10 @@ button {
     text-align: center;
 }
 
+.slider .right ul li:nth-of-type(even) a{
+    color:#fff;
+}
+
 .slider .right ul li>div {
     position: absolute;
     top: 0;
@@ -980,9 +1039,10 @@ button {
 
 .slider .right ul li h2 {
     margin-top: 120px;
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: 'Noto Serif KR';
+    /* font-family: 'Sorts Mill Goudy', serif; */
     font-size: 1.9rem;
-    color: #4b1248;
+    color: #440f76;
 }
 
 .slider .right ul li p {
@@ -994,7 +1054,7 @@ button {
 .slider .right ul li a {
     position: absolute;
     display: block;
-    border: 2px solid #F0C27B;
+    border: 2px solid #bc9b6a;
     padding: 10px 20px;
     font-size: 18px;
     margin-top: 50px;
@@ -1005,7 +1065,7 @@ button {
 }
 
 .slider .right ul li a:hover {
-    background: #F0C27B;
+    background:#bc9b6a;
     color: #fff
 }
 
@@ -1187,7 +1247,8 @@ button {
 
 .box2-2>div:nth-of-type(2) {
     transition: 1s;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Noto Serif KR';
+    /* font-family: 'Ibarra Real Nova', serif; */
     font-weight: bold;
     font-size: 50px;
     right: -40%;
@@ -1590,7 +1651,8 @@ article:hover h4 {
     position: relative;
     padding: 30px 0;
     height: 100%;
-    background: #011638;
+    /* background: #011638; */
+    background: #666666;
 
     color: #fff;
     margin-top: 200px;
@@ -1655,7 +1717,7 @@ article:hover h4 {
 }
 
 #top:hover {
-    background: #4b1248;
+    background: #440f76;
 }
 
 /* #top>a>img{
@@ -1677,9 +1739,9 @@ article:hover h4 {
         width: 90%;
     }
 
-    #header .gnb {
+    /* #header .gnb {
         width: 85%;
-    }
+    } */
 
     #header .gnb li a {
         font-size: 10px;
@@ -1976,6 +2038,11 @@ article:hover h4 {
 
     .main .m_logo {
         display: block;
+       
+    }
+
+    .main .m_logo img{
+        height:4.5vw;
     }
 
 
@@ -2003,7 +2070,8 @@ article:hover h4 {
     }
 
     .main>.bg>li>.subject {
-        font-size: 14px;
+        /* font-size: 14px; */
+        font-size: 30px;
         bottom: 32%;
     }
 
@@ -2014,7 +2082,8 @@ article:hover h4 {
     }
 
     #reservation .r1 div {
-        height: 65px;
+        /* height: 65px; */
+        height:80px;
         padding: 10px;
     }
 
@@ -2070,9 +2139,10 @@ article:hover h4 {
     #reservation .r1 div .search {
         margin-top: 0;
         width: 60%;
-        height: 60%;
+        /* height: 60%; */
         position: absolute;
         left: 50%;
+        font-size:20px;
         transform: translateX(-50%);
     }
 
