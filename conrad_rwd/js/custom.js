@@ -192,24 +192,24 @@ $(document).ready(function(){
        var scroll = $(this).scrollTop() + $(window).height();
   
 
-       if(scroll > pos){
+       if(scroll > parseInt(pos)){
            $('#con1').addClass('on');
        }
 
-       if(scroll > pos2){
+       if(scroll > parseInt(pos2)){
            $('#con2').addClass('on');
        }
 
-       if(scroll > pos3){
+       if(scroll > parseInt(pos3)){
            $('#con3').addClass('on');
          
        }
 
-       if(scroll > pos4){
+       if(scroll > parseInt(pos4)){
            $('#con4').addClass('on');
        }
 
-       if(scroll > pos5){
+       if(scroll > parseInt(pos5)){
            $('#con5').addClass('on');
        }
    })

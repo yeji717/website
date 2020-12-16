@@ -67,7 +67,7 @@ $(document).ready(function(){
     }
     
 /* 메인메뉴 버튼(햄버거) */
-    var burger = $('.burger');
+    var burger = $('.open-menu');
 
     burger.on('click',function(e){
         e.preventDefault();
@@ -115,7 +115,7 @@ $(document).ready(function(){
 
 
         if(scrollTop > a ){
-            $("#about>h1").addClass('on');
+            $("#about>h2").addClass('on');
             $('.balloon').addClass('on');
             // $('.menu>ul>li:first-child').css({"color":"red"});
             // doMotion();
@@ -123,16 +123,16 @@ $(document).ready(function(){
         }
     
         if(scrollTop > b){
-            $("#skill>h1").addClass('on');
+            $("#skill>h2").addClass('on');
             $('.box2-1>div').css('transform','scale(1)');
         }
     
         if(scrollTop > c){
-            $("#work>h1").addClass('on');
+            $("#work>h2").addClass('on');
         }
 
         if(scrollTop > d){
-            $("#contact>h1").addClass('on');
+            $("#contact>h2").addClass('on');
         }
 
         if(scrollTop > parseInt($('.work1').offset().top)){

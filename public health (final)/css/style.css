@@ -82,6 +82,12 @@ header .row .row-1 li a{
     opacity: 1;
 }
 
+
+/* #lnb nav.on +div{
+    height:530px;
+    opacity: 1;
+} */
+
 #lnb nav > ul {
     /* display: inline-block; */
     margin:0 auto;
@@ -660,63 +666,30 @@ header .row .row-1 li a{
     padding:10px 15px;
 }
 
-.con2-2 .button{
+.con2-2>a{
+    width: 40px;
+    height: 25px;
+    /* border: 3px solid #44b82a; */
+    background: #44b82a;
     position: absolute;
-    /* width:300px;
-    height:40px; */
-    right:0;
-    bottom:0;
-    background:#fff;
-}
-
-.con2-2 .button li{
-    float: left;
-    margin:1px 2px;
-}
-
-.con2-2 .button li a{
-   display: block;
-    width:23px;
-    height:23px;
-    /* border:3px solid #44b82a; */
-    /* background:#44b82a; */
-    /* position: absolute; */
-    /* bottom:0; */
-  x
+    bottom: 0;
+    color: #fff;
     font-weight: bold;
     text-align: center;
-    background:url("../images/icon.png") no-repeat;
 }
-
-.con2-2 .button li a.prev{
-    background-position: -150px -166px;
-}
-
-.con2-2 .button li a.next{
-    background-position: -150px -189px;
-}
-
-.con2-2 .button li a.pause {
-    background-position: -150px -143px;
-}
-
-.con2-2 .button li a.play {
-    background-position: -150px -120px;
-}
-
 /* .con2-2>a>img{
     display: block;
     height:100%;
     width:100%;
 } */
 
-/* .con2-2 .prev{
+.con2-2 .prev{
     right:40px;
 }
 
 .con2-2 .next{
     right:0;
-} */
+}
 
 .con2-3{
     float: left;

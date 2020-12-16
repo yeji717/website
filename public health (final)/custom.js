@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+    // 메인 메뉴
+
+    $('#lnb nav').focusin(function(){
+        $(this).css({"background":"red"});
+    });
+
+    // $('#lnb nav').focusin(function(){
+    //     $(this).mouseenter();
+    //     $(this).siblings('div').css({"opacity":"1","height":"530px"});
+    // });
+
     // 탭 메뉴
 
     var $tab_list = $('.con2-1');
@@ -126,7 +137,7 @@ $(document).ready(function(){
         });
     
         active_index = next_index;      
-        activateBtn(active_index);   
+        // activateBtn(active_index);   
     }
     
     
@@ -142,7 +153,7 @@ $(document).ready(function(){
         });
     
         active_index = prev_index;
-        activateBtn(active_index);
+        // activateBtn(active_index);
     }
 
     /*---------------- con2-3 ---------------- */
@@ -191,7 +202,7 @@ $(document).ready(function(){
         });
     
         active_index = next_index;      
-        activateBtn(active_index);   
+        // activateBtn(active_index);   
     }
     
     
@@ -207,7 +218,7 @@ $(document).ready(function(){
         });
     
         active_index = prev_index;
-        activateBtn(active_index);
+        // activateBtn(active_index);
     }
 
 
@@ -257,7 +268,7 @@ $(document).ready(function(){
         });
     
         active_index = next_index;      
-        activateBtn(active_index);   
+        // activateBtn(active_index);   
     }
     
     
@@ -273,7 +284,7 @@ $(document).ready(function(){
         });
     
         active_index = prev_index;
-        activateBtn(active_index);
+        // activateBtn(active_index);
     }
 
 

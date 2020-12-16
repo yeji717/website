@@ -12,11 +12,27 @@ a{
     color: inherit;
 }
 
+button{
+    background:none;
+    border:none;
+}
+
 .after::after{
     display: block;
     content: "";
     clear: both;
 }
+
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+.ir_su{
+    overflow:hidden;
+    position: absolute;
+    width:0;
+    height:0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ibarra+Real+Nova:ital,wght@1,600;1,700&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@300;400&family=Bebas+Neue&display=swap');
 
@@ -33,11 +49,11 @@ body{
 
 
 
-#wrap section{
+#wrap>section{
     padding-top:50px;
 }
 
-#wrap section h1{
+#wrap>section>h2{
  
     text-align: center;
     color:#28282a;
@@ -46,7 +62,7 @@ body{
 }
 
 
-#wrap section h1>span{
+#wrap>section>h2>span{
     display: inline-block;
     /* position: absolute; */
     position: relative;
@@ -58,7 +74,7 @@ body{
     opacity: 0;
 }
 
-#wrap section h1>span::before{
+#wrap>section>h2>span::before{
     position: absolute;
     content: "";
     display: block;
@@ -71,7 +87,7 @@ body{
     display: none;
 }
 
-#wrap section h1>span::after{
+#wrap>section>h2>span::after{
     position: absolute;
     content: "";
     display: block;
@@ -83,7 +99,7 @@ body{
     background:#ec7357;
 }
 
-#wrap section h1.on span{
+#wrap>section>h2.on span{
     opacity: 1;
     top:0;
 }
@@ -274,7 +290,7 @@ body{
 	}
 } */
 
-#main .burger{
+#main .open-menu{
     display: block;
     /* display: none; */
     position: fixed;
@@ -305,7 +321,7 @@ body{
     }
 }
 
-#main .burger .button{
+#main .open-menu .button{
     display: block;
     position: absolute;
     top:50%;
@@ -316,7 +332,7 @@ body{
    
 }
 
-#main .burger .button span{
+#main .open-menu .button span{
     display: inline-block;
     position: absolute;
     left:0;
@@ -327,23 +343,23 @@ body{
     transition: 0.4s;
 }
 
-#main .burger .button span:nth-child(1){
+#main .open-menu .button span:nth-child(1){
     top:0;
 }
 
-#main .burger .button span:nth-child(2){
+#main .open-menu .button span:nth-child(2){
     top:20px;
 }
 
-#main .burger .button span:nth-child(3){
+#main .open-menu .button span:nth-child(3){
     bottom:0;
 }
 
-#main .burger .button.on span:nth-child(1){
+#main .open-menu .button.on span:nth-child(1){
     transform: translateY(20px) rotate(-45deg);
 }
 
-#main .burger .button.on span:nth-child(2){
+#main .open-menu .button.on span:nth-child(2){
     left:50%;
     opacity:0;
     animation:active .8s forwards;
@@ -355,7 +371,7 @@ body{
     }
 }
 
-#main .burger .button.on span:nth-child(3){
+#main .open-menu .button.on span:nth-child(3){
     transform: translateY(-20px) rotate(45deg);
 }
 
@@ -430,14 +446,14 @@ body{
     text-align: center;
 }
 
-.about_sec01 .right>div>h2{
+.about_sec01 .right>div>h3{
     position: relative;
     font-size:2.5vw;
     color:#222;
     z-index: 5;
 }
 
-.about_sec01 .right>div>h2::after{
+.about_sec01 .right>div>h3::after{
     position: absolute;
     z-index:-1;
     display: block;
@@ -764,12 +780,12 @@ body{
 }
 
 
-#work>div{
+#work>section{
     position: relative;
     margin-bottom:150px;
 }
 
-#work>div .num{
+#work>section .num{
     font-size:200px;
     display: inline-block;
     position: absolute;
@@ -782,12 +798,12 @@ body{
     transition: 1s;
 }
 
-#work>div.on .num{
+#work>section.on .num{
     opacity:0.2;
     transform: translateY(0);
 }
 
-#work>div img{
+#work>section img{
     display: block;
     float: left;
     width:50%;
@@ -798,12 +814,12 @@ body{
     transition: 1s;
 }
 
-#work>div.on img{
+#work>section.on img{
     opacity: 1;
     transform: translateY(0);
 }
 
-#work>div .comment{
+#work>section .comment{
     float: left;
     width:50%;
     margin-top:10%;
@@ -812,12 +828,12 @@ body{
     transition: 1s;
 }
 
-#work>div .comment h2{
+#work>section .comment h3{
     font: 3.5vw/1 'Deciso-BoldItalic';
     text-align: center;
 }
 
-#work>div .comment p{
+#work>section .comment p{
     left:50%;
     text-align: center;
     margin-top:50px;
@@ -825,7 +841,7 @@ body{
     line-height: 28px;
 }
 
-#work>div.on .comment{
+#work>section.on .comment{
     opacity: 1;
     transform: translateX(0);
 }
@@ -838,12 +854,12 @@ body{
     transform: translateX(-500px);
 }
 
-#work>div .comment .link{
+#work>section .comment .link{
     text-align: center;
     margin-top:50px;
 }
 
-#work>div .comment .link a{
+#work>section .comment .link a{
     position: relative;
     display:inline-block;
     padding:10px 20px;
@@ -854,7 +870,7 @@ body{
 
 }
 
-#work>div .comment .link a::before{
+#work>section .comment .link a::before{
     display: block;
     content: "";
     position: absolute;
@@ -867,47 +883,47 @@ body{
     z-index: -1;
 }
 
-#work>div .comment .link a:hover{
+#work>section .comment .link a:hover{
     color: #fff;
 }
 
-#work>div .comment .link a:hover::before{
+#work>section .comment .link a:hover::before{
     width:100%;
     background:#cc0000;
 }
 
-#work>div .comment .link a:last-child{
+#work>section .comment .link a:last-child{
     margin-right:0;
 }
 
-#work>div .comment .link a:active {
+#work>section .comment .link a:active {
     transform: translateY(2px);
 }
 
-#work>div:nth-of-type(even)>div .link a{
+#work>section:nth-of-type(even)>div .link a{
     color:#4b1248;
 }
 
-#work>div:nth-of-type(even)>div .link a:hover{
+#work>section:nth-of-type(even)>div .link a:hover{
     color:#fff;
 }
 
-#work>div:nth-of-type(even)>div .link a:hover::before{
+#work>section:nth-of-type(even)>div .link a:hover::before{
     width:100%;
     background:#4b1248;
 }
 
-#work>div:last-of-type>div h2{
+#work>section:last-of-type>div h2{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-#work>div:last-of-type>div .link a{
+#work>section:last-of-type>div .link a{
     color:#f9930f;
 }
-#work>div:last-of-type>div .link a:hover{
+#work>section:last-of-type>div .link a:hover{
     color: #fff;
 }
-#work>div:last-of-type>div .link a:hover::before{
+#work>section:last-of-type>div .link a:hover::before{
     width:100%;
     background:#f9930f;
 }
@@ -1252,11 +1268,11 @@ body{
         margin: 13% auto;
     }
 
-    .about_sec01 .right>div>h2{
+    .about_sec01 .right>div>h3{
         font-size:3.5vw;
     }
 
-    .about_sec01 .right>div>h2::after{
+    .about_sec01 .right>div>h3::after{
         left:50%;
         transform: translateX(-50%);
     }
@@ -1280,7 +1296,7 @@ body{
         width:30px;
     }
 
-    #work>div .comment h2{
+    #work>div .comment h3{
         font:3vw/1 'Deciso-BoldItalic';
     }
 
@@ -1353,7 +1369,15 @@ body{
         font-size:6.5vw;
     }
 
+    #wrap>section>h2>span{
+        font-size:8vw;
+    }
+
     /* skill */
+
+    #skill{
+        display: none;
+    }
 
     #skills_wrap{
         width:60%;
@@ -1437,7 +1461,7 @@ body{
         width:70%;
     }
 
-    #work>div .comment h2{
+    #work>div .comment h3{
         font:6vw/1 'Deciso-BoldItalic';
     }
 }
@@ -1504,11 +1528,11 @@ body{
         font-size:15px;
     }
 
-    .about_sec01 .right>div>h2{
+    .about_sec01 .right>div>h3{
         font-size:25px;
     }
 
-    .about_sec01 .right>div>h2::after{
+    .about_sec01 .right>div>h3::after{
         width:50%;
     }
 

@@ -121,7 +121,7 @@ p.typing-txt {
     padding:10px 15px;
     font-size:0.8rem;
     font-weight: bold;
-    background:#4b1248;
+    background:#440f76;
     font-family: 'Nanum Gothic', sans-serif;
     box-shadow: -2px 5px 6px black;
     overflow: hidden;
@@ -400,17 +400,18 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 .tc li:nth-of-type(2)>div:nth-of-type(1){
     top:25%;
     left:10%;
-    background:#4b1248;
+    background:#440f76;
 }
 
 .tc li:nth-of-type(2)>div:nth-of-type(2){
-    background:#011638;
+    background:#051856;
     top:40%;
     left:28%;
 }
 
 .tc li:nth-of-type(2)>div:nth-of-type(3){
-    background:#f0c27b;
+    /* background:#f0c27b; */
+    background:#bc9b6a;
     top:55%;
     left:15%;
 }
@@ -444,23 +445,25 @@ background: radial-gradient(rgb(41, 38, 38), rgb(0, 0, 0));
 }
 
 .comment .c1{
-    margin-top:60px;
+    margin-top:5vw;
 }
 
 .c2{
-    margin-top:250px;
+    margin-top:10vw;
 }
 
 .c3{
-    margin-top:300px;
+    margin-top:15vw;
 }
 
 .c4,.c5,.c6{
-    margin-top:400px;
+    margin-top:20vw;
 }
 
 .c7{
-    margin-top:200px;
+    position: absolute;
+    bottom:-50px;
+    /* margin-top:18vw; */
 }
 
 /* .c5{
