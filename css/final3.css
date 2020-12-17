@@ -471,7 +471,7 @@ body{
 
 .about_sec01 .right>div>ul>li{
     font-size:20px;
-    padding:10px 0 0 30%;
+    padding:10px 0 0 32%;
     position: relative;
     
 }
@@ -1365,6 +1365,41 @@ body{
 
 @media(max-width:768px){
 
+    /* 오픈 메뉴 */
+
+    #main .open-menu{
+        display: none;
+        width:80px;
+        height:80px;
+    }
+
+    #main .open-menu .button{
+        width:40px;
+        height:30px;
+    }
+
+    #main .open-menu .button span:nth-child(1){
+        top:0;
+    }
+
+    #main .open-menu .button span:nth-child(2){
+        top:13px;
+    }
+
+    #main .open-menu .button span:nth-child(3){
+        bottom:0;
+    }
+
+    #main .open-menu .button.on span:nth-child(1){
+        transform: translateY(15px) rotate(-45deg);
+    }
+
+    #main .open-menu .button.on span:nth-child(3){
+        transform: translateY(-12px) rotate(45deg);
+    }
+
+    /* //오픈 메뉴 */
+
     #wrap section h1>span{
         font-size:6.5vw;
     }
@@ -1399,14 +1434,14 @@ body{
         width:90%;
     }
 
-    #work>div>.num{
+    #work>section>.num{
         top:-11%;
         left:20%;
         right:none;
         font:15.5vw/1 'Deciso-BoldItalic';
     }
 
-    #work>div img{
+    #work>section img{
         float: none;
         width:70%;
         margin:0 auto;
@@ -1416,7 +1451,8 @@ body{
         float: none;
     }
 
-    #work>div .comment{
+    #work>section .comment{
+        width:100%;
         float: none;
         margin:0 auto;
     }
@@ -1467,6 +1503,14 @@ body{
 }
 
 @media(max-width:570px){
+
+    /* work */
+    #work>section img{
+        width:80%;
+    }
+    #work>section .comment h3{
+        font:6vw/1 'Deciso-BoldItalic';
+    }
 
     /* contact */
 

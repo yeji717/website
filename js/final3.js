@@ -82,12 +82,19 @@ $(document).ready(function(){
         e.preventDefault();
     
         var i = $(this).index();
-        var offset = $wrap_div.eq(i).offset().top;
+        var offset = $wrap_div.eq(i-1).offset().top;
         
         $('html,body').stop().animate({scrollTop:offset},speed,ease);
         $('.menu').removeClass('on');
         $('.button').removeClass('on');
     })
+
+    // var windowWidth = $(window).width();
+    // if(windowWidth < 768) {
+    //     menu.eq(1).css({'display':'none'});
+    // }else{
+    //     menu.eq(1).css({'display':'block'});
+    // }
 
     $(window).on("scroll",function(){
 

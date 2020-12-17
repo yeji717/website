@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-  
 
     /*header 부분 */
 
@@ -177,26 +176,32 @@ $(document).ready(function(){
  
     /* content */
 
-   var pos = $('#con1').offset().top;
-   var pos2 = $('#con2').offset().top;
-   var pos3 = $('#con3').offset().top;
-   var pos4 = $('#con4').offset().top;
-   var pos5 = $('#con5').offset().top;
+   var pos =  $('#con1').offset().top/3;
+   var pos2 = $('#con2').offset().top/2;
+   var pos3 = $('#con3').offset().top/1.5;
+   var pos4 = $('#con4').offset().top/1.5;
+   var pos5 = $('#con5').offset().top/1.2;
+
+   
+
     console.log(pos);
     console.log(pos2);
     console.log(pos3);
     console.log(pos4);
-
+    
+    
 
    $(window).on("scroll",function(){
-       var scroll = $(this).scrollTop() + $(window).height();
-  
+     
+        var scroll = $(this).scrollTop();
+    
+        console.log(scroll);
 
-       if(scroll > parseInt(pos)){
+       if(scroll>=pos && scroll<pos2){
            $('#con1').addClass('on');
        }
 
-       if(scroll > parseInt(pos2)){
+       if(scroll>=pos2 && scroll<pos3){
            $('#con2').addClass('on');
        }
 
