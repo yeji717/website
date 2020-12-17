@@ -56,6 +56,12 @@ $(document).ready(function(){
         }
     });
 
+    /* language */
+
+    $('.ko').click(function(){
+        $('.list').toggleClass('active');
+    })
+
     /* sub menu */
 
     $('.mainmenu>li').on('mouseover',function(){
