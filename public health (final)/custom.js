@@ -6,10 +6,6 @@ $(document).ready(function(){
         $(this).css({"background":"red"});
     });
 
-    // $('#lnb nav').focusin(function(){
-    //     $(this).mouseenter();
-    //     $(this).siblings('div').css({"opacity":"1","height":"530px"});
-    // });
 
     // 탭 메뉴
 
@@ -26,14 +22,7 @@ $(document).ready(function(){
       }
 
       $tab_list.find('ul>li>a').click(tabMenu).focus(tabMenu);
-        
-      // $this.children('a').addClass('active');
-        // $this.siblings().find('a').removeClass('active');
-        
-        // tab_panel.hide();
 
-        // var target = $this.index();
-        // tab_panel.eq(target).show();
    
     /* mobutton */
 
@@ -50,19 +39,6 @@ $(document).ready(function(){
         // $('.mopanel').css({'right':'-300px'});
         $("header").removeClass('on');
     });
-
-        // var isOpen = $('.mopanel').hasClass('on');
-
-        // if (isOpen) {
-        //     $('.mopanel').removeClass('on');
-        //     $("header").removeClass('on');
-        // } else {
-        //     $('.mopanel').addClass('on');
-        //     $("header").addClass('on');
-        // }
-
-        // $(this).toggleClass('active');
-        // $(this).siblings('mopanel').css({'right':'0'});
     });
 
     /* mognb sub */
@@ -109,7 +85,6 @@ $(document).ready(function(){
         var $current = $banner_li.filter($('.'+class_name));
         var current_index = $current.index();
         var next_index;
-
         (current_index != len-1) ? next_index = current_index+1 : next_index = 0;
         if(isBlock) showNext($current, next_index);
     });
@@ -136,7 +111,7 @@ $(document).ready(function(){
             isBlock = true;     
         });
     
-        active_index = next_index;      
+        // active_index = next_index;      
         // activateBtn(active_index);   
     }
     
@@ -152,7 +127,7 @@ $(document).ready(function(){
             isBlock = true;     
         });
     
-        active_index = prev_index;
+        // active_index = prev_index;
         // activateBtn(active_index);
     }
 
@@ -344,13 +319,4 @@ $(document).ready(function(){
                 // $('.detail').css({'display':'block'});
         });
 
-
-        // var button = $('.footer_site_list>li>a>span');
-
-        //     button.on('click',function(e){
-        //     e.preventDefault();
-        //     $(this).parent().siblings($('.detail')).toggleClass('on');
-
-        //     // $('.detail').css({'display':'block'});
-        // });
 })
