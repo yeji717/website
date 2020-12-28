@@ -2,9 +2,9 @@ $(document).ready(function(){
 
     // 메인 메뉴
 
-    $('#lnb nav').focusin(function(){
-        $(this).css({"background":"red"});
-    });
+    // $('#lnb nav').focusin(function(){
+    //     $(this).css({"background":"red"});
+    // });
 
 
     // 탭 메뉴
@@ -69,7 +69,7 @@ $(document).ready(function(){
    
     /*-----------------     banner 1    ------------------ */
 
-    active_index = 0;
+    // active_index = 0;
     $banner_li = $('.banner>li');
     $prev = $('.prev');
     $next = $('.next');

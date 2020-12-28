@@ -17,8 +17,6 @@ $(document).ready(function(){
 		var ht = $(window).height();
 		//브라우저의 높이값을 #wrap>div의 높이 값으로 지정
 		$wrap_div.height(ht);
-		
-		
 	};	
 
 	$wrap_div.on("mousewheel",function(event,delta){    
@@ -28,6 +26,7 @@ $(document).ready(function(){
 		if (delta > 0) {  
 			 //변수 prev에 현재 휠을 움직인 div에서 이전 div의 offset().top위치저장
 			var prev_target = $(this).prev().offset().top;
+			console.log(delta);
 
 			//문서 전체를 prev에 저장된 위치로 이동
 			$('html,body').stop().animate({'scrollTop':prev_target},speed,ease);
@@ -36,7 +35,7 @@ $(document).ready(function(){
 		}else if (delta < 0) {  	
 			//변수 next에 현재 휠을 움직인 div에서 다음 div의 offset().top위치 저장
 			var next_target = $(this).next().offset().top;
-
+			console.log(delta);
 			//문서 전체를 next에 저장된 위치로 이동
 			$('html,body').stop().animate({'scrollTop':next_target},speed,ease);
 		}          
