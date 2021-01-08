@@ -64,18 +64,18 @@
             "image": "./imgs/pink_t.png"
         },
         {
-            "type": "tshirt",
-            "gender": "female",
+            "type": "pants",
+            "gender": "male",
             "size": "large",
-            "color": "pink",
-            "image": "./imgs/pink_t.png"
+            "color": "yellow",
+            "image": "./imgs/yellow_p.png"
         },
         {
-            "type": "tshirt",
+            "type": "skirt",
             "gender": "female",
-            "size": "large",
+            "size": "small",
             "color": "pink",
-            "image": "./imgs/pink_t.png"
+            "image": "./imgs/pink_s.png"
         },
         {
             "type": "tshirt",
