@@ -2,7 +2,7 @@
 
 // Fetch the items form the JSON file
 function loadItems(){
-    return fetch('https://yeji717.github.io/user/Downloads/imgs/data.json')
+    return fetch('imgs/data.json')
     .then(response => console.log(response));
 }
 
