@@ -3,10 +3,10 @@ $(document).ready(function(){
 
     /*header 부분 */
 
-    var isScrolled = false;
+    let isScrolled = false;
 
     $(window).on('scroll', function(){
-        var scroll = $(this).scrollTop();
+        let scroll = $(this).scrollTop();
         if(scroll>0){
             $('.main').addClass('on');
 
@@ -81,7 +81,7 @@ $(document).ready(function(){
         
         $(this).toggleClass('on');
 
-        var isOpen = $('#moPanel').hasClass('on');
+        let isOpen = $('#moPanel').hasClass('on');
 
         if (isOpen) {
             $('#moPanel').removeClass('on');
@@ -91,12 +91,12 @@ $(document).ready(function(){
     });
 
     //2depth 탭버튼
-    var $moGnb_li = $('#moGnb>li');
+    let $moGnb_li = $('#moGnb>li');
 
     $moGnb_li.on('click', function (e) {
-        // e.preventDefault();
+        e.preventDefault();
 
-        var isOn = $(this).children('a').hasClass('on');
+        let isOn = $(this).children('a').hasClass('on');
 
         if (isOn) {
             $(this).children('a').removeClass('on');
@@ -147,9 +147,9 @@ $(document).ready(function(){
 
 	// };
   
-    var num = 0;
-    var s = $('.bg li');
-    var length = s.length;
+    let num = 0;
+    let s = $('.bg li');
+    let length = s.length;
 
     s.hide();
     $('.bg li:first-child').show();
@@ -164,8 +164,8 @@ $(document).ready(function(){
 
     /* con1 (promotion) */
 
-    var btn1 = $('.con1-2>.btn_>li:first-child');
-    var btn2 = $('.con1-2>.btn_>li:last-child');
+    let btn1 = $('.con1-2>.btn_>li:first-child');
+    let btn2 = $('.con1-2>.btn_>li:last-child');
    
 
     btn1.on("click",function(e){
@@ -182,11 +182,11 @@ $(document).ready(function(){
  
     /* content */
 
-   var pos =  $('#con1').offset().top/3;
-   var pos2 = $('#con2').offset().top/2;
-   var pos3 = $('#con3').offset().top/1.5;
-   var pos4 = $('#con4').offset().top/1.5;
-   var pos5 = $('#con5').offset().top/1.2;
+   let pos =  $('#con1').offset().top/3;
+   let pos2 = $('#con2').offset().top/2;
+   let pos3 = $('#con3').offset().top/1.5;
+   let pos4 = $('#con4').offset().top/1.5;
+   let pos5 = $('#con5').offset().top/1.2;
 
    
 
@@ -199,7 +199,7 @@ $(document).ready(function(){
 
    $(window).on("scroll",function(){
      
-        var scroll = $(this).scrollTop();
+        let scroll = $(this).scrollTop();
     
         console.log(scroll);
 
@@ -297,38 +297,38 @@ $(document).ready(function(){
     /*
         http://openapi.map.naver.com/api/geocode.php?key=f32441ebcd3cc9de474f8081df1e54e3&encoding=euc-kr&coord=LatLng&query=서울특별시 강남구 강남대로 456
     */
-    var Y_point = 37.525574; // Y 좌표
-    var X_point = 126.926681; // X 좌표
+    let Y_point = 37.525574; // Y 좌표
+    let X_point = 126.926681; // X 좌표
 
 
 
-    var zoomLevel = 13; // 지도의 확대 레벨 : 숫자가 클수록 확대됨
+    let zoomLevel = 13; // 지도의 확대 레벨 : 숫자가 클수록 확대됨
 
-    var markerTitle = "콘래드서울"; // 현재 위치 마커에 마우스를 올렸을때 나타나는 정보
-    var markerMaxWidth = 800; // 마커를 클릭했을때 나타나는 말풍선의 최대 크기
+    let markerTitle = "콘래드서울"; // 현재 위치 마커에 마우스를 올렸을때 나타나는 정보
+    let markerMaxWidth = 800; // 마커를 클릭했을때 나타나는 말풍선의 최대 크기
 
     // 말풍선 내용
-    var contentString = '<div>' +
+    let contentString = '<div>' +
         '<h2>콘래드서울</h2>' +
         '<a href="http://www.conradseoul.co.kr/" target="_blank">http://www.conradseoul.co.kr/</a>' 
         //'<a href="http://www.daegu.go.kr" target="_blank">http://www.daegu.go.kr</a>'+ //링크도 넣을 수 있음
         '</div>';
 
-    var myLatlng = new google.maps.LatLng(Y_point, X_point);
-    var mapOptions = {
+    let myLatlng = new google.maps.LatLng(Y_point, X_point);
+    let mapOptions = {
         zoom: zoomLevel,
         center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    var map = new google.maps.Map(document.getElementById('google'), mapOptions);
+    let map = new google.maps.Map(document.getElementById('google'), mapOptions);
 
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
         title: markerTitle
     });
 
-    var infowindow = new google.maps.InfoWindow({
+    let infowindow = new google.maps.InfoWindow({
         content: contentString,
         maxWidth: markerMaxWidth
     });
