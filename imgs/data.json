@@ -85,6 +85,13 @@
             "image": "./imgs/blue_t.png"
         },
         {
+            "type": "skirt",
+            "gender": "female",
+            "size": "large",
+            "color": "yellow",
+            "image": "./imgs/yellow_s.png"
+        },
+        {
             "type": "tshirt",
             "gender": "female",
             "size": "large",
@@ -97,6 +104,13 @@
             "size": "small",
             "color": "blue",
             "image": "./imgs/blue_t.png"
+        },
+        {
+            "type": "skirt",
+            "gender": "male",
+            "size": "small",
+            "color": "blue",
+            "image": "./imgs/blue_s.png"
         }
     ]
 }
