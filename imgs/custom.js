@@ -11,7 +11,6 @@ function loadItems(){
 function displayItems(items) {
     const container = document.querySelector('.items');
     container.innerHTML = items.map(item => createHTMLString(item)).join('');
-
 }
 
 // Create HTML list item from the given data item
@@ -25,8 +24,18 @@ function createHTMLString(item) {
 }
 
 function onButtonClick(event, items){
-    console.log(event.target.dataset.key);
-    console.log(event.target.dataset.value);
+    const dataset = event.target.dataset;
+    const key = dataset.key;
+    const value = dataset.value;
+
+    if (key == null || value == null){
+        return;
+    }
+
+    const filtered = items.filter(item => item[key] === value);
+    displayItems(filtered);
+    // console.log(event.target.dataset.key);
+    // console.log(event.target.dataset.value);
 }
 
 function setEventListners(items) {
