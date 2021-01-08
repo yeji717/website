@@ -4,7 +4,7 @@
 function loadItems(){
     return fetch('https://yeji717.github.io/website/imgs/data.json')
     .then(response => response.json())
-    .then(json => console.log(json));
+    .then(json => json.items);
 }
 
 // function displayItems(items) {
@@ -13,6 +13,7 @@ function loadItems(){
 // main
 loadItems()
     .then (items => {
+        console.log(items);
         // console.log(items);
         // displayItems(items);
         // setEventListners(item)
