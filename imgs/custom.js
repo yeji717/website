@@ -12,8 +12,8 @@ function displayItems(items) {
 // main
 loadItems()
     .then (items => {
-        console.log(items);
-        displayItems(items);
+        // console.log(items);
+        // displayItems(items);
         // setEventListners(item)
     })
     .catch(console.log);
