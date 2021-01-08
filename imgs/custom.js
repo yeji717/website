@@ -7,12 +7,14 @@ function loadItems(){
     .then(json => json.items);
 }
 
+//Update the list with the given items
 function displayItems(items) {
     const container = document.querySelector('.items');
     container.innerHTML = items.map(item => createHTMLString(item)).join('');
 
 }
 
+// Create HTML list item from the given data item
 function createHTMLString(item) {
     return `
     <li class="item">
@@ -22,13 +24,27 @@ function createHTMLString(item) {
     `;
 }
 
+function onButtonClick(event, items){
+    console.log(event.target.dataset.key);
+    console.log(event.target.dataset.value);
+}
+
+function setEventListners(items) {
+    const logo = document.querySelector('.logo');
+    const buttons = document.querySelector('.button');
+    logo.addEventListener('click', ()=> displayItems(items));
+    buttons.addEventListener('click', event => onButtonClick(event, items));
+    // const imgBtn = Document.querySelector('.imgBtn');
+    // const one = imgBtn.firstChild;
+    // console.log(one);
+}
+
 // }
 // main
 loadItems()
     .then (items => {
         console.log(items);
-        // console.log(items);
         displayItems(items);
-        // setEventListners(item)
+        setEventListners(items);
     })
     .catch(console.log);
