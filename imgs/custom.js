@@ -2,12 +2,15 @@
 
 // Fetch the items form the JSON file
 function loadItems(){
-    return fetch('/user/Downloads/imgs/data.json').then(response => console.log(response));
+    return fetch('https://yeji717.github.io/website/imgs/data.json')
+    .then(response => response.json())
+    .then(json => json.items);
 }
 
 // main
 loadItems()
     .then (items => {
+        console.log(items);
         // displayItems(items);
         // setEventListners(item)
     })
