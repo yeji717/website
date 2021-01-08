@@ -6,9 +6,9 @@ function loadItems(){
     .then(response => console.log(response));
 }
 
-function displayItems(items) {
+// function displayItems(items) {
 
-}
+// }
 // main
 loadItems()
     .then (items => {
