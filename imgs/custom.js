@@ -1,4 +1,4 @@
-'use strict';
+
 
 // Fetch the items form the JSON file
 function loadItems(){
