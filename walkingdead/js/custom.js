@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     var speed = 1000;
 	var ease = 'easeOutExpo';
-	var $wrap_div = $('.wrap>div');
+	var $wrap_section = $('.wrap>section');
 
 	match_height();
 
@@ -16,10 +16,10 @@ $(document).ready(function(){
 		//변수 ht에 브라우저 높이 값을 저장
 		var ht = $(window).height();
 		//브라우저의 높이값을 #wrap>div의 높이 값으로 지정
-		$wrap_div.height(ht);
+		$wrap_section.height(ht);
 	};	
 
-	$wrap_div.on("mousewheel",function(event,delta){    
+	$wrap_section.on("mousewheel",function(event,delta){    
 		event.preventDefault();	
 
 		//마우스 휠을 올렸을때	
