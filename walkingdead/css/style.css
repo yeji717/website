@@ -25,6 +25,16 @@ a{
     clear: both;
 }
 
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+.ir_su{
+    overflow:hidden;
+    position: absolute;
+    width:0;
+    height:0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 .wrap{
     position: relative;
     width:100%;
@@ -33,13 +43,36 @@ a{
   
 }
 
-.wrap>section>h1{
-
+.wrap>section .subhead{
+    position: relative;
+    text-align: center;
+    color:#cc0000;
+    left:50%;
+    transform: translateX(-50%);
    font-size:3.125vw;
     font-family: 'EB Garamond', serif;
     display: inline-block;
     margin-top:50px;
-   
+}
+
+.wrap>section .subhead::before{
+    position:absolute;
+    display:block;
+    content:"";
+    width:100px;
+    height:2px;
+    background:#cc0000;
+    top:50%;
+}
+
+.wrap>section .subhead::after{
+    position:absolute;
+    display:block;
+    content:"";
+    width:100px;
+    height:2px;
+    background:#cc0000;
+    top:50%;
 }
 
 .box1{
@@ -134,7 +167,7 @@ a{
          }
  }
  
- #box1-2 {
+ #title {
      width: 1000px; 
      height: 400px;  
      position: absolute;
@@ -160,19 +193,19 @@ a{
  }
  
  
- .box1 > ul {
+ .box1 > .menu {
      top:5%;
      right:0;
      width:45vw;
      position: absolute;
  }
- .box1 > ul> li{
+ .box1 > .menu > li{
      width:25%;
      float: left;
      text-align: center;
  }
  
- .box1 > ul> li > a{
+ .box1 > .menu > li > a{
      display: block;
      width:100%;
      color:white;
@@ -180,7 +213,7 @@ a{
      font-family: 'Squada One', cursive;
  }
  
- .box1 > ul> li:hover a{
+ .box1 > .menu > li:hover a{
      color:#cc0000;
  }
  
@@ -203,28 +236,26 @@ a{
 .box2{
     background:#1F1B19;
 }
-.box2>h1{
+/* .box2>.subhead{
     position:relative;
     color:#cc0000;
     text-align: center;
     left:50%;
     transform: translateX(-50%);
-    /* left:50%;
-    transform: translateX(-50%); */
-}
-.box2>h1::before{
-    position:absolute;
+} */
+
+.box2>.subhead::before{
+    /* position:absolute;
     display:block;
     content:"";
     width:100px;
     height:2px;
     background:#cc0000;
-    top:50%;
-    /* top:75%; */
+    top:50%; */
     left:-45%;
 }
 
-.box2>h1::after{
+.box2>.subhead::after{
     position:absolute;
     display:block;
     content:"";
@@ -299,18 +330,18 @@ a{
    
 }
 
-#slide_wrap #slider .right ul>li>h1 {
+#slide_wrap #slider .right ul>li>strong {
+    position: relative;
+    display: block;
     color: #fff;
     text-align: center;
     margin-top: 30px;
-    /* font-size: 35px;  */
     font-size:2vw;
     font-family: 'Gentium Basic', serif;
 }
 
 #slide_wrap #slider .right ul>li>p{
     text-align: center;
-    /* font-size:18px; */
     font-size:1.17vw;
     color:#fff;
     margin-top:15px;
@@ -324,7 +355,6 @@ a{
     margin:0 auto;
     color: #fff;
     text-align: center;
-    /* font-size:20px; */
     font-size:1.3vw;
     padding:10px 0;
     margin-top:30px;
@@ -382,35 +412,34 @@ a{
     perspective: 1000px;
 }
 
-.box3>h1{
+/* .box3>.subhead{
     position: relative;
     text-align: center;
     color: #BA1B0D;
     left:50%;
     transform: translateX(-50%);
-}
+} */
 
-.box3>h1::before{
-    position: absolute;
+.box3>.subhead::before{
+    /* position: absolute;
     display:block;
     content:"";
     width:100px;
     height:2px;
     background:#BA1B0D;
-    top:50%;
+    top:50%; */
     left:-75%;
-
 }
 
-.box3>h1::after{
+.box3>.subhead::after{
 
-    position: absolute;
+    /* position: absolute;
     display:block;
     content:"";
     width:100px;
     height:2px;
     background:#BA1B0D;
-    top:50%;
+    top:50%; */
     right:-75%;
 
 }
@@ -532,37 +561,40 @@ a{
     left:43%;
 }
 
-.box4>.con1 h1 { 
-    position: relative;
+.box4>.con1 .subhead { 
+    /* position: relative;
     color:#cc0000;
-    z-index:3;
     font-size:48px;
     text-align: center;
     transition: all 0.5s;
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond', serif; */
 }
 
-.box4>.con1>h1::before{
-    position: absolute;
+.box4>.con1 .subhead::before{
+    /* position: absolute;
     display:block;
     content:"";
     width:100px;
     height:2px;
     background:#BA1B0D;
-    top:53%;
-    left:20%;
+    top:53%; */
+    left:-45%;
 }
 
 
-.box4>.con1>h1::after{
-    position: absolute;
+.box4>.con1 .subhead::after{
+    /* position: absolute;
     display: block;
     content:"";
     width:100px;
     height:2px;
     background:#BA1B0D;
-    top:53%;
-    right:20%;
+    top:53%; */
+    right:-45%;
+}
+
+.box4 iframe{
+    border:none;
 }
 
 .box4>.con1>video{
@@ -598,13 +630,21 @@ a{
     background:#1F1B19;
 }
 
-.box5>h1{
-    position: absolute;
+.box5 .subhead{
+    /* position: absolute; */
     top:7%;
-    left:6%;
+    left:13.5% !important;
     color:#cc0000;
-    font-size:100px;
+    /* font-size:100px; */
     font-family: 'EB Garamond', serif;
+}
+
+.box5 .subhead::before{
+    display:none !important;
+}
+
+.box5 .subhead::after{
+    display:none !important;
 }
 
 .box5>p{

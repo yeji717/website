@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     // 탭 메뉴
 
-    var $tab_list = $('.con2-1');
+    const $tab_list = $('.con2-1');
 
       $tab_list.find('ul ul').hide();
       $tab_list.find('li.active>ul').show();
@@ -17,7 +17,7 @@ $(document).ready(function(){
       function tabMenu(e){
           e.preventDefault();
 
-          var $this = $(this);
+          const $this = $(this);
           $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('ul').hide();
       }
 
@@ -43,12 +43,12 @@ $(document).ready(function(){
 
     /* mognb sub */
 
-    var $mognb_li = $('.mognb>li');
+    const $mognb_li = $('.mognb>li');
 
     $mognb_li.on('click',function(e){
         // e.preventDefault();
 
-        var isOn = $(this).children('a').hasClass('on');
+        const isOn = $(this).children('a').hasClass('on');
 
         if (isOn) {
             $(this).children('a').removeClass('on');
@@ -82,9 +82,9 @@ $(document).ready(function(){
     $next.on('click',function(e){
         e.preventDefault();
 
-        var $current = $banner_li.filter($('.'+class_name));
-        var current_index = $current.index();
-        var next_index;
+        let $current = $banner_li.filter($('.'+class_name));
+        let current_index = $current.index();
+        let next_index;
         (current_index != len-1) ? next_index = current_index+1 : next_index = 0;
         if(isBlock) showNext($current, next_index);
     });
@@ -92,9 +92,9 @@ $(document).ready(function(){
     $prev.on('click',function(e){
         e.preventDefault();
 
-        var $current = $banner_li.filter($('.'+class_name));
-        var current_index = $current.index();
-        var prev_index;
+        let $current = $banner_li.filter($('.'+class_name));
+        let current_index = $current.index();
+        let prev_index;
 
         (current_index != 0) ? prev_index = current_index-1 : prev_index = len-1;
         if(isBlock) showPrev($current, prev_index);
@@ -145,9 +145,9 @@ $(document).ready(function(){
     $next_3.on('click',function(e){
         e.preventDefault();
 
-        var $current = $slide2_li.filter($('.'+class_name));
-        var current_index = $current.index();
-        var next_index;
+        let $current = $slide2_li.filter($('.'+class_name));
+        let current_index = $current.index();
+        let next_index;
 
         (current_index != len3-1) ? next_index = current_index+1 : next_index = 0;
         if(isBlock) showNext_3($current, next_index);
@@ -157,9 +157,9 @@ $(document).ready(function(){
     $prev_3.on('click',function(e){
         e.preventDefault();
 
-        var $current = $slide2_li.filter($('.'+class_name));
-        var current_index = $current.index();
-        var prev_index;
+        let $current = $slide2_li.filter($('.'+class_name));
+        let current_index = $current.index();
+        let prev_index;
 
         (current_index != 0) ? prev_index = current_index-1 : prev_index = len3-1;
         if(isBlock) showPrev_3($current, prev_index);
@@ -211,9 +211,9 @@ $(document).ready(function(){
     $next_2.on('click',function(e){
         e.preventDefault();
 
-        var $current = $slide_li.filter($('.'+class_name));
-        var current_index = $current.index();
-        var next_index;
+        let $current = $slide_li.filter($('.'+class_name));
+        let current_index = $current.index();
+        let next_index;
 
         (current_index != len2-1) ? next_index = current_index+1 : next_index = 0;
         if(isBlock) showNext_2($current, next_index);
@@ -223,9 +223,9 @@ $(document).ready(function(){
     $prev_2.on('click',function(e){
         e.preventDefault();
 
-        var $current = $slide_li.filter($('.'+class_name));
-        var current_index = $current.index();
-        var prev_index;
+        let $current = $slide_li.filter($('.'+class_name));
+        let current_index = $current.index();
+        let prev_index;
 
         (current_index != 0) ? prev_index = current_index-1 : prev_index = len2-1;
         if(isBlock) showPrev_2($current, prev_index);
@@ -272,10 +272,10 @@ $(document).ready(function(){
 
 	// alert(totalWid);
 
-	var mleft = 0;
+	let mleft = 0;
 
 	
-	var timer = setInterval(move,30);
+	let timer = setInterval(move,30);
 	
 	$(".banner2").on("mouseenter",function(){
 		clearInterval(timer); //setInterval값을 멈추기
@@ -309,7 +309,7 @@ $(document).ready(function(){
 
         /*-------------- footer ------------------- */
 
-        var button = $('.footer_site_list>li');
+        const button = $('.footer_site_list>li');
         
             button.on('click',function(e){
                 e.preventDefault();

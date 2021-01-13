@@ -91,7 +91,7 @@ $(document).ready(function(){
     });
 
     //2depth 탭버튼
-    let $moGnb_li = $('#moGnb>li');
+    const $moGnb_li = $('#moGnb>li');
 
     $moGnb_li.on('click', function (e) {
         e.preventDefault();
@@ -148,7 +148,7 @@ $(document).ready(function(){
 	// };
   
     let num = 0;
-    let s = $('.bg li');
+    const s = $('.bg li');
     let length = s.length;
 
     s.hide();

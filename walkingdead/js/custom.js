@@ -3,9 +3,9 @@ $(document).ready(function(){
 
    /* ======= wheel event ======= */ 
 
-    var speed = 1000;
-	var ease = 'easeOutExpo';
-	var $wrap_section = $('.wrap>section');
+    const speed = 1000;
+	const ease = 'easeOutExpo';
+	const $wrap_section = $('.wrap>section');
 
 	match_height();
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	function match_height(){
 		//변수 ht에 브라우저 높이 값을 저장
-		var ht = $(window).height();
+		const ht = $(window).height();
 		//브라우저의 높이값을 #wrap>div의 높이 값으로 지정
 		$wrap_section.height(ht);
 	};	
@@ -25,7 +25,7 @@ $(document).ready(function(){
 		//마우스 휠을 올렸을때	
 		if (delta > 0) {  
 			 //변수 prev에 현재 휠을 움직인 div에서 이전 div의 offset().top위치저장
-			var prev_target = $(this).prev().offset().top;
+			const prev_target = $(this).prev().offset().top;
 			console.log(delta);
 
 			//문서 전체를 prev에 저장된 위치로 이동
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		//마우스 휠을 내렸을때	 
 		}else if (delta < 0) {  	
 			//변수 next에 현재 휠을 움직인 div에서 다음 div의 offset().top위치 저장
-			var next_target = $(this).next().offset().top;
+			const next_target = $(this).next().offset().top;
 			console.log(delta);
 			//문서 전체를 next에 저장된 위치로 이동
 			$('html,body').stop().animate({'scrollTop':next_target},speed,ease);
@@ -45,7 +45,7 @@ $(document).ready(function(){
     /* ========= box1 scroll ============ */ 
 
     $(".scroll").on("click",function(){
-        var first = $('.box2').offset().top;
+        const first = $('.box2').offset().top;
 
         $('html,body').stop().animate({'scrollTop':first},600);
     });
@@ -120,15 +120,15 @@ $(document).ready(function(){
 
 	/* cast 슬라이더 */
 	
-	var width = $(".list>li").outerWidth();
-    var num = $(".list>li").length;
-    var totalwidth = width*num;
+	let width = $(".list>li").outerWidth();
+    let num = $(".list>li").length;
+    let totalwidth = width*num;
     $(".list").width(totalwidth);
 
-    var mleft = 0;
+    let mleft = 0;
    
 
-    var timer = setInterval(move,30);
+    let timer = setInterval(move,30);
 
     $(".list").on("mouseenter",function(){
         clearInterval(timer);
@@ -149,7 +149,4 @@ $(document).ready(function(){
        
     }
 
-
-
-    
 });
