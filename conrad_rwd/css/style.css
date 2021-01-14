@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR:wght@300;400&family=Noto+Serif+KR:wght@500&family=Sorts+Mill+Goudy:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+KR:wght@300;400&family=Noto+Serif+KR:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -58,7 +58,7 @@ a {
     text-align: center;
 }
 
-#contents>div>h2 {
+#contents .tit_wrap h2 {
     /* color: #011638; */
     color: #051856;
     font-size: 35px;
@@ -67,7 +67,7 @@ a {
     text-shadow: 1px 1px 1px #fff;
 }
 
-#contents>div>h2::after {
+#contents .tit_wrap h2::after {
     /* display: block; */
     display: none;
     content: "";
@@ -81,7 +81,7 @@ a {
     z-index: -10;
 }
 
-#contents div>.sub_t {
+#contents .tit_wrap>.sub_t {
     margin-top: 10px;
     font-size: 17px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -297,9 +297,8 @@ a {
 
 }
 
-.main>.bg>li>.title {
+/* .main>.bg>li>.title {
     position: absolute;
-    font-family: 'Sorts Mill Goudy', serif;
     color: #fff;
     right: 10%;
     bottom: 25%;
@@ -307,7 +306,7 @@ a {
     text-shadow: 5px 5px 5px #222;
     letter-spacing: 2px;
     display: none;
-}
+} */
 
 .main>.bg>li>.subject {
     position: absolute;
@@ -1077,9 +1076,8 @@ button>img{
 }
 
 .slider .right ul li h2 {
-    margin-top: 120px;
+    margin-top: 3rem;
     font-family: 'Noto Serif KR';
-    /* font-family: 'Sorts Mill Goudy', serif; */
     font-size: 1.9rem;
     color: #440f76;
 }
@@ -1161,7 +1159,7 @@ button>img{
 .right .prev {
     position: absolute;
     top: 85%;
-    left: 13%;
+    left: 10%;
     width: 70px;
     height: 30px;
     background: url(../img/left2.png) no-repeat;
@@ -1518,13 +1516,8 @@ article:hover span {
 
 .box3-1>div>h3 {
     padding: 10px 0 10px 5px;
-    color: #011638;
-    background: #D1913C;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FFD194, #D1913C);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #FFD194, #D1913C);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    background: #bc9b6a;
 }
 
 .box3-1>div:nth-of-type(1) .hover {
@@ -1856,6 +1849,7 @@ article:hover span {
 
     .right .prev {
         top: 85%;
+        left:13%;
     }
 
     .right .next {
