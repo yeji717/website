@@ -1,0 +1,586 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after{
+    display: block;
+    content:"";
+    clear: both;
+}
+
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+.ir_su{
+    overflow:hidden;
+    position: absolute;
+    width:0;
+    height:0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* body {
+    background:yellow;
+} */
+
+#wrap {
+    width: 100%;
+    position: relative;  
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.bg {
+    position: relative;
+    background: url(../img/main7.jpg) no-repeat center;
+    background-size: cover;
+    height:250px;
+}
+
+.main .info{
+    position: absolute;
+    z-index:1000;
+    top:3%;
+    right:5%;
+    margin-top:25px;
+}
+
+.main .info li{
+    float: left;
+    color:#fff;
+    padding:0 10px;
+    font-size:12px;
+    position: relative;
+}
+
+.main .info li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right:0;
+    top:-2px;
+    width:1px;
+    margin-top:6px;
+    height:12px;
+    background:#fff;
+}
+
+.main .info li:hover a {
+    border-bottom: 1px solid #fff;
+}
+
+.main .info li:last-child:hover a{
+    border-bottom:0;
+}
+
+.main .info li:last-child::after{
+    display: none;
+}
+
+.main .info li:last-child{
+    color:#fff;
+    background:none;
+    padding-left:10px;
+}
+
+.main .info li:last-child a i{
+    padding-left:5px;
+}
+
+.main .info li:last-child .list{
+    display: none;
+    
+}
+
+.main .info li:last-child .list li{
+    padding:0;
+   
+}
+
+.main .info li:last-child .list.active{
+    
+    display: block;
+}
+
+.main .m_logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top:30px;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.main .m_logo img {
+    display: block;
+    height:2.5vw;
+}
+
+.main .logo3 {
+    display: none;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    top:90px;
+    height: 8vmin;
+    transition: 0.5s;
+    z-index: 1000;
+    color:#fff;
+}
+
+#header .menu {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+#header .logo {
+    width:10vmin;
+    height:10vmin;
+    float: left;
+}
+
+#header .logo img {
+    display: block;
+    height: 100%;
+}
+
+#header .logo1-2 {
+    width:10vmin;
+    height:10vmin;
+    float: left;
+    display: none;
+}
+
+#header .logo1-2 img {
+    display: block;
+    height: 100%;
+}
+
+.gnb {
+    width:100%;
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.gnb .mainmenu {
+    height: 100%;
+}
+
+
+.gnb .mainmenu>li {
+    width: 14%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    position: relative;
+
+}
+
+.gnb .mainmenu>li:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.gnb .mainmenu>li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 0.84vw;
+    line-height: 8vmin;
+}
+
+.gnb .mainmenu>li .submenu {
+    position: absolute;
+    width: 100%;
+    background:rgba(0,0,0,1);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 13px;
+    box-sizing: border-box;
+    color: #f0c27b;
+}
+
+.submenu li:hover a {
+    background: rgba(155, 168, 185, 0.5);
+}
+
+.submenu::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #f0c27b;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.7s;
+}
+
+.mainmenu>li:hover .submenu::before {
+    width: 100%;
+}
+
+.main .btn {
+    position: absolute;
+    background: none;
+    font-size: 40px;
+    top: 5%;
+    right: 30px;
+    display: none;
+    z-index:200;
+}
+
+.btn span{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:3px;
+    background:#fff;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+.btn span::before, .btn span::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width:100%;
+    height:3px;
+    background:#fff;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+
+.btn span::before{
+    top:-7px;
+}
+
+.btn span::after{
+   top:7px;
+}
+
+.btn.on span{ background:none;}
+
+.btn.on span::before{top:0; transform:  rotate(45deg);}
+
+.btn.on span::after{top:0; transform: rotate(-45deg);}
+
+
+.main.on #header {
+    top:0;
+}
+
+.main.on .gnb .mainmenu>li:hover a{
+    color:#fff;
+}
+ 
+/* ----------------- 모바일 메뉴 ---------------- */
+
+#moPanel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: 0.5s;
+}
+
+#moPanel.on {
+    left: 0px;
+}
+
+#moGnb {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 0px;
+    z-index: 100;
+    border-top:3px solid #f0c27b;
+    border-bottom:3px solid #f0c27b;
+}
+
+#moGnb>li {
+    border-bottom: 1px solid #f0c27b;
+}
+
+#moGnb>li>a {
+    display: block;
+    background: #000;
+    font-size: 18px;
+    color: #F0C27B;
+    /* padding: 15px 20px; */
+    padding:30px 40px;
+    position: relative;
+}
+
+#moGnb>li>a::before{
+    display: block;
+    position: absolute;
+    content: "";
+    width:3px;
+    height:30px;
+    background:#f0c27b;
+    top:50%;
+    transform: translateY(-40%);
+    left:20px;
+}
+
+#moGnb>li>.sub {
+    display: none;
+}
+
+#moGnb>li>.sub>li {
+    border-bottom: 1px solid #000;
+}
+
+#moGnb>li>.sub>li>a {
+    display: block;
+    background: #eee;
+    color: #222;
+    padding: 15px 30px;
+}
+
+/* contents */
+
+section.contents {
+    position: relative;
+    width:65%;
+    margin:150px auto;
+}
+
+.contents article{
+    width:35%;
+    float:left;
+}
+
+.contents .conosore{
+    position: relative;
+    height:450px;
+    margin-right:25%;
+    background:green;
+    text-align: center;
+    background: url(../img/box1.png)no-repeat;
+    background-size: cover;
+}
+
+.contents .conosore .join{
+    width:100%;
+    height:100%;
+    position: relative;
+    color:#fff;
+}
+
+.join h4{
+    position: absolute;
+    top:18%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:32px;
+}
+
+.join strong{
+    position: absolute;
+    width:100%;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+    /* display: block; */
+    font-size:15px;
+    font-weight: normal;
+    line-height:30px;
+}
+
+.join a{
+    position: absolute;
+    width:20%;
+    left:50%;
+    transform: translateX(-50%);
+    display: block;
+    background:#bc9b6a;
+    margin-top:20px;
+    bottom:20%;
+    padding:10px 80px;
+}
+
+.login {
+    width:40% !important;
+    margin-top: calc((450px - 380.6px)/2);
+    /* width:410px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+    text-align:center;
+}
+
+.login h3{
+    padding:0 0 20px;
+    border-bottom:2px solid #111;
+    text-align: center;
+    line-height:1;
+    font-size:32px;
+    color:#111;
+}
+
+.login > ul {
+    padding:40px 0 33px;
+}
+
+.login > ul li{
+    padding: 0 0.4px 12px;
+    text-align: left;
+}
+
+.login > ul li input{
+    width:100%;
+    height:46px;
+    box-sizing: border-box;
+    text-indent: 16px;
+}
+
+.login > ul li input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #9fa19f;
+    text-indent: 16px;
+}
+
+.login > ul li input[type="checkbox"] {
+    position: absolute;
+    left: -3000%;
+}
+
+.login > ul li input[type="checkbox"] + label {
+    height:36px;
+    line-height:36px;
+}
+
+.login > ul li input[type="checkbox"] + label::before {
+    display: inline-block;
+    margin:0 10px 0 0;
+    content: "";
+    width:18px;
+    height:18px;
+    border:1px solid #666 ;
+    background:#fff;
+    vertical-align: -4px;
+}
+
+.login > ul li input[type="checkbox"]:checked + label::before{
+    background: url(../img/checkbox.png) no-repeat center #333;
+ 
+}
+
+.login button {
+    width:100%;
+    height:56px;
+    line-height:56px;
+    font-size:18px;
+    color:#fff;
+    border: none;
+    background: #011638;
+    cursor: pointer;
+}
+
+.login div ul {
+    display: flex;
+    justify-content: center;
+}
+
+.login div ul li {
+    position: relative;
+    padding: 0 18px;
+}
+
+.login div ul li ~ li::after{          /* ~ 은 first-child 제외한 나머지가 선택됨 */
+    content: "";
+    position: absolute;
+    left:0;
+    top:5px;
+    height:14px;
+    width:1px;
+    background:#111;
+    transform: rotate(25deg);
+}
+
+.login div ul li a {
+    font-size:14px;
+    color:#111;
+}
+
+/*----------------------------  footer -----------------------------*/
+
+#footer {
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    height: 100%;
+    /* background: #011638; */
+    background: #666666;
+    color: #fff;
+    margin-top: 200px;
+}
+
+#footer ul {
+    padding-left: 100px;
+}
+
+#footer li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+#footer ul:nth-of-type(1) li::after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #dbdbdb;
+    position: absolute;
+    right: -2px;
+    top: 2px;
+}
+
+#footer li:first-child::after {
+    width: 0;
+}
+
+#footer ul:nth-child(2) {
+    padding-top: 15px;
+}

@@ -243,16 +243,6 @@ a {
     display: none;
 }
 
-/* .main .info li:last-child select{
-    color:#fff;
-    background:none;
-    border:1px solid #fff;
-}
-
-.main .info li:last-child select option{
-    background:#333;
-} */
-
 .main .info li:last-child{
     color:#fff;
     background:none;
@@ -538,7 +528,7 @@ a {
     top: 5%;
     right: 30px;
     display: none;
-    z-index:100;
+    z-index:200;
 }
 
 .btn span{
@@ -694,7 +684,6 @@ button>img{
     float: left;
     width: 100%;
     height: 100%;
-    /* background: #4b1248; */
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -1098,7 +1087,7 @@ button>img{
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-
+    transition: 0.3s ease;
 }
 
 .slider .right ul li a:hover {
@@ -1506,6 +1495,7 @@ article:hover span {
     transform: translateX(-50%);
     border: 1px solid #fff;
     padding: 10px;
+    transition: 0.3s ease;
 }
 
 .hover-1>a:hover {
@@ -1822,7 +1812,6 @@ article:hover span {
 
     .con1-2 .btn_ {
         display: block;
-     
     }
 
     .slider .left {
