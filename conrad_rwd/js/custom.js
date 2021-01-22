@@ -76,6 +76,27 @@ $(document).ready(function(){
         $(this).find('.submenu').css({'opacity':'0'});
     })
 
+    /* sub menu (tab) */
+
+    $('.mainmenu>li').bind('focus',function(){
+        $(this).find('.submenu').css({'transform':'translateY(0)'});
+        $(this).find('.submenu').css({'visibility':'visible'});
+        $(this).find('.submenu').css({'opacity':'1'});
+    })
+    
+    // $('.mainmenu>li').focus(function(){
+    //     $(this).find('.submenu').css({'transform':'translateY(0)'});
+    //     $(this).find('.submenu').css({'visibility':'visible'});
+    //     $(this).find('.submenu').css({'opacity':'1'});
+    // })
+
+    // $('.mainmenu>li').blur(function(){
+    //     $(this).find('.submenu').css({'transform':'translateY(20%)'});
+    //     $(this).find('.submenu').css({'visibility':'hidden'});
+    //     $(this).find('.submenu').css({'opacity':'0'});
+    // })
+
+
     $('.btn').on('click', function (e) {
         e.preventDefault();
         
