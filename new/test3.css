@@ -356,6 +356,7 @@ section .title.on{
     margin-top: 100px;
     height:500px;
     background: url(./img/work_bg1.png) no-repeat;
+    background-size:contain;
     z-index: 100;
 }
 
