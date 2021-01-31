@@ -64,13 +64,13 @@ $(document).ready(function(){
 
     /* sub menu */
 
-    $('.mainmenu>li').on('mouseover',function(){
+    $('.mainmenu>li').on('mouseenter focusin',function(){
         $(this).find('.submenu').css({'transform':'translateY(0)'});
         $(this).find('.submenu').css({'visibility':'visible'});
         $(this).find('.submenu').css({'opacity':'1'});
     })
 
-    $('.mainmenu>li').on('mouseleave',function(){
+    $('.mainmenu>li').on('mouseleave focusout',function(){
         $(this).find('.submenu').css({'transform':'translateY(20%)'});
         $(this).find('.submenu').css({'visibility':'hidden'});
         $(this).find('.submenu').css({'opacity':'0'});
@@ -281,7 +281,7 @@ $(document).ready(function(){
 
    /* 시설 슬라이드 */
 
-   $('article').on('mouseover',function(){
+   $('article').on('mouseover focusin',function(){
        $(this).stop().animate({'width':"33%"},800,function(){
            $(this).find('p').css({"opacity":"1"});
            $(this).find('a').css({"opacity":"1"});
@@ -289,7 +289,7 @@ $(document).ready(function(){
        $(this).find('img').css({"opacity":"1"},300);
    });
 
-   $('article').on('mouseleave',function(){
+   $('article').on('mouseleave focusout',function(){
        $(this).stop().animate({"width":"15%"},800);
        $(this).find('p').css({"opacity":"0"});
        $(this).find('a').css({"opacity":"0"});
@@ -359,4 +359,13 @@ $(document).ready(function(){
     });
     }
     initialize();
+
+    
+    /* follow */
+
+    // $('.follow').on('mouseenter focusin', function(){
+    //     $(this).children('ul .text').css({"opacity":"0","transition":"0.5"});
+    //     $(this).children('ul li i').css({"opacity":"1"});
+    // })
 });
+

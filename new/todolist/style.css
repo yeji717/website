@@ -1,0 +1,64 @@
+body{
+    background: #2c3e50;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+#wrap{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-70%);
+    text-align:center;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.js-form{
+    margin-bottom:20px;
+}
+
+h1{
+    color:#fff;
+    transition: 0.5s color ease-in-out;
+    font-size:100px;
+}
+
+input{
+    font-size:25px;
+}
+
+.clicked{
+    color:#7f8c8d;
+}
+
+.form, .greetings{
+    display:none;
+}
+
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    animation: fadeIn 0.5s ease-in-out; 
+}

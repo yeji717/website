@@ -1,0 +1,45 @@
+body{
+    height:100vh;
+    background-image:linear-gradient(to bottom, #0fd850 0%, #f9f047 100%);
+}
+
+.dot {
+    position: absolute;
+    top:35%;
+    left:35%;
+    width:100px;
+    height:100px;
+    /* border:1px solid #000; */
+    /* transform: translate(-50%,-50%); */
+    animation:loading 1s ease-in-out infinite;
+    
+}
+
+.dot div {
+    position: absolute;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background:#fff;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.dot .circle1{
+    top:0;
+}
+
+.dot .circle2{
+    bottom:0;
+    
+}
+
+@keyframes loading {
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+}

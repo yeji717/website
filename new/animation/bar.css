@@ -1,0 +1,36 @@
+body{
+    
+    background-image: linear-gradient(to right, #12547a, #80d0c7);
+}
+
+.bar{
+    background:#fff;
+    height:350px;
+    width:5px;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    position: absolute;
+    animation: bar 2s ease-in-out infinite;
+}
+
+@keyframes bar {
+    0%{
+        transform: rotate(0); height:0;
+    }
+
+    25%{
+        transform: rotate(0); height:300px;
+    }
+
+    50% {
+        transform: rotate(180deg); height:300px;
+    }
+
+    100%{
+        transform: rotate(180deg); height:0px;
+    }
+
+}

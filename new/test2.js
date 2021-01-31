@@ -2,8 +2,8 @@
 $(window).scroll(function(){
     // $("#header").addClass("on");
 
-    // $("#contents").css({"width":"92%"});
-    $("#contents").css({"width":"100%"});
+    $("#contents").css({"width":"92%"});
+    // $("#contents").css({"width":"100%"});
     
     const scrollTop = $(this).scrollTop() + $(window).height()/1.5;
     const about = $("#about").offset().top;

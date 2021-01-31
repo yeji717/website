@@ -115,10 +115,10 @@ header .row .row-1 li a{
     z-index: 30;
 }
 
-#lnb nav:hover +div{
+/* #lnb nav:hover +div{
     height:530px;
     opacity: 1;
-}
+} */
 
 
 /* #lnb nav.on +div{

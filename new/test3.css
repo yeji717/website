@@ -1,3 +1,5 @@
+/* reset */
+
 *{
     margin:0;
     padding:0;
@@ -25,15 +27,8 @@ body{
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-#contents{
-    position: relative;
-    /* width:100%; */
-    width:92%;
-    /* height:1300px; */
-    margin:0 auto;
-    background-color:#000;
-    transition: 0.5s ease-in-out;
-}
+
+/* 헤더 */
 
 #header{
     width:100%;
@@ -75,12 +70,24 @@ body{
     color:rgb(245, 223, 77);
 }
 
+/* 컨텐츠 */
+
+#contents{
+    position: relative;
+    /* width:100%; */
+    width:92%;
+    /* height:1300px; */
+    margin:0 auto;
+    background-color:#000;
+    transition: 0.5s ease-in-out;
+}
+
 
 #contents > section{
     /* height:100vh; */
 }
 
-.main{
+#intro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +98,7 @@ body{
 
 }
 
-strong{
+#intro strong{
     display: block;
     /* display: inline-block; */
     /* position: absolute;
@@ -104,7 +111,7 @@ strong{
     
 }
 
-strong span{
+#intro strong span{
     font-size: 100px;
     position: relative;
     display: inline-block;
@@ -225,7 +232,7 @@ section .title.on{
 }
 
 #about .about_sec01{
-    margin-top:120px;
+    margin:120px 0 100px;
     border-top:1px solid #fff;
     border-bottom:1px solid #fff;
 }
@@ -346,30 +353,82 @@ section .title.on{
 }
 
 #work {
+    position: relative;
     font-family: 'Noto Sans KR', sans-serif;
     overflow: hidden;
 }
 
-.ex-wrap{
+ul.slide{
     position: relative;
+    width:100%;
+    height:640px;
+    transition: 0.5s ease-in-out;
+}
+
+.slide li.on .container{
+    transform: translateY(0);
+}
+
+.prev{
+    position: absolute;
+    display:inline-block;
+    top:475px;
+    left:1%;
+    width:40px;
+    height:70px;
+    z-index:200;
+    background:url(./img/prev.png)no-repeat;
+    /* background-size: cover; */
+}
+
+.next{
+    position: absolute;
+    display:inline-block;
+    top:475px;
+    right:1%;
+    width:40px;
+    height:70px;
+    z-index:200;
+    background: url(./img/next.png)no-repeat;
+}
+
+.slide_wrap{
+    position: absolute;
+    /* position: relative; */
     width: 100%;
-    margin-top: 100px;
-    height:500px;
-    background: url(./img/work_bg1.png) no-repeat;
-    background-size:contain;
+    height:100%;
+    /* margin-top: 100px; */
     z-index: 100;
 }
 
+.odd{
+    background: url(./img/work_bg1.png) no-repeat;
+    background-size:contain;
+}
 
-.wark{
+.even{
+    background:url(./img/work_bg2.png) no-repeat;
+    background-size: contain;
+}
+
+.slide_wrap.even .container{
+    text-align: right;
+}
+
+.slide_wrap.even .container p{
+    width:inherit;
+}
+
+
+.walk{
     padding:40px;
 }
 
-.wark div{
+.walk div{
     float: left;
 }
 
-.wark span{
+.walk span{
     font-family: 'Poppins', sans-serif;
     /* display: none; */
     /* position: absolute; */
@@ -383,14 +442,23 @@ section .title.on{
 
 
 .monitor {
+    margin-top:-5%;
     margin-right:10%;
     width:40%;
     transform: translateX(150%);
     transition: 1.3s ease;
+    /* opacity:0; */
+    visibility: hidden;
 }
 
-.monitor.on{
+/* .second .monitor{
+    transform: translateX(-100%);
+} */
+
+.slide li.on .monitor{
     transform: translateX(0);
+    /* opacity:1; */
+    visibility: visible;
 }
 
 
@@ -419,7 +487,7 @@ section .title.on{
     left:10%;
 }
 
-.sun1.on {
+.slide li.on .sun1 {
     animation:sun forwards ease 3s;
 }
 
@@ -444,7 +512,7 @@ section .title.on{
     /* left:10%; */
 }
 
-.sun2.on{
+.slide li.on .sun2{
     animation: sun2 forwards ease 3s;
 }
 
@@ -471,12 +539,18 @@ section .title.on{
 .detail .go a{
     display: inline-block;
     padding:10px 15px;
-    background:#fff;
-    color: #000;
+    border:1px solid #fff;
+    color: #fff;
+    transition: 0.3s ease;
 }
 
 .detail .go a:nth-child(1){
     margin-right:5%;
+}
+
+.detail .go a:hover {
+    background: #fff;
+    color: #000;
 }
 
 
@@ -494,7 +568,9 @@ section .title.on{
 
 
 .container {
-    padding: 20px 50px 20px 120px;
+    transform: translateY(-100%);
+    transition: 0.8s ease-in-out;
+    padding: 20px 50px 20px 100px;
     /* transform: skewY(10deg);  */
 }
 
@@ -503,10 +579,129 @@ section .title.on{
     font-weight: 900;
     padding: 20px 0;
     font-size: 50px;
+    /* -webkit-text-stroke: 1px #fff;
+    color:transparent; */
 }
+
+.slide li:nth-child(3) .container {
+    padding:30px 50px 20px 100px;
+}
+
+.slide li:nth-child(3) .container h1{
+    font-family: 'Do Hyeon', sans-serif;
+    /* font-size:40px; */
+} 
 
 .container p {
  
     font-size: 20px;
     width: 80%;
 }
+
+.even .container{
+    padding:20px 120px 20px 50px;
+}
+
+/* work 2 */
+
+/* .work1 {
+    margin:200px 0;
+} */
+
+.work1{
+    margin:120px 0 100px;
+}
+
+.work2{
+    /* height:800px; */
+    margin-bottom:200px;
+    position: relative;
+}
+
+.subtitle h2{
+    /* width:200%; */
+    font-size:5vw;
+    text-align:center;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-family: 'Abel', sans-serif;
+    font-weight:normal;
+    /* margin-left:30%; */
+}
+
+.subtitle h2 strong {
+    color: #fff;
+}
+.animation{
+    width:90%;
+    margin:80px auto 0;
+    transition:0.8s ease-in;
+    opacity: 0;
+    transform:translateY(300px);
+    /* margin:150px auto 0; */
+}
+
+.animation.on {
+    opacity:1;
+    transform: translateY(0);
+}
+
+.animation>div{
+    position: relative;
+    float: left;
+    width:32%;
+    margin-right:2%;
+    height:350px;
+}
+
+.animation div:last-child{
+    margin-right:0;
+}
+
+    /* animation */
+
+   
+    
+    .animation div iframe {
+        width:100%;
+        height:100%;
+    }
+
+    .inner{
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        background: rgba(255,255,255,0.7);
+        opacity: 0;
+        transition:0.5s ease;
+        padding:20px;
+        box-sizing:border-box;
+        text-align: center;
+    }
+
+    .inner h3{
+        text-transform: uppercase;
+        text-align: center;
+        padding:20px 0;
+    }
+    
+    .animation div:hover .inner{
+        opacity: 1;
+    }
+
+    .work3 {
+        /* height:600px; */
+    }
+
+    .javascript{
+        margin-top:80px;
+        text-align: center;
+    }
+
+    .javascript iframe {
+        width:800px;
+        height:700px;
+     
+    }

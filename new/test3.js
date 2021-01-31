@@ -1,3 +1,52 @@
+const slide = document.querySelector('.slide');
+const li = slide.getElementsByTagName('li');
+console.log(li[0]);
+const slideCount = li.length;
+console.log(slideCount);
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let current = 0;
+
+
+// slide li 가로 배치
+
+for(let i=0; i < slideCount; i++){
+    li[i].style.left = 100 * i + '%' ;
+}
+
+// goToSlide 함수
+
+function goToSlide(idx){
+    slide.style.left =  -100 * idx + '%';
+    li[idx].classList.add('on');
+    current = idx; 
+    
+}
+
+
+// slide prev 클릭
+prev.addEventListener('click', (e) => {
+    e.preventDefault();
+    // goToSlide(current - 1);
+
+    if(current == 0){
+        goToSlide(current = slideCount-1);
+    }else{
+        goToSlide(current = current -1);
+    }
+})
+
+// slide next 클릭
+next.addEventListener('click', (e) => {
+    e.preventDefault();
+    // goToSlide(current + 1);
+
+    if(current == slideCount-1){
+        goToSlide(0);
+    }else{
+        goToSlide(current + 1);
+    }
+})
 
 $(window).scroll(function(){
     // $("#header").addClass("on");
@@ -8,20 +57,26 @@ $(window).scroll(function(){
     const scrollTop = $(this).scrollTop() + $(window).height()/1.5;
     const about = $("#about").offset().top;
     const work = $("#work").offset().top;
+    const work2 = $(".work2").offset().top;
     const work_h = $("work").height();
 
-    console.log(work);
-    console.log(scrollTop);
+    // console.log(work);
+    // console.log(scrollTop);
 
     if(scrollTop > about){
         $("#about .title").addClass("on");
     }
     if(scrollTop > work){
         $("#work .title").addClass("on");
-        $(".monitor").addClass('on');
-        $(".sun1").addClass('on');
-        $(".sun2").addClass('on');
-        
+        li[0].classList.add('on');
+        // $(".work1 .subtitle h2").animate({"margin-left":"8%"},1000);
+        // $(".monitor").addClass('on');
+        // $(".sun1").addClass('on');
+        // $(".sun2").addClass('on');
+    }
+    if(scrollTop > work2){
+        // $(".work2 .subtitle h2").animate({"margin-left":"1.5%"},1000);
+        $(".animation").addClass("on");
     }
  
 
@@ -29,76 +84,26 @@ $(window).scroll(function(){
 
 const list = document.querySelector(".w_list");
 
-// console.log(list.children[0]);
 
 
-// const current = 0;
-
-
-
-// const prev = $(".L_btn");
-// const next = $(".R_btn");
-// const list_li = $(".w_list > li");
-// const len = list_li.length;
-// const class_name = 'on';
-// const speed = 800;
-// isBlock = true;
-
-
-// prev.on("click",function(e){
-//     e.preventDefault();
-
-//     let current = list_li.filter($('.'+class_name));
-//     let current_index = current.index();
-//     let prev_index;
-
-//     (current_index != 0) ? prev_index = current_index-1 : prev_index = len-1;
-
-//     if(isBlock) showPrev(current, prev_index);
-// });
-
-// next.on("click",function(e){
-//     e.preventDefault();
-
-//     let current = list_li.filter($('.'+class_name));
-//     let current_index = current.index();
-//     let next_index;
-
-//     (current_index != len-1) ? next_index = current_index+1 : next_index = 0;
-
-//     if(isBlock) showNext(current, next_index);
-
-// });
-
-// function showNext(current, next_index){ 
-//     isBlock = false;
-
-//     current.stop().animate({left:'-100%'},speed,function(){
-//         $(this).removeClass(class_name).hide();
-//     });
-
-//     list_li.eq(next_index).show().css({left:'100%'}).stop().animate({left:'0%'},speed,function(){
-//         $(this).addClass(class_name);  
-//         isBlock = true;     
-//     });
-
-//     // active_index = next_index;      
-//     // activateBtn(active_index);   
-// }
-
-
-// function showPrev(current, prev_index){   
-//     isBlock = false;
-
-//     current.stop().animate({left:'100%'},speed,function(){
-//         $(this).removeClass(class_name).hide();
-//     });
-//     list_li.eq(prev_index).show().css({left:'-100%'}).stop().animate({left:'0%'},speed,function(){
-//         $(this).addClass(class_name);  
-//         isBlock = true;     
-//     });
-
-//     // active_index = prev_index;
-//     // activateBtn(active_index);
-// }
-
+// var Emblem = {
+//     init: function(el, str) {
+//       var element = document.querySelector(el);
+//       var text = str ? str : element.innerHTML;
+//       element.innerHTML = '';
+//       for (var i = 0; i < text.length; i++) {
+//         var letter = text[i];
+//         var span = document.createElement('span');
+//         var node = document.createTextNode(letter);
+//         var r = (360/text.length)*(i);
+//         var x = (Math.PI/text.length).toFixed(0) * (i);
+//         var y = (Math.PI/text.length).toFixed(0) * (i);
+//         span.appendChild(node);
+//         span.style.webkitTransform = 'rotateZ('+r+'deg) translate3d('+x+'px,'+y+'px,0)';
+//         span.style.transform = 'rotateZ('+r+'deg) translate3d('+x+'px,'+y+'px,0)';
+//         element.appendChild(span);
+//       }
+//     }
+//   };
+  
+//   Emblem.init('.emblem');

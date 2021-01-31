@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="test3.css">
     <!-- google font-->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&&family=Noto+Sans+KR&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&family=Noto+Sans+KR&family=Abel&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header" class="on">
@@ -15,8 +15,8 @@
             <span>2021</span>
         </div>
     </header>
-    <div id="contents">
-        <section class="main">
+    <main id="contents">
+        <section id="intro">
             <strong>
                 <span style="--i:1;">P</span>
                 <span style="--i:2;">O</span>
@@ -78,42 +78,129 @@
             <div class="title">
                 <h2>MY WORK</h2>
             </div>
-            <div class="ex-wrap">
-                
-                <div class="container">
-                    <h1>WAKING DEAD</h1>
-                    <p>평소 좋아하는 미국드라마 ‘워킹데드’
-                        홈페이지를 만들었습니다.
-                    </p>
-                </div>
-
-                <div class="wark after">
-                    <div class="detail">
-                        <span>01</span>
-                        <p>#풀페이지 #슬라이드 #동영상 삽입</p>
-                        <div class="go">
-                            <a href="#">사이트바로가기</a>
-                            <a href="#">코딩가이드</a>
+            <div class="work1">
+                <ul class="slide">
+                    <li class="slide_wrap odd">        
+                        <div class="container">
+                            <h1>WAKING DEAD</h1>
+                            <p>평소 좋아하는 미국드라마 ‘워킹데드’
+                                홈페이지를 만들었습니다.
+                            </p>
                         </div>
-                        <div class="sun1"></div>
-                        <div class="sun2"></div>
-                    </div>
-                    <div class="monitor">
-                        <img src="./img/walk.png" alt="">
-                    </div>
-                </div>
-                
+                        <div class="walk after">
+                            <div class="detail">
+                                <span>01</span>
+                                <p>#풀페이지 #슬라이드 #동영상 삽입</p>
+                                <div class="go">
+                                    <a href="#">사이트바로가기</a>
+                                    <a href="#">코딩가이드</a>
+                                </div>
+                                <div class="sun1"></div>
+                                <div class="sun2"></div>
+                            </div>
+                            <div class="monitor">
+                                <img src="./img/walk.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide_wrap odd">
+                        <div class="container">
+                            <h1>CONRAD SEOUL</h1>
+                            <p>콘래드 서울의 기존 홈페이지를 반응형으로 리뉴얼해서 만들었습니다.
+                            </p>
+                        </div>
+                        <div class="walk after">
+                            <div class="detail">
+                                <span>02</span>
+                                <p>#반응형 #로그인 페이지 #동영상 삽입</p>
+                                <div class="go">
+                                    <a href="#">사이트바로가기</a>
+                                    <a href="#">코딩가이드</a>
+                                </div>
+                                <div class="sun1"></div>
+                                <div class="sun2"></div>
+                            </div>
+                            <div class="monitor">
+                                <img src="./img/conrad.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide_wrap odd">        
+                        <div class="container">
+                            <h1>대전서구보건소</h1>
+                            <p>콘래드 서울의 기존 홈페이지를 반응형으로 리뉴얼해서 만들었습니다. 
+                            </p>
+                        </div>
+                        <div class="walk after">
+                            <div class="detail">
+                                <span>03</span>
+                                <p>#반응형 #탭메뉴 #픽토그램메뉴</p>
+                                <div class="go">
+                                    <a href="#">사이트바로가기</a>
+                                    <a href="#">코딩가이드</a>
+                                </div>
+                                <div class="sun1"></div>
+                                <div class="sun2"></div>
+                            </div>
+                            <div class="monitor">
+                                <img src="./img/health.png" alt="">
+                            </div>
+                        </div>
+                    </li>      
+                </ul>
+                <a href="#" class="prev"></a>
+                <a href="#" class="next"></a>
             </div>
-            <!-- <div class="ex">
-                <div class="container">
-                    <h1>WAKING DEAD</h1>
-                    <p>평소 좋아하는 미국드라마 ‘워킹데드’
-                        홈페이지를 만들었습니다.
-                    </p>
+            <div class="work2">
+                <div class="subtitle">
+                    <h2>ANIMATION</h2>
                 </div>
-            </div> -->
+                <div class="animation after">
+                    <div class="ani1">
+                        <iframe src="./animation/bar.html" frameborder="0" scrolling="no">
+                        </iframe>
+                        <div class="inner">
+                            <h3>bar animaiton</h3>
+                            <p>
+                                바의 height값을 <br> 0, 25, 50, 100 각 퍼센트마다 달리해주고 <br> rotate값을 주어서 줄어들었다가 돌아오는 효과를 만들었다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ani2">
+                        <iframe src="./animation/Tail.html" frameborder="0" scrolling="no">
+                        </iframe>
+                        <div class="inner">
+                            <h3>Tail animaiton</h3>
+                            <p>
+                                원을 여러개 만들고 <br> keyframe을 통해
+                                방향을 대각선으로 설정했다. <br>
+                                각자 delay값을 설정해 속도를 제어하였다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ani3">
+                        <iframe src="./animation/dot.html" frameborder="0" scrolling="no">
+                        </iframe>
+                        <div class="inner">
+                            <h3>Loding animaiton</h3>
+                            <p>
+                                바의 height값을 <br> 0, 25, 50, 100 각 퍼센트마다 달리해주고 <br> rotate값을 주어서 줄어들었다가 돌아오는 효과를 만들었다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work3">
+                <div class="subtitle">
+                    <h2>JAVASCRIPT</h2>
+                </div>
+                <div class="javascript">
+                    <iframe src="./todolist/index.html" frameborder="0" scrolling="0">
+                    </iframe>
+                </div>
+            </div>
         </section>
-    </div>
+    </main>
     <!-- fontawesome-->
     <script src="https://kit.fontawesome.com/d841d98aaf.js" crossorigin="anonymous"></script>
     <script src="jquery-2.1.1.min.js"></script>

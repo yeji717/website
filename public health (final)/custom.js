@@ -2,6 +2,18 @@ $(document).ready(function(){
 
     // 메인 메뉴
 
+    $('#lnb nav').on('mouseenter focusin', function(){
+        $(this).siblings('div').css({"height":"530px","opacity":"1"});
+    });
+
+    $('#lnb nav').on('mouseleave focusout', function(){
+        $(this).siblings('div').css({"height":"0","opacity":"0"});
+    });
+
+    // $('#lnb nav>ul').on('mouseenter focusin',function(){
+    //     $(this).css({"overflow":"visible"});
+    //     // $(this).siblings('ul').css({"opacity":"1"});
+    // })
     // $('#lnb nav').focusin(function(){
     //     $(this).css({"background":"red"});
     // });
