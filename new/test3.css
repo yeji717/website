@@ -1097,6 +1097,18 @@ ul.slide {
         height:50px;
         background-size:contain;
     }
+    
+    /* animation */
+
+      .animation{
+        width:70%;
+    }
+
+    .animation>div{
+        width:100%;
+        margin-right:0;
+        margin-bottom:5%;
+    }
 }
 
 @media(max-width:660px){
