@@ -108,7 +108,6 @@ const list = document.querySelector(".w_list");
   
 //   Emblem.init('.emblem');
 
-
 const menu = $(".menu li");
 const panel = $(".panel li");
 
