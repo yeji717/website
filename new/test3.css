@@ -385,6 +385,7 @@ ul.slide {
 
 .slide li.on .container {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .prev {
@@ -592,6 +593,7 @@ ul.slide {
     transform: translateY(-100%);
     transition: 0.8s ease-in-out;
     padding: 20px 50px 20px 100px;
+    opacity: 0;
     /* transform: skewY(10deg);  */
 }
 
