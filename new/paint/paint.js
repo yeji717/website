@@ -7,13 +7,14 @@ const saveBtn = document.getElementById("jsSave");
 const clear = document.getElementById("jsClear");
 
 const INITIAL_COLOR = "#2c2c2c"
-const CANVAS_SIZE = 400;
+const CANVAS_W_SIZE = 400;
+const CANVAS_H_SIZE = 300;
 
-canvas.width = CANVAS_SIZE;
-canvas.height = CANVAS_SIZE;
+canvas.width = CANVAS_W_SIZE;
+canvas.height = CANVAS_H_SIZE;
 
 ctx.fillStyle="white";
-ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+ctx.fillRect(0, 0, CANVAS_W_SIZE, CANVAS_H_SIZE);
 ctx.strokeStyle = INITIAL_COLOR;
 ctx.fillStyle = INITIAL_COLOR;
 ctx.lineWidth = 2.5;
@@ -77,7 +78,7 @@ function handleModeClick(){
 
 function handleCanvasClick(){
     if(filling){
-        ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        ctx.fillRect(0, 0, CANVAS_W_SIZE, CANVAS_H_SIZE);
     }
 }
 
@@ -91,7 +92,7 @@ function handleSaveClick(){
 }
 
 function handleClear(){
-    ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+    ctx.clearRect(0, 0, CANVAS_W_SIZE, CANVAS_H_SIZE);
 }
 
 
