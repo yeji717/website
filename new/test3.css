@@ -734,7 +734,7 @@ ul.slide {
 
 .javascript {
     width: 800px;
-    height: 650px;
+    height: 450px;
     margin: 100px auto 100px;
 }
 
@@ -1011,6 +1011,20 @@ ul.slide {
     .animation>div{
         height:300px;
     }
+
+    /* javascript */
+
+    .javascript{
+        width:70%;
+    }
+
+    .panel li .ani {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+        right: -30px;
+
+    }
 }
 
 @media (max-width:900px){
@@ -1068,6 +1082,10 @@ ul.slide {
     .about_sec01 .balloon:after{
         display: none;
     }
+
+    .subtitle h2{
+        font-size:50px;
+    }
 }
 
 @media(max-width:768px){
@@ -1097,10 +1115,10 @@ ul.slide {
         height:50px;
         background-size:contain;
     }
-    
+
     /* animation */
 
-      .animation{
+    .animation{
         width:70%;
     }
 
@@ -1235,9 +1253,9 @@ ul.slide {
         font-size: 30px;
     }
 
-    /* #intro {
+    #intro {
         height:80vh;
-    } */
+    }
     
     #intro strong span{
         letter-spacing: 10px;
@@ -1281,5 +1299,30 @@ ul.slide {
     .detail p{
         font-size:13px;
         padding: 10px 5px;
+    }
+
+    /* javascript */
+
+    .javascript{
+        height:inherit;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .panel{
+        width:100%;
+    }
+
+    .panel li {
+        position:static;
+        height:450px;
+        display: block;
+        margin-bottom:50px;
+    }
+
+    .panel li .ani{
+        display: none;
     }
 }
