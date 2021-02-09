@@ -1240,6 +1240,10 @@ ul.slide {
         padding:10px;
     }
 
+    .slide li:nth-child(3) .container{
+        padding:10px;
+    }
+
     .monitor{
         width:80%;
     }
