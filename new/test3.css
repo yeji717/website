@@ -238,6 +238,7 @@ section .title {
 }
 
 section .title h2 {
+    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Anton', sans-serif;
     letter-spacing: 10px;
 }
@@ -1066,7 +1067,7 @@ ul.slide {
     }
 
     .about_sec01 .right>div>h3::after{
-        left:50%;
+        left:0;
         transform: translateX(-50%);
     }
 
@@ -1117,6 +1118,10 @@ ul.slide {
     }
 
     /* animation */
+
+    .work2{
+        margin-bottom:100px;
+    }
 
     .animation{
         width:70%;
@@ -1194,6 +1199,18 @@ ul.slide {
     .monitor{
         width:65%;
     }
+
+    /* animation */
+
+    .animation{
+        margin:50px auto 0;
+    }
+
+    /* javascript */
+
+    .javascript {
+        margin:50px auto;
+    }
 }
 
 @media(max-width:540px){
@@ -1251,11 +1268,12 @@ ul.slide {
 
     section .title h2 {
         font-size: 30px;
+        letter-spacing: 5px;
     }
 
-    /* #intro {
+    #intro {
         height:80vh;
-    } */
+    }
     
     #intro strong span{
         letter-spacing: 10px;
@@ -1299,6 +1317,16 @@ ul.slide {
     .detail p{
         font-size:13px;
         padding: 10px 5px;
+    }
+
+    /* animation */
+
+    .animation>div{
+        height:250px;
+    }
+
+    .inner{
+        font-size:13px;
     }
 
     /* javascript */
