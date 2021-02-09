@@ -2491,6 +2491,14 @@ article:hover span {
         right:8%;
     }
 
+    #contents .tit_wrap h2{
+        font-size:22px;
+    }
+
+    #contents .tit_wrap>.sub_t{
+        font-size:14px;
+    }
+
     #con1.on{
         margin-top:280px;
     }
