@@ -1457,11 +1457,7 @@ body{
         margin:0 auto;
     }
 
-    /* contact */
-
-    #contact .form{
-        width:80%;
-    }
+ 
 }
 
 @media(max-width:660px){

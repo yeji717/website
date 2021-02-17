@@ -16,41 +16,22 @@ $(document).ready(function(){
                     'background':'#fff',
                     'color':'#666',
                     'border-bottom':'1px solid #e8e8e8'
-                    // 'background':'#011638',
-                    // 'box-shadow':'2px 2px 8px #5c5c5d'
                 }); 
-
-                // $('.gnb .mainmenu>li').mouseenter().css({
-                //     'color':'#fff'
-                // });
-
-                // $('.gnb .mainmenu>li').css({
-                //     'width':'12.5%'
-                // })
-                // $('#header .logo').css({'display':'none'});
-                // $('#header .logo1-2').css({'display':'block'});
             }      
             isScrolled = $('.main').hasClass('on'); 
 
         }else{ //스크롤안될때 다시 원래 초기값으로
             $('.main').removeClass('on');
-            // $('#header').css({'background':'rgba(0,0,0,0.5'});
             $('#header').css({
                 'color':'#fff',
                 'background':'none',
                 'box-shadow':'none',
                 'border-bottom':'none'
             });
-            // $('#header').css({'color':'#fff'});
-            // $('#header').css({'background':'none'})
-            // $('#header').css({ 'box-shadow':'none'});
+
             $('#header .logo').css({'display':'block'});
             $('#header .logo1-2').css({'display':'none'});
-                
 
-            // $('.gnb .mainmenu>li').css({
-            //     'width':'14%'
-            // })
             isScrolled = false;
 
         }
@@ -60,8 +41,13 @@ $(document).ready(function(){
 
     $('.ko').click(function(){
         $('.list').toggleClass('active');
-    })
+    });
 
+    /* main menu */
+
+    // $(".mainmenu>li>a").on("click",function(e){
+    //     e.preventDefault();
+    // });
     /* sub menu */
 
     $('.mainmenu>li').on('mouseenter focusin',function(){
@@ -114,8 +100,7 @@ $(document).ready(function(){
     //2depth 탭버튼
     const $moGnb_li = $('#moGnb>li');
 
-    $moGnb_li.on('click', function (e) {
-        e.preventDefault();
+    $moGnb_li.on('click', function () {
 
         let isOn = $(this).children('a').hasClass('on');
 

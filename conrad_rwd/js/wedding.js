@@ -17,7 +17,8 @@ $(document).ready(function(){
                     'position':'fixed',
                     'background':'#fff',
                     'color':'#666',
-                    'border-bottom':'1px solid #e8e8e8'
+                    'border-bottom':'1px solid #e8e8e8',
+                    'margin-top':'0px'
                     // 'background':'#011638',
                     // 'box-shadow':'2px 2px 8px #5c5c5d'
                 }); 
@@ -41,7 +42,8 @@ $(document).ready(function(){
                 'color':'#fff',
                 'background':'none',
                 'box-shadow':'none',
-                'border-bottom':'none'
+                'border-bottom':'none',
+                'margin-top':'30px'
             });
             // $('#header').css({'color':'#fff'});
             // $('#header').css({'background':'none'})
