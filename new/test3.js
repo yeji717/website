@@ -58,7 +58,7 @@ $(window).scroll(function(){
     const about = $("#about").offset().top;
     const work = $("#work").offset().top;
     const work2 = $(".work2").offset().top;
-    const work_h = $("work").height();
+    const contact = $(".contact").offset().top;
 
     // console.log(work);
     // console.log(scrollTop);
@@ -77,6 +77,9 @@ $(window).scroll(function(){
     if(scrollTop > work2){
         // $(".work2 .subtitle h2").animate({"margin-left":"1.5%"},1000);
         $(".animation").addClass("on");
+    }
+    if(scrollTop > contact){
+        $(".contact .title").addClass('on');
     }
  
 
