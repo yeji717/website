@@ -1689,12 +1689,11 @@ article:hover span {
 
 /*----------------------------  footer -----------------------------*/
 
-#footer {
+/* #footer {
     width: 100%;
     position: relative;
     padding: 30px 0;
     height: 100%;
-    /* background: #011638; */
     background: #666666;
     color: #fff;
     margin-top: 200px;
@@ -1728,6 +1727,39 @@ article:hover span {
 
 #footer ul:nth-child(2) {
     padding-top: 15px;
+} */
+
+#footer{
+    width:100%;
+    position: relative;
+    padding:30px 0;
+    height:100%;
+    background:#011638;
+    text-align: center;
+    color: #fff;
+    font-size:12px;
+}
+
+#footer li {
+    position: relative;
+    display:inline; 
+    padding:0 7px 0 10px; 
+    white-space: nowrap;
+}
+#footer li::before{
+    content: "";
+    width: 1px;
+    height:14px;
+    background:#dbdbdb;
+    position: absolute;
+    left:0;
+    top:5px;
+}
+#footer li:first-child::before{
+    width:0;
+}
+#footer ul:nth-child(2){
+    padding-top:15px;
 }
 
 /* ---------------- top button --------------- */
@@ -1736,8 +1768,8 @@ article:hover span {
     position: fixed;
     bottom: 3%;
     right: 2%;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.7);
 
@@ -1750,7 +1782,7 @@ article:hover span {
 }
 
 #top>a>i {
-    font-size: 40px;
+    font-size: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2267,14 +2299,8 @@ article:hover span {
         font-size: 11px;
     }
 
-
     #top {
-        width: 55px;
-        height: 55px;
-    }
-
-    #top a>i {
-        font-size: 30px;
+        display: none;
     }
 }
 

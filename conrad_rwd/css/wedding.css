@@ -14,6 +14,18 @@ a{
     color: inherit;
 }
 
+.hide{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
 
 
 .after::after{
@@ -89,8 +101,8 @@ a{
     padding: 15px 30px;
 }
 
-.main{
-    z-index:1100;
+header{
+    z-index:50;
     position: absolute;
     width:100%;
     /* height:44.8vw; */
@@ -103,7 +115,7 @@ a{
     position: relative;
 }
 
-.main .info{
+header .info{
     position: absolute;
     /* z-index:1000; */
     right:5%;
@@ -113,7 +125,7 @@ a{
     /* margin-top:25px; */
 }
 
-.main .info li{
+header .info li{
     float: left;
     color:#fff;
     padding:0 10px;
@@ -121,7 +133,7 @@ a{
     position: relative;
 }
 
-.main .info li::after{
+header .info li::after{
     content: "";
     display: block;
     position: absolute;
@@ -133,39 +145,39 @@ a{
     background:#fff;
 }
 
-.main .info li:hover a {
+header .info li:hover a {
     border-bottom: 1px solid #fff;
 }
 
-.main .info li:last-child:hover a{
+header .info li:last-child:hover a{
     border-bottom:0;
 }
 
-.main .info li:last-child::after{
+header .info li:last-child::after{
     display: none;
 }
 
-.main .info li:last-child{
+header .info li:last-child{
     color:#fff;
     background:none;
     padding-left:10px;
 }
 
-.main .info li:last-child a i{
+header .info li:last-child a i{
     padding-left:5px;
 }
 
-.main .info li:last-child .list{
+header .info li:last-child .list{
     display: none;
     
 }
 
-.main .info li:last-child .list li{
+header .info li:last-child .list li{
     padding:0;
    
 }
 
-.main .info li:last-child .list.active{
+header .info li:last-child .list.active{
     display: block;
 }
 
@@ -228,7 +240,7 @@ a{
     width: 100%;
     /* top:5vmin; */
     /* top:8vmin; */
-    /* top:90px; */
+    top:90px;
     /* top: 2.6vw; */
     margin-top:30px;
     height: 8vmin;
@@ -279,7 +291,6 @@ a{
     text-align: center;
     float: left;
     position: relative;
-
 }
 
 .gnb .mainmenu>li:hover {
@@ -290,10 +301,13 @@ a{
     position: relative;
     display: block;
     width: 100%;
-    font-size: 0.84vw;
+    font-size: 0.9vw;
+    /* font-size: 0.84vw; */
     /* color:#fff; */
     /* color: #f0c27b; */
     line-height: 8vmin;
+    /* font-family: 'Nanum Gothic', sans-serif;
+    font-weight:300; */
 }
 
 .gnb .mainmenu>li .submenu {
@@ -341,16 +355,17 @@ a{
     width: 100%;
 }
 
-.main .btn {
+.btn {
     position: fixed;
     background: none;
     font-size: 40px;
+    width:30px;
+    height:30px;
     /* top: 5%; */
     /* top:42%; */
     top:4.15vh;
     right: 30px;
     display: none;
-    z-index:100;
 }
 
 .btn span{
@@ -392,17 +407,17 @@ a{
 .btn.on span::after{top:0; transform: rotate(-45deg);}
 
 
-.main.on #header {
+header.on #header {
     /* margin-top: -40px; */
     /* margin-top:-60px; */
     top:0;
 }
 
-.main.on .gnb .mainmenu>li:hover a{
+header.on .gnb .mainmenu>li:hover a{
     color:#fff;
 }
 
-.main .logo {
+header .logo {
     /* position: absolute; */
     /* height: 60px; */
     /* top: 0;
@@ -414,7 +429,7 @@ a{
     /* display: block; */
 }
 
-.main .logo img {
+header .logo img {
     display: block;
     margin: 0 auto;
     /* height: 100%; */
@@ -422,24 +437,24 @@ a{
     height:2.5vw;
 }
 
-.main .m_logo {
+header .m_logo {
     display: none;
 }
 
-#content>div{
+#content>section{
     position: relative;
     width:1240px;
     margin:150px auto;
 }
 
-#content>div>h2{
+#content>section>h2{
     text-align: center;
     font-size: 2.6vw;
     padding-top:20px;
     position: relative;
 }
 
-#content>div>h2::after {
+#content>section>h2::after {
     display: block;
     content: "";
     width: 10%;
@@ -714,15 +729,15 @@ a{
 
 @media (max-width:1000px){
     
-    .main h1{
+    header h1{
         font-size:3.5rem;
     }
 
-    #content>div{
+    #content>section{
         margin:120px auto;
     }
 
-    #content>div>h2{
+    #content>section>h2{
         font-size:3.5vw;
     }
 
@@ -752,7 +767,7 @@ a{
         font-size:10px;
     }
 
-    #content>div{
+    #content>section{
         width:100%;
     }
 
@@ -771,11 +786,11 @@ a{
         height:400px;
     } */
 
-    .main h1{
+    header h1{
         font-size: 3rem;
     }
 
-    .main .info{
+    header .info{
         display: none;
     }
 
@@ -795,11 +810,11 @@ a{
         display: none;
     }
 
-    .main .logo2{
+    header .logo2{
         display: block;
     }
 
-    .main .logo img{
+    header .logo img{
         height:4.5vw;
     }
  
@@ -811,10 +826,8 @@ a{
        line-height: 55px;
    }
 
-   .main .btn {
+   .btn {
         display: block;
-        width:30px;
-        height:30px;
     }
 
     .style .box2 .right>p>span{
@@ -833,7 +846,7 @@ a{
         display: none;
     } */
 
-    .main .m_logo{
+    header .m_logo{
         /* position: absolute;
         top:6%;
         left:5%; */
@@ -867,7 +880,7 @@ a{
         height:70px;
     }
 
-    #content>div>h2{
+    #content>section>h2{
         font-size:5.5vw;
     }
 
@@ -947,11 +960,11 @@ a{
 
 @media(max-width:425px){
 
-    .main{
+    header{
         height:400px;
     }
 
-    .main h1{
+    header h1{
         font-size:2.5rem;
     }
     

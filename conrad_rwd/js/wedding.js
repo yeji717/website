@@ -10,7 +10,7 @@ $(document).ready(function(){
     $(window).on('scroll', function(){
         var scroll = $(this).scrollTop();
         if(scroll>0){
-            $('.main').addClass('on');
+            $('header').addClass('on');
 
             if(isScrolled == false){ //스크롤이 될때
                 $('#header').css({
@@ -36,7 +36,7 @@ $(document).ready(function(){
             isScrolled = $('.main').hasClass('on'); 
 
         }else{ //스크롤안될때 다시 원래 초기값으로
-            $('.main').removeClass('on');
+            $('header').removeClass('on');
             // $('#header').css({'background':'rgba(0,0,0,0.5'});
             $('#header').css({
                 'color':'#fff',
