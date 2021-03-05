@@ -116,7 +116,7 @@ a{
     display: block;
 }
 
-.main .m_logo {
+.main .logo {
     position: absolute;
     top: 0;
     left: 50%;
@@ -125,7 +125,12 @@ a{
     display: block;
 }
 
-.main .m_logo img {
+.main .logo a{
+    display: block;
+    width:100%;
+}
+
+.main .logo img {
     display: block;
     height:2.5vw;
 }
@@ -604,7 +609,7 @@ header.on .gnb .mainmenu>li:hover a{
         display: none;
     }
     
-    .main .m_logo img{
+    .main .logo img{
         height:4.5vw;
     }
 

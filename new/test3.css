@@ -475,7 +475,7 @@ ul.slide {
 
 .monitor {
     float: right;
-    margin-top: -10%;
+    margin-top: -5%;
     margin-right: 10%;
     width: 40%;
     transform: translateX(150%);
@@ -1484,9 +1484,9 @@ ul.slide {
         letter-spacing: 5px;
     }
 
-    /* #intro {
+    #intro {
         height:80vh;
-    } */
+    }
     
     #intro strong span{
         font-size:11vw;
