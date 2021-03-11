@@ -49,6 +49,32 @@ a{
     text-indent: -9999px;
 }
 
+/* skipNav */
+
+#skipNav {
+    position:relative;
+    z-index:9999;
+    text-align: center;
+}
+
+#skipNav a{
+    position: absolute;
+    top:-200px;
+    left:0;
+    width:140px;
+    font-size:13px;
+    background:#333;
+    color:#fff;
+    border:1px solid #dedede;
+    line-height:30px;
+}
+
+#skipNav a:active, #skipNav a:focus {
+    top:0;
+}
+
+
+
 /*------------------------------- 모바일 메뉴 --------------------------- */
 
 #moPanel {
@@ -116,10 +142,9 @@ header{
 }
 
 header .info{
-    float: right;
     position: absolute;
     right:5%;
-    top:24%;
+    margin-top:25px;
 }
 
 header .info li{
@@ -352,7 +377,8 @@ header .info li:last-child .list.active{
 .btn {
     display: none;
     position: fixed;
-    top:4.15vh;
+    top:25px;
+    /* top:4.15vh; */
     right: 30px;
     width:30px;
     height:30px;
@@ -368,6 +394,7 @@ header .info li:last-child .list.active{
     width:100%;
     height:3px;
     background:#fff;
+    border-radius: 3px;
     transform: translateY(-50%);
     transition: 0.5s;
 }
@@ -381,6 +408,7 @@ header .info li:last-child .list.active{
     height:3px;
     content: "";
     background:#fff;
+    border-radius: 3px;
     transition: 0.5s;
 }
 
@@ -390,6 +418,10 @@ header .info li:last-child .list.active{
 
 .btn span::after{
    top:7px;
+}
+
+.btn.on {
+    position: fixed;
 }
 
 .btn.on span{ background:none;}
@@ -414,7 +446,7 @@ header .logo {
     /* height: 60px; */
     /* top: 0;
     left: 50%; */
-    padding-top:30px;
+    padding:30px 0 0 0;
     /* margin-top: 10px; */
     /* transform: translateX(-50%); */
     /* display: none; */
@@ -457,6 +489,11 @@ header .m_logo {
     content: "";
     background: #011638;
     transform: translateX(-50%);
+}
+
+#content>section p{
+    font-weight: bold;
+    font-size:1vw;
 }
 
 
@@ -617,6 +654,7 @@ header .m_logo {
 .right>span a{
     display: block;
     padding:10px;
+    font-size:1.2vw;
 }
 
 .box2 .right h2{
@@ -736,6 +774,10 @@ header .m_logo {
     #content>section>h2{
         font-size:3.5vw;
     }
+    
+    #content>section p{
+        font-size:1.5vw;
+    }
 
     .about p{
         font-size:1.3vw;
@@ -782,6 +824,16 @@ header .m_logo {
         height:400px;
     } */
 
+    header.on {
+        position:fixed;
+        background: #bc9b6a;
+    }
+    
+    header.on .logo{
+        transition: 0.5s;
+        padding:30px 0 25px 0;
+    }
+
     header h1{
         font-size: 3rem;
     }
@@ -824,6 +876,10 @@ header .m_logo {
 
    .btn {
         display: block;
+    }
+
+    #content>section p{
+        font-size:2vw;
     }
 
     .style .box2 .right>p>span{
@@ -959,12 +1015,17 @@ header .m_logo {
 
 @media(max-width:425px){
 
-    header{
+    /* header{
         height:400px;
-    }
+    } */
 
     header h1{
         font-size:2.5rem;
+    }
+
+    .btn{
+        width:25px;
+        right:20px;
     }
     
     /* .box2 .right p{

@@ -87,7 +87,6 @@ $(document).ready(function(){
      e.preventDefault();
      
      $(this).toggleClass('on');
-
      let isOpen = $('#moPanel').hasClass('on');
 
      if (isOpen) {
@@ -96,6 +95,11 @@ $(document).ready(function(){
          $('#moPanel').addClass('on');
      }
  });
+
+//  $('.main').on('click',function(e){
+//      e.preventDefault();
+//     $(this).addClass('on');
+//  });
 
  //2depth 탭버튼
  const $moGnb_li = $('#moGnb>li');

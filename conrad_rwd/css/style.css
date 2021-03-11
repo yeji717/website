@@ -22,6 +22,10 @@ a {
     clear: both;
 }
 
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 
 /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
 .ir_su{
@@ -32,7 +36,6 @@ a {
     line-height: 0;
     text-indent: -9999px;
 }
-
 
 /* skipNav */
 
@@ -76,7 +79,6 @@ a {
     transform: translateY(300px);
     /* margin-top: 300px; */
     margin-top:200px;
-    font-family: 'Noto Sans KR', sans-serif;
     opacity: 0;
     transition: 0.5s 0.5s cubic-bezier(0.36, 0.67, 0.58, 1);
     text-align: center;
@@ -108,7 +110,6 @@ a {
 #contents .tit_wrap>.sub_t {
     margin-top: 10px;
     font-size: 17px;
-    font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
 }
 
@@ -118,41 +119,7 @@ a {
     transform: translateY(0);
 }
 
-/*------------------------------- 모바일 메뉴 --------------------------- */
-
-/* #all-menu-box{
-    position: fixed;
-    z-index:200;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    opacity:0;
-    visibility: hidden;
-    transition:opacity 0.3s, visibility 0.3s;
-    overflow-y: auto;
-}
-
-#all-menu-box.active{
-    display:block;
-    opacity:1;
-    visibility:visible;
-}
-
-#all-menu-box::before{
-    content: "";
-    position: fixed;
-    display: block;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
-    z-index:-1;
-} */
-
-
-#moPanel {
+/* #moPanel {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -186,7 +153,6 @@ a {
     background: #000;
     font-size: 18px;
     color: #F0C27B;
-    /* padding: 15px 20px; */
     padding:30px 40px;
     position: relative;
 }
@@ -216,6 +182,58 @@ a {
     background: #eee;
     color: #222;
     padding: 15px 30px;
+} */
+
+/*------------------------------- 모바일 메뉴 --------------------------- */
+
+#moPanel {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.5s; 
+}
+
+#moPanel.on {
+    left: 0px; 
+}
+
+#moGnb {
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+}
+
+#moGnb>li {
+    border-bottom: 1px solid #bc9b6a;
+}
+
+#moGnb>li>a {
+    display: block; 
+    font-size: 16px; 
+    background: #000;
+    color: #bc9b6a; 
+    padding: 22px 15px;
+}
+
+#moGnb>li>.sub {
+    display: none;
+}
+
+#moGnb>li>.sub>li {
+    border-bottom: 1px solid #000; 
+}
+
+#moGnb>li>.sub>li>a {
+    display:block; 
+    background:#eee; 
+    color:#222; 
+    padding: 15px 30px;
 }
 
 /*------------------------------- 메인 header  --------------------------- */
@@ -224,7 +242,6 @@ a {
     position: relative;
     width: 100%;
     height: auto;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .main .info{
@@ -293,7 +310,7 @@ a {
 }
 
 
-.main .bg {
+.bg {
     position: relative;
     width: 100%;
     height:38vw;
@@ -301,7 +318,7 @@ a {
     /* height: 800px; */
 }
 
-.main>.bg>li {
+.bg>li {
     position: absolute;
     top: 0;
     left: 0;
@@ -322,10 +339,9 @@ a {
     display: none;
 } */
 
-.main>.bg>li>.subject {
+.bg>li>.subject {
     position: absolute;
     font-family: 'Noto Serif KR', serif;
-    /* font-family: 'Noto Sans KR', sans-serif; */
     color: #fff;
     right: 17%;
     top:45%;
@@ -334,17 +350,17 @@ a {
     text-align: right;
 }
 
-.main>.bg>.bg1 {
+.bg>.bg1 {
     background: url('../img/main3.jpg')100% no-repeat;
     background-size: cover;
 }
 
-.main>.bg>.bg2 {
+.bg>.bg2 {
     background: url('../img/bg2.jpg')100% no-repeat;
     background-size: cover;
 }
 
-.main>.bg>.bg3 {
+.bg>.bg3 {
     background: url('../img/spa01.jpg')100% no-repeat;
     background-size: cover;
 }
@@ -582,6 +598,10 @@ a {
    top:7px;
 }
 
+.btn.on{
+    position: fixed;
+}
+
 .btn.on span{ background:none;}
 
 .btn.on span::before{top:0; transform:  rotate(45deg);}
@@ -608,7 +628,6 @@ a {
     width: 60%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #reservation .r1 {
@@ -623,7 +642,6 @@ a {
     float: left;
     width: 16.6666%;
     background:#fff;
-    /* background: rgba(1, 22, 56, 0.9); */
     padding: 15px;
     box-sizing: border-box;
     position: relative;
@@ -695,7 +713,6 @@ button>img{
     color: #fff;
     margin-top: 5px;
     background:#051856;
-    font-family: 'Noto Sans KR';
 }
 
 #reservation .r1 div .search {
@@ -720,7 +737,6 @@ button>img{
 #con1 {
     width: 100%;
     margin-top: 300px;
-    font-family: 'Noto Sans KR', sans-serif;
     opacity: 0;
     transition: 0.5s;
     text-align: center;
@@ -956,7 +972,6 @@ button>img{
 /* #con2 {
     width: 100%;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
     margin-top: 300px;
     transition: 0.5s;
     opacity: 0;
@@ -1272,7 +1287,6 @@ button>img{
 .more p {
     margin-top: 30px;
     font-size: 15px;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .more a {
@@ -1423,7 +1437,6 @@ article p {
     z-index: 1;
     color: #fff;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 article img {
@@ -1498,7 +1511,6 @@ article:hover span {
     transition: 0.5s;
     color: #fff;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .hover-1>p {
@@ -1605,8 +1617,6 @@ article:hover span {
     color: #fff;
     text-shadow: 2px 2px 2px #4f205a;
     font-size: 45px;
-    /* background:#011638; */
-    font-family: 'Noto Sans KR', sans-serif;
     border-radius: 25px;
 }
 
@@ -1639,7 +1649,6 @@ article:hover span {
     line-height: 60px;
     border-radius: 50%;
     font-size: 26px;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .follow ul:hover .text {
@@ -2242,8 +2251,11 @@ article:hover span {
         width: 49%;
     }
 
-    .con1-2 .pro_box li:nth-of-type(1),
-    li:nth-of-type(2) {
+    .pro_box>li:nth-child(1){
+        display: none;
+    }
+
+    .pro_box>li:nth-child(2){
         display: none;
     }
 
@@ -2472,23 +2484,27 @@ article:hover span {
     } */
 
     .main .btn {
-        width:35px;
+        /* width:35px;
         height:35px;
-        font-size: 25px;
-        top: 10%;
+        font-size: 25px; */
+        top: 7%;
     }
 
-    .btn span{
-        height:5px;
+    .btn.on {
+        top:3.8%;
     }
+
+    /* .btn span{
+        height:3px;
+    } */
 
     .btn span::before, .btn span::after{
-        top:-10px;
-        height:5px;
+        top:-8px;
+        /* height:5px; */
     }
 
     .btn span::after{
-        top:10px;
+        top:8px;
     }
 
     .main>.bg>li>.title {
