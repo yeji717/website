@@ -195,6 +195,7 @@ body{
     left: -100%;
     background: rgba(0, 0, 0, 0.9);
     transition: 0.5s; 
+    overflow-y:auto;
 }
 
 #moPanel.on {
@@ -203,7 +204,7 @@ body{
 
 .mopanel_inner{
     position: relative;
-    margin-top:18%;
+    margin-top:100px;
 }
 
 .user{
