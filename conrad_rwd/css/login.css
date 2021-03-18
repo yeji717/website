@@ -18,6 +18,18 @@ a{
     clear: both;
 }
 
+.hide{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    visibility: hidden;
+    line-height: 0;
+}
+
 /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
 .ir_su{
     overflow:hidden;
@@ -35,117 +47,173 @@ a{
 #wrap {
     width: 100%;
     position: relative;  
-}
-
-.main {
-    position: relative;
-    width: 100%;
-    height: auto;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.bg {
-    position: relative;
-    background: url(../img/main7.jpg) no-repeat center;
-    background-size: cover;
-    height:250px;
+/*------------------------------- 모바일 메뉴 --------------------------- */
+
+#moPanel {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.5s; 
+    overflow-y:auto;
 }
 
-.main .info{
+#moPanel.on {
+    left: 0px; 
+}
+
+#moGnb {
     position: absolute;
-    z-index:1000;
-    top:3%;
+    top: 15%;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+}
+
+#moGnb>li {
+    border-bottom: 1px solid #bc9b6a;
+}
+
+#moGnb>li>a {
+    display: block; 
+    font-size: 16px; 
+    background: #000;
+    color: #bc9b6a; 
+    padding: 22px 15px;
+}
+
+#moGnb>li>.sub {
+    display: none;
+}
+
+#moGnb>li>.sub>li {
+    border-bottom: 1px solid #000; 
+}
+
+#moGnb>li>.sub>li>a {
+    display:block; 
+    background:#eee; 
+    color:#222; 
+    padding: 15px 30px;
+}
+
+header{
+    position: absolute;
+    z-index:50;
+    width:100%;
+}
+
+.headerWrap{
+    position: relative;
+}
+
+header .info{
+    position: absolute;
     right:5%;
     margin-top:25px;
 }
 
-.main .info li{
+header .info li{
     float: left;
-    color:#fff;
+    position: relative;
     padding:0 10px;
     font-size:12px;
-    position: relative;
+    color:#fff;
 }
 
-.main .info li::after{
-    content: "";
+header .info li::after{
     display: block;
     position: absolute;
     right:0;
     top:-2px;
     width:1px;
-    margin-top:6px;
     height:12px;
+    margin-top:6px;
     background:#fff;
+    content: "";
 }
 
-.main .info li:hover a {
+header .info li:hover a {
     border-bottom: 1px solid #fff;
 }
 
-.main .info li:last-child:hover a{
+header .info li:last-child:hover a{
     border-bottom:0;
 }
 
-.main .info li:last-child::after{
+header .info li:last-child::after{
     display: none;
 }
 
-.main .info li:last-child{
+header .info li:last-child{
+    padding-left:10px;
     color:#fff;
     background:none;
-    padding-left:10px;
+   
 }
 
-.main .info li:last-child a i{
+header .info li:last-child a i{
     padding-left:5px;
 }
 
-.main .info li:last-child .list{
+header .info li:last-child .list{
     display: none;
     
 }
 
-.main .info li:last-child .list li{
+header .info li:last-child .list li{
     padding:0;
    
 }
 
-.main .info li:last-child .list.active{
-    
+header .info li:last-child .list.active{
     display: block;
 }
 
-.main .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-top:30px;
-    transform: translateX(-50%);
-    display: block;
-}
-
-.main .logo a{
-    display: block;
+.main_bg{
+    position: relative;
     width:100%;
+    height:30vw;
+    background: url(../img/main7.JPG) center no-repeat;
+    background-size: cover;
 }
 
-.main .logo img {
+.main_bg .title{
+    position: absolute;
+    z-index: 10;
+    font-size: 4vw;
+    color: #fff;
+    bottom: 20%;
+    right: 10%;
+    text-shadow: 3px 3px 3px #330d33;
+}
+
+.main_bg .title::after {
     display: block;
-    height:2.5vw;
-}
-
-.main .logo3 {
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 55%;
+    z-index:-1;
+    width: 90%;
+    padding: 1.6vw 0;
+    content: "";
+    background: linear-gradient(to left,rgba(214, 164, 38, 0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    transform: skewX(-45deg);
 }
 
 #header {
-    position: absolute;
-    width: 100%;
     top:90px;
-    height: 8vmin;
-    transition: 0.5s;
     z-index: 1000;
+    width: 100%;
+    height: 8vmin;
+    margin-top:30px;
+    transition: 0.5s;
     color:#fff;
 }
 
@@ -157,9 +225,9 @@ a{
 
 
 #header .logo {
+    float: left;
     width:10vmin;
     height:10vmin;
-    float: left;
 }
 
 #header .logo img {
@@ -167,22 +235,10 @@ a{
     height: 100%;
 }
 
-#header .logo1-2 {
-    width:10vmin;
-    height:10vmin;
-    float: left;
-    display: none;
-}
-
-#header .logo1-2 img {
-    display: block;
-    height: 100%;
-}
-
 .gnb {
-    width:100%;
-    position: relative;
     float: left;
+    position: relative;
+    width:100%;
     height: 100%;
 }
 
@@ -192,12 +248,11 @@ a{
 
 
 .gnb .mainmenu>li {
+    float: left;
+    position: relative;
     width: 14%;
     height: 100%;
     text-align: center;
-    float: left;
-    position: relative;
-
 }
 
 .gnb .mainmenu>li:hover {
@@ -205,10 +260,10 @@ a{
 }
 
 .gnb .mainmenu>li>a {
-    position: relative;
     display: block;
+    position: relative;
     width: 100%;
-    font-size: 0.84vw;
+    font-size: 0.9vw;
     line-height: 8vmin;
 }
 
@@ -239,53 +294,56 @@ a{
 }
 
 .submenu::before {
-    position: absolute;
-    content: "";
     display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
     width: 0;
     height: 4px;
     background: #f0c27b;
-    top: 0;
-    left: 50%;
     transform: translateX(-50%);
     transition: 0.7s;
+    content: "";
 }
 
 .mainmenu>li:hover .submenu::before {
     width: 100%;
 }
 
-.main .btn {
-    position: absolute;
+.btn {
+    display: none;
+    position: fixed;
+    top:25px;
+    right: 30px;
+    width:30px;
+    height:30px;
     background: none;
     font-size: 40px;
-    top: 5%;
-    right: 30px;
-    display: none;
-    z-index:200;
 }
 
 .btn span{
-    position: absolute;
     display: block;
+    position: absolute;
+    top:50%;
+    left:0;
     width:100%;
     height:3px;
     background:#fff;
-    top:50%;
-    left:0;
+    border-radius: 3px;
     transform: translateY(-50%);
     transition: 0.5s;
 }
 
 .btn span::before, .btn span::after{
     display: block;
-    content: "";
     position: absolute;
-    width:100%;
-    height:3px;
-    background:#fff;
     top:0;
     left:0;
+    width:100%;
+    height:3px;
+    content: "";
+    background:#fff;
+    border-radius: 3px;
     transition: 0.5s;
 }
 
@@ -297,20 +355,16 @@ a{
    top:7px;
 }
 
+.btn.on {
+    position: fixed;
+}
+
 .btn.on span{ background:none;}
 
 .btn.on span::before{top:0; transform:  rotate(45deg);}
 
 .btn.on span::after{top:0; transform: rotate(-45deg);}
 
-
-/* .main.on #header {
-    top:0;
-}
-
-.main.on .gnb .mainmenu>li:hover a{
-    color:#fff;
-} */
 
 header.on #header {
     top:0;
@@ -319,74 +373,21 @@ header.on #header {
 header.on .gnb .mainmenu>li:hover a{
     color:#fff;
 }
- 
-/* ----------------- 모바일 메뉴 ---------------- */
 
-#moPanel {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: -100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 100;
-    transition: 0.5s;
+header .logo {
+    padding:30px 0 0 0;
 }
 
-#moPanel.on {
-    left: 0px;
-}
-
-#moGnb {
-    position: absolute;
-    width: 100%;
-    top: 15%;
-    left: 0px;
-    z-index: 100;
-    border-top:3px solid #f0c27b;
-    border-bottom:3px solid #f0c27b;
-}
-
-#moGnb>li {
-    border-bottom: 1px solid #f0c27b;
-}
-
-#moGnb>li>a {
+header .logo img {
     display: block;
-    background: #000;
-    font-size: 18px;
-    color: #F0C27B;
-    /* padding: 15px 20px; */
-    padding:30px 40px;
-    position: relative;
+    height:2.5vw;
+    margin: 0 auto;
 }
 
-#moGnb>li>a::before{
-    display: block;
-    position: absolute;
-    content: "";
-    width:3px;
-    height:30px;
-    background:#f0c27b;
-    top:50%;
-    transform: translateY(-40%);
-    left:20px;
-}
-
-#moGnb>li>.sub {
+header .m_logo {
     display: none;
 }
 
-#moGnb>li>.sub>li {
-    border-bottom: 1px solid #000;
-}
-
-#moGnb>li>.sub>li>a {
-    display: block;
-    background: #eee;
-    color: #222;
-    padding: 15px 30px;
-}
 
 /* contents */
 
@@ -397,14 +398,14 @@ header.on .gnb .mainmenu>li:hover a{
 }
 
 .contents article{
-    width:35%;
+    width:45%;
     float:left;
 }
 
 .contents .conosore{
     position: relative;
     height:450px;
-    margin-right:25%;
+    margin-right:10%;
     background:green;
     text-align: center;
     background: url(../img/box1.png)no-repeat;
@@ -590,10 +591,29 @@ header.on .gnb .mainmenu>li:hover a{
 
 /* 반응형 */
 
+@media (max-width:1000px){
+
+    header h1{
+        font-size:3.5rem;
+    }
+}
+
 @media (max-width:1024px){
+
+    #header .menu{
+        width:90%;
+    }
+
+    #header .gnb li a {
+        font-size:10px;
+    }
 
     .contents{
         width:80%;
+    }
+
+    .login div ul li{
+        padding:0 10px;
     }
 
     #footer ul {
@@ -605,12 +625,58 @@ header.on .gnb .mainmenu>li:hover a{
 
 @media (max-width:768px){
 
-    .info{
-        display: none;
+    header.on {
+        position:fixed;
+        background: #bc9b6a;
     }
     
-    .main .logo img{
+    header.on .logo{
+        transition: 0.5s;
+        padding:30px 0 25px 0;
+    }
+
+    header h1{
+        font-size: 3rem;
+    }
+
+    header .info{
+        display: none;
+    }
+
+    #header{
+        display: none;
+        height:65px;
+        margin-top:30px;
+    }
+
+    #header .menu{
+        
+        width:100%;
+    }
+
+    #header .logo{
+        display: none;
+        float:none;
+    }
+
+    header .logo2{
+        display: block;
+    }
+
+    header .logo img{
         height:4.5vw;
+    }
+ 
+    #header .gnb{
+        display: none;
+    }
+
+   .gnb>.mainmenu>li{
+       line-height: 55px;
+   }
+
+   .btn {
+        display: block;
     }
 
     .contents{
@@ -636,7 +702,51 @@ header.on .gnb .mainmenu>li:hover a{
     }
 }
 
+@media (max-width:576px){
+
+    #moGnb>li>a{
+        font-size:15px;
+    }
+
+    #header{
+        height:70px;
+        margin-top:0;
+    }
+
+    #content>section>h2{
+        font-size:5.5vw;
+    }
+
+    .join strong{
+        font-size:13px;
+    }
+}
+
+@media(max-width:480px){
+    
+    header .m_logo{
+        display: block;
+        margin-top:20px;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        color:#fff;
+        font-weight: bold;
+        font-size:17px;
+    }
+}
+
+
 @media screen and (max-width:425px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    .btn{
+        width:25px;
+        right:20px;
+    }
+
     .contents article{
         width:100%;
     }

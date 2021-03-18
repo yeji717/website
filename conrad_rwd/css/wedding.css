@@ -209,29 +209,6 @@ header .info li:last-child .list.active{
     display: block;
 }
 
-/* .main .title{
-    position: absolute;
-    color: #fff;
-    font-size: 5vw;
-    bottom: 20%;
-    right: 10%;
-    text-shadow: 3px 3px 3px #330d33;
-    z-index: 10;
-}
-
-.main .title::after {
-    position: absolute;
-    right: 0;
-    top: 55%;
-    display: block;
-    content: "";
-    width: 90%;
-    padding: 25px 0;
-    background: linear-gradient(to left,rgba(214, 164, 38, 0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
-    transform: skewX(-45deg);
-    z-index:-1;
-} */
-
 .main_bg{
     position: relative;
     width:100%;
@@ -282,11 +259,8 @@ header .info li:last-child .list.active{
 
 #header .logo {
     float: left;
-    /* width:84px; */
     width:10vmin;
     height:10vmin;
-    /* height: 100%; */
-
 }
 
 #header .logo img {
@@ -297,9 +271,6 @@ header .info li:last-child .list.active{
 .gnb {
     float: left;
     position: relative;
-    /* width: 90%; */
-    /* width:1240px; */
-    /* width:calc(100% - 10vmin); */
     width:100%;
     height: 100%;
 }
@@ -326,20 +297,13 @@ header .info li:last-child .list.active{
     position: relative;
     width: 100%;
     font-size: 0.9vw;
-    /* font-size: 0.84vw; */
-    /* color:#fff; */
-    /* color: #f0c27b; */
     line-height: 8vmin;
-    /* font-family: 'Nanum Gothic', sans-serif;
-    font-weight:300; */
 }
 
 .gnb .mainmenu>li .submenu {
     position: absolute;
     width: 100%;
-    /* background:rgba(0,0,0,0.7); */
     background:rgba(0,0,0,1);
-    /* background: #011638; */
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -383,7 +347,6 @@ header .info li:last-child .list.active{
     display: none;
     position: fixed;
     top:25px;
-    /* top:4.15vh; */
     right: 30px;
     width:30px;
     height:30px;
@@ -437,8 +400,6 @@ header .info li:last-child .list.active{
 
 
 header.on #header {
-    /* margin-top: -40px; */
-    /* margin-top:-60px; */
     top:0;
 }
 
@@ -447,24 +408,13 @@ header.on .gnb .mainmenu>li:hover a{
 }
 
 header .logo {
-    /* position: absolute; */
-    /* height: 60px; */
-    /* top: 0;
-    left: 50%; */
     padding:30px 0 0 0;
-    /* margin-top: 10px; */
-    /* transform: translateX(-50%); */
-    /* display: none; */
-    /* display: block; */
 }
 
 header .logo img {
     display: block;
     height:2.5vw;
     margin: 0 auto;
-    /* height: 100%; */
-    /* height:50%; */
-
 }
 
 header .m_logo {

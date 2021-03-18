@@ -8,173 +8,182 @@
 </head>
 <body>
     <div id="wrap">
-        <header class="main">
-            <div class="bg"></div>
-            <nav class="info">
-                <ul class="after">
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li>
-                        <a href="#" class="ko">Korean<i class="fas fa-chevron-down"></i></a>
-                        <ul class="list">
-                            <li><a href="#">english</a></li>
-                        </ul>
-                    </li>       
-                </ul>
-            </nav>
-            <div class="logo">
-                <a href="./index.html"><img src="./img/main_logo.png" alt="콘래드 서울"></a>
-            </div>
-            <div class="logo3">Conrad Seoul</div>
-            <div id="header" class="after">
-                <div class="menu after">
-                    <h2 class="ir_su">전체 메뉴</h2>
-                    <nav class="gnb">
-                        <ul class="mainmenu after">
-                            <li><a href="#" onmouseover="this.innerHTML='객실'" onmouseout="this.innerHTML='ROOMS'">ROOMS</a>
-                                <ul class="submenu">
-                                    <li><a href="#" onmouseover="this.innerHTML='디럭스'" onmouseout="this.innerHTML='DELUXE'">DELUXE</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='프리미엄'" onmouseout="this.innerHTML='PREMIUM'">PREMIUM</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='퀸 코너 프리미엄'" onmouseout="this.innerHTML='QUEEN CORNER PREMIUM'">QUEEN CORNER PREMIUM</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='이그제큐티브'" onmouseout="this.innerHTML='EXECUTIVE'">EXECUTIVE</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='그랜드 킹 코너 스위트'" onmouseout="this.innerHTML='GRAND KING CORNER SUITE'">GRAND KING CORNER SUITE</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='그랜드 킹 이그제큐티브 스위트'" onmouseout="this.innerHTML='GRAND KING EXECUTIVE SUITE'">GRAND KING EXECUTIVE SUITE</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='더 콘래드 스위트'" onmouseout="this.innerHTML='THE CONRAD SUITE'">THE CONRAD SUITE</a></li>
-                                    <li><a href="#" onmouseover="this.innerHTML='더 펜트하우스'" onmouseout="this.innerHTML='THE PENTHOUSE'">THE PENTHOUSE</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">FOOD</a>
-                                <!-- <div class="submenu"> -->
-                                <ul class="submenu">
-                                    <li><a href="#" onmouseover="this.innerHTML='아트리오'" onmouseout="this.innerHTML='ATRIO'">ATRIO</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='제스트'" onmouseout="this.innerHTML='ZEST'">ZEST</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='37 그릴 바'" onmouseout="this.innerHTML='37 GRILL BAR'">37 GRILL &amp; BAR</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='버티고'" onmouseout="this.innerHTML='VVERTIGO'">VVERTIGO</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='더 누들 바'" onmouseout="this.innerHTML='THE NOODLE BAR'">THE NOODLE BAR</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='프레임즈'" onmouseout="this.innerHTML='FLAMES'">FLAMES</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='텐쥐'" onmouseout="this.innerHTML='10G'">10G</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='이그제큐티브 라운지'" onmouseout="this.innerHTML='EXECUTIVE LOUNGE'">EXECUTIVE LOUNGE</a></li>
-                                </ul>
-                                <!-- </div> -->
-                            </li>
-                            <li><a href="wedding.html">WEDDING</a></li>
-                            <li><a href="#">MEETING</a>
-                                <!-- <div class="submenu"> -->
-                                <ul class="submenu">
-                                    <li><a href="#"  onmouseover="this.innerHTML='그랜드 볼룸'" onmouseout="this.innerHTML='GRAND BALLROOM'">GRAND BALLROOM</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='파크 볼룸'" onmouseout="this.innerHTML='PARK BALLROOM'">PARK BALLROOM</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='더스튜디오'" onmouseout="this.innerHTML='THE STUDIO'">THE STUDIO</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='보드룸'" onmouseout="this.innerHTML='BOARDROOM'">BOARDROOM</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='캐퍼시티 차트'" onmouseout="this.innerHTML='CAPACITY CHART'">CAPACITY CHART</a></li>
-                                </ul>
-                                <!-- </div> -->
-                            </li>
-                            <li><a href="#">FITNESS &amp; SPA</a></li>
-                            <li><a href="#">PROMOTION</a>
-                                <!-- <div class="submenu"> -->
-                                <ul class="submenu">
-                                    <li><a href="#"  onmouseover="this.innerHTML='객실'" onmouseout="this.innerHTML='ROOMS'">ROOMS</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='식음료'" onmouseout="this.innerHTML='RESTAURANT'">RESTAURANT</a></li>
-                                    <li><a href="#"  onmouseover="this.innerHTML='뉴스'" onmouseout="this.innerHTML='NEWS'">NEWS</a></li>
-                                </ul>
-                                <!-- </div> -->
-                            </li>
-                            <li><a href="#">GALLERY</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+        <div id="moPanel">
+            <ul id="moGnb">
+                <li>
+                    <a href="#">ROOMS</a>
+                    <ul class="sub">
+                        <li><a href="#">DELUXE</a></li>
+                        <li><a href="#">PREMIUM</a></li>
+                        <li><a href="#">QUEEN CORNER PREMIUM</a></li>
+                        <li><a href="#">EXECUTIVE</a></li>
+                        <li><a href="#">GRAND KING CORNER SUITE</a></li>
+                        <li><a href="#">GRAND KING EXECUTIVE SUITE</a></li>
+                        <li><a href="#">THE CONRAD SUITE</a></li>
+                        <li><a href="#">THE PENTHOUSE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">FOOD &amp; BEVERAGE</a>
+                    <ul class="sub">
+                        <li><a href="#">ATRIO</a></li>
+                        <li><a href="#">ZEST</a></li>
+                        <li><a href="#">37 GRILL &amp; BAR</a></li>
+                        <li><a href="#">VVERTIGO</a></li>
+                        <li><a href="#">THE NOODLE BAR</a></li>
+                        <li><a href="#">FLAMES</a></li>
+                        <li><a href="#">10G</a></li>
+                        <li><a href="#">EXECUTIVE LOUNGE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./wedding.html">WEDDING</a>
+                </li>
+                <li>
+                    <a href="#">MEETING &amp; CONFERENCE</a>
+                    <ul class="sub">
+                        <li><a href="#">GRAND BALLROOM</a></li>
+                        <li><a href="#">PARK BALLROOM</a></li>
+                        <li><a href="#">THE STUDIO</a></li>
+                        <li><a href="#">BOARDROOM</a></li>
+                        <li><a href="#">CAPACITY CHART</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">FITNESS &amp; SPA</a>
+                </li>
+                <li>
+                    <a href="#">PROMOTION &amp; NEWS</a>
+                    <ul class="sub">
+                        <li><a href="#">ROOMS</a></li>
+                        <li><a href="#">RESTAURANT</a></li>
+                        <li><a href="#">NEWS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">GALLERY</a>
+                </li>
+            </ul>
             <a href="#" class="btn">
                 <span></span>
             </a>
-            <div id="moPanel">
-                <ul id="moGnb">
-                    <li>
-                        <a href="#">ROOMS</a>
-                        <ul class="sub">
-                            <li><a href="#">DELUXE</a></li>
-                            <li><a href="#">PREMIUM</a></li>
-                            <li><a href="#">QUEEN CORNER PREMIUM</a></li>
-                            <li><a href="#">EXECUTIVE</a></li>
-                            <li><a href="#">GRAND KING CORNER SUITE</a></li>
-                            <li><a href="#">GRAND KING EXECUTIVE SUITE</a></li>
-                            <li><a href="#">THE CONRAD SUITE</a></li>
-                            <li><a href="#">THE PENTHOUSE</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">FOOD &amp; BEVERAGE</a>
-                        <ul class="sub">
-                            <li><a href="#">ATRIO</a></li>
-                            <li><a href="#">ZEST</a></li>
-                            <li><a href="#">37 GRILL &amp; BAR</a></li>
-                            <li><a href="#">VVERTIGO</a></li>
-                            <li><a href="#">THE NOODLE BAR</a></li>
-                            <li><a href="#">FLAMES</a></li>
-                            <li><a href="#">10G</a></li>
-                            <li><a href="#">EXECUTIVE LOUNGE</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./wedding.html">WEDDING</a>
-                    </li>
-                    <li>
-                        <a href="#">MEETING &amp; CONFERENCE</a>
-                        <ul class="sub">
-                            <li><a href="#">GRAND BALLROOM</a></li>
-                            <li><a href="#">PARK BALLROOM</a></li>
-                            <li><a href="#">THE STUDIO</a></li>
-                            <li><a href="#">BOARDROOM</a></li>
-                            <li><a href="#">CAPACITY CHART</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">FITNESS &amp; SPA</a>
-                    </li>
-                    <li>
-                        <a href="#">PROMOTION &amp; NEWS</a>
-                        <ul class="sub">
-                            <li><a href="#">ROOMS</a></li>
-                            <li><a href="#">RESTAURANT</a></li>
-                            <li><a href="#">NEWS</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">GALLERY</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <section class="contents after">
-            <article class="conosore">
-                <!-- <img src="./img/box1.png" alt=""> -->
-               <div class="join">
-                    <h4>코노소어</h4>
-                    <strong>콘래드 서울의 <br> 고메 다이닝 멤버십 프로그램에 가입하세요 </strong>
-                    <a href="#">가입하기</a>
-               </div>
-            </article>
-            <article class="login">
-                <h3>로그인</h3>
-                <ul>
-                    <li><input type="text" placeholder="아이디" title="아이디입력"></li>
-                    <li><input type="password" placeholder="비밀번호" title="비밀번호입력"></li>
-                    <li>
-                        <input type="checkbox" id="chk_id">
-                        <label for="chk_id">아이디저장</label>
-                    </li>
-                    <li><button type="submit">로그인</button></li>
-                </ul>
-                <div>
-                    <ul>
+        </div>
+        <header>
+            <div class="headerWrap">
+                <nav class="info">
+                    <ul class="after">
                         <li><a href="#">회원가입</a></li>
-                        <li><a href="#">아이디 찾기</a></li>
-                        <li><a href="#">비밀번호 찾기</a></li>
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li>
+                            <a href="#" class="ko">Korean<i class="fas fa-chevron-down"></i></a>
+                            <ul class="list">
+                                <li><a href="#">english</a></li>
+                            </ul>
+                        </li>       
                     </ul>
-                </div>
-            </article>
-        </section>   
+                </nav>
+                <h1 class="logo">
+                    <img src="./img/main_logo.png" alt="콘래드서울">
+                </h1>
+                <div id="header" class="after">
+                    <div class="menu after">
+                        <h2 class="ir_su">전체 메뉴</h2>
+                        <nav class="gnb">
+                            <ul class="mainmenu after">
+                                <li><a href="#" onmouseover="this.innerHTML='객실'" onmouseout="this.innerHTML='ROOMS'">ROOMS</a>
+                                    <ul class="submenu">
+                                        <li><a href="#" onmouseover="this.innerHTML='디럭스'" onmouseout="this.innerHTML='DELUXE'">DELUXE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='프리미엄'" onmouseout="this.innerHTML='PREMIUM'">PREMIUM</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='퀸 코너 프리미엄'" onmouseout="this.innerHTML='QUEEN CORNER PREMIUM'">QUEEN CORNER PREMIUM</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='이그제큐티브'" onmouseout="this.innerHTML='EXECUTIVE'">EXECUTIVE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='그랜드 킹 코너 스위트'" onmouseout="this.innerHTML='GRAND KING CORNER SUITE'">GRAND KING CORNER SUITE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='그랜드 킹 이그제큐티브 스위트'" onmouseout="this.innerHTML='GRAND KING EXECUTIVE SUITE'">GRAND KING EXECUTIVE SUITE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='더 콘래드 스위트'" onmouseout="this.innerHTML='THE CONRAD SUITE'">THE CONRAD SUITE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='더 펜트하우스'" onmouseout="this.innerHTML='THE PENTHOUSE'">THE PENTHOUSE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">FOOD</a>
+                                    <!-- <div class="submenu"> -->
+                                    <ul class="submenu">
+                                        <li><a href="#" onmouseover="this.innerHTML='아트리오'" onmouseout="this.innerHTML='ATRIO'">ATRIO</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='제스트'" onmouseout="this.innerHTML='ZEST'">ZEST</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='37 그릴 바'" onmouseout="this.innerHTML='37 GRILL BAR'">37 GRILL &amp; BAR</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='버티고'" onmouseout="this.innerHTML='VVERTIGO'">VVERTIGO</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='더 누들 바'" onmouseout="this.innerHTML='THE NOODLE BAR'">THE NOODLE BAR</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='프레임즈'" onmouseout="this.innerHTML='FLAMES'">FLAMES</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='텐쥐'" onmouseout="this.innerHTML='10G'">10G</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='이그제큐티브 라운지'" onmouseout="this.innerHTML='EXECUTIVE LOUNGE'">EXECUTIVE LOUNGE</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </li>
+                                <li><a href="./wedding.html">WEDDING</a></li>
+                                <li><a href="#">MEETING</a>
+                                    <!-- <div class="submenu"> -->
+                                    <ul class="submenu">
+                                        <li><a href="#"  onmouseover="this.innerHTML='그랜드 볼룸'" onmouseout="this.innerHTML='GRAND BALLROOM'">GRAND BALLROOM</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='파크 볼룸'" onmouseout="this.innerHTML='PARK BALLROOM'">PARK BALLROOM</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='더스튜디오'" onmouseout="this.innerHTML='THE STUDIO'">THE STUDIO</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='보드룸'" onmouseout="this.innerHTML='BOARDROOM'">BOARDROOM</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='캐퍼시티 차트'" onmouseout="this.innerHTML='CAPACITY CHART'">CAPACITY CHART</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </li>
+                                <li><a href="#">FITNESS &amp; SPA</a></li>
+                                <li><a href="#">PROMOTION</a>
+                                    <!-- <div class="submenu"> -->
+                                    <ul class="submenu">
+                                        <li><a href="#"  onmouseover="this.innerHTML='객실'" onmouseout="this.innerHTML='ROOMS'">ROOMS</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='식음료'" onmouseout="this.innerHTML='RESTAURANT'">RESTAURANT</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='뉴스'" onmouseout="this.innerHTML='NEWS'">NEWS</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </li>
+                                <li><a href="#">GALLERY</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- <div class="m_logo">Conrad Seoul</div> -->
+            
+           
+        </header>
+        <main>
+            <div class="main_bg">
+                    <h2 class="hide">메인배너</h2>
+                    <!-- <span class="title">L O G I N</span> -->
+            </div>
+            <section class="contents after">
+                <article class="conosore">
+                   <div class="join">
+                        <h4>코노소어</h4>
+                        <strong>콘래드 서울의 <br> 고메 다이닝 멤버십 프로그램에 가입하세요 </strong>
+                        <a href="#">가입하기</a>
+                   </div>
+                </article>
+                <article class="login">
+                    <h3>로그인</h3>
+                    <ul>
+                        <li><input type="text" placeholder="아이디" title="아이디입력"></li>
+                        <li><input type="password" placeholder="비밀번호" title="비밀번호입력"></li>
+                        <li>
+                            <input type="checkbox" id="chk_id">
+                            <label for="chk_id">아이디저장</label>
+                        </li>
+                        <li><button type="submit">로그인</button></li>
+                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>    
+        </main>
         <footer id="footer">
             <ul>
                 <li><a href="#">SITE MAP</a></li>
