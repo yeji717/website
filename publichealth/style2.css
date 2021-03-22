@@ -23,9 +23,6 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
-
-
 /* header { width:1240px; margin:0 auto; position: relative;} */
 .header{
     width:100%;
