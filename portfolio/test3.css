@@ -809,6 +809,7 @@ ul.slide {
 .panel li iframe {
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 .panel li.on {
