@@ -37,7 +37,7 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
 
 
 /* 헤더 */
@@ -1179,7 +1179,7 @@ ul.slide {
     }
 
     .detail .go {
-        width: none;
+        width: inherit;
         margin-left: 0;
     }
 
