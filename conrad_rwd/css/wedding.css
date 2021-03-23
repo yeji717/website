@@ -30,8 +30,6 @@ body{
     line-height: 0;
 }
 
-
-
 .after::after{
     display: block;
     content: "";
@@ -775,10 +773,7 @@ header .m_logo {
 
 @media (max-width:768px){
 
-    /* .main{
-        height:400px;
-    } */
-
+    
     header.on {
         position:fixed;
         background: #bc9b6a;
@@ -853,14 +848,7 @@ header .m_logo {
 
 @media (max-width: 480px){
 
-    /* .main .logo{
-        display: none;
-    } */
-
     header .m_logo{
-        /* position: absolute;
-        top:6%;
-        left:5%; */
         display: block;
         margin-top:20px;
         text-align: center;
@@ -874,13 +862,6 @@ header .m_logo {
 
 @media(max-width:576px){
 
-    /* .main{
-        height:550px;
-    } */
-
-    /* #moPanel{
-        width:200px;
-    } */
 
     #moGnb>li>a{
         font-size:15px;
