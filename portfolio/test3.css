@@ -610,7 +610,7 @@ ul.slide {
     /* transform: skewY(10deg);  */
 }
 
-.container h1 {
+.container h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     padding: 20px 0;
@@ -623,7 +623,7 @@ ul.slide {
     padding: 30px 50px 20px 100px;
 }
 
-.slide li:nth-child(3) .container h1 {
+.slide li:nth-child(3) .container h3 {
     font-family: 'Do Hyeon', sans-serif;
     /* font-size:40px; */
 }
@@ -1038,7 +1038,7 @@ ul.slide {
         background-size: contain;
     }
 
-    .container h1{
+    .container h3{
         padding:0;
         font-size:40px;
         
@@ -1096,7 +1096,7 @@ ul.slide {
         font-size:18px;
     }
 
-    .container h1{
+    .container h3{
         font-size:35px;
     }
 
@@ -1179,7 +1179,7 @@ ul.slide {
     }
 
     .detail .go {
-        width: inherit;
+        /* width: inherit; */
         margin-left: 0;
     }
 
@@ -1384,7 +1384,7 @@ ul.slide {
         padding:20px 50px;
     }
 
-    .container h1{
+    .container h3{
         font-size:25px;
     }
 
