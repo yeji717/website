@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    
+    $('#lnb nav').on('mouseenter focusin', function(){
+        $(this).siblings('div').css({"height":"530px","opacity":"1"});
+    });
+
+    $('#lnb nav').on('mouseleave focusout', function(){
+        $(this).siblings('div').css({"height":"0","opacity":"0"});
+    });
+
     /* mobutton */
 
     $('.mobutton').on('click', function(e) {
@@ -13,8 +22,10 @@ $(document).ready(function(){
             $('.mopanel').addClass('on');
         }
 
-        $(this).toggleClass('active');
-        // $(this).siblings('mopanel').css({'right':'0'});
+        $('.close').click(function(){
+            $('.mopanel').removeClass('on');
+            $("header").removeClass('on');
+        });
     });
 
     /* mognb sub */

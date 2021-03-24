@@ -23,10 +23,6 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* header { width:1240px; margin:0 auto; position: relative;} */
-.header{
-    width:100%;
-}
 header .row{
     width:100%;
     height:45px;
@@ -35,13 +31,9 @@ header .row{
 }
 
 header .row .row-1{
-    /* width:30%; */
-    /* width:1240px; */
+    position: absolute;
     float:right;
-    margin-right:19%;
-    
-    /* margin:0 auto;
-    padding-left:50px; */
+    right:12%;
 }
 
 header .row .row-1 li{
@@ -54,22 +46,43 @@ header .row .row-1 li{
 header .row .row-1 li a{
     display: block;
     width:100%;
-    font-size:14px;
- 
+    font-size:0.812rem;
 }
 
 .mopanel{
     display: none;
 }
 
-.logo{
+.m_logo{
     display: none;
+}
+
+.lnb{
+    position: relative;
+}
+
+.mainlogo{
+    position:absolute;
+    top:55%;
+    transform: translateY(-50%);
+    left:8%;
+    /* display:block; */
+    width:15%;
+    float: left;
+    /* margin:1% 2.5% 0 2.5%; */
+}
+
+.mainlogo img{
+    width:70%;
 }
 
 /* #lnb {position:absolute; left:0; top:0; width:100%; } */
 
 #lnb {
-    width:1240px; margin:0 auto;
+    /* width:1240px;  */
+    margin:0 auto;
+    width:80%;
+    float: right;
 }
 #lnb nav {
     /* border-bottom:1px solid rgba(5,245,0,0.5); */
@@ -78,16 +91,25 @@ header .row .row-1 li a{
     z-index: 30;
 }
 
-#lnb nav:hover +div{
+/* #lnb nav:hover +div{
     height:530px;
     opacity: 1;
-}
+} */
+
+
+/* #lnb nav.on +div{
+    height:530px;
+    opacity: 1;
+} */
 
 #lnb nav > ul {
     /* display: inline-block; */
     margin:0 auto;
     text-align: center;
-    width:100%;
+    width:90%;
+    /* width:100%; */
+    /* width:80%; */
+    /* float: right; */
     /* height:70px; */
     overflow:hidden;
     z-index:31;
@@ -100,7 +122,8 @@ header .row .row-1 li a{
 #lnb nav + div{
     position: absolute;
     left:0;
-    top:83px;
+    /* top:110px; */
+    /* top:83px; */
     width:100%;
     height:0;
     background:#fff;
@@ -117,16 +140,17 @@ header .row .row-1 li a{
     /* display: inline-block; */
     float:left;
     position: relative;
-    width:14%;
+    width:16%;
+    /* width:14%; */
 }
 
 #lnb nav > ul > li > a{
-    font-size:1.1rem;
+    font-size:1.1rem; 
     color: #000; 
     display:block; 
     /* width:170px;  */
-    height:83px; 
-    line-height:83px;
+    height:75px; 
+    line-height:75px;
     position: relative;
 }
 
@@ -147,14 +171,14 @@ header .row .row-1 li a{
     left:0;
 }
 
-#lnb nav > ul > li:first-child > a::after{
+/* #lnb nav > ul > li:first-child > a::after{
     display: none;
 }
 
 #lnb nav > ul > li:first-child > a >img {
     width:100%;
     vertical-align: middle;
-}
+} */
 
 #lnb nav > ul ul {
    
@@ -604,44 +628,46 @@ header .row .row-1 li a{
 
 @media(max-width:1240px){
 
-    header .row .row-1{
-        margin-right:5%;
-    }
-
-    /* #lnb {
-        width:80%;
-    } */
-
     header .row .row-1 li a{
         font-size:12px;
     }
 
+    .mainlogo{
+        left:3%;
+    }
+    
+    .contents{
+        width:80%;
+    }
+
     #lnb{
-        width:100%;
+        /* width:100%; */
     }
 
     #lnb nav > ul {
-       width:80%;
+       /* width:80%; */
+       width:90%;
     }
 
     #lnb nav > ul > li > a{
         /* width:calc(943px / 7); */
-        font-size:17px;
+        font-size:15px;
         height:70px; 
         line-height:70px;
     }
 
     #lnb nav > ul ul a{
-        font-size:13px;
+        font-size:11px;
     }
     
     #lnb nav > ul ul a:hover {
-        font-size:15px;
+        font-size:13px;
     }
 
     #lnb nav:hover +div{
         height:480px;
     }
+
 
     .page_1{
         width:80%;
@@ -708,9 +734,9 @@ header .row .row-1 li a{
         height:390px;
     }
 
-    #lnb nav + div{
+    /* #lnb nav + div{
         top:110px;
-    }
+    } */
 
     #lnb nav:hover +div{
         height:390px;
@@ -727,6 +753,7 @@ header .row .row-1 li a{
     #lnb nav > ul ul li a:hover {
         font-size:13px;
     }
+
 
     .box1>ul:nth-child(1)>li>a{
         font-size:15px;
@@ -810,10 +837,6 @@ header .row .row-1 li a{
 
 @media (max-width:990px){
 
-    .logo{
-        display:block;
-    }
-
 
     #lnb nav{
         position: relative;
@@ -822,7 +845,21 @@ header .row .row-1 li a{
         height:60px;
     }
 
-    #lnb nav .logo {
+    .mainlogo{
+        position: absolute;
+        width:15%;
+        left:13%;
+        top:50%;
+        transform: translateY(-50%);
+        margin:0;
+    }
+
+    .mainlogo img{
+        display: block;
+        width:100%;
+    }
+
+    #lnb nav .m_logo {
         position: absolute;
        width:18%;
        left:0;
@@ -830,18 +867,19 @@ header .row .row-1 li a{
        transform: translateY(-50%);
     }
 
-    #lnb nav .logo img{
+    #lnb nav .m_logo img{
         display: block;
         width:100%;
     }
 
-    #lnb nav .mobutton{
+    .mobutton{
         /* width:40px;
         height:30px; */
         position: absolute;
         top:50%;
         transform: translateY(-50%);
-        right:0;
+        right:10%;
+        z-index:100;
     }
 
     .mobutton span{
@@ -862,43 +900,6 @@ header .row .row-1 li a{
         margin-top: 5px;
     }
 
-    .mobutton.active span {
-        transition: 0.25s margin, 0.25s transform 0.25s;
-    }
-
-    .mobutton.active span:nth-child(1){
-        margin-top:8px;
-        margin-bottom: -4px;
-        transform: rotate(45deg);
-    }
-
-    .mobutton.active span:nth-child(2){
-        transform: rotate(-45deg);
-    }
-
-    .mobutton.active span:nth-child(3){
-
-        margin-top:-4px;
-        transform: rotate(135deg);
-    }
-
-    .mobutton.active +.mopanel{
-        display: block;
-        right:0;
-       
-    }
-
-
-    /* #lnb nav .mobutton::before{
-        position: absolute;
-        content: "";
-        width:100%;
-        height:3px;
-        background: blueviolet;
-        top:0;
-        left:0;
-    } */
-
     #lnb nav > ul:nth-of-type(1){
         display: none;
     }
@@ -906,19 +907,35 @@ header .row .row-1 li a{
     .mopanel{
         display: block;
         /* width:220px; */
+        overflow-x:hidden;
         width:300px;
-        left:-300px;
+        right:-300px;
         height:100%;
         position: fixed;
         top:0;
-        z-index:100;
+        z-index:1002;
         transition:0.7s;
         background:#eaeaea;
         /* overflow:scroll; */
     }
 
     .mopanel.on{
-        left: 0px;
+        right: 0px;
+    }
+
+    .back {
+        display: none;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:1001;
+        background:rgba(0,0,0,0.5);
+    }
+    
+    header.on .back{
+        display: block;
     }
 
     .mopanel .mognb{
@@ -960,6 +977,8 @@ header .row .row-1 li a{
         /* height:30px; */
         right:0;
         top:50%;
+        padding-left:0;
+        margin-right:10px;
         transform: translateY(-50%);
     }
 
@@ -1013,17 +1032,20 @@ header .row .row-1 li a{
         display: block;
     }
 
-    .mognb li .sub li{
-        border-bottom:1px solid #000;
-    }
+ 
 
     .mognb li .sub>li>a{
         display:block;
         background:#eee;
         color:#222;
+        border-bottom:1px solid #000;
         /* padding:5px; */
         padding:15px 30px;
         font-size:12px;
+    }
+
+    .mognb li .sub>li:last-child>a{
+        border-bottom:none;
     }
 
     #lnb nav + div{
@@ -1032,6 +1054,11 @@ header .row .row-1 li a{
 }
 
 @media (max-width:768px){
+
+    header .row .row-1 li a{
+        font-size:9px;
+    }
+
     .page_1{
         width:100%;
     }
@@ -1086,6 +1113,7 @@ header .row .row-1 li a{
 }
 
 @media (max-width:630px){
+   
     header .row{
         height:30px;
     }
@@ -1093,11 +1121,13 @@ header .row .row-1 li a{
     header .row .row-1{
         width:100%;
         margin-right:0;
+        right:0;
     }
 
     header .row .row-1 li{
         margin-right:0;
         width:25%;
+        
         line-height:30px;
     }
 
@@ -1126,9 +1156,8 @@ header .row .row-1 li a{
         height:50px;
     }
 
-    #lnb nav .logo{
-        /* width:20%; */
-        display: none;
+    #lnb nav .m_logo{
+        width:20%;
     }
 
     .contents .how li>div::after{
@@ -1152,9 +1181,23 @@ header .row .row-1 li a{
 
 @media (max-width:430px){
 
-    .main .btn{
-        display: block;
+    .mognb>li>a{
+        font-size:10px;
     }
+
+    .mognb li .sub>li>a{
+        font-size:9px;
+        padding:10px 19px;
+    }
+
+    .mobutton span{
+        width:30px;
+    }
+
+
+    /* .main .btn{
+        display: block;
+    } */
 
     .page_bg1 h1{
         font-size: 20px;
@@ -1266,13 +1309,13 @@ header .row .row-1 li a{
 
 @media (max-width:375px){
 
-    header .row .row-1 li a{
+    /* header .row .row-1 li a{
         font-size:10px;
     }
 
     #lnb nav .logo{
         width:30%;
-    }
+    } */
 
     .box2 nav ul li a {
         font-size:5px;

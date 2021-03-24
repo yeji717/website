@@ -48,15 +48,9 @@ header .row{
 }
 
 header .row .row-1{
-    /* width:30%; */
-    /* width:1240px; */
+    position: absolute;
     float:right;
     right:12%;
-    position: absolute;
-    /* margin-right:5%; */
-    /* width:1240px; */
-    /* margin:0 auto;
-    padding-left:50px; */
 }
 
 header .row .row-1 li{
@@ -69,7 +63,6 @@ header .row .row-1 li{
 header .row .row-1 li a{
     display: block;
     width:100%;
-    /* font-size:14px; */
     font-size:0.813rem;
 }
 
@@ -103,38 +96,26 @@ header .row .row-1 li a{
 /* #lnb {position:absolute; left:0; top:0; width:100%; } */
 
 #lnb {
-    /* width:1240px;  */
+
     margin:0 auto;
     width:80%;
     float: right;
 }
 #lnb nav {
-    /* border-bottom:1px solid rgba(5,245,0,0.5); */
+  
     font-size:0;
     position: relative;
     z-index: 30;
 }
 
-/* #lnb nav:hover +div{
-    height:530px;
-    opacity: 1;
-} */
 
-
-/* #lnb nav.on +div{
-    height:530px;
-    opacity: 1;
-} */
 
 #lnb nav > ul {
-    /* display: inline-block; */
+/* display: inline-block; */
     margin:0 auto;
     text-align: center;
     width:90%;
-    /* width:100%; */
-    /* width:80%; */
-    /* float: right; */
-    /* height:70px; */
+   
     overflow:hidden;
     z-index:31;
 }
@@ -146,8 +127,6 @@ header .row .row-1 li a{
 #lnb nav + div{
     position: absolute;
     left:0;
-    /* top:110px; */
-    /* top:83px; */
     width:100%;
     height:0;
     background:#fff;
@@ -161,18 +140,15 @@ header .row .row-1 li a{
 }
 
 #lnb nav > ul > li{
-    /* display: inline-block; */
     float:left;
     position: relative;
     width:16%;
-    /* width:14%; */
 }
 
 #lnb nav > ul > li > a{
     font-size:1.1rem; 
     color: #000; 
     display:block; 
-    /* width:170px;  */
     height:75px; 
     line-height:75px;
     position: relative;
@@ -195,15 +171,6 @@ header .row .row-1 li a{
     left:0;
 }
 
-/* #lnb nav > ul > li:first-child > a::after{
-    display: none;
-}
-
-#lnb nav > ul > li:first-child > a >img {
-    width:100%;
-    vertical-align: middle;
-} */
-
 #lnb nav > ul ul {
    
    position: absolute;
@@ -213,20 +180,15 @@ header .row .row-1 li a{
    opacity: 0;
    transition: 0.5s;
    height:450px;
-   /* border-left: 0.5px solid #dedede; */
-   border-top: 4px solid #dedede;
+    border-top: 4px solid #dedede;
 }
 
-#lnb nav > ul li:last-child ul {
-    /* border-right: 0.5px solid #dedede; */
-}
 
 #lnb nav > ul ul li {
     line-height:39px;
 }
 
 #lnb nav > ul ul li a{
-    /* font-size:15px; */
     font-size:0.813rem;
     position: relative;
     transition: 0.1s;
@@ -1610,10 +1572,6 @@ header .row .row-1 li a{
     
 @media (max-width:990px){
 
-    .m_logo{
-        /* display:block; */
-    }
-
 
     #lnb nav{
         position: relative;
@@ -1677,43 +1635,6 @@ header .row .row-1 li a{
         margin-top: 5px;
     }
 
-    /* .mobutton.active span {
-        transition: 0.25s margin, 0.25s transform 0.25s;
-    }
-
-    .mobutton.active span:nth-child(1){
-        margin-top:8px;
-        margin-bottom: -4px;
-        transform: rotate(45deg);
-    }
-
-    .mobutton.active span:nth-child(2){
-        transform: rotate(-45deg);
-    }
-
-    .mobutton.active span:nth-child(3){
-
-        margin-top:-4px;
-        transform: rotate(135deg);
-    }
-
-    .mobutton.active +.mopanel{
-        display: block;
-        right:0;
-       
-    } */
-
-
-    /* #lnb nav .mobutton::before{
-        position: absolute;
-        content: "";
-        width:100%;
-        height:3px;
-        background: blueviolet;
-        top:0;
-        left:0;
-    } */
-
     #lnb nav > ul:nth-of-type(1){
         display: none;
     }
@@ -1730,31 +1651,28 @@ header .row .row-1 li a{
         z-index:1002;
         transition:0.7s;
         background:#eaeaea;
-        /* overflow:scroll; */
     }
 
     .mopanel.on{
         right: 0px;
     }
 
-    header.on .back{
+    /* header.on .back{
         display: block;
-    }
+    } */
 
     .mopanel .mognb{
         position: absolute;
         width: 100%;
-        /* height:100%; */
         top:0;
         left:0px;
         z-index:100;
-        /* text-align: center; */
+       
     }
 
     .mognb>li{
         color: #fff;
         background:#353990;
-        /* height:50px; */
         border-bottom:1px solid #fff;
         position: relative;
     }
@@ -1777,7 +1695,6 @@ header .row .row-1 li a{
     .mognb>li:nth-child(1)>.close{
         position: absolute;
         width:30px;
-        /* height:30px; */
         right:0;
         top:50%;
         padding-left:0;
@@ -1809,12 +1726,9 @@ header .row .row-1 li a{
         width:100%;
         display: block;
         box-sizing: border-box;
-        /* font-size:14px;
-        padding:15px 20px; */
     }
 
     .mognb li img{
-        /* display:block; */
         position: absolute;
         top:50%;
         transform: translateY(-50%);
@@ -1824,10 +1738,6 @@ header .row .row-1 li a{
     }
 
     .mognb li .sub{
-        /* position: absolute;
-        width:100%; */
-        /* z-index:100; */
-        /* height:100%; */
         display: none;
     }
 
@@ -1835,16 +1745,13 @@ header .row .row-1 li a{
         display: block;
     }
 
-    /* .mognb li .sub li{
-        border-bottom:1px solid #000;
-    } */
+ 
 
     .mognb li .sub>li>a{
         display:block;
         background:#eee;
         color:#222;
         border-bottom:1px solid #000;
-        /* padding:5px; */
         padding:15px 30px;
         font-size:12px;
     }
@@ -2124,20 +2031,7 @@ header .row .row-1 li a{
     #lnb nav .m_logo{
         width:20%;
     }
-/* 
-    #lnb nav .mobutton{
-        width:30px;
-        height:20px;
-    }
 
-    .mobutton span:nth-child(2){
-        margin-top:8px;
-    }
-
-    .mobutton span:last-child{
-        margin-top:16px;
-    } */
-    
     .main_menu{
         display: none;
     }
@@ -2146,7 +2040,6 @@ header .row .row-1 li a{
         display:block;
         margin:30px auto;
         width:80%;
-        /* height:240px; */
     }
 
     .momenu ul{
@@ -2165,7 +2058,6 @@ header .row .row-1 li a{
     .momenu ul li a{
         display:block;
         width:100%;
-        /* line-height:50px; */
     }
 
     .momenu ul li a p{
@@ -2311,23 +2203,10 @@ header .row .row-1 li a{
 
 @media (max-width:510px){
 
-    /* .mopanel{
-        width:180px;
-     
-    } */
-
     .mognb>li>a{
         font-size:12px;
     }
-
-    /* .mognb>li:nth-child(1)>img{
-        right:5px;
-    } */
-
-    .momenu ul li a{
-        /* line-height:0; */
-    }
-    
+     
     .momenu ul li img{
         width:45px;
     }
@@ -2347,11 +2226,6 @@ header .row .row-1 li a{
     .box1-1 > img{
         margin-left:30px;
     }
-
-    /* .box2-1 li{
-        margin-right:15px;
-        padding-right:15px;
-    } */
 
     .box2-1 li a{
         font-size:10px;
