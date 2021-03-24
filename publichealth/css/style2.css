@@ -18,6 +18,15 @@ a{
     clear: both;
 }
 
+.ir_su{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 body{
     overflow-x: hidden;
     font-family: 'Noto Sans KR', sans-serif;
@@ -438,7 +447,7 @@ header .row .row-1 li a{
 .contents .how li>div::after{
     display: block;
     content: "";
-    background: url("./images/arrow.png") 0 0 no-repeat;
+    background: url("../images/arrow.png") 0 0 no-repeat;
     background-size: cover;
     width:20px;
     height:20px;
@@ -565,7 +574,7 @@ header .row .row-1 li a{
     top:50%;
     transform: translateY(-50%);
     right:10px;
-    background:url("./images/down.png") 0 -10px  no-repeat;
+    background:url("../images/down.png") 0 -10px  no-repeat;
 }
 
 .footer_site_list li .detail{
