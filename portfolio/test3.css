@@ -28,6 +28,15 @@ button {
     clear: both;
 }
 
+.ir_su{
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 /* html { font-size: 62.5%;} */
 
 body {
@@ -249,7 +258,7 @@ section .title {
     transition: 0.5s ease;
 }
 
-section .title h2 {
+section .title h3 {
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Anton', sans-serif;
     letter-spacing: 10px;
@@ -610,7 +619,7 @@ ul.slide {
     /* transform: skewY(10deg);  */
 }
 
-.container h3 {
+.container h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     padding: 20px 0;
@@ -623,7 +632,7 @@ ul.slide {
     padding: 30px 50px 20px 100px;
 }
 
-.slide li:nth-child(3) .container h3 {
+.slide li:nth-child(3) .container h4 {
     font-family: 'Do Hyeon', sans-serif;
     /* font-size:40px; */
 }
@@ -654,7 +663,7 @@ ul.slide {
     position: relative;
 }
 
-.subtitle h2 {
+.subtitle h3 {
     /* width:200%; */
     font-size: 5vw;
     text-align: center;
@@ -665,7 +674,7 @@ ul.slide {
     /* margin-left:30%; */
 }
 
-.subtitle h2 strong {
+.subtitle h3 strong {
     color: #fff;
 }
 
@@ -1038,7 +1047,7 @@ ul.slide {
         background-size: contain;
     }
 
-    .container h3{
+    .container h4{
         padding:0;
         font-size:40px;
         
@@ -1087,7 +1096,7 @@ ul.slide {
         font-size:80px;
     } */
 
-    section .title h2 {
+    section .title h3 {
         font-size:50px;
     }
 
@@ -1096,7 +1105,7 @@ ul.slide {
         font-size:18px;
     }
 
-    .container h3{
+    .container h4{
         font-size:35px;
     }
 
@@ -1214,7 +1223,7 @@ ul.slide {
 
 @media (max-width:900px){
 
-    section .title h2 {
+    section .title h3 {
         font-size:40px;
     }
 
@@ -1268,7 +1277,7 @@ ul.slide {
         display: none;
     }
 
-    .subtitle h2{
+    .subtitle h3{
         font-size:50px;
     }
 }
@@ -1384,7 +1393,7 @@ ul.slide {
         padding:20px 50px;
     }
 
-    .container h3{
+    .container h4{
         font-size:25px;
     }
 
@@ -1430,7 +1439,7 @@ ul.slide {
 
 @media(max-width:540px){
 
-    section .title h2 {
+    section .title h3 {
         font-size: 35px;
     }
     
@@ -1481,7 +1490,7 @@ ul.slide {
 
 @media(max-width:450px){
 
-    section .title h2 {
+    section .title h3 {
         font-size: 30px;
         letter-spacing: 5px;
     }
