@@ -48,14 +48,16 @@ header .row{
 }
 
 header .row .row-1{
-    position: absolute;
+    /* position: absolute; */
     float:right;
-    right:12%;
+    /* right:12%; */
 }
 
 header .row .row-1 li{
     float: left;
-    margin-right:20px;
+    /* margin-left:20px; */
+    /* margin-right:20px; */
+    margin-right:33px;
     line-height: 45px;
     text-align: center;
 }
@@ -64,6 +66,13 @@ header .row .row-1 li a{
     display: block;
     width:100%;
     font-size:0.813rem;
+}
+
+.box{
+    position: relative;
+    width:1170px;
+    margin:0 auto;
+    height:100%; 
 }
 
 .mopanel{
@@ -82,9 +91,9 @@ header .row .row-1 li a{
     position:absolute;
     top:55%;
     transform: translateY(-50%);
-    left:8%;
+    /* left:8%; */
     /* display:block; */
-    width:15%;
+    /* width:15%; */
     float: left;
     /* margin:1% 2.5% 0 2.5%; */
 }
@@ -114,8 +123,7 @@ header .row .row-1 li a{
 /* display: inline-block; */
     margin:0 auto;
     text-align: center;
-    width:90%;
-   
+    /* width:90%; */
     overflow:hidden;
     z-index:31;
 }
@@ -125,7 +133,8 @@ header .row .row-1 li a{
 }
 
 #lnb nav + div{
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     left:0;
     width:100%;
     height:0;
@@ -142,7 +151,7 @@ header .row .row-1 li a{
 #lnb nav > ul > li{
     float:left;
     position: relative;
-    width:16%;
+    width:16.6%;
 }
 
 #lnb nav > ul > li > a{
@@ -1113,6 +1122,12 @@ header .row .row-1 li a{
 
 
 /* responsive */
+
+@media (max-width:1170px){
+    .box{
+        width:100%;
+    }
+}
 
 @media (max-width:1440px){
 
