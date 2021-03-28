@@ -2,41 +2,12 @@ $(document).ready(function(){
 
     // 메인 메뉴
 
-    // $('#lnb nav').on('mouseenter focusin', function(){
-    //     $(this).siblings('div').css({"height":"530px","opacity":"1"});
-    // });
-
-    // $('#lnb nav').on('mouseleave focusout', function(){
-    //     $(this).siblings('div').css({"height":"0","opacity":"0"});
-    // });
-
-    $(window).resize(function(){
-        var mq1 = window.matchMedia("screen and (max-width:990px)");
-
-        if(mq1.matches){
-            // 990px 이히일때
-            $("#lnb nav").on('mouseenter focusin', function(){
-                $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
-            });
-        }else{
-            // 990px 이상일때
-            $("#lnb nav").on('mouseenter focusin', function(){
-                $(this).parent().parent().parent().children('span').css({"height":"540px","opacity":"1"});
-            });
-        
-            $("#lnb nav").on('mouseleave focusout', function(){
-                $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
-            });
-        }
+    $('#lnb nav').on('mouseenter focusin', function(){
+        $(this).siblings('div').css({"height":"530px","opacity":"1"});
     });
 
-   
-    $("#lnb nav").on('mouseenter focusin', function(){
-        $(this).parent().parent().parent().children('span').css({"height":"540px","opacity":"1"});
-    });
-
-    $("#lnb nav").on('mouseleave focusout', function(){
-        $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
+    $('#lnb nav').on('mouseleave focusout', function(){
+        $(this).siblings('div').css({"height":"0","opacity":"0"});
     });
 
     // $('#lnb nav>ul').on('mouseenter focusin',function(){
@@ -73,11 +44,10 @@ $(document).ready(function(){
         $('.mopanel').addClass('on');
         $("header").addClass('on');
 
-         /* mognb close */
+    /* mognb close */
 
     $('.close').click(function(){
         $('.mopanel').removeClass('on');
-        // $('.mopanel').css({'right':'-300px'});
         $("header").removeClass('on');
     });
     });

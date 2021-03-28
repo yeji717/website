@@ -314,6 +314,7 @@ body{
     position: relative;
     width: 100%;
     height:38vw;
+    /* overflow: hidden; */
     /* height:86vh; */
     /* height: 800px; */
 }
@@ -325,7 +326,7 @@ body{
     width: 100%;
     height: 100%;
     background-size: cover;
-
+    /* animation: bg ease-in-out 3s; */
 }
 
 /* .main>.bg>li>.title {
@@ -364,6 +365,17 @@ body{
     background: url('../img/spa01.jpg')100% no-repeat;
     background-size: cover;
 }
+
+/* @keyframes bg {
+    0%{
+        transform: scale(1.1);
+        
+    }
+
+    100%{   
+        transform: scale(1);
+    }
+} */
 
 /* 
 .navi{
