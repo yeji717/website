@@ -40,14 +40,14 @@ header .row{
 }
 
 header .row .row-1{
-    position: absolute;
+    /* position: absolute; */
     float:right;
-    right:12%;
+    /* right:12%; */
 }
 
 header .row .row-1 li{
     float: left;
-    margin-right:20px;
+    margin-right:33px;
     line-height: 45px;
     text-align: center;
 }
@@ -55,7 +55,14 @@ header .row .row-1 li{
 header .row .row-1 li a{
     display: block;
     width:100%;
-    font-size:0.812rem;
+    font-size:0.813rem;
+}
+
+.container{
+    position: relative;
+    width:1170px;
+    margin:0 auto;
+    height:100%; 
 }
 
 .mopanel{
@@ -66,18 +73,28 @@ header .row .row-1 li a{
     display: none;
 }
 
-.lnb{
+nav{
     position: relative;
+}
+
+nav > span{
+    position: absolute;
+    content: "";
+    width:100%;
+    background:#fff;
+    z-index:10;
+    transition: 0.5s ease;
 }
 
 .mainlogo{
     position:absolute;
     top:55%;
     transform: translateY(-50%);
-    left:8%;
+    /* left:8%; */
     /* display:block; */
     width:15%;
     float: left;
+    z-index:20;
     /* margin:1% 2.5% 0 2.5%; */
 }
 
@@ -87,13 +104,13 @@ header .row .row-1 li a{
 
 /* #lnb {position:absolute; left:0; top:0; width:100%; } */
 
-#lnb {
+#gnb {
     /* width:1240px;  */
     margin:0 auto;
     width:80%;
     float: right;
 }
-#lnb nav {
+#gnb .inner {
     /* border-bottom:1px solid rgba(5,245,0,0.5); */
     font-size:0;
     position: relative;
@@ -111,11 +128,11 @@ header .row .row-1 li a{
     opacity: 1;
 } */
 
-#lnb nav > ul {
+#gnb .inner > ul {
     /* display: inline-block; */
     margin:0 auto;
     text-align: center;
-    width:90%;
+    /* width:90%; */
     /* width:100%; */
     /* width:80%; */
     /* float: right; */
@@ -124,28 +141,26 @@ header .row .row-1 li a{
     z-index:31;
 }
 
-#lnb nav > ul:hover {
+#gnb .inner > ul:hover {
     overflow:visible;
 }
 
-#lnb nav + div{
+/* #gnb nav + div{
     position: absolute;
     left:0;
-    /* top:110px; */
-    /* top:83px; */
     width:100%;
     height:0;
     background:#fff;
     z-index:29;
     transition: 0.5s;
     opacity: 0;
-}
+} */
 
-#lnb nav > ul:hover ul {
+#gnb .inner > ul:hover ul {
     opacity: 1;
 }
 
-#lnb nav > ul > li{
+#gnb .inner > ul > li{
     /* display: inline-block; */
     float:left;
     position: relative;
@@ -153,7 +168,7 @@ header .row .row-1 li a{
     /* width:14%; */
 }
 
-#lnb nav > ul > li > a{
+#gnb .inner > ul > li > a{
     font-size:1.1rem; 
     color: #000; 
     display:block; 
@@ -163,7 +178,7 @@ header .row .row-1 li a{
     position: relative;
 }
 
-#lnb nav > ul > li > a::after{
+#gnb .inner > ul > li > a::after{
     content: "";
     width:0;
     position: absolute;
@@ -175,7 +190,7 @@ header .row .row-1 li a{
     z-index:30;
 }
 
-#lnb nav > ul > li:hover>a::after {
+#gnb .inner > ul > li:hover>a::after {
     width:100%;
     left:0;
 }
@@ -189,7 +204,7 @@ header .row .row-1 li a{
     vertical-align: middle;
 } */
 
-#lnb nav > ul ul {
+#gnb .inner > ul ul {
    
    position: absolute;
    text-align: center;
@@ -202,33 +217,29 @@ header .row .row-1 li a{
    border-top: 4px solid #dedede;
 }
 
-#lnb nav > ul li:last-child ul {
-    /* border-right: 0.5px solid #dedede; */
-}
-
-#lnb nav > ul ul li {
+#gnb .inner > ul ul li {
     line-height:39px;
 }
 
-#lnb nav > ul ul li a{
+#gnb .inner > ul ul li a{
     /* font-size:15px; */
     font-size:0.813rem;
     position: relative;
     transition: 0.1s;
 }
 
-#lnb nav > ul ul li a:hover {
+#gnb .inner > ul ul li a:hover {
     color: #00aeef;
     font-weight:bold;
     font-size:18px;
 }
 
-#lnb nav > ul ul li a:hover::after{
+#gnb .inner > ul ul li a:hover::after{
     width:100%;
     left:0;
 }
 
-#lnb nav > ul ul li a::after{
+#gnb .inner > ul ul li a::after{
     content: "";
     position: absolute;
     width:0;
@@ -277,7 +288,7 @@ header .row .row-1 li a{
     margin-top:6%;
 }
 
-.box1>ul:nth-child(1)>li>a{
+.box1 #snb>li>a{
     display: block;
     color:#fff;
     background: #353990;
@@ -285,21 +296,21 @@ header .row .row-1 li a{
     font-size:20px;
 }
 
-.box1 ul li:nth-of-type(1)>ul{
+.box1 #snb li:nth-of-type(1)>ul{
     padding:15px 0;
     border:1px solid #91908f;
 }
 
-.box1 ul li:nth-of-type(1)>ul>li{
+.box1 #snb li:nth-of-type(1)>ul>li{
     position: relative;
 }
 
-.box1 ul li:nth-of-type(1)>ul>li.on a{
+.box1 #snb li:nth-of-type(1)>ul>li.on a{
     font-weight: bold;
     font-size:18px;
 }
 
-.box1 ul li:nth-of-type(1)>ul>li>span{
+.box1 #snb li:nth-of-type(1)>ul>li>span{
     position: absolute;
     width:4px;
     height:4px;
@@ -309,11 +320,11 @@ header .row .row-1 li a{
     transform: translateY(-50%);
 }
 
-.box1 ul li:nth-of-type(1)>ul>li.on span{
+.box1 #snb li:nth-of-type(1)>ul>li.on span{
     background:#000;
 }
 
-.box1 ul li:nth-of-type(1)>ul>li>a{
+.box1 #snb li:nth-of-type(1)>ul>li>a{
     display: block;
     padding:10px 20px 10px 30px;
     
@@ -326,21 +337,24 @@ header .row .row-1 li a{
  
 }
 
-.box2>nav{
+.box2 .location{
     position: absolute;
     top:15px;
     right:0;
 }
 
-.box2 nav ul li{
+.box2 .location ol li{
     float: left;
     margin-right:10px;
     color: #91908f;
 }
 
-.box2 nav ul li a{
-    font-size:17px;
-   
+.box2 .location ol li a{
+    font-size:13px;
+}
+
+.box2 .location ol li span img{
+    padding-left:10px;
 }
 
 .box2  .contents{
@@ -649,31 +663,31 @@ header .row .row-1 li a{
         width:80%;
     }
 
-    #lnb{
+    #gnb{
         /* width:100%; */
     }
 
-    #lnb nav > ul {
+    #gnb nav > ul {
        /* width:80%; */
        width:90%;
     }
 
-    #lnb nav > ul > li > a{
+    #gnb nav > ul > li > a{
         /* width:calc(943px / 7); */
         font-size:15px;
         height:70px; 
         line-height:70px;
     }
 
-    #lnb nav > ul ul a{
+    #gnb nav > ul ul a{
         font-size:11px;
     }
     
-    #lnb nav > ul ul a:hover {
+    #gnb nav > ul ul a:hover {
         font-size:13px;
     }
 
-    #lnb nav:hover +div{
+    #gnb nav:hover +div{
         height:480px;
     }
 
@@ -733,33 +747,31 @@ header .row .row-1 li a{
     }
 }
 
+@media (max-width:1190px){
+    .container{
+        width:100%;
+    }
+}
+
 @media (max-width:1024px){
 
-    #lnb nav > ul > li > a {
+    #gnb .inner > ul > li > a {
         font-size:15px;
     }
 
-    #lnb nav > ul ul{
+    #gnb .inner > ul ul{
         height:390px;
     }
 
-    /* #lnb nav + div{
-        top:110px;
-    } */
-
-    #lnb nav:hover +div{
-        height:390px;
-    }
-
-    #lnb nav > ul ul li{
+    #gnb .inner > ul ul li{
         line-height: 32px;
     }
 
-    #lnb nav > ul ul li a{
+    #gnb .inner > ul ul li a{
         font-size:12px;
     }
 
-    #lnb nav > ul ul li a:hover {
+    #gnb .inner > ul ul li a:hover {
         font-size:13px;
     }
 
@@ -846,8 +858,11 @@ header .row .row-1 li a{
 
 @media (max-width:990px){
 
+    #gnb .inner > ul:nth-of-type(1){
+        display: none;
+    }
 
-    #lnb nav{
+    #gnb .inner{
         position: relative;
         width:80%;
         margin:0 auto;
@@ -856,7 +871,8 @@ header .row .row-1 li a{
 
     .mainlogo{
         position: absolute;
-        width:15%;
+        /* width:15%; */
+        width:110px;
         left:13%;
         top:50%;
         transform: translateY(-50%);
@@ -868,7 +884,7 @@ header .row .row-1 li a{
         width:100%;
     }
 
-    #lnb nav .m_logo {
+    /* #gnb nav .m_logo {
         position: absolute;
        width:18%;
        left:0;
@@ -876,10 +892,10 @@ header .row .row-1 li a{
        transform: translateY(-50%);
     }
 
-    #lnb nav .m_logo img{
+    #gnb nav .m_logo img{
         display: block;
         width:100%;
-    }
+    } */
 
     .mobutton{
         /* width:40px;
@@ -907,10 +923,6 @@ header .row .row-1 li a{
 
     .mobutton span:nth-child(3){
         margin-top: 5px;
-    }
-
-    #lnb nav > ul:nth-of-type(1){
-        display: none;
     }
 
     .mopanel{
@@ -1057,7 +1069,7 @@ header .row .row-1 li a{
         border-bottom:none;
     }
 
-    #lnb nav + div{
+    #gnb nav + div{
         display: none;
     }
 }
@@ -1088,10 +1100,10 @@ header .row .row-1 li a{
         width:100%;
     }
 
-    .box2 nav ul li {
+    .box2 .location ol li {
         font-size:12px;
     }
-    .box2 nav ul li a{
+    .box2 .location ol li a{
         font-size:13px;
     }
 
@@ -1160,14 +1172,14 @@ header .row .row-1 li a{
         color:#fff;
     }
 
-    #lnb nav{
+    #gnb .inner{
         width:90%;
         height:50px;
     }
 
-    #lnb nav .m_logo{
+    /* #gnb nav .m_logo{
         width:20%;
-    }
+    } */
 
     .contents .how li>div::after{
         right:-22px;
@@ -1212,11 +1224,11 @@ header .row .row-1 li a{
         font-size: 20px;
     }
 
-    .box2 nav ul li{
+    .box2 .location ol li{
         font-size:11px;
     }
 
-    .box2 nav ul li a{
+    .box2 .location ol li a{
         font-size:10px;
     }
 
@@ -1326,7 +1338,7 @@ header .row .row-1 li a{
         width:30%;
     } */
 
-    .box2 nav ul li a {
+    .box2 .location ol li a {
         font-size:5px;
     }
 

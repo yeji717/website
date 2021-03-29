@@ -13,15 +13,15 @@ $(document).ready(function(){
     let w_width = window.innerWidth;
 
     if(w_width >= 990){
-        $("#lnb nav").on('mouseenter focusin', function(){
+        $("#gnb .inner").on('mouseenter focusin', function(){
             $(this).parent().parent().parent().children('span').css({"height":"540px","opacity":"1"});
         });
     
-        $("#lnb nav").on('mouseleave focusout', function(){
+        $("#gnb .inner").on('mouseleave focusout', function(){
             $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
         });    
     }else{
-        $("#lnb nav").on('mouseenter focusin', function(){
+        $("#gnb .inner").on('mouseenter focusin', function(){
             $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
         });
     }
@@ -41,16 +41,16 @@ $(document).ready(function(){
 
         if(mq1.matches){
             // 990px 이히일때
-            $("#lnb nav").on('mouseenter focusin', function(){
+            $("#gnb .inner").on('mouseenter focusin', function(){
                 $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
             });
         }else{
             // 990px 이상일때
-            $("#lnb nav").on('mouseenter focusin', function(){
+            $("#gnb .inner").on('mouseenter focusin', function(){
                 $(this).parent().parent().parent().children('span').css({"height":"540px","opacity":"1"});
             });
         
-            $("#lnb nav").on('mouseleave focusout', function(){
+            $("#gnb .inner").on('mouseleave focusout', function(){
                 $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
             });
         }
