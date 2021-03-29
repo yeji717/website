@@ -25,16 +25,6 @@ $(document).ready(function(){
             $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
         });
     }
-    
-    // console.log(window.innerWidth);
-
-    // $("#lnb nav").on('mouseenter focusin', function(){
-    //     $(this).parent().parent().parent().children('span').css({"height":"540px","opacity":"1"});
-    // });
-
-    // $("#lnb nav").on('mouseleave focusout', function(){
-    //     $(this).parent().parent().parent().children('span').css({"height":"0","opacity":"0"});
-    // });
 
     $(window).resize(function(){
         var mq1 = window.matchMedia("screen and (max-width:990px)");
@@ -376,14 +366,20 @@ $(document).ready(function(){
 
         /*-------------- footer ------------------- */
 
-        const button = $('.footer_site_list>li');
-        
-            button.on('click',function(e){
-                e.preventDefault();
-                // if($(this).parent().siblings().children('.detail').hasClass('on')){removeClass('on')};
-                // button.removeClass('on');
-                $(this).toggleClass('on');
-                // $('.detail').css({'display':'block'});
-        });
+        const button = $('.footer_site_list li>a');
 
+        $('.detail').hide();
+        
+        button.on("click focusout",function () {
+            if($(this).siblings(".detail").is(":hidden")){
+                $(".detail").hide();
+                $(this).siblings(".detail").show();
+                button.removeClass("on");
+                $(this).addClass("on");
+            }else{
+                $(".detail").hide();
+                button.removeClass("on");
+            }
+            return false;
+        });
 })

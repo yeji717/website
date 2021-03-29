@@ -1075,7 +1075,11 @@ nav > span{
     border:1px solid #272a36;
 }
 
-.footer_site_list li.on .detail{
+/* .footer_site_list li.on .detail{
+    display:block;
+} */
+
+.footer_site_list>li>a.on .detail{
     display:block;
 }
 
