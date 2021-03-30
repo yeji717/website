@@ -92,7 +92,7 @@ nav > span{
     transform: translateY(-50%);
     /* left:8%; */
     /* display:block; */
-    width:15%;
+    /* width:15%; */
     float: left;
     z-index:20;
     /* margin:1% 2.5% 0 2.5%; */
@@ -164,7 +164,7 @@ nav > span{
     /* display: inline-block; */
     float:left;
     position: relative;
-    width:16%;
+    width:16.6%;
     /* width:14%; */
 }
 
@@ -644,6 +644,7 @@ nav > span{
 
 .footerwrap address{
     margin-top:20px;
+    font-style: normal;
 }
 
 

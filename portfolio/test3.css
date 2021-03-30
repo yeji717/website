@@ -53,12 +53,9 @@ body {
 
 #header {
     width: 100%;
+    height: 8.3vh;
     /* height: 60px; */
-    height: 60px;
     background: #fff;
-    /* position: absolute; */
-    /* margin:0 auto; */
-    /* top:-100%; */
     transition: 1s ease-in-out;
     display: none;
     opacity: 0;
@@ -80,18 +77,18 @@ body {
 #header .header_wrap h1 {
     text-transform: uppercase;
     display: inline-block;
-    line-height: 60px;
-    font-size:2rem;
-    /* font-size: 3.2rem; */
-    /* font-size: 32px; */
-    /* margin-left:4%; */
+    line-height: 8.3vh;
+    /* line-height: 60px; */
+    /* font-size:2rem; */
+    font-size:4.43vh;
 }
 
 #header .header_wrap span {
     display: inline;
     float: right;
     /* margin-right:4%; */
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 5.54vh;
     color: rgb(245, 223, 77);
 }
 
@@ -261,6 +258,7 @@ section .title {
 section .title h3 {
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Anton', sans-serif;
+    font-size:3.8vw;
     letter-spacing: 10px;
 }
 
@@ -473,12 +471,12 @@ ul.slide {
     font-family: 'Poppins', sans-serif;
     /* display: none; */
     /* position: absolute; */
-    color: #fff;
+    color: #000;
     /* z-index: -100; */
     left: 0;
     top: 0;
     font-size: 100px;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 
@@ -527,7 +525,8 @@ ul.slide {
     height: 80%;
     background: #fff;
     top: 35px;
-    left: 10%;
+    /* left: 10%; */
+    left: 8%;
 }
 
 .slide li.on .sun1 {
@@ -551,8 +550,9 @@ ul.slide {
     height: 2px;
     background: #fff;
     bottom: 11%;
-    left: 10%;
-    /* left:10%; */
+    /* left: 10%; */
+    left: 8%;
+    
 }
 
 .slide li.on .sun2 {
@@ -571,13 +571,12 @@ ul.slide {
 
 .detail p {
 
-    margin: 50px 80px;
+    margin: 50px 70px;
     font-size: 20px;
 }
 
 .detail .go {
-    /* width: 50%; */
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .detail .go a {
@@ -589,7 +588,7 @@ ul.slide {
 }
 
 .detail .go a:nth-child(1) {
-    margin-right: 5%;
+    margin-right: 20px;
 }
 
 .detail .go a:hover {
@@ -654,7 +653,7 @@ ul.slide {
 } */
 
 .work1 {
-    margin: 120px 0 100px;
+    margin: 120px 0 200px;
 }
 
 .work2 {
@@ -729,7 +728,7 @@ ul.slide {
     text-align: center;
 }
 
-.inner h3 {
+.inner h4 {
     text-transform: uppercase;
     text-align: center;
     padding: 20px 0;

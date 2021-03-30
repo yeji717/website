@@ -371,6 +371,7 @@ $(document).ready(function(){
         $('.detail').hide();
         
         button.on("click focusout",function () {
+
             if($(this).siblings(".detail").is(":hidden")){
                 $(".detail").hide();
                 $(this).siblings(".detail").show();
@@ -382,4 +383,4 @@ $(document).ready(function(){
             }
             return false;
         });
-})
+});
