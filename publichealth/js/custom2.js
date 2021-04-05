@@ -86,15 +86,24 @@ $(document).ready(function(){
 
     /*-------------- footer ------------------- */
 
-    var button = $('.footer_site_list>li');
-        
-    button.on('click',function(e){
-        e.preventDefault();
-        // if($(this).parent().siblings().children('.detail').hasClass('on')){removeClass('on')};
-        // button.removeClass('on');
-        $(this).toggleClass('on');
-        // $('.detail').css({'display':'block'});
-});
+
+    const button = $('.footer_site_list li>a');
+
+    $('.detail').hide();
+    
+    button.on("click focusout",function () {
+
+        if($(this).siblings(".detail").is(":hidden")){
+            $(".detail").hide();
+            $(this).siblings(".detail").show();
+            button.removeClass("on");
+            $(this).addClass("on");
+        }else{
+            $(".detail").hide();
+            button.removeClass("on");
+        }
+        return false;
+    });  
 
 
 })
