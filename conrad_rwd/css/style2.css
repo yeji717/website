@@ -352,7 +352,8 @@ body{
 .bg {
     position: relative;
     width: 100%;
-    height:38vw;
+    height:80vh;
+    /* height:38vw; */
     /* height:86vh; */
     /* height: 800px; */
 }
@@ -390,17 +391,17 @@ body{
 }
 
 .bg>.bg1 {
-    background: url('./img/main3.jpg')100% no-repeat;
+    background: url('../img/main3.jpg')100% no-repeat;
     background-size: cover;
 }
 
 .bg>.bg2 {
-    background: url('./img/bg2.jpg')100% no-repeat;
+    background: url('../img/bg2.jpg')100% no-repeat;
     background-size: cover;
 }
 
 .bg>.bg3 {
-    background: url('./img/spa01.jpg')100% no-repeat;
+    background: url('../img/spa01.jpg')100% no-repeat;
     background-size: cover;
 }
 
@@ -664,10 +665,8 @@ body{
 #reservation {
     position: absolute;
     background: rgba(155, 168, 185, 0.8);
-    /* top:34.5vw; */
-    top:525px;
-    /* top: 92%; */
-    /* height:7vw; */
+    /* top:525px; */
+    top:72vh;
     height: 110px;
     width: 60%;
     left: 50%;
@@ -1048,43 +1047,43 @@ button>img{
 }
 
 .slider .left .room .a1 {
-    background: url('./img/deluxe.jpg')0 0 no-repeat;
+    background: url('../img/deluxe.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a2 {
-    background: url('./img/premium.jpg')0 0 no-repeat;
+    background: url('../img/premium.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a3 {
-    background: url('./img/queencorner.jpg')0 0 no-repeat;
+    background: url('../img/queencorner.jpg')0 0 no-repeat;
     background-size: cover;
 
 }
 
 .slider .left .room .a4 {
-    background: url('./img/executive.jpg')0 0 no-repeat;
+    background: url('../img/executive.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a5 {
-    background: url('./img/premium_corner_suite.jpg')0 0 no-repeat;
+    background: url('../img/premium_corner_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a6 {
-    background: url('./img/executive_suite.jpg')0 0 no-repeat;
+    background: url('../img/executive_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a7 {
-    background: url('./img/conrad_suite.jpg')0 0 no-repeat;
+    background: url('../img/conrad_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .slider .left .room .a8 {
-    background: url('./img/penthouse.jpg')0 0 no-repeat;
+    background: url('../img/penthouse.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
@@ -1183,43 +1182,43 @@ button>img{
 
 
 .b1-2 {
-    background: url('./img/deluxe.jpg')0 0 no-repeat;
+    background: url('../img/deluxe.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b2-2 {
-    background: url('./img/premium.jpg')0 0 no-repeat;
+    background: url('../img/premium.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 
 .b3-2 {
-    background: url('./img/queencorner.jpg')0 0 no-repeat;
+    background: url('../img/queencorner.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b4-2 {
-    background: url('./img/executive.jpg')0 0 no-repeat;
+    background: url('../img/executive.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b5-2 {
-    background: url('./img/premium_corner_suite.jpg')0 0 no-repeat;
+    background: url('../img/premium_corner_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b6-2 {
-    background: url('./img/executive_suite.jpg')0 0 no-repeat;
+    background: url('../img/executive_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b7-2 {
-    background: url('./img/conrad_suite.jpg')0 0 no-repeat;
+    background: url('../img/conrad_suite.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
 .b8-2 {
-    background: url('./img/penthouse.jpg')0 0 no-repeat;
+    background: url('../img/penthouse.jpg')0 0 no-repeat;
     background-size: cover;
 }
 
@@ -1229,7 +1228,7 @@ button>img{
     left: 10%;
     width: 70px;
     height: 30px;
-    background: url(./img/left2.png) no-repeat;
+    background: url(../img/left2.png) no-repeat;
     background-size: contain;
 }
 
@@ -1239,7 +1238,7 @@ button>img{
     left: 30%;
     width: 70px;
     height: 30px;
-    background: url(./img/right2.png) no-repeat;
+    background: url(../img/right2.png) no-repeat;
     background-size: contain;
     text-shadow: 1px 1px 1px #222;
 }
@@ -1381,7 +1380,7 @@ button>img{
     height: 300px;
     /* border-radius: 50%; */
     /* background: linear-gradient(to top, #250825,  rgb(255, 255, 255)); */
-    background: url(./img/main7.jpg)no-repeat center;
+    background: url(../img/main7.jpg)no-repeat center;
     background-size: cover;
     top: 28%;
     right: 10%;
@@ -1413,7 +1412,7 @@ button>img{
     position: relative;
     min-width: 70%;
     height: 35vw;
-    background: url('./img/bg.png') no-repeat;
+    background: url('../img/bg.png') no-repeat;
     background-size: cover;
 }
 
@@ -1586,22 +1585,22 @@ article:hover span {
 }
 
 .box3-1>div:nth-of-type(1) .hover {
-    background: url('./img/wedding07.jpg') no-repeat center;
+    background: url('../img/wedding07.jpg') no-repeat center;
     background-size: cover;
 }
 
 .box3-1>div:nth-of-type(2) .hover {
-    background: url('./img/spa02.jpg')no-repeat center;
+    background: url('../img/spa02.jpg')no-repeat center;
     background-size: cover;
 }
 
 .box3-1>div:nth-of-type(3) .hover {
-    background: url('./img/버티고2.jpg') no-repeat center;
+    background: url('../img/버티고2.jpg') no-repeat center;
     background-size: cover;
 }
 
 .box3-1>div:nth-of-type(4) .hover {
-    background: url('./img/conference05.jpg') no-repeat center;
+    background: url('../img/conference05.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -1858,9 +1857,9 @@ article:hover span {
 @media (max-width:1260px) {
 
 
-    .bg {
+    /* .bg {
         height: 600px;
-    }
+    } */
 
     #header .menu {
         width: 90%;
@@ -2196,9 +2195,9 @@ article:hover span {
         height:30px;
     }
 
-    .bg {
+    /* .bg {
         height: 550px;
-    }
+    } */
 
     .bg>li>.title {
         font-size: 40px;
