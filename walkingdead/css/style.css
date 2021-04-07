@@ -276,52 +276,75 @@ a{
     position:relative;
 }
 
-#slider .left{
-    width:30%;
-    float: left;
-    margin-left:13%;
-    overflow: hidden;
+.slider_inner{
+    position: relative;
+    width:70%;
+    margin:0 auto;
 }
 
-#slider .left ul{
-    width:1000%;
-    margin-left:0%;
- 
-}
- 
-#slider .left ul li{
-    width:10%;
-    height:59vh;
-    /* height:600px; */
-    float: left;
-}
-
-#slider .left ul li img{
-    display: block;
-    width:100%;
-    height:100%;
-}
-
-#slider .right{
+.slider_inner .left{
     width:40%;
     float: left;
-    position: relative;
-    /* height:500px; */
-    height:46vh;
     overflow: hidden;
+}
+
+.slider_inner .right{
+    width:60%;
+    height:46vh;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;    
     margin-top:50px;
     border-top:2px solid #cc0000;
     border-right: 2px solid #cc0000;
     border-bottom: 2px solid #cc0000;
 }
 
-#slider .right ul{
+/* #slider .left{
+    width:30%;
+    float: left;
+    margin-left:13%;
+    overflow: hidden;
+} */
+
+.slider_inner .left ul{
+    width:1000%;
+    margin-left:0%;
+ 
+}
+ 
+.slider_inner .left ul li{
+    width:10%;
+    height:59vh;
+    /* height:600px; */
+    float: left;
+}
+
+.slider_inner .left ul li img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+
+/* #slider .right{
+    width:40%;
+    float: left;
+    position: relative;
+    height:46vh;
+    overflow: hidden;
+    margin-top:50px;
+    border-top:2px solid #cc0000;
+    border-right: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+} */
+
+.slider_inner .right ul{
     width:1000%;
     position: relative;
     margin-left: 0%;
 }
 
-#slide_wrap #slider .right ul>li {
+.slider_inner .right ul>li {
     width:10%;
     /* height: 600px; */
     height:100%;
@@ -330,7 +353,7 @@ a{
    
 }
 
-#slide_wrap #slider .right ul>li>strong {
+.slider_inner .right ul>li>strong {
     position: relative;
     display: block;
     color: #fff;
@@ -340,7 +363,7 @@ a{
     font-family: 'Gentium Basic', serif;
 }
 
-#slide_wrap #slider .right ul>li>p{
+.slider_inner .right ul>li>p{
     text-align: center;
     font-size:1.17vw;
     color:#fff;
@@ -349,7 +372,7 @@ a{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-#slide_wrap #slider .right ul>li>a>span{
+.slider_inner .right ul>li>a>span{
     display: block;
     width:100px;
     margin:0 auto;
@@ -362,7 +385,7 @@ a{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-#slide_wrap #slider .right ul>li>a>span:hover{
+.slider_inner .right ul>li>a>span:hover{
     background:#fff;
     color:#cc0000;
     font-weight: bold;
