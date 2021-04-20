@@ -5,18 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slider for mobile</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
     <link rel="stylesheet" href="./touch.css">
 </head>
 <body>
     <h1>SWIPTE!</h1>
-    <div class="album">
-        <div class="images">
-            <img src="./img/2.jpg" alt="">
-            <img src="./img/3.jpg" alt="">
-            <img src="./img/asset10.png" alt="">
-            <img src="./img/asset8.png" alt="">
-        </div>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- 슬라이더 입니다. -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div> ...
+        </div> <!-- 만약 페이지네비게이션이 필요하다면 추가하세요 -->
+        <div class="swiper-pagination"></div> <!-- 양옆에 좌우 버튼이 필요하다면 추가하세요 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> <!-- 스크롤바가 필요하다면 추가하세요 -->
+        <div class="swiper-scrollbar"></div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="jquery.min_1.12.4.js"></script>
     <script src="touch.js"></script>
 </body>
