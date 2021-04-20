@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+}
+
+.owl-carousel{}
+.owl-carousel .item{
+    text-align: center;
+    background: #93e0e4;
+    height: 200px;
+    line-height: 200px;
+    margin:10px;
+}
