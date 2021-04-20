@@ -7,10 +7,14 @@ h1{
     text-align: center;
 }
 
-.album{
+.swiper-container { width: 600px; height: 300px; }
+
+
+
+/* .album{
     height: 300px;
     width: 375px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .images{
@@ -22,4 +26,4 @@ h1{
 
 img{
     width: 375px;
-}
+} */
