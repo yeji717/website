@@ -67,6 +67,7 @@ body{
 #wrap {
     width: 100%;
     position: relative;
+    overflow: hidden;     /* Ie에서 안되서 추가 */
     background:#f7f7f7;
 }
 

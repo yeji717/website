@@ -166,10 +166,7 @@ $(document).ready(function(){
         $banner_li.eq(next_index).show().css({left:'100%'}).stop().animate({left:'0%'},speed,function(){
             $(this).addClass(class_name);  
             isBlock = true;     
-        });
-    
-        // active_index = next_index;      
-        // activateBtn(active_index);   
+        });  
     }
     
     
@@ -183,9 +180,6 @@ $(document).ready(function(){
             $(this).addClass(class_name);  
             isBlock = true;     
         });
-    
-        // active_index = prev_index;
-        // activateBtn(active_index);
     }
 
     /*---------------- con2-3 ---------------- */

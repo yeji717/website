@@ -521,7 +521,7 @@ nav > span{
 .tab li.active>a{
     background:#353990;
     color: #fff;
-    border:none;
+    border:0;
 }
 
 .tab>li>span{
