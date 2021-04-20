@@ -10,7 +10,7 @@ h1{
 .album{
     height: 300px;
     width: 375px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .images{
