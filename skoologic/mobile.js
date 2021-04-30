@@ -216,6 +216,12 @@ $(document).ready(function(){
     // if($('.inform-box').css({'display':'block'})){
     //     $('.back').css({'display':'block'});
     // }
+
+    // 모바일 버튼 누르고 그냥 아무대나(어두운화면 .back) 눌렀을때 패널사라지게하기
+    $('.back').on("click",function(){
+        $(this).removeClass('on');
+        $('.mopanel').removeClass('active');
+    })
 })
 
 
