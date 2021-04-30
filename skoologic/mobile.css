@@ -764,25 +764,21 @@ i.fas.fa-caret-right {
 
 .prev {
     position: absolute;
-    /* width: 20px;
-    height: 20px; */
+    width:20px;
     top:50%;
     left:3%;
     transform: translateY(-50%);
-    /* background: url(./img/asset27.png)no-repeat; */
-    /* margin-right: 20px; */
+    font-size: 20px;
 }
 
 .next {
     position: absolute;
-    /* width: 20px;
-    height: 20px; */
+    width:20px;
     top:50%;
     right:3%;
     transform: translateY(-50%);
+    font-size: 20px;
 }
-
-
 
 .conbox li{
     float: left;
