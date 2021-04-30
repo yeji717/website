@@ -1910,9 +1910,12 @@ option:hover{
     }
 
     .mopanel.active{
+        position: fixed;
+        bottom: 0;
         opacity: 1;
         visibility: visible;
-        transform: translateY(-100%);
+        transform: translateY(0%);
+        /* transform: translateY(-100%); */
         z-index: 101;
     }
 
