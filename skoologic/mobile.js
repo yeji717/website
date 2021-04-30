@@ -67,9 +67,6 @@ $(document).ready(function(){
         if(state == 'option1'){
             $('.option1').show();
             $('.option1').siblings().hide();
-            // $('.option2').hide();
-            // $('.option3').hide();
-            // $('.option4').hide();
         }else if(state == 'option2'){
             $('.option2').show();
             $('.option2').siblings().hide();
@@ -193,13 +190,6 @@ $(document).ready(function(){
         // $('.notice-pop2').css({'display':'block'});
     });
 
-
-    // viewport height? bottom 값 구하기
-
-    // const target = $('#wrap');
-    // let clientRect = target.innerHeight();
-    // console.log(clientRect);
-
     // 오늘 하루 보지 않기 눌렀을때 색 변경
 
     $('.inform-bottom span').on("click",function(){
@@ -221,6 +211,12 @@ $(document).ready(function(){
     $('.back').on("click",function(){
         $(this).removeClass('on');
         $('.mopanel').removeClass('active');
+    })
+
+    // 알림버튼 눌렀을 때 다른 곳(back) 눌러도 사라지게하기 
+    $('.back').on("click",function(){
+        $('#wrap').removeClass('on');
+        // $('.mopanel').removeClass('active');
     })
 })
 
