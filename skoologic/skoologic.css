@@ -533,11 +533,11 @@ header{
     width:100%;
 }
 
-.contents>li:nth-child(1).on{
+/* .contents>li:nth-child(1).on{
     position: sticky;
     top:0;
     z-index: 50;
-}
+} */
 
 .contents>li:nth-child(2){
     margin-top: 10px;
@@ -564,7 +564,7 @@ header{
     max-width:1000px;
     margin: 50px auto;
     font-family: 'Noto Sans KR', sans-serif;
-    /* overflow:hidden; */ /*sticky 때문에 잠시 */
+    overflow:hidden; /*sticky 때문에 잠시 */
 }
 
 #wrap.on .notice-pop2{
@@ -1890,11 +1890,11 @@ option:hover{
         margin: 0 auto;
     }
 
-    .contents>li:nth-child(1){
+    /* .contents>li:nth-child(1){
         position: sticky;
         top:0;
         z-index: 50;
-    }
+    } */
 
     .contents>li:nth-child(2){
         margin-top: 0;
