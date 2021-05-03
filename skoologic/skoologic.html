@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스쿨로직 클래스</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./skoologic.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./selectize/selectize.css">
+   
+</head>
+<body>
+    <div id="wrap">
+        <div class="back"></div>
+        <!-- header 시작 -->
+        <header>
+            <div class="headerWrap">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="스쿨로직로고">
+                    </a>
+                </h1>
+                <button class="m-menu">
+                    <div class="line" id="line-top"></div>
+                    <div class="line" id="line-mid"></div>
+                    <div class="line" id="line-bottom"></div>
+                    <!-- <i class="fas fa-bars"></i> -->
+                </button> 
+                <button class="m-save"></button>
+                <button class="m-notice">
+                    <span class="nav-counter"></span>
+                </button>
+            </div>
+            <!-- <div class="mobile-h after">
+                <div class="m-menu">
+                    <button>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div> -->
+        </header>
+        <!-- header 끝 -->
+        <!-- 메인 시작-->
+        <ul class="contents after">
+            <li>
+                <!-- con1 (문구, 문장)-->
+                <div class="con1">
+                    <div class="search">
+                        <input class="btn-search" type="text" placeholder="키워드를 입력해주세요">
+                        <span class="submit">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <div class="word">
+                        <ul>
+                            <li><a href="#">입력해주세요</a></li>
+                            <li><a href="#">키워드</a></li>
+                            <li><a href="#">추천</a></li>
+                            <li><a href="#">상담</a></li>
+                            <li><a href="#">문구</a></li>
+                            <li><a href="#">태그</a></li>
+                            <li><a href="#">단어들</a></li>
+                            <!-- <li><a href="#">#내용</a></li>
+                            <li><a href="#">#키워드</a></li>
+                            <li><a href="#">#추천</a></li>
+                            <li><a href="#">#상담</a></li>
+                            <li><a href="#">#문구</a></li>
+                            <li><a href="#">#태그</a></li>
+                            <li><a href="#">#단어들</a></li> -->
+                        </ul>
+                        <div class="sentence1 sentence">
+                            <ul>
+                                <li>
+                                    <!-- <i class="fas fa-caret-right"></i> -->
+                                    코로나19의 장기화로 인해 발생하고 있는 우을증을 뜻하는 코로나 블루를 극복하기 위해 대학교에서 진행하는 심리방역 상담 프로그램에 참여하여 전문가의 도움을 받고 우울한 기분을 떨쳐내고 공부에 집중할 수 있었던 경험을 바탕으로 다른 사람의 이야기를 들어주고 도움을 줄 수 있는 상담가가 되기를 희망함.
+                                </li>
+                                <li>
+                                    <!-- <i class="fas fa-caret-right"></i> -->
+                                    평소에 독서를 생활화하는 학생으로 학급 도서부장의 역할을 맡아 추천도서 목록을 만들어 급우들에게 나누어주고 책 읽기를 독려함. 최근 1인 방송,
+                                    소셜미디어 등이 확산되면서 강조되는 미디어를 읽고 쓸 수 있는 능력을 말하는 '미디어 리터서리'를 주제로 한 강연을 시청함. 강연을 듣고
+                                    미디어에서
+                                    말하는 사실들을 비판적으로 들을 수 있어야 한다는 점을 깨달음.
+                                </li>
+                                <li>
+                                    <!-- <i class="fas fa-caret-right"></i> -->
+                                    학교 축제에서 동아리 부스 운영의 책임자를 맡아서 카리스마 있게 팀을 이끄는 모습을 보여줌. 자신의 업무를 깔끔하게 처리했을 뿐만 아니라 다른
+                                    친구들의
+                                    일까지 발벗고 나서서 도와주는 모습을 보여주며 친구들에게 뛰어난 리더로 인정을 받음. 큰 행사를 준비하는 과정에서 보이지 않는 사람들의 노력이
+                                    성공적인
+                                    행사를 만드는 데 굉장히 중요하다는 것을 깨달음.
+                                </li>
+                            </ul>
+                            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- con2 (도서, 저널)-->
+                <div class="con2-box">
+                    <ul class="menu after">
+                        <li class="notice">
+                            <a href="#">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li class="test">
+                            <a href="#">
+                                <span></span>
+                                <!-- <p>검사</p> -->
+                            </a>
+                        </li>
+                        <li class="save">
+                            <a href="#">
+                                <span></span>
+                                <!-- <p>저장</p> -->
+                            </a>
+
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span></span>
+                                <!-- <p>리스트</p> -->
+                            </a>
+                        </li>
+                        <li class="mypage">
+                            <a href="#">
+                                <span></span>
+                                <!-- <p>마이페이지</p> -->
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="con2">
+                        <li class="sentence-wrap">
+                            <div class="sentence">
+                                <ul>
+                                    <li>
+                                        <!-- <i class="fas fa-caret-right"></i> -->
+                                        심장이 멈춘 상태에서 4분 넘게 그 상황이 지속될 경우 죽음에 이른다는 사실을 응급처치교육을 통해 알게 됨. 언제, 어디서든 발생할 수 있는
+                                        위급한
+                                        상황에 대비하고 소중한 사람들을 지키기 위해 자동심장충격기(AED)와 심폐소생술, 하임리히법을 익힘. 또한 이국종 교수의 다큐멘터리를 시청하며
+                                        추가적으로 중증외상과 관련한 내용에 대해 적극적으로 추가조사함.
+                                    </li>
+                                    <li>
+                                        <!-- <i class="fas fa-caret-right"></i> -->
+                                        평소에 독서를 생활화하는 학생으로 학급 도서부장의 역할을 맡아 추천도서 목록을 만들어 급우들에게 나누어주고 책 읽기를 독려함. 최근 1인 방송,
+                                        소셜미디어 등이 확산되면서 강조되는 미디어를 읽고 쓸 수 있는 능력을 말하는 '미디어 리터서리'를 주제로 한 강연을 시청함. 강연을 듣고
+                                        미디어에서
+                                        말하는 사실들을 비판적으로 들을 수 있어야 한다는 점을 깨달음.
+                                    </li>
+                                    <li>
+                                        <!-- <i class="fas fa-caret-right"></i> -->
+                                        학교 축제에서 동아리 부스 운영의 책임자를 맡아서 카리스마 있게 팀을 이끄는 모습을 보여줌. 자신의 업무를 깔끔하게 처리했을 뿐만 아니라 다른
+                                        친구들의
+                                        일까지 발벗고 나서서 도와주는 모습을 보여주며 친구들에게 뛰어난 리더로 인정을 받음. 큰 행사를 준비하는 과정에서 보이지 않는 사람들의 노력이
+                                        성공적인
+                                        행사를 만드는 데 굉장히 중요하다는 것을 깨달음.
+                                    </li>
+                                </ul>
+                                <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                            </div>
+                        </li>
+                        <li class="book-box">
+                            <div class="slide">
+                                <div id="bookwrap">
+                                    <div class="slide-wrap">
+                                        <ul class="conbox after">
+                                            <li class="bookwrap">
+                                                <div class="text">
+                                                    <div class="text1">
+                                                        <p>생명과학</p>
+                                                        <p>홍영남</p>
+                                                        <p>라이프사이언스</p>
+                                                    </div>
+                                                </div>
+                                                <div class="book"></div>
+                                            </li>
+                                            <li class="bookwrap">
+                                                <div class="text">
+                                                    <div class="text1">
+                                                        <p>생명과학</p>
+                                                        <p>홍영남</p>
+                                                        <p>라이프사이언스</p>
+                                                    </div>
+                                                </div>
+                                                <div class="book"></div>
+                                            </li>
+                                            <li class="bookwrap">
+                                                <div class="text three">
+                                                    <div class="text1">
+                                                        <p>생명과학</p>
+                                                        <p>홍영남</p>
+                                                        <p>라이프사이언스</p>
+                                                    </div>
+                                                </div>
+                                                <div class="book"></div>
+                                            </li>
+                                            <li class="bookwrap">
+                                                <div class="text spe">
+                                                    <div class="text1">
+                                                        <p>생명과학</p>
+                                                        <p>홍영남</p>
+                                                        <p>라이프사이언스</p>
+                                                    </div>
+                                                </div>
+                                                <div class="book"></div>
+                                            </li>
+                                            <li class="bookwrap">
+                                                <div class="text">
+                                                    <div class="text1">
+                                                        <p>생명과학</p>
+                                                        <p>홍영남</p>
+                                                        <p>라이프사이언스</p>
+                                                    </div>
+                                                </div>
+                                                <div class="book"></div>
+                                            </li>
+                                            <li class="bookwrap">
+                                                <div class="text three">
+                                                    <div class="text1">
+                                                        <p>생명과학</p>
+                                                        <p>홍영남</p>
+                                                        <p>라이프사이언스</p>
+                                                    </div>
+                                                </div>
+                                                <div class="book"></div>
+                                            </li>
+                                        </ul>
+                                        <!-- <ul>
+                                            <li>
+                                                <div class="aftber">
+                                                    <img src="./img/social.png" alt="">
+                                                    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/star.png" alt="">
+                                          
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/english.png" alt="">
+                                               
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/social.png" alt="">
+                                                 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/star.png" alt="">
+                                                    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/english.png" alt="">
+                                                 
+                                                </div>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    
+                                </div>
+                                <button class="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <!-- <div class="book">
+                                <div id="bookwrap">
+                                    <div class="slide-wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="aftber">
+                                                    <img src="./img/social.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/star.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/english.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/social.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/star.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <img src="./img/english.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div> -->
+                        </li>
+                        <li class="aca-box">
+                            <div class="academic">
+                                <ul>
+                                    <li>
+                                        <!-- <i class="fas fa-caret-right"></i> -->
+                                        국제무역과 테러의 관계 연구 <br>
+                                        학위논문  한국외국어대학교  李惠仁  2017
+                                    </li>
+                                    <li>
+                                        <!-- <i class="fas fa-caret-right"></i> -->
+                                        조직건강성과 고객지향성이 의료기관의 사회적 책임활동(HSR) 인식에 미치는 영향</li>
+                                    <li>
+                                        <!-- <i class="fas fa-caret-right"></i> -->
+                                        디아코니아의 역사적 고찰과 교회와 사회봉사에 대한 소고</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="notice-pop">
+                            <div>
+                                <ul class="notice-header">
+                                    <li>
+                                        <span>전체 알림</span>
+                                        <div class="delete">
+                                            <button class="read"><span>읽은알림삭제</span></button>
+                                            <button class="all"><span>모두삭제</span></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="notice-list">
+                                    <li>
+                                        <a href="#">
+                                            <strong>
+                                                <span>(광고)</span> 스쿨로직 2.2상품 5월1일 출시 예정!
+                                            </strong><br>
+                                            <p>by 스쿨로직 오후 3시 25분</p>
+                                        </a>
+                                        <button class="delete-btn">
+                                            <span></span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>
+                                                <span>작성완료</span> S클래스
+                                            </strong><br>
+                                            <p>by 스쿨로직 오후 3시 25분</p>
+                                        </a>
+                                        <button class="delete-btn">
+                                            <span></span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>
+                                                <span>임시저장</span> 임시보관함에 이전 날짜로 작성된 파일...
+                                            </strong><br>
+                                            <p>by 스쿨로직 오후 3시 25분</p>
+                                            <button class="delete-btn">
+                                                <span></span>
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>
+                                                <span></span> 2021.04.19에 파일 작성 완료되었습니다.
+                                            </strong><br>
+                                            <p>by 스쿨로직 오후 12시 25분</p>
+                                            <button class="delete-btn">
+                                                <span></span>
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <div class="page">
+                                        <ul class="pagenation after">
+                                            <li><a href="#" class="prev-p"><<</a> </li> 
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#" class="next-p">>></a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- 모바일 버전 상세보기버튼-->
+                <div class="detail-btn">
+                    <span>
+                        <span class="in">상세보기</span>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <!-- 모바일 버전에서 (con3,con4) tab메뉴로 구성-->
+                <div class="tab-box">
+                    <ul class="after">
+                        <!-- 수업기록 시작-->
+                        <li class="active">
+                            <a href="#">수업기록</a>
+                            <section class="con3 w-49">
+                                <div class="class">
+                                    <div class="topic">
+                                        <label for="tag">주제 태그</label>
+                                        <div class="tagwrap">
+                                            <input id="tag" type="text" placeholder="태그입력(최대5개)">
+                                        </div>
+                                       
+                                        <!-- <textarea name="" cols="30" rows="10" placeholder="#태그입력(최대5개)"></textarea> -->
+                                        <button class="temporary">임시저장</button>
+                                    </div>
+                                    <div class="sub-title after">
+                                        <div class="title1 after">
+                                            <!-- <label for="과목">과목</label> -->
+                                            <select name="과목" id="subject" class="selectpicker">
+                                                <option value="" disabled selected hidden>과목을 입력해주세요</option>
+                                                <option value="english">영어</option>
+                                                <option value="math">수학</option>
+                                                <option value="science">과학</option>
+                                            </select>
+                                        </div>
+                                        <div class="title2 after">
+                                            <!-- <label for="학습목차">학습 목차</label> -->
+                                            <select name="목차" id="chapter">
+                                                <option value="" disabled selected hidden>학습목차를 입력해주세요</option>
+                                                <option value="1">1주차</option>
+                                                <option value="2">2주차</option>
+                                                <option value="3">3주차</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="class-contents">
+                                        <textarea name="" cols="30" rows="10"
+                                            placeholder="수업 내용을 입력해 주세요"></textarea>
+                                    </div>
+                                    <!-- <div class="topic">
+                                        <label for="tag">주제 태그</label>
+                                        <textarea name="" cols="30" rows="10" placeholder="#태그입력(최대5개)"></textarea>
+                                    </div> -->
+                                </div>
+                            </section>
+                        </li>
+                        <!-- 수업기록 끝-->
+                        <!-- 학교생활다이어리 시작-->
+                        <li>
+                            <a href="#">스쿨로직클래스</a>
+                            <section class="con4 w-50">
+                                <div class="class">
+                                    <div class="diary-h after">
+                                        <div class="activity">
+                                            <select name="활동" class="subject" id="activity">
+                                                <option value="" disabled selected hidden >활동을 선택해주세요</option>
+                                                <option value="option1">진로탐색활동</option>
+                                                <option value="option2">진로학술활동</option>
+                                                <option value="option3">교과세부능력-특기사항</option>
+                                                <option value="option4">창의적체험활동-자율활동</option>
+                                                <option value="option5">창의적체험활동-동아리활동</option>
+                                                <option value="option6">창의적체험활동-진로활동</option>
+                                                <option value="option7">행동특성-인성활동</option>
+                                            </select>                                   
+                                        </div>
+                                        <div class="test-btn">
+                                            <button class="check">검사</button>
+                                            <button class="temporary">임시저장</button>
+                                            <div class="guide">
+                                                <ul>
+                                                    <li>
+                                                        <strong>금지문구 :</strong>
+                                                        감점 및 0점 처리 될 수 있는 단어
+                                                    </li>
+                                                    <li>
+                                                        <strong>주의문구 :</strong>
+                                                        합격과 불힙격을 가를 수 있는 주요 단어
+                                                    </li>
+                                                    <li>
+                                                        <strong>추천문구 :</strong>
+                                                        전공 및 인성을 나타내는 단어
+                                                    </li>
+                                                    <li>
+                                                        <strong>외부인증장소 :</strong>
+                                                        교육청 산하의 외부 활동 기관 및 장소
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide-box">
+                                        <div class="guide-info option1 after" value="option1" style="display: block;">
+                                            <div class="job-box">
+                                                <div class="job">
+                                                    <input class="btn-search" type="text" placeholder="직업을 검색해보세요">
+                                                    <span class="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                                <ul class="ex after">
+                                                    <li class="ex1">예시</li>
+                                                    <li><a href="#">과학</a></li>
+                                                    <li><a href="#">심리</a></li>
+                                                    <li><a href="#">광고</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="major-box">
+                                                <div class="major">
+                                                    <input class="btn-search" type="text" placeholder="학과를 검색해보세요">
+                                                    <span class="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                                <ul class="ex after">
+                                                    <li class="ex1">예시</li>
+                                                    <li><a href="#">심리학과</a></li>
+                                                    <li><a href="#">간호학과</a></li>
+                                                    <!-- <li><a href="#">노인복지학과</a></li> -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="guide-info option2 after">
+                                            <div class="job-box">
+                                                <div class="job">
+                                                    <input class="btn-search" type="text" placeholder="강의를 검색해보세요">
+                                                    <span class="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                                <ul class="ex after">
+                                                    <li class="ex1">추천</li>
+                                                    <li><a href="#">심리학</a></li>
+                                                    <li><a href="#">마케팅</a></li>
+                                                    <li><a href="#">치료</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="major-box">
+                                                <div class="major">
+                                                    <input class="btn-search" type="text" placeholder="논문을 검색해보세요">
+                                                    <span class="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                                <ul class="ex after">
+                                                    <li class="ex1">추천</li>
+                                                    <li><a href="#">상담</a></li>
+                                                    <li><a href="#">심리치료</a></li>
+                                                    <li><a href="#">디자인</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="guide-info option3 tip">
+                                            <span>작성팁</span>
+                                            <p>교과별 성취기준에 따른 자기주도적 학습과 탐구과정을 중심으로 서술하세요. 탐구과정을 통한 변화와 성장 정도를 중심으로 서술하며, 그로 인해 느끼고 깨닫게 된 점을 꼭 표현하는 것이 중요합니다.</p>
+                                        </div>
+                                        <div class="guide-info option4 tip">
+                                            <span>작성팁</span>
+                                            <p>정규교육과정 이수과정에서 사교육 개입 없이 학교 내에서 학생주도로 수행한 자율탐구활동에 한하여 학생의 특기사항을 개별적 특성이 잘 드러나도록 입력하세요.</p>
+                                        </div>
+                                        <div class="guide-info option5 tip">
+                                            <span>작성팁</span>
+                                            <p>동아리활동에서 자신의 구체적인 역할과 활동을 적고, 이를 통해 무엇을 배우고 어떻게 성장하였는지 구체적으로 작성하세요.</p>
+                                        </div>
+                                        <div class="guide-info option6 tip">
+                                            <span>작성팁</span>
+                                            <p>자신의 진로를 찾게 된 과정의 구체성을 나타내는 것이 중요합니다. 단순히 심리검사를 통해서 진로를 찾았다는 이야기는 자제해 주세요.</p>
+                                        </div>
+                                        <div class="guide-info option7 tip">
+                                            <span>작성팁</span>
+                                            <p>봉사활동 참여 동기와 활동 내용, 그리고 봉사활동을 통해 변화하고 성장한 모습이 잘 드러나게 작성하세요.</p>
+                                        </div>
+                                    </div>
+                                    <textarea name="diary" id="" cols="30" rows="10" class="notes" placeholder="활동 내용을 입력하세요"></textarea>
+                                    <textarea name="diary" id="" cols="30" rows="10" class="notes" placeholder="느낀점을 입력하세요"></textarea>
+                                    <div class="word-check">
+                                        <ul>
+                                            <li>금지문구</li>
+                                            <li>주의문구</li>
+                                            <li>추천문구</li>
+                                            <li>외부인증장소</li>
+                                        </ul>
+                                    </div>
+                                    <div class="byte-box">
+                                        <span class="userbyte">1500</span>
+                                        <span class="bytetext">Byte</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                        <!-- 학교생활다이어리 끝-->
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- 메인 끝-->
+        <!-- 모바일 패널-->
+        <div class="mopanel">
+            <ul>
+                <li><a href="#">마이페이지</a><span></span></li>
+                <li><a href="#">마이리스트</a><span></span></li>
+                <li><a href="#">아이디로 공유하기</a><span></span></li>
+            </ul>
+        </div>
+        <!-- 알림창, 팝업창-->
+        <div class="pop-box">
+            <div class="tempop">
+                <span><i class="fas fa-exclamation-circle"></i></span>
+                <p>작성 중인 문서가 임시저장 되었습니다.</p>
+            </div>
+            <div class="save-pop">
+                <span><i class="fas fa-exclamation-circle"></i></span>
+                <p>문서가 저장되었습니다.</p>
+            </div>
+            <div class="notice-pop notice-pop2">
+                <div>
+                    <ul class="notice-header">
+                        <li>
+                            <span>전체 알림</span>
+                            <div class="delete">
+                                <button class="read"><span>읽은알림삭제</span></button>
+                                <button class="all"><span>모두삭제</span></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="notice-list">
+                        <li>
+                            <a href="#">
+                                <strong>
+                                    <span>(광고)</span> 스쿨로직 2.2상품 5월1일 출시 예정!
+                                </strong><br>
+                                <p>by 스쿨로직 오후 3시 25분</p>
+                            </a>
+                            <button class="delete-btn">
+                                <span></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>
+                                    <span>작성완료</span> S클래스
+                                </strong><br>
+                                <p>by 스쿨로직 오후 3시 25분</p>
+                            </a>
+                            <button class="delete-btn">
+                                <span></span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>
+                                    <span>임시저장</span> 임시보관함에 이전 날짜로 작성된 파일...
+                                </strong><br>
+                                <p>by 스쿨로직 오후 3시 25분</p>
+                                <button class="delete-btn">
+                                    <span></span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>
+                                    <span></span> 2021.04.19에 파일 작성 완료되었습니다.
+                                </strong><br>
+                                <p>by 스쿨로직 오후 12시 25분</p>
+                                <button class="delete-btn">
+                                    <span></span>
+                                </button>
+                            </a>
+                        </li>
+                        <div class="page">
+                            <ul class="pagenation after">
+                                <li>
+                                    <a href="#" class="prev-p"><<</a> 
+                                </li> 
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#" class="next-p">>></a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="inform-box">
+                <div class="inform">
+                    <strong><span>NEW</span><br>나의 S-다이어리</strong>
+                    <p>스쿨로직 S클래스가 <br> 새롭게 출시되었습니다.</p>
+                    <p>2021년 5월1일 토요일 출시</p>
+                </div>
+                <div class="inform-bottom">
+                    <span><i class="fas fa-check-circle"></i>오늘 하루 보지 않기</span>
+                    <button>닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d841d98aaf.js" crossorigin="anonymous"></script>
+    <script src="./jquery.min_1.12.4.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./custom2.js"></script>
+    <script src="./selectize/selectize.js"></script>
+    <script>
+         $('#subject').selectize();
+        $('#chapter').selectize();
+        $('#activity').selectize();
+        $('#tag').selectize({
+        plugins: ['restore_on_backspace', 'remove_button'],
+        delimiter: ' ',
+        persist: false,
+        create: function(input) {
+            return {
+                value: input,
+                text: input
+            }
+        }
+    });
+    </script>
+</body>
+</html>
