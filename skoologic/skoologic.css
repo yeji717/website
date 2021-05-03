@@ -1281,7 +1281,7 @@ option:hover{
 
 .diary-h{
     position: relative;
-    height: 17%;
+    /* height: 17%; */
 }
 
 .diary-h>div {
@@ -1324,7 +1324,7 @@ option:hover{
 .guide-box {
     /* position: relative;
     height: 26%; */
-    position: absolute;
+    /* position: absolute; */
     width:100%;
 }
 
@@ -1513,9 +1513,10 @@ option:hover{
 
 
 .notes {
-    position: relative;
+    height:80px;
+    /* position: relative;
     height: 16%;
-    top:29%;
+    top:29%; */
     /* height: 58%; */
     /* height: 38%; */
     /* background-attachment: local;
@@ -1597,7 +1598,7 @@ option:hover{
     }
 }
 
-@media(max-width:769px){
+@media(max-width:900px){
 
     .class .topic{
         height: 14%;
