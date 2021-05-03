@@ -1605,9 +1605,9 @@ option:hover{
         font-size: 12px;
     }
 
-    .class div label{
+    /* .class div label{
         margin-left:10px;
-    }
+    } */
 
     .topic textarea{
         width:50%;
