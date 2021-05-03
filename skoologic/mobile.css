@@ -1148,7 +1148,7 @@ option:hover{
 
 .topic textarea {
     /* width:75%; */
-    width:54%;
+    width:45%;
     height: 58%;
     /* height: 100%; */
     /* border-top: 1px solid #000; */
@@ -1231,7 +1231,7 @@ option:hover{
 
 .diary-h{
     position: relative;
-    height: 17%;
+    /* height: 17%; */
 }
 
 .diary-h>div {
@@ -1545,7 +1545,7 @@ option:hover{
     }
 }
 
-@media(max-width:769px){
+@media(max-width:900px){
 
     .class .topic{
         height: 14%;
