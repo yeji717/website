@@ -1274,7 +1274,8 @@ option:hover{
 .guide-box {
     /* position: relative;
     height: 26%; */
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width:100%;
 }
 
@@ -1461,11 +1462,14 @@ option:hover{
     background: blue;
 }
 
+.diary-f{
+
+}
 
 .notes {
     position: relative;
     height: 16%;
-    top:29%;
+    /* top:29%; */
     /* height: 58%; */
     /* height: 38%; */
     /* background-attachment: local;

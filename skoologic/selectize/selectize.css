@@ -277,6 +277,7 @@
   color: #495c68;
 }
 .selectize-dropdown .create {
+  font-size: 0;  /* 추가부분*/
   color: rgba(48, 48, 48, 0.5);
 }
 .selectize-dropdown-content {

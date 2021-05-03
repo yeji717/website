@@ -34,14 +34,14 @@ $(document).ready(function(){
            $(this).siblings('.con2-box').stop().slideUp();
            $('.detail-btn .in').text('상세보기');
            $('.detail-btn>span').removeClass('changed');
-           $('.contents>li').eq(0).css({'position':'sticky','top':'0','z-index':'50'});
+        //    $('.contents>li').eq(0).css({'position':'sticky','top':'0','z-index':'50'});
            
        } else {
            $(this).siblings('.con2-box').addClass('on');
            $(this).siblings('.con2-box').stop().slideDown();
            $('.detail-btn .in').text('상세접기');
            $('.detail-btn>span').addClass('changed');
-           $('.contents>li').eq(0).css({'position':'static','top':'initial'});
+        //    $('.contents>li').eq(0).css({'position':'static','top':'initial'});
          
        }
 
