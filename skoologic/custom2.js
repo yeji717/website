@@ -52,18 +52,18 @@ $(document).ready(function(){
 
    // 768px 이상일때는 sticky 취소
 
-   $(window).resize(function(){
-       console.log($(window).outerWidth(true));
-       if($(window).outerWidth()<=490){
-           $('.contents>li').eq(0).css({'position':'sticky','top':'0','z-index':'50'});
-           $('.con2-box').css({'display':'none'});
-       }
+//    $(window).resize(function(){
+//        console.log($(window).outerWidth(true));
+//        if($(window).outerWidth()<=490){
+//            $('.contents>li').eq(0).css({'position':'sticky','top':'0','z-index':'50'});
+//            $('.con2-box').css({'display':'none'});
+//        }
        
-       if($(window).outerWidth()>=751){
-           $('.contents>li').eq(0).css({'position':'static','top':'initial','z-index':'initial'});
-           $('.con2-box').css({'display':'block'});
-       }
-   })
+//        if($(window).outerWidth()>=751){
+//            $('.contents>li').eq(0).css({'position':'static','top':'initial','z-index':'initial'});
+//            $('.con2-box').css({'display':'block'});
+//        }
+//    })
 
    // select 선택했을 때 값 색상 변경 (과목, 학습목차)
 
