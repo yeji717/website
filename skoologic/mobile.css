@@ -1467,8 +1467,9 @@ option:hover{
 }
 
 .notes {
-    position: relative;
-    height: 16%;
+    height: 80px;
+    /* position: relative;
+    height: 16%; */
     /* top:29%; */
     /* height: 58%; */
     /* height: 38%; */
