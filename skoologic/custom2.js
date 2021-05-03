@@ -41,7 +41,7 @@ $(document).ready(function(){
            $(this).siblings('.con2-box').stop().slideDown();
            $('.detail-btn .in').text('상세접기');
            $('.detail-btn>span').addClass('changed');
-           $('.contents>li').eq(0).css({'position':'static','top':'initial','z-index':'initial'});
+           $('.contents>li').eq(0).css({'position':'static','top':'initial'});
          
        }
 
