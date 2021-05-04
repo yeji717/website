@@ -1543,7 +1543,7 @@ option:hover{
 
 
 .notes {
-    height:80px;
+    height:75px;
     /* position: relative;
     height: 16%;
     top:29%; */
@@ -1562,7 +1562,7 @@ option:hover{
 .word-check{
     display: none;
     position: relative;
-    bottom: -115px;
+    bottom: 2px;
     font-size: 12px;
     text-align: center;
 }
