@@ -984,6 +984,36 @@ i.fas.fa-caret-right {
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
+.academic ul li .journal-desc{
+    font-size:12px;
+}
+
+/* .academic ul li .journal-desc span{
+    display: inline-block;
+} */
+
+.academic ul li .journal-desc span:nth-child(1){
+    padding-right:8px;
+}
+
+.academic ul li .journal-desc .journal-deco{
+    display: inline-block;
+    position: relative;
+    padding: 0 8px;
+}
+
+.academic ul li .journal-desc .journal-deco::before{
+    position: absolute;
+    display: block;
+    content: "";
+    bottom:2px;
+    left: 0;
+    width:1px;
+    height:11px;
+    background: rgba(0,0,0,0.2);
+    
+}
+
 /* 상세보기버튼 */
 .detail-btn {
     text-align: center;
