@@ -177,7 +177,7 @@ header{
 /* mopanel */
 
 .mopanel{
-    display: none;
+    /* display: none; */
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -2000,7 +2000,7 @@ option:hover{
     }
 
     .mopanel.active{
-        display: block;
+        /* display: block; */
         position: fixed;
         bottom: 0;
         opacity: 1;
