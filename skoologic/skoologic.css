@@ -178,7 +178,7 @@ header{
 
 .mopanel{
     /* display: none; */
-    opacity: 0;
+    /* opacity: 0; */
     visibility: hidden;
     position: absolute;
     width:100%;
@@ -189,7 +189,7 @@ header{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background: #fff;
-    transition: 0.5s ease-in;
+    transition: 0.4s ease;
 }
 
 .mopanel ul {
