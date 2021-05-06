@@ -1102,22 +1102,28 @@ i.fas.fa-caret-right {
     fill:orange;
 }
 
-.menu .test a span {
-    background: url("http://www/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat;
+.menu .test a span{
+    background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat;
     background-size: cover;
 }
+
+/* .menu .test a span {
+    background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/Send.svg") no-repeat;
+    background-size: cover;
+}
+
+.menu .test a span:hover{
+    background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat;
+    background-size: cover;
+} */
 
 .menu li a span img:hover{
     fill:orange;
 }
 
-.test2:hover{
-  
-}
-
 .menu .save a span {
-    /* background: url(./svg/Storage_pc.svg) no-repeat;
-    background-size: cover; */
+    background: url(./svg/Storage_pc.svg) no-repeat;
+    background-size: cover;
 }
 
 .menu .list a span {
@@ -1557,17 +1563,6 @@ option:hover{
 
 .notes {
     height:75px;
-    /* position: relative;
-    height: 16%;
-    top:29%; */
-    /* height: 58%; */
-    /* height: 38%; */
-    /* background-attachment: local;
-    background-image:
-    linear-gradient(to right, white 10px, transparent 10px),
-    linear-gradient(to left, white 10px, transparent 10px),
-    repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
-    line-height: 31px; */
     padding: 10px 15px;
     border-bottom: 1px solid #dbdbdb;
 }
@@ -1623,7 +1618,71 @@ option:hover{
     color: orangered;
 }
 
+.con1 {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+}
 
+#wrap .con2-box {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.word {
+    height:330px;
+    margin-top: 15px;
+    border: 1px solid #dbdbdb;
+}
+
+.con2-box .menu{
+    display: block;
+}
+
+.sentence-wrap{
+    display: none;
+}
+
+.detail-btn{
+    display: none;
+}
+
+.con2{
+    position: relative;
+    height: 330px;
+    border: 1px solid #dbdbdb;
+    margin-top: 15px;
+}
+
+.con2.on .notice-pop{
+    display: block;
+}
+
+.sentence1{
+    display: block;
+    height: 72%;
+    border-top:1px solid #dbdbdb;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.slide-wrap{
+    height:100%; /* 추가 */
+}
+
+.book{
+    height: 100%;
+    border-bottom: 0;
+}
+
+.aca-box{
+    height:72%;
+}
+
+.academic{
+    height: 100%;
+}
 
 
 
@@ -1738,12 +1797,8 @@ option:hover{
 
 }
 
-@media(min-width:768px){
+/* @media(min-width:768px){
     
-    /* #wrap{
-        max-width: 80%;
-    } */
-
     .con1 {
         float: left;
         width: 49%;
@@ -1794,7 +1849,7 @@ option:hover{
     }
 
     .slide-wrap{
-        height:100%; /* 추가 */
+        height:100%; 
     }
 
     .book{
@@ -1810,12 +1865,46 @@ option:hover{
         height: 100%;
     }
 
-    /* .notice-pop::after{
-        left: 7%;
-    } */
-}
+} */
 
-@media (max-width:760px) {
+@media (max-width:767px) {
+
+    .con1{
+        float: none;
+        width:initial;
+        margin-right: 0;
+    }
+    
+    .sentence1{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .con2{
+        margin-top:0;
+        height:initial;
+    }
+
+    .con2-box .menu{
+        display: none;
+    }
+
+    #wrap .con2-box{
+        float: none;
+        width:initial;
+        display: none;
+    }
+
+    .sentence-wrap{
+        display: block;
+    }
+
+    #wrap{
+        width: 100%;
+    }
 
     .btn-search{
         padding-left: 20px;
@@ -1833,6 +1922,7 @@ option:hover{
     }
 
     .word{
+        height:initial;
         background: #f2f2f2;
     }
 
@@ -1841,6 +1931,7 @@ option:hover{
     }
 
     .detail-btn{
+        display: block;
         background: #f2f2f2;
     }
 
@@ -1872,7 +1963,6 @@ option:hover{
     }
 
     .tab-box>ul>li>a{
-        /* background: #dbdbdb; */
         display: inline-block;
         padding:5px 10px 7px 10px;
         font-size: 13px;
@@ -1934,12 +2024,6 @@ option:hover{
         margin: 0 auto;
     }
 
-    /* .contents>li:nth-child(1){
-        position: sticky;
-        top:0;
-        z-index: 50;
-    } */
-
     .contents>li:nth-child(2){
         margin-top: 0;
     }
@@ -1947,10 +2031,6 @@ option:hover{
     .book-box{
         height: 100px;
     }
-
-    /* .conbox li{
-        width:10%;
-    } */
 
     .con3{
         border: 0;
@@ -1986,10 +2066,6 @@ option:hover{
         display: none;
     }
 
-    /* .job-box{
-        margin-bottom: 10px;
-    } */
-
     .guide-box{
         position: inherit;
     }
@@ -2007,13 +2083,11 @@ option:hover{
 
     .byte-box{
         position: initial;
-        /* display: inline-block; */
         float: right;
         padding-right: 5%;
     }
 
     .mopanel.active{
-        /* display: block; */
         position: fixed;
         bottom: 0;
         opacity: 1;
