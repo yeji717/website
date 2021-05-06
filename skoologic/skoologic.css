@@ -674,7 +674,7 @@ input:focus{
     height: 65%;
 }
 
-.sentence ul::-webkit-scrollbar {
+/* .sentence ul::-webkit-scrollbar {
     width: 10px;
     background: lightgray;
     border-radius: 50px;
@@ -685,7 +685,7 @@ input:focus{
     background: orange;
     border-radius: 50px;
 
-}
+} */
 
 .sentence ul {
     width: 100%;
@@ -967,7 +967,7 @@ i.fas.fa-caret-right {
     overflow-y: scroll;
 }
 
-.academic ul::-webkit-scrollbar {
+/* .academic ul::-webkit-scrollbar {
     width: 10px;
     background: lightgray;
     border-radius: 50px;
@@ -976,7 +976,7 @@ i.fas.fa-caret-right {
 .academic ul::-webkit-scrollbar-thumb {
     background: orange;
     border-radius: 50px;
-}
+} */
 
 .academic ul li {
     font-size: 13px;
@@ -1093,27 +1093,40 @@ i.fas.fa-caret-right {
 }
 
 .menu .notice a span {
-    background: url(./img/Notice.png) no-repeat;
-    background-size: cover;
+    /* background: url(./svg/Notice-14.svg) no-repeat;
+    background-size: cover; */
+    fill:rgba(0,0,0,0.2);
+}
+
+.menu .notice a span:hover svg{
+    fill:orange;
 }
 
 .menu .test a span {
-    background: url(./img/File.png) no-repeat;
+    background: url("http://www/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat;
     background-size: cover;
+}
+
+.menu li a span img:hover{
+    fill:orange;
+}
+
+.test2:hover{
+  
 }
 
 .menu .save a span {
-    background: url(./img/Storage_pc.png) no-repeat;
-    background-size: cover;
+    /* background: url(./svg/Storage_pc.svg) no-repeat;
+    background-size: cover; */
 }
 
 .menu .list a span {
-    background: url(./img/Send.png) no-repeat;
+    background: url(./svg/Send.svg) no-repeat;
     background-size: cover;
 }
 
 .menu .mypage a span {
-    background: url(./img/My-Page.png) no-repeat;
+    background: url(./svg/My-Page.svg) no-repeat;
     background-size: cover;
 }
 
@@ -1280,7 +1293,7 @@ option:hover{
     padding: 15px 15px 15px 30px;
 }
 
-.class .class-contents textarea::-webkit-scrollbar {
+/* .class .class-contents textarea::-webkit-scrollbar {
     width: 10px;
     background: lightgray;
     border-radius: 50px;
@@ -1291,7 +1304,7 @@ option:hover{
     background: orange;
     border-radius: 50px;
 
-}
+} */
 
 /* .class-contents textarea{
     width: 100%;
