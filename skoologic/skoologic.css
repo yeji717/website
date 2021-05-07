@@ -2097,6 +2097,7 @@ option:hover{
     }
 
     .mopanel.active{
+        display: block;
         position: fixed;
         bottom: 0;
         opacity: 1;
