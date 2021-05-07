@@ -67,12 +67,15 @@ header{
 
 .headerWrap{
     position: relative;
+    height:50px; /*추가*/
     padding: 10px 0;
 }
 
 .logo {
-    text-align: center;
-    display: inline-block;
+    position: absolute;
+    height:44.6px;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .logo a {
@@ -1086,6 +1089,7 @@ i.fas.fa-caret-right {
 .menu li a span {
     display: inline-block;
     width: 45px;
+    /* height:45px; */
     height:100%;
     /* height: 22px; */
     background-position: center;
@@ -1093,17 +1097,27 @@ i.fas.fa-caret-right {
 }
 
 .menu .notice a span {
-    /* background: url(./svg/Notice-14.svg) no-repeat;
-    background-size: cover; */
-    fill:rgba(0,0,0,0.2);
+    background: url(./svg/Notice-14.svg)no-repeat;
+    /* background: url(./img/icon.svg) no-repeat; */
+    background-size: cover;
+    /* fill:rgba(0,0,0,0.2); */
 }
 
-.menu .notice a span:hover svg{
-    fill:orange;
+.menu .notice a span:hover{
+    width:57px;
+    height:50px;
+    background: url(./img/icon.svg) no-repeat;
+    background-size: cover;
 }
 
 .menu .test a span{
-    background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat;
+    background:url(./svg/File.svg)no-repeat;
+    /* background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat; */
+    background-size: cover;
+}
+
+.menu .test a span:hover{
+    background: url(./img/icon.svg)no-repeat -133px 0;
     background-size: cover;
 }
 
