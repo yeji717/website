@@ -37,7 +37,7 @@ select{
 }
 
 select:focus{
-    border: 1px solid orangered;
+    border: 1px solid #f7450c;
 }
 
 textarea:focus, input:focus{
@@ -209,7 +209,7 @@ header{
 }
 
 .mopanel ul li:nth-child(1) a{
-    color: orangered;
+    color: #f7450c;
 }
 
 .mopanel ul li span{
@@ -260,7 +260,7 @@ header{
     display: inline-block;
     font-size: 55px;
     margin-top: 50px;
-    color: orangered;
+    color: f7450c;
 }
 
 .pop-box .tempop p, .save-pop p{
@@ -367,7 +367,7 @@ header{
 }
 
 .notice-list>li a strong span{
-    color: orange;
+    color: #f7450c;
 }
 
 .notice-list>li a p {
@@ -468,12 +468,12 @@ header{
     display: inline-block;
     position: relative;
     font-size: 30px;
-    color: orangered;
+    color: #f7450c;
 }
 
 .inform-box .inform strong span{
     position: absolute;
-    background: orangered;
+    background: #f7450c;
     top:20px;
     left:0;
     color: #fff;
@@ -511,7 +511,7 @@ header{
 }
 
 .inform-bottom span.on{
-    color: orangered;
+    color: #f7450c;
 }
 
 .inform-bottom span i{
@@ -521,7 +521,7 @@ header{
 .inform-bottom>button {
     float: right;
     padding: 10px 20px;
-    color: orangered;
+    color: #f7450c;
     font-weight: bold;
 }
 
@@ -610,15 +610,15 @@ header{
 }
 
 .btn-search:focus{
-    border:2px solid orangered;
+    border:2px solid #f7450c;
 }
 
 .btn-search:focus + .submit{
-    color: orangered;
+    color: #f7450c;
 }
 
 input:focus{
-    border:2px solid orangered;
+    border:2px solid #f7450c;
 }
 
 .search .submit {
@@ -826,12 +826,12 @@ i.fas.fa-caret-right {
 }
 
 .conbox li.on .book{
-    background: orange;
+    background: #f7450c;
 }
 
 .conbox li.on .text{
     width:200%;
-    border: 2px solid orange;
+    border: 2px solid #f7450c;
 }
 .conbox li.on .text .text1{
     display: block;
@@ -1197,7 +1197,7 @@ select option {
 }
 
 option:hover{
-    background: orangered;
+    background: #f7450c;
 }
 
 /* select option:checked{
@@ -1261,8 +1261,8 @@ option:hover{
 }
 
 .topic button:hover{
-    background: orangered;
-    border: 1px solid orangered;
+    background: #f7450c;
+    border: 1px solid #f7450c;
     color: #fff;
 }
 
@@ -1444,7 +1444,7 @@ option:hover{
 
 .tip span{
     /* position: relative; */
-    color: orangered;
+    color: #f7450c;
     /* padding-left: 15px; */
 }
 
@@ -1460,7 +1460,7 @@ option:hover{
     height: 7px;
     margin:0 10px 1px 0;
     /* transform: translateY(-50%); */
-    background: orangered;
+    background: #f7450c;
 }
 
 .diary-h .test-btn{
@@ -1485,8 +1485,8 @@ option:hover{
 }
 
 .test-btn button:hover{
-    background: orangered;
-    border: 1px solid orangered;
+    background: #f7450c;
+    border: 1px solid #f7450c;
     color: #fff;
 }
 
