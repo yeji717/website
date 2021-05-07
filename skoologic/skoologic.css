@@ -1944,6 +1944,11 @@ option:hover{
     .con3{
         width:100%;
         margin-top: 2px;
+        border:none;
+    }
+
+    .contents .con4{
+        border:none;
     }
 
     .con4{
