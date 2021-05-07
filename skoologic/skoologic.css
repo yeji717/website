@@ -73,7 +73,7 @@ header{
 
 .logo {
     position: absolute;
-    height:44.6px;
+    height:45px;
     top:50%;
     transform: translateY(-50%);
 }
@@ -958,28 +958,14 @@ i.fas.fa-caret-right {
 /* 학술 */
 
 .academic {
-    /* height: 35%; */
     height:65%;
     overflow: hidden;
-    /* border-bottom: 1px solid #000; */
-    /* background: pink; */
 }
 
 .academic ul {
     height: 100%;
     overflow-y: scroll;
 }
-
-/* .academic ul::-webkit-scrollbar {
-    width: 10px;
-    background: lightgray;
-    border-radius: 50px;
-}
-
-.academic ul::-webkit-scrollbar-thumb {
-    background: orange;
-    border-radius: 50px;
-} */
 
 .academic ul li {
     font-size: 13px;
@@ -990,10 +976,6 @@ i.fas.fa-caret-right {
 .academic ul li .journal-desc{
     font-size:12px;
 }
-
-/* .academic ul li .journal-desc span{
-    display: inline-block;
-} */
 
 .academic ul li .journal-desc span:nth-child(1){
     padding-right:8px;
@@ -1065,17 +1047,15 @@ i.fas.fa-caret-right {
     display: none;
     width: 100%;
     height: 40px;
-    /* height: 15%; */
-    /* border: 1px solid #000; */
     box-sizing: border-box;
 }
 
 .menu li {
+    position: relative;
     width: 18%;
     height:100%;
     float: left;
     margin:0 1%;
-    /* margin-right: 2%; */
     text-align: center;
 }
 
@@ -1087,66 +1067,63 @@ i.fas.fa-caret-right {
 }
 
 .menu li a span {
-    display: inline-block;
+    position: absolute;
     width: 45px;
-    /* height:45px; */
-    height:100%;
-    /* height: 22px; */
+    height:50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     background-position: center;
     background-size: cover;
 }
 
 .menu .notice a span {
-    background: url(./svg/Notice-14.svg)no-repeat;
-    /* background: url(./img/icon.svg) no-repeat; */
+    background: url(./img/Notice_gray.svg)no-repeat;
     background-size: cover;
-    /* fill:rgba(0,0,0,0.2); */
 }
 
 .menu .notice a span:hover{
-    width:57px;
-    height:50px;
-    background: url(./img/icon.svg) no-repeat;
+    background: url(./img/Notice.svg) no-repeat;
     background-size: cover;
 }
 
 .menu .test a span{
-    background:url(./svg/File.svg)no-repeat;
-    /* background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat; */
+    background:url(./img/File_gray.svg)no-repeat;
     background-size: cover;
 }
 
 .menu .test a span:hover{
-    background: url(./img/icon.svg)no-repeat -133px 0;
+    background: url(./img/File.svg)no-repeat;
     background-size: cover;
-}
-
-/* .menu .test a span {
-    background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/Send.svg") no-repeat;
-    background-size: cover;
-}
-
-.menu .test a span:hover{
-    background: url("https://www.skoologic.com/theme/eb4_basic/multiTheme/themePortal/img/File.svg") no-repeat;
-    background-size: cover;
-} */
-
-.menu li a span img:hover{
-    fill:orange;
 }
 
 .menu .save a span {
-    background: url(./svg/Storage_pc.svg) no-repeat;
+    background: url(./img/Storage_gray.svg) no-repeat;
+    background-size: cover;
+}
+
+.menu .save a span:hover{
+    background: url(./img/Storage_pc.svg) no-repeat;
     background-size: cover;
 }
 
 .menu .list a span {
-    background: url(./svg/Send.svg) no-repeat;
+    background: url(./img/Send_gray.svg) no-repeat;
+    background-size: cover;
+}
+
+.menu .list a span:hover {
+    background: url(./img/Send.svg) no-repeat;
     background-size: cover;
 }
 
 .menu .mypage a span {
-    background: url(./svg/My-Page.svg) no-repeat;
+    background: url(./img/My-Page_gray.svg) no-repeat;
+    background-size: cover;
+}
+
+.menu .mypage a span:hover {
+    background: url(./img/My-Page.svg) no-repeat;
     background-size: cover;
 }
 
@@ -1158,12 +1135,13 @@ i.fas.fa-caret-right {
     display: none;
 }
 
-
+.tab-box>ul{
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
 
 /* con3 */
 
 .con3{
-    /* width:49%; */
     margin-right: 1%;
     border: 1px solid #dbdbdb;
 }
@@ -1177,15 +1155,12 @@ i.fas.fa-caret-right {
     height: 10%;    /* 추가부분 */
     padding:15px 30px;
     background: rgba(0,0,0,0.1);
-    /* padding: 5px 0; */
-    /* border-bottom: 1px solid #000; */
 }
 
 .class .sub-title>div {
     float: left;
     width:47%;
     margin-right: 6%;
-    /* position: relative; */
 }
 
 .class .sub-title>div:last-child{
@@ -1998,19 +1973,21 @@ option:hover{
         left:0;
     }
 
-    .contents>li:nth-child(2) .tab-box ul>li.active>a {
+    /* .contents>li:nth-child(2) .tab-box ul>li.active>a {
         border-bottom: 1px solid #fff;
-    }
+    } */
 
     .tab-box>ul>li.active>a{
         border: 1px solid #dbdbdb;
         background: #fff;
-        padding: 5px 10px 5px 10px;
+        /* padding: 5px 10px 5px 10px; */
+        margin:0px 0 -1px;
+        border-bottom: 1px solid #fff;
     }
 
     .tab-box ul li.active section{
         display: block;
-        border-top: 1px solid #dbdbdb;
+        /* border-top: 1px solid #dbdbdb; */
         margin-top: -4px;
     }
 }
