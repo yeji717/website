@@ -96,10 +96,10 @@ body{
     float: left;
     width:20%;
     text-align: center;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size:1vw;
     font-weight: 600;
     color: #fff;
-
 }
 
 .menu li a{
@@ -135,11 +135,15 @@ body{
 
 .section1 .intro{
     position: absolute;
-    top:30%;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    /* top:30%;
     left: 33%;
-    transform: translateY(100px);
+    transform: translateY(100px); */
     color: #fff;
-    font-size: 3.5em;
+    /* font-size: 3.5em; */
+    font-size: 2.6vw;
     text-align: center;
     opacity: 0;
     visibility: hidden;
@@ -147,7 +151,7 @@ body{
 }
 
 .section1 .intro.on{
-    transform: translateY(0);
+    transform: translate(-50%,-50%);
     opacity: 1;
     visibility: visible;
 }
@@ -156,17 +160,40 @@ body{
     font-family: 'DM Serif Text', serif;
 }
 
+.section1_inner .go{
+    /* position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translateX(-50%); */
+    display: inline-block;
+    color: #fff;
+    background: #f7450c;
+    /* padding:15px 20px; */
+    padding:20px 30px;
+    /* font-size: 30px; */
+    font-size: 1.2vw;
+    transition: 0.5s;
+    margin-top:40px;
+}
+
+.section1_inner .go:hover{
+    background: #fff;
+    color: #f7450c;
+}
+
 /* section2 */
 
 .con2-1{
     width:80%;
-    padding-top:250px;
+    /* padding-top:250px; */
+    padding-top:25vh;
     margin:0 auto;
     /* margin: 0 auto 100px; */
 }
 
 .con2-1 .title h2{
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 2.2vw;
     opacity: 0;
     visibility: hidden;
     transform: translateX(-120px);
@@ -187,7 +214,8 @@ body{
 }
 
 .explain p{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.17vw;
     /* white-space: wrap; */
 }
 
@@ -199,7 +227,7 @@ body{
     /* background: blue; */
     background:url('./img/banner02.jpg')no-repeat 100%;
     background-size: cover;
-    margin-top:40px;
+    /* margin-top:40px; */
     overflow:hidden;
 }
 
@@ -211,7 +239,8 @@ body{
 .con3-1{
     width:100%;
     max-width:1180px;
-    padding-top:130px;
+    /* padding-top:130px; */
+    padding-top:8.4vw;
     margin:0 auto;
 }
 
@@ -220,7 +249,8 @@ body{
 }
 
 .con3-1 .title h2{
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
+    font-size: 2.2vw;
     opacity: 0;
     visibility: hidden;
     transform: translateY(120px);
@@ -235,16 +265,18 @@ body{
 
 .con3-1 .technology{
     width:100%;
-    /* height:450px; */
-    /* border: 1px solid #000; */
-    margin-top:100px;
+    /* width:80%; */
+    margin:3.9vw auto 0;
+    /* margin-top:80px; */
 }
 
 .con3-1 .technology li{
     position: relative;
     float: left;
     width:32%;
-    height:496px;
+    /* height:496px; */
+    /* height:300px; */
+    height:41vh;
     /* background:skyblue; */
     margin-right: 2%;
 }
@@ -256,6 +288,36 @@ body{
 .con3-1 .technology li:last-child{
     margin-right: 0;
 }
+
+/* .technology li article{
+    width: 100%;
+    height: 100%;
+} */
+
+.technology li.tech1 .tech_img{
+    width: 100%;
+    height: 100%;
+    background: url('./img/ai.jpg')no-repeat -127px;
+    background-size: cover;
+}
+
+.technology li.tech2 .tech_img{
+    width: 100%;
+    height: 100%;
+    background: url('./img/device.jpg')no-repeat -135px;
+    background-size: cover;
+}
+
+.technology li.tech3 .tech_img{
+    width: 100%;
+    height: 100%;
+    background: url('./img/notice2.jpg')no-repeat -135px;
+    background-size: cover;
+}
+
+/* .technology li:hover article{
+    transform: scale(1.1);
+} */
 
 .con3-1 .technology li div{
     position: absolute;
@@ -281,10 +343,14 @@ body{
     padding:20px;
 }
 
+.technology li div strong{
+    padding-left: 15px;
+}
+
 
 .technology .tech1{
-    background: url('./img/ai.jpg')no-repeat -135px;
-    background-size: cover;
+    /* background: url('./img/ai.jpg')no-repeat -135px;
+    background-size: cover; */
     /* transition: 0.5s;
     overflow:hidden; */
 }
@@ -293,7 +359,7 @@ body{
     transform: scale(1.1);
 } */
 
-.technology .tech2{
+/* .technology .tech2{
     background: url('./img/device.jpg')no-repeat -380px;
     background-size: cover;
 }
@@ -301,7 +367,7 @@ body{
 .technology .tech3{
     background: url('./img/notice2.jpg')no-repeat -160px;
     background-size: cover;
-}
+} */
 
 /* section4 */
 
@@ -318,12 +384,13 @@ body{
 
 .con4-1 .title{
     position: absolute;
-    right:0;
-    top:20%;
+    right:-10%;
+    top:10%;
 }
 
 .con4-1 .title h2{
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
+    font-size: 2.2vw;
     opacity: 0;
     visibility: hidden;
     transform: translatey(120px);
@@ -410,4 +477,60 @@ body{
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
+}
+
+.section5{
+    background:#f7450c;
+}
+
+.con5-1{
+    width:100%;
+    max-width:1160px;
+    padding-top:20vh;
+    margin:0 auto;
+}
+
+.con5-1 .title{
+    text-align: center;
+}
+
+.con5-1 .title h2{
+    font-size: 2.2vw;
+}
+
+.con5-1 .review_wrap{
+    width:100%;
+    margin-top:50px;
+}
+
+.review_wrap .review{
+    width:48%;
+    float: left;
+    height:250px;
+    margin-right: 2%;
+    background: #fff;
+}
+
+.review_wrap .review:nth-child(1){
+    width:100%;
+    margin-bottom:30px;
+}
+
+.review_wrap .review:last-child{
+    width:50%;
+    margin-right: 0;
+}
+
+/* 반응형 */
+
+@media(max-width:1400px){
+    .con3-1 .technology{
+        width:80%;
+    }
+}
+@media(max-width:1180px){
+
+}
+@media(max-width:1160px){
+
 }

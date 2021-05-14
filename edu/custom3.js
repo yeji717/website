@@ -52,7 +52,7 @@ $(document).ready(function(){
 
      if($(window).scrollTop()>=pos1/2){
        
-        slidingBox('.img-box', 500, 'orange', 0);
+        slidingBox('.img-box', 500, '#f7450c', 0);
 
         function slidingBox(item, speed, color, delay){
             $(item).append(
