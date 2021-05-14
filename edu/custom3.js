@@ -52,7 +52,7 @@ $(document).ready(function(){
 
      if($(window).scrollTop()>=pos1/2){
        
-        slidingBox('.img-box', 1000, 'orange', 0);
+        slidingBox('.img-box', 500, 'orange', 0);
 
         function slidingBox(item, speed, color, delay){
             $(item).append(
@@ -81,8 +81,10 @@ $(document).ready(function(){
         }
 
         const pos3 = $('.section3').offset().top; 
-        if($(window).scrollTop()>=pos3/3){
+        if($(window).scrollTop()>=pos3/1.2){
             $('.con4-1>.title>h2').addClass('on');
+            $('.teacher').addClass('on');
+            $('.student').addClass('on');
         }
     });
 

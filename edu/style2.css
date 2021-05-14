@@ -138,7 +138,6 @@ body{
     top:30%;
     left: 33%;
     transform: translateY(100px);
-    
     color: #fff;
     font-size: 3.5em;
     text-align: center;
@@ -151,6 +150,10 @@ body{
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+}
+
+.section1 .intro .main-title{
+    font-family: 'DM Serif Text', serif;
 }
 
 /* section2 */
@@ -302,6 +305,10 @@ body{
 
 /* section4 */
 
+.section4{
+    overflow:hidden;
+}
+
 .section4 .con4-1>div{
     position: absolute;
     width:600px;
@@ -376,6 +383,16 @@ body{
     left:-10%;
     background: url(./img/teacher.jpg)no-repeat center;
     background-size: cover;
+    transform: translatex(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+
+.section4 .con4-1 .teacher.on{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .section4 .con4-1 .student{
@@ -383,4 +400,14 @@ body{
     right: -10%;
     background: url(./img/student.jpg)no-repeat center;
     background-size: cover;
+    transform: translatex(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+
+.section4 .con4-1 .student.on{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
