@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // $('.section1>video').play();
+
     /* 첫로딩시 글씨 띄우기 */
     setTimeout(function(){
         // AOS.init();
@@ -86,11 +88,29 @@ $(document).ready(function(){
             $('.teacher').addClass('on');
             $('.student').addClass('on');
         }
+
+        const pos4 = $('.section4').offset().top;
+
+        if($(window).scrollTop()>=pos4/1.2){
+            $('.con5-1>.title>h2').addClass('on');
+        }
+
+        const pos5 = $('.section5').offset().top;
+      
+        if($(window).scrollTop()>=pos5/1.2){
+            const speed = 400;
+            $('.sun .top').animate({'width':'100%'},speed,function(){
+                $('.right').animate({'height':'100%'},speed,function(){
+                    $('.bottom').animate({'width':'100%'},speed,function(){
+                        $('.left').animate({'height':'100%'},speed,function(){
+                            AOS.init();
+                        });
+                    });
+                });
+            });
+        }
     });
 
-   
-
-     
     
 })
 

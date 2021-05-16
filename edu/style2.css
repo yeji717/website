@@ -129,9 +129,14 @@ body{
 }
 
 .section1{
+    /* background:url('./img/Student_mv.mp4')no-repeat center; */
     background:url('./img/main02.png')no-repeat center;
     background-size: cover; 
 }
+
+/* .section1 video{
+    height:100%;
+} */
 
 .section1 .intro{
     position: absolute;
@@ -264,7 +269,7 @@ body{
 }
 
 .con3-1 .technology{
-    width:100%;
+    /* width:100%; */
     /* width:80%; */
     margin:3.9vw auto 0;
     /* margin-top:80px; */
@@ -278,11 +283,11 @@ body{
     /* height:300px; */
     height:41vh;
     /* background:skyblue; */
-    margin-right: 2%;
+    margin:0 1%;
 }
 
 .con3-1 .technology li:nth-child(2){
-    margin-top:50px;
+    /* margin-top:50px; */
 }
 
 .con3-1 .technology li:last-child{
@@ -297,21 +302,21 @@ body{
 .technology li.tech1 .tech_img{
     width: 100%;
     height: 100%;
-    background: url('./img/ai.jpg')no-repeat -127px;
+    background: url('./img/ai.jpg')no-repeat;
     background-size: cover;
 }
 
 .technology li.tech2 .tech_img{
     width: 100%;
     height: 100%;
-    background: url('./img/device.jpg')no-repeat -135px;
+    background: url('./img/device.jpg')no-repeat;
     background-size: cover;
 }
 
 .technology li.tech3 .tech_img{
     width: 100%;
     height: 100%;
-    background: url('./img/notice2.jpg')no-repeat -135px;
+    background: url('./img/notice2.jpg')no-repeat;
     background-size: cover;
 }
 
@@ -322,9 +327,9 @@ body{
 .con3-1 .technology li div{
     position: absolute;
     width:90%;
-    height:150px;
+    height:120px;
     left:50%;
-    bottom: -50px;
+    bottom:0;
     transform: translateX(-50%);
     background:#fff;
 }
@@ -340,7 +345,8 @@ body{
 }
 
 .con3-1 .technology li div p{
-    padding:20px;
+    padding:10px 20px;
+    font-size: 14px;
 }
 
 .technology li div strong{
@@ -384,7 +390,7 @@ body{
 
 .con4-1 .title{
     position: absolute;
-    right:-10%;
+    right:0;
     top:10%;
 }
 
@@ -446,8 +452,9 @@ body{
 }
 
 .section4 .con4-1 .teacher{
-    top:20%;
-    left:-10%;
+    top:22%;
+    /* left:-10%; */
+    left: 0;
     background: url(./img/teacher.jpg)no-repeat center;
     background-size: cover;
     transform: translatex(-100%);
@@ -464,7 +471,8 @@ body{
 
 .section4 .con4-1 .student{
     bottom:20%;
-    right: -10%;
+    /* right: -10%; */
+    right: 0;
     background: url(./img/student.jpg)no-repeat center;
     background-size: cover;
     transform: translatex(100%);
@@ -496,41 +504,258 @@ body{
 
 .con5-1 .title h2{
     font-size: 2.2vw;
+    opacity: 0;
+    visibility: hidden;
+    transform: translatey(120px);
+    transition: 0.8s;
+}
+
+.con5-1 .title h2.on{
+    transform: translatey(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .con5-1 .review_wrap{
     width:100%;
-    margin-top:50px;
+    /* margin-top:50px; */
+    margin: 50px auto 0;
 }
 
-.review_wrap .review{
-    width:48%;
+.review_box{
+    width:80%;
+    height:450px;
+    margin:0 auto;
+    background: url('./img/bg02.jpg')no-repeat 100%;
+    background-size: cover;
+}
+
+.review_box .review{
+    position: relative;
+    width:18%;
     float: left;
-    height:250px;
+    height:450px;
     margin-right: 2%;
-    background: #fff;
+    /* background: #fff; */
+    transition: 0.5s ease;
+    overflow:hidden;
 }
 
-.review_wrap .review:nth-child(1){
+.review_box .review i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    animation: animate 1s infinite;
+    color: #f7450c;
+    text-shadow: 5px 5px 5px #000;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.review .review_inner{
+    position: absolute;
+    top:17%;
+    right:-101%;
+    width:90%;
+    height:350px;
+    background: #fff;
+    transition: 0.5s ease;
+}
+
+.review_box .review h3{
+    position: relative;
+    padding:10px 25px;
+    z-index: 3;
+}
+
+.review_box .review h3::before{
+    display: block;
+    position: absolute;
+    content: "";
+    width:3px;
+    height:18px;
+    top:37%;
+    left:10px;
+    background: #000;
+}
+
+.review_wrap .review:hover{
+    width:52%;
+}
+
+.review_wrap .review:hover .review_inner{
+    right:5%;
+}
+
+.review_wrap .review:hover i{
+    display: none;
+}
+
+.review_box .review span{
+    display: block;
+    position: absolute;
+    content: "";
+    width:100%;
+    height:0;
+    top:0;
+    left: 0;
+    background: rgba(247,69,12,0.5);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.review_wrap .review:hover span{
+    height:50px;
+}
+
+/* .review_wrap .review:nth-child(1){
     width:100%;
     margin-bottom:30px;
-}
+} */
 
 .review_wrap .review:last-child{
-    width:50%;
+    /* width:50%; */
     margin-right: 0;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+/* section 6 */
+
+.section6{
+    background: #f2f2f2;
+}
+
+.section6 .con6-1{
+    position: relative;
+    width:100%;
+    max-width:1160px;
+    margin:0 auto;
+    padding-top:130px;
+}
+
+.con6-1 .title{
+    text-align: center;
+}
+
+.con6-1 .title h2{
+    font-size:2.2vw;
+}
+
+.con6-1 .sun{
+    position: absolute;
+    width:100%;
+    height:30vw;
+    margin-top:50px;
+}
+.sun .top{
+    position: absolute;
+    width:0%;
+    height:1px;
+    background: #000;
+    top:0;
+    left:0;
+}
+
+.sun .right{
+    position: absolute;
+    width:1px;
+    height:0%;
+    background: #000;
+    top:0;
+    right:0;
+}
+
+.sun .bottom{
+    position: absolute;
+    width:0%;
+    height:1px;
+    background: #000;
+    bottom:0;
+    right:0;
+}
+
+.sun .left{
+    position: absolute;
+    width:1px;
+    height:0%;
+    background: #000;
+    bottom:0;
+    left:0;
+}
+
+.contact{
+    float: left;
+    width:50%;
+    height:100%;
+    background: url("./img/contact.jpg")no-repeat 100%;
+    background-size: cover;
+}
+
+.contact_t {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding:170px 30px;
+    box-sizing: border-box;
+}
+
+.contact_t h3{
+    font-size:1.5vw;
+    margin-bottom:20px;
+}
+
+.contact_t .question{
+    display: inline-block;
+    background: #f7450c;
+    color: #fff;
+    padding:10px 25px;
+    margin-top:25px;
 }
 
 /* 반응형 */
 
 @media(max-width:1400px){
-    .con3-1 .technology{
+    /* .con3-1 .technology{
         width:80%;
-    }
+    } */
 }
 @media(max-width:1180px){
 
 }
 @media(max-width:1160px){
 
+}
+
+@media(max-width:1024px){
+    .section4 .con4-1>div{
+        width:500px;
+        height:350px;
+    }
+}
+
+@media(max-width:1000px){
+
+    /* .con3-1 .technology{
+        width:90%;
+    } */
+
+    .con6-1 .sun{
+        width:80%;
+        left:50%;
+        transform: translateX(-50%);
+    }
 }

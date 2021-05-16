@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edu</title>
     <link rel="stylesheet" href="./style2.css">
-    <!-- <link rel="stylesheet" href="./aos.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick.css">
 </head>
 <style>
-    *{
-        margin:0;
-        padding:0;
-    }
-   
+     .slick-slide{
+            /* text-align:center;          
+            background: orange;
+            height:300px;
+            width:31%;
+            margin-right:2%; */
+            position: relative;
+        float: left;
+        width:32%;
+        height:41vh;
+        margin-right: 1%;
+        background: orange;
+        }
+        .slick-slide:nth-child(2n){
+            margin-top:50px;
+        }
+
+        .slick-slide:last-child{
+            margin-right: 0;
+        }
+
+
+
+.slick-slide div{
+    position: absolute;
+    width:90%;
+    height:150px;
+    left:50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    background:#fff;
+}
+
+.slick-slide div span{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    background:#f7450c;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.slick-slide div p{
+    padding:20px;
+}
+
+.slick-slide div strong{
+    padding-left: 15px;
+}
+
+        .slick-example>li{
+            
+            height: 300px;
+        }
+        .slick-prev{
+            /* background: red; */
+            left:-40px;
+        }
+        .slick-next{
+            /* background: red; */
+            right:-25px;
+        }
+        .slick-prev::before,.slick-next::before{
+            color: #000;
+            font-size:45px;
+        }
+        .slick-slider{
+            width:80%;
+            margin:150px auto 0;
+        }
 </style>
+
 <body>
     <div class="wrap">
         <section class="section1">
@@ -30,8 +101,8 @@
                                 <ul class="menu">
                                     <li><a href="#"><span>스쿨로직에듀</span></a></li>
                                     <li><a href="#"><span>주요기능</span></a></li>
-                                    <li><a href="#"><span>회사소개</span></a></li>
                                     <li><a href="#"><span>프로그램안내</span></a></li>
+                                    <li><a href="#"><span>후기</span></a></li>
                                     <li><a href="#"><span>협약문의</span></a></li>
                                 </ul>
                             </nav>
@@ -40,6 +111,7 @@
                 </div>
             </header>
             <div class="section1_inner">
+                <!-- <video src="./img/Student_mv.mp4" autoplay="autoplay" muted="muted" ></video> -->
                 <div class="intro">
                     <span class="main-title">Skoologic Edu</span>
                     <p>교육시대의 편리함을 가꾸다</p>
@@ -62,7 +134,8 @@
                         </p>
                         &nbsp;
                         <p>
-                            교사의 일방향적 학생부 관리 시스템이 아닌 모든 학생의 역량을 교사가 한눈에 파악하여 기입할 수 있도록 소통의 부재를 줄이고, 기존의 복잡하고 어려운 학생부를 보다 빠른 시간안에 해결할 별도의 툴을 보유하고 있습니다.
+                            교사의 일방향적 학생부 관리 시스템이 아닌 모든 학생의 역량을 교사가 한눈에 파악하여 기입할 수 있도록 소통의 부재를 줄이고, 기존의 복잡하고 어려운 학생부를 보다
+                            빠른 시간안에 해결할 별도의 툴을 보유하고 있습니다.
                         </p>
                     </div>
                     <div class="img-box"></div>
@@ -79,24 +152,48 @@
                         <article class="tech_img"></article>
                         <div class="tech1_box">
                             <span>01</span>
-                            <strong>인공지능</strong>
-                            <p>인공지능 기술을 활용한 AI 작성 프로그램</p>
+                            <strong>작성예시 및 작성팁 제공</strong>
+                            <p>학교 내에서 진행한 축제, 훈련, 교육등의 작성팁과 예시문장 서비스 제공</p>
                         </div>
                     </li>
                     <li class="tech2">
                         <article class="tech_img"></article>
                         <div class="tech2_box">
                             <span>02</span>
-                            <strong>인터페이스</strong>
-                            <p>PC, 태블릿, 모바일에 최적화된 인터페이스 구성</p>
+                            <strong>글자수(BYTE)세기 기능</strong>
+                            <p>나이스 시스템의 바이트 계산법과 동일한 서비스 제공</p>
                         </div>
                     </li>
                     <li class="tech3">
                         <article class="tech_img"></article>
                         <div class="tech3_box">
                             <span>03</span>
-                            <strong>정보알림</strong>
-                            <p>학교, 학급 상황에 맞게 적용할 수 있는 맞춤형 정보 알림기능</p>
+                            <strong>문서검사 및 필터링</strong>
+                            <p>작성한 문서에 대한 내용을 바탕으로 기입 가능한 외부 인증 장소와 금지, 주의, 추천무구 필터링 서비스</p>
+                        </div>
+                    </li>
+                    <li class="tech4">
+                        <article class="tech_img"></article>
+                        <div class="tech3_box">
+                            <span>04</span>
+                            <strong>진로 특화 기능</strong>
+                            <p>진로와 관련된 모든 정보 및 교육 자료를 찾는 통합 솔루션 기능</p>
+                        </div>
+                    </li>
+                    <li class="tech5">
+                        <article class="tech_img"></article>
+                        <div class="tech3_box">
+                            <span>05</span>
+                            <strong>연관단어 VIEW</strong>
+                            <p>학생의 활동 기록을 교사와 공유가 가능한 기능</p>
+                        </div>
+                    </li>
+                    <li class="tech6">
+                        <article class="tech_img"></article>
+                        <div class="tech3_box">
+                            <span>06</span>
+                            <strong>클라우드 및 공유 기능</strong>
+                            <p>추천 문구에 대한 연관단어를 보여주는 View 기능 서비스</p>
                         </div>
                     </li>
                     <!-- <li></li> -->
@@ -122,8 +219,8 @@
                 <div class="student">
                     <div class="inner">
                         <div class="inner_text">
-                           비교과 역량 강화에 필요한 다양한 진로 및 특기 활동을 <br>
-                           '스쿨로직 에듀'에서 모두 해결이 가능합니다.
+                            비교과 역량 강화에 필요한 다양한 진로 및 특기 활동을 <br>
+                            '스쿨로직 에듀'에서 모두 해결이 가능합니다.
                         </div>
                     </div>
                     <a href="#" class="go">학생용 바로가기</a>
@@ -138,9 +235,53 @@
                     </h2>
                 </span>
                 <div class="review_wrap after">
-                    <div class="review"></div>
-                    <div class="review"></div>
-                    <div class="review"></div>
+                    <div class="review_box">
+                        <div class="review">
+                            <h3>Review1</h3>
+                            <span></span>
+                            <article class="review_inner">
+                                <p>진동섭</p>
+                            </article>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="review">
+                            <h3>Review2</h3>
+                            <span></span>
+                            <article class="review_inner">
+                                <p>김창(한양대 교수)</p>
+                            </article>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="review">
+                            <h3>Review3</h3>
+                            <span></span>
+                            <article class="review_inner">
+                                <p>현직 교사</p>
+                            </article>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="back"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section6">
+            <div class="con6-1">
+                <div class="title">
+                    <h2>협약문의</h2>
+                </div>
+                <div class="sun">
+                    <div class="top"></div>
+                    <div class="right"></div>
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="contact" data-aos="zoom-in">
+                    </div>
+                    <div class="contact_t" data-aos="flip-up">
+                        <h3>스쿨로직은 진로, 진학 관리를 지향합니다</h3>
+                        <p>교육기사, 교육자료, 진로 및 진학 콘텐츠, 전문강의 및 논문자료 등을 제공하며, 학생들이 잘 아는 검증된 교육 정보 포털 사이트</p>
+                        <a href="#" class="question">문의 바로가기</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -148,8 +289,30 @@
     <script src="jquery-1.12.4.js"></script>
     <script src="./jquery.easing.1.3.js"></script>
     <script src="./jquery.mousewheel.min.js"></script>
-    <!-- <script src="./aos.js"></script> -->
+    <script src="./aos.js"></script>
     <script src="custom3.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/d841d98aaf.js" crossorigin="anonymous"></script>
+    <script>
+        $('.technology').slick({ dots: true, //페이지 네비게이션 
+            arrows:true, // next, prev 이동 버튼 
+            autoplay:true, // 자동 넘김 여부 
+            infinite: false, //반복설정 
+            speed: 300, //슬라이드 속도 
+            autoplaySpeed : 10000, // 자동 넘김시 슬라이드 시간 
+            pauseOnHover : true,// 마우스 hover시 슬라이드 멈춤 
+            vertical : false, // 세로 방향 슬라이드 옵션 
+            prevArrow : "<button type='button' class='slick-prev'>Previous</button>", 
+            nextArrow : "<button type='button' class='slick-next'>Next</button>", //화살표 커스텀 
+            slidesToShow: 3, //보여질 슬라이드 수 
+            slidesToScroll: 1, //넘겨질 슬라이드 수 
+            responsive: [ // -> 반응형 옵션 
+            { breakpoint: 1024, // 반응형 ~ 1024 
+                settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true } }, { breakpoint: 600,// 반응형 ~ 600 
+                    settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 480,// 반응형 ~ 480 
+                        settings: { slidesToShow: 1, slidesToScroll: 1 } } ] });
+    </script>
 </body>
+
 </html>
