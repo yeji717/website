@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     /* 스크롤할 때의 에니메이션 */
 
-    $(window).on('scroll',function(){
+    $(window).on('scroll touchmove mousewheel',function(){
         
     
         // const pos1 = $('.section1').offset().top; 
