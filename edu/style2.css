@@ -107,8 +107,10 @@ body{
     float: left;
     width:20%;
     text-align: center;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     /* font-size:1vw; */
+    /* font-size: 1.8rem; */
+    font-size:2.3vh;
     font-weight: 600;
     color: #fff;
 }
@@ -142,6 +144,7 @@ body{
 /* 모바일 */
 
 .mobutton{
+    display: none;
     position: absolute;
     width:40px;
     height:31px;
@@ -230,7 +233,8 @@ body{
     transform: translateY(100px); */
     color: #fff;
     /* font-size: 3.5em; */
-    font-size: 2.6vw;
+    /* font-size: 2.6vw; */
+    font-size:3.2rem;
     text-align: center;
     opacity: 0;
     visibility: hidden;
@@ -272,6 +276,7 @@ body{
     position: absolute;
     padding-top:80px;
     left:50%;
+    transform: translateX(-50%);
     bottom:5%;
     padding-left:5px; /* 추가 */
 }
@@ -555,6 +560,7 @@ body{
     color: #fff;
     background: rgba(247,69,12,0.5);
     z-index:11;
+    font-size:1.7rem;
 }
 
 .section4 .con4-1>div .inner{
@@ -906,6 +912,12 @@ body{
 
 /* 반응형 */
 
+@media (hover: hover){
+    .section4 .con4-1>div:hover .inner{
+        transform: translateX(0);
+    }
+}
+
 @media(max-width:1400px){
     /* .con3-1 .technology{
         width:80%;
@@ -977,6 +989,10 @@ body{
 
 @media(max-width:768px){
 
+    .mobutton{
+        display: block;
+    }
+
     .menu{
         display: none;
     }
@@ -1003,11 +1019,21 @@ body{
         height:300px;
     }
 
+    /* section 3 */
+
+    .con3-1 .technology li div p{
+        font-size:1.2rem;
+    }
+
     /* section 4 */
 
     .section4 .con4-1>div{
         width:49%;
         height:23.17%;
+    }
+
+    .con4-1>div .go{
+        font-size:1.3rem;
     }
     
     .section4 .con4-1 .teacher{
@@ -1025,6 +1051,15 @@ body{
 }
 
 @media(max-width:480px){
+
+    .section1 .intro{
+        width:100%;
+        font-size:2.5rem;
+    }
+
+    .section1_inner .go{
+        font-size:1.3rem;
+    }
 
     .title h2{
         font-size:2.3rem;
@@ -1074,6 +1109,21 @@ body{
         /* left:50%;
         transform: translateX(-50%);
         right:initial; */
+    }
+
+    .contact{
+        width:100%;
+        height:50%;
+    }
+
+    .contact_t{
+        width:100%;
+        height:50%;
+    }
+
+    .contact_twrap h3{
+        font-size:1.4rem;
+        margin-bottom:10px;
     }
 }
 
