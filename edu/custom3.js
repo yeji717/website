@@ -7,6 +7,19 @@ $(document).ready(function(){
         // AOS.init();
         $('.intro').addClass('on');
     },1000);
+
+    /* scroll 클릭 시 section1로 이동 */
+
+    
+
+    $('.scroll').on("click",function(){
+        const section2 = $('.section2').offset().top;
+
+        $('html, body').stop().animate({'scrollTop':section2},400);
+    })
+
+
+
     /* ======= wheel event ======= */ 
 
     const speed = 1000;
@@ -45,59 +58,78 @@ $(document).ready(function(){
 			//문서 전체를 next에 저장된 위치로 이동
 			$('html,body').stop().animate({'scrollTop':next_target},speed,ease);
 		}          
+    });
 
-        const pos1 = $('.section1').offset().top; 
-       
-    //  $(window).on("scroll",function(){
-    //      console.log($(window).scrollTop());
-    //  })
+    /* review 구간 */
 
-     if($(window).scrollTop()>=pos1/2){
-       
-        slidingBox('.img-box', 500, '#f7450c', 0);
+    // $('.review').mouseover(function(){
+    //     $(this).stop().animate({width:'52%'},500);
+    // });
 
-        function slidingBox(item, speed, color, delay){
-            $(item).append(
-                $('<div class="inner">').css({
-                    'width':'100%','height':'100%',
-                    'position':'absolute', 'top':'0px','left':'-100%',
-                    'background':color
-                }).delay(delay).animate({'left':'0%'},speed,'easeOutExpo',function(){
-                    $(item).css({'color':color})
-                    $(this).animate({'left':'100%'},speed,'easeInExpo', function(){
-                        $(this).remove();
-                    })
-                })
-            )
-        }
+    // $('.review').mouseleave(function(){
+    //     $(this).stop().animate({width:'18%'},500);
+    // });
 
-        setTimeout(function(){
-            $('.con2-1>.title>h2').addClass('on');
-        },300)
-        // $('.menu li').css({'color':'#000'});
-        }
+    /* 스크롤할 때의 에니메이션 */
 
+    $(window).on('scroll',function(){
+        
+    
+        // const pos1 = $('.section1').offset().top; 
         const pos2 = $('.section2').offset().top; 
-        if($(window).scrollTop()>=pos2/2.5){
+        const pos3 = $('.section3').offset().top; 
+        const pos4 = $('.section4').offset().top;
+        const pos5 = $('.section5').offset().top;
+        const pos6 = $('.section6').offset().top;
+
+        // let scrollvalue = $(this).scrollTop();
+        // console.log(scrollvalue);
+        // console.log(pos3);
+       
+        if($(window).scrollTop()<=pos2){
+       
+            slidingBox('.img-box', 500, '#f7450c', 0);
+
+            function slidingBox(item, speed, color, delay){
+                $(item).append(
+                    $('<div class="inner">').css({
+                        'width':'100%','height':'100%',
+                        'position':'absolute', 'top':'0px','left':'-100%',
+                        'background':color
+                    }).delay(delay).animate({'left':'0%'},speed,'easeOutExpo',function(){
+                        $(item).css({'color':color})
+                        $(this).animate({'left':'100%'},speed,'easeInExpo', function(){
+                            $(this).remove();
+                        })
+                    })
+                )
+            }
+            $('.con2-1-box>.title>h2').addClass('on');
+      
+        }
+
+    
+        if($(window).scrollTop()>=pos3/1.2){
             $('.con3-1>.title>h2').addClass('on');
         }
 
-        const pos3 = $('.section3').offset().top; 
-        if($(window).scrollTop()>=pos3/1.2){
+     
+        if($(window).scrollTop()>=pos4/1.2){
             $('.con4-1>.title>h2').addClass('on');
             $('.teacher').addClass('on');
             $('.student').addClass('on');
         }
 
-        const pos4 = $('.section4').offset().top;
+  
 
-        if($(window).scrollTop()>=pos4/1.2){
+        if($(window).scrollTop()>=pos5/1.2){
             $('.con5-1>.title>h2').addClass('on');
         }
 
-        const pos5 = $('.section5').offset().top;
+
       
-        if($(window).scrollTop()>=pos5/1.2){
+        if($(window).scrollTop()>=pos6/1.2){
+            $('.con6-1>.title>h2').addClass('on');
             const speed = 400;
             $('.sun .top').animate({'width':'100%'},speed,function(){
                 $('.right').animate({'height':'100%'},speed,function(){
@@ -108,9 +140,14 @@ $(document).ready(function(){
                     });
                 });
             });
-        }
-    });
+        }    
+    })
 
+    /* 모바일 버튼 눌렀을 때 나오는 모바일패널 */
+
+    $('.mobutton').on('click',function(){
+        $('.mopanel').toggleClass('on');
+    });
     
 })
 
