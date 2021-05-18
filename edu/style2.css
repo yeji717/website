@@ -580,7 +580,7 @@ body{
     font-size: 18px;
 }
 
-.section4 .con4-1>div:hover .inner{
+.section4 .con4-1>.hover:hover .inner{
     transform: translateX(0);
 }
 
@@ -912,11 +912,11 @@ body{
 
 /* 반응형 */
 
-@media (hover: hover){
+/* @media (hover: hover){
     .section4 .con4-1>div:hover .inner{
         transform: translateX(0);
     }
-}
+} */
 
 @media(max-width:1400px){
     /* .con3-1 .technology{
@@ -1048,6 +1048,11 @@ body{
         padding:3.9vw 0.78vw;
         font-size: 1.3rem;
     }
+
+    .section4 .con4-1>div:hover .inner{
+
+    }
+
 }
 
 @media(max-width:480px){

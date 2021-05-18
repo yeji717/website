@@ -148,6 +148,20 @@ $(document).ready(function(){
     $('.mobutton').on('click',function(){
         $('.mopanel').toggleClass('on');
     });
+
+    
+
+    $(window).resize(function(){
+
+        let windowWidth = $(window).width();
+        // console.log(windowWidth);
+
+        if(windowWidth<=768){
+            $('.con4-1>div').removeClass('hover');
+        }else{
+            $('.con4-1>div').addClass('hover');
+        }
+    });
     
 })
 
