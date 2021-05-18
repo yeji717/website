@@ -190,9 +190,19 @@ body{
 }
 
 .m-menu li a{
+    position: relative;
     display: block;
     padding:15px 25px;
-    font-size:2rem;
+    font-size:1.8em;
+}
+
+.m-menu li a::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width:85%;
+    bottom:0;
+    border:1px solid #f3f3f3;
 }
 
 .m-menu li:hover{
@@ -1048,6 +1058,22 @@ body{
     .con3-1 {
         width:90%;
         padding-top:25vh;
+    }
+
+    /* section4 */
+
+    .section4 .con4-1 .title{
+        text-align: center;
+    }
+
+    .section4 .con4-1>div{
+        width:100%;
+    }
+
+    .con4-1 .title{
+        /* left:50%;
+        transform: translateX(-50%);
+        right:initial; */
     }
 }
 
