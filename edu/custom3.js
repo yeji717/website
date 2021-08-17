@@ -149,6 +149,23 @@ $(document).ready(function(){
         $('.mopanel').toggleClass('on');
     });
 
+    $('.close').on('click',function(){
+        $('.mopanel').removeClass('on');
+    })
+
+    /* 위로가기 버튼 클릭 */
+
+    $('.top').on("click",function(){
+        $('html,body').stop().animate({scrollTop:0},500);
+    });
+
+    /* 메뉴버튼 눌렀을 때 */
+
+    // $('.menu-bar').on("click",function(){
+    // })
+
+
+
     
 
     $(window).resize(function(){
@@ -160,6 +177,14 @@ $(document).ready(function(){
             $('.con4-1>div').removeClass('hover');
         }else{
             $('.con4-1>div').addClass('hover');
+        }
+
+        if(windowWidth<=480){
+            if($(window).scrollTop()>0){
+                $('#header').css({'background':'#fff'});
+            }else{
+                $('#header').css({'background':'none'});
+            }
         }
     });
     
