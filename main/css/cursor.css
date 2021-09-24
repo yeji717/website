@@ -1,0 +1,23 @@
+
+.box{
+    width:300px;
+    height:100px;
+    background: skyblue;
+}
+
+.box:hover .red-ball{
+    display: block;
+}
+
+.red-ball{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    /* right: 0; */
+    width:800px;
+    height: 400px;
+    background: url(../image/wdbg.jpg)no-repeat 100%;
+    background-size: cover;
+}
+
