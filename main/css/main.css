@@ -1093,6 +1093,14 @@ footer {
         font-size: 50px;
     }
 
+    section h2{
+        padding-top:30px;
+    }
+
+    .flex_box{
+        height:calc(100vh - 35.6px);
+    }
+
     .work_list li .inner_tit a:nth-of-type(1){
         font-size: 16px;
     }
