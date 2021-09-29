@@ -370,6 +370,7 @@ span:nth-child(2n) {
 .work_list li {
     margin-bottom: 20px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .work_list li .inner_tit a:nth-of-type(1) {
@@ -649,8 +650,8 @@ span:nth-child(2n) {
 
 .s5_box {
     position: absolute;
-    /* width: 1200px; */
-    width:75vw;
+    /* width:75vw; */
+    width:65vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
