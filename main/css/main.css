@@ -164,6 +164,8 @@ header .hamburger {
 section {
     position: relative;
     height: 100vh;
+    height:-webkit-fill-available;
+    height:fill-available;
     background: #dcdcdc;
     overflow: hidden;
     /* 추가 */
