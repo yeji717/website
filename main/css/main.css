@@ -519,6 +519,7 @@ span:nth-child(2n) {
 
 .img_box .explain p {
     /* font-size:18px; */
+    font-size:1.2vw;
     line-height: 40px;
 }
 
