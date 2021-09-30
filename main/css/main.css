@@ -939,7 +939,8 @@ footer {
     }
 
     #s4 .profile .img_box{
-        height:320px;
+        /* height:320px; */
+        height: 240px;
     } /* 추가 */
 
     .p_box{
