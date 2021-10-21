@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,li,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background:none;
+    border: none;
+}
+
+header{}
+header nav{}
+main{}
+main #con1{
+    position: relative;
+    display: flex;
+}
+#con1>div{
+    width:50%;
+    height:700px;
+}
+
+#con1 .box1{
+    background-color: #fff;
+}
+
+#con1 .box2{
+    background-color: red;
+}
+
+#con1 .BestDeal{
+    position: absolute;
+    /* display: flex;
+    align-items: center; */
+    width:70%;
+    /* height: 500px; */
+    height:382px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    /* background:gray; */
+}
+
+#con1 .BestDeal>li{
+    /* position: absolute; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    font-size: 5vw;
+}
+
+.BestDeal span{
+    font-size:1.4vw;
+    font-style: italic;
+}
+
+.BestDeal img{
+    display: block;
+    width: 400px;
+    height: 300px;
+    grid-column-start: 3;
+}
+
+.BestDeal p{
+    padding:20px 0;
+}
+
+.BestDeal .more{
+    display: inline-block;
+    padding: 15px 15px;
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.button{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.button li{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #000;
+    /* cursor: pointer; */
+}
+

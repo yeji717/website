@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.after::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
