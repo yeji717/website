@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+KR:wght@100;400;700&family=Permanent+Marker&family=Roboto&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="./jquery.min_1.12.4.js"></script>
     <script src="./custom.js"></script>
 
@@ -33,17 +35,19 @@
                     <li><a href="#">FOOD & DRINK</a></li>
                 </ul>
             </nav>
+            <button class="m_menu">
+                <span></span>
+            </button>
         </div>
     </header>
+    <div class="panel"></div>
     <div class="back">
         <div class="box1"></div>
         <div class="box2"></div>
         <div class="main-content">
             <div class="navigation">
-                <!-- <i class="js-navigate js-left icon-arrow-left-circle icons"></i> -->
-                <!-- <i class="js-navigate js-right icon-arrow-right-circle icons"></i> -->
-                <i class="fas fa-arrow-left js-left js-navigate"></i>
-                <i class="fas fa-arrow-right js-right js-navigate"></i>
+                <i class="fas fa-chevron-left js-left js-navigate"></i>
+                <i class="fas fa-chevron-right js-right js-navigate"></i>
             </div>
             <div class="deal-content">
                 <div class="dc deal shack">
@@ -104,24 +108,49 @@
             </div>
             <div class="deal-image">
                 <div class="deal">
+                    <div class="deal_mobile">
+                        <img src="./image/img2.png" alt="">
+                        <span>SHACK BURGER</span>
+                        <a href="#" class="more">more deals</a>
+                    </div>
                     <!-- <img src="./image/img2.png" alt=""> -->
                 </div>
                 <div class="deal">
+                    <div class="deal_mobile">
+                        <img src="./image/fries.png" alt="">
+                        <span>SHACK BURGER</span>
+                        <a href="#" class="more">more deals</a>
+                    </div>
                     <!-- <img src="./image/fries.png" alt=""> -->
                 </div>
                 <div class="deal">
+                    <div class="deal_mobile">
+                        <img src="./image/Concrete.png" alt="">
+                        <span>SHACK BURGER</span>
+                        <a href="#" class="more">more deals</a>
+                    </div>
                     <!-- <img src="./image/burger_02.jpg" alt=""> -->
                 </div>
                 <div class="deal active">
+                    <img src="./image/shake-dog-biscuits.png" alt="">
+                    <div class="deal_mobile">
+                        <span>SHACK BURGER</span>
+                        <a href="#" class="more">more deals</a>
+                    </div>
                     <!-- <img src="./image/sns2.jpg" alt=""> -->
                 </div>
                 <div class="deal">
+                    <div class="deal_mobile">
+                        <img src="./image/chicken_ham.png" alt="">
+                        <span>SHACK BURGER</span>
+                        <a href="#" class="more">more deals</a>
+                    </div>
                     <!-- <img src="./image/sns3.jpg" alt=""> -->
                 </div>
             </div>
         </div>
     </div>
-    <main>
+    <main id="main">
         <div class="content_box">
             <section class="sec1 container">
                 <div class="about_1">
@@ -182,16 +211,6 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- <li>
-                        <img src="" alt=""><span></span>
-                        <p></p>
-                    </li>
-                    <li>
-                        <img src="" alt=""><span></span>
-                        <p></p>
-                    </li> -->
-                </ul>
-                <ul class="ham_list2">
                     <li>
                         <div class="list_box">
                             <img src="./image/img2.png" alt="">
@@ -216,7 +235,28 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <div class="list_box">
+                            <img src="./image/img2.png" alt="">
+                            <span>CHICK'N SHACK</span>
+                            <p>
+                                버터밀크에 수비드한 후 바삭하게 튀겨낸 치킨 패티에 양상추, 피클, 허브마요 소스를 곁들인 버거</p>
+                            <ul class="price">
+                                <li> &#8361; 7,9</li>
+                                <li> &#8361; 6,9</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <img src="" alt=""><span></span>
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="" alt=""><span></span>
+                        <p></p>
+                    </li> -->
                 </ul>
+
             </section>
             <section class="sec3">
                 <div class="store_inner">
@@ -281,6 +321,9 @@
         </div>
     </main>
     <footer>
+        <span class="top-btn">
+            <i class="fas fa-chevron-up"></i>
+        </span>
         <div class="f_container">
             <nav>
                 <ul>

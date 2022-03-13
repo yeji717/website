@@ -149,4 +149,15 @@ $(document).ready(function () {
 
     let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); window.addEventListener('resize', () => { let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); }); window.addEventListener('touchend', () => { let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); });
 
+    // 마우스 커서 이동시 따라다니는 예시 이미지
+
+    const image = $('.image');
+
+    document.addEventListener("mousemove",(e)=>{
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        image.css("left",mouseX+'px');
+        image.css("top",mouseY+'px');
+    })
+
 })
