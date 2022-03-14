@@ -151,7 +151,7 @@ $(document).ready(function () {
 
     // 마우스 커서 이동시 따라다니는 예시 이미지
 
-    let image = $('.image');
+    let image = $('.work_box');
 
     document.addEventListener("mousemove",(e)=>{
         const mouseX = e.clientX;
