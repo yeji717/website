@@ -341,7 +341,7 @@ span:nth-child(2n) {
 
 .work_list>li {
     /* color: #fff; */
-    position: relative;
+    /* position: relative; */
     color: rgba(229, 229, 229, 0.3);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
